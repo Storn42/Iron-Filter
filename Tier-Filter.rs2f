@@ -4,8 +4,8 @@ name: header
 */
 
 meta {
-    name = "Storn's Tier Filter";
-    description = "A Proof of Concept for Tier Based Filtering";
+    name = "Storn's Iron Filter";
+    description = "A Filter for the Ironman Experience. Turn off GE value and enjoy";
 	}
 
 /*@ define:module:greetings
