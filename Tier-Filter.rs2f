@@ -3881,7 +3881,7 @@ enum: ["Crystal weapon seed", "Crystal armour seed", "Enhanced crystal weapon se
 
 rule (name:GUANTLET_C_UNIQUES) {UNIQUE_C_STYLE}
 
-*@ define:input:boss_pvm
+/*@ define:input:boss_pvm
 label: Attack Styles
 type: enumlist
 group: Gauntlet
@@ -4430,7 +4430,7 @@ group: Hueycoatle
 rule (area:[1501,3268,0,1538,3298,0] && name:HUEYCOATL_HIDE && name:"Big bones" && ENABLE_HUEYCOATL_MVP && ownership:1) {hideOverlay = true;}
 rule (area:[1501,3268,0,1538,3298,0] && name:HUEYCOATL_HIDE) {hidden = true;}
 
-/*@ define:input:boss_pvm
+/*@ define:input:boss_pvm
 label: SS Tier Uniques
 type: enumlist
 group: The Inferno
@@ -5089,10 +5089,10 @@ apply (area:[1501,3268,0,1538,3298,0] && name:"Big Bones" && ENABLE_NEX_MVP && o
 label: SS Tier Uniques
 type: enumlist
 group: Nex
-enum: ["Zaryte vambraces",Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*", "Ancient godsword"]
+enum: ["Zaryte vambraces","Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*", "Ancient godsword"]
 */
 
-#define NEX_SS_UNIQUES ["Zaryte vambraces",Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*"]
+#define NEX_SS_UNIQUES ["Zaryte vambraces", "Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*"]
 
 rule (name:NEX_SS_UNIQUES) {UNIQUE_SS_STYLE}
 
@@ -5100,7 +5100,7 @@ rule (name:NEX_SS_UNIQUES) {UNIQUE_SS_STYLE}
 label: S Tier Uniques
 type: enumlist
 group: Nex
-enum: ["Zaryte vambraces",Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*", "Ancient godsword"]
+enum: ["Zaryte vambraces","Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*", "Ancient godsword"]
 */
 
 #define NEX_S_UNIQUES ["Ancient godsword"]
@@ -5111,7 +5111,7 @@ rule (name:NEX_S_UNIQUES) {UNIQUE_S_STYLE}
 label: A Tier Uniques
 type: enumlist
 group: Nex
-enum: ["Zaryte vambraces",Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*", "Ancient godsword"]
+enum: ["Zaryte vambraces","Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*", "Ancient godsword"]
 */
 
 #define NEX_A_UNIQUES []
@@ -5122,7 +5122,7 @@ rule (name:NEX_A_UNIQUES) {UNIQUE_A_STYLE}
 label: B Tier Uniques
 type: enumlist
 group: Nex
-enum: ["Zaryte vambraces",Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*", "Ancient godsword"]
+enum: ["Zaryte vambraces","Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*", "Ancient godsword"]
 */
 
 #define NEX_B_UNIQUES []
@@ -5133,7 +5133,7 @@ rule (name:NEX_B_UNIQUES) {UNIQUE_B_STYLE}
 label: C Tier Uniques
 type: enumlist
 group: Nex
-enum: ["Zaryte vambraces",Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*", "Ancient godsword"]
+enum: ["Zaryte vambraces","Zaryte crossbow","Nihil horn","*Torva full helm*","*Torva platebody*","*Torva platelegs*","Ancient hilt*", "Ancient godsword"]
 */
 
 #define NEX_C_UNIQUES []
@@ -7990,7 +7990,7 @@ enum: ["Dark totem base","Dark totem middle","Dark totem top","Dark Totem","Awak
 group: B Tier
 */
 
-#define KEYS_B_NAMES ["Dark totem base","Dark totem middle","Dark totem top","Crystal key","Frozen key","Frozen key piece (bandos)","Frozen key piece (saradomin)","Frozen key piece (zamorak)","Frozen key piece (armadyl)","Grubby key","Sinister key","Contract of worm acquisition","Contract of catalyst acquisition"]
+#define KEYS_B_NAMES ["Dark totem base","Dark totem middle","Dark totem top","Crystal key","Frozen key","Frozen key piece (bandos)","Frozen key piece (saradomin)","Frozen key piece (zamorak)","Frozen key piece (armadyl)","Grubby key","Sinister key",]
 
 /*@ define:input:keys
 label: Show Unnoted
