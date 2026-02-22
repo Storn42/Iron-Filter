@@ -6664,6 +6664,56 @@ enum: ["Oathplate helm","Oathplate chest","Oathplate legs","Rite of vile transfe
 rule (name:YAMA_C_UNIQUES) {UNIQUE_C_STYLE}
 
 /*@ define:input:boss_pvm
+label: Othplate Shards SS
+type: number
+group: Yama
+*/
+
+#define YAMA_OATHPLATE_SHARD_SS 100
+
+rule (name:"Oathplate shards" && quantity:>=YAMA_OATHPLATE_SHARD_SS) {UNIQUE_SS_STYLE}
+
+/*@ define:input:boss_pvm
+label: Othplate Shards S
+type: number
+group: Yama
+*/
+
+#define YAMA_OATHPLATE_SHARD_S 10
+
+rule (name:"Oathplate shards" && quantity:>=YAMA_OATHPLATE_SHARD_S) {UNIQUE_S_STYLE}
+
+/*@ define:input:boss_pvm
+label: Othplate Shards A
+type: number
+group: Yama
+*/
+
+#define YAMA_OATHPLATE_SHARD_A 1
+
+rule (name:"Oathplate shards" && quantity:>=YAMA_OATHPLATE_SHARD_A) {UNIQUE_A_STYLE}
+
+/*@ define:input:boss_pvm
+label: Othplate Shards B
+type: number
+group: Yama
+*/
+
+#define YAMA_OATHPLATE_SHARD_B 0
+
+rule (name:"Oathplate shards" && quantity:>=YAMA_OATHPLATE_SHARD_B) {UNIQUE_B_STYLE}
+
+/*@ define:input:boss_pvm
+label: Othplate Shards C
+type: number
+group: Yama
+*/
+
+#define YAMA_OATHPLATE_SHARD_C 0
+
+rule (name:"Oathplate shards" && quantity:>=YAMA_OATHPLATE_SHARD_C) {UNIQUE_C_STYLE}
+
+/*@ define:input:boss_pvm
 label: Hide Items
 type: stringlist
 group: Yama
