@@ -18,7 +18,7 @@ description:
 
   - Minigames
 
-  - Clues
+  - Misc Uniques
 */
 
 /*@ define:module:settings
@@ -7773,6 +7773,405 @@ exampleItem: Reward casket (master)
 	borderColor = "#ffc90808";
 
 rule (name:["Reward casket (master)"]) {CASKET_MASTER_STYLE}
+
+/*@ define:module:clue_scroll_uniques
+name: Clue Scroll Uniques
+subtitle: Rewards from a Successful Treasure Hunt
+*/
+
+
+/*@ define:input:clue_scroll_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Mega Rares
+enum: ["3rd age full helmet","3rd age platebody","3rd age platelegs","3rd age plateskirt","3rd age kiteshield","3rd age range coif","3rd age range top","3rd age range legs","3rd age vambraces","3rd age mage hat","3rd age robe top","3rd aage robe","3rd age amulet","3rd age druidic robe top","3rd age druidic robe bottoms","3rd age druidic cloak","3rd age longsword","3rd age bow","3rd age wand","3rd age druidic staff","3rd age cloak","3rd age pickaxe","3rd age axe","Ring of 3rd age","Gilded scimitar","Gilded boots","Gilded coif","Gilded d'hide vambraces","Gilded d'hide body","Gilded d'hide chaps","Gilded pickaxe","Gilded axe","Gilded spade","Gilded full helm","Gilded platebody","Gilded platelegs","Gilded plateskirt","Gilded kiteshield","Gilded med helm","Gilded chainbody","Gilded sq shield","Gilded 2h sword","Gilded spear","Gilded hasta","Lava dragon mask","Ring of nature","Bucket helm (g)","Ring of coins"]
+*/
+
+#define MEGA_RARES_SS_UNIQUES ["3rd age full helmet","3rd age platebody","3rd age platelegs","3rd age plateskirt","3rd age kiteshield","3rd age range coif","3rd age range top","3rd age range legs","3rd age vambraces","3rd age mage hat","3rd age robe top","3rd aage robe","3rd age amulet","3rd age druidic robe top","3rd age druidic robe bottoms","3rd age druidic cloak","3rd age longsword","3rd age bow","3rd age wand","3rd age druidic staff","3rd age cloak","3rd age pickaxe","3rd age axe","Ring of 3rd age"]
+
+rule (name:MEGA_RARES_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: S Tier Uniques
+type: enumlist
+group: Mega Rares
+enum: ["3rd age full helmet","3rd age platebody","3rd age platelegs","3rd age plateskirt","3rd age kiteshield","3rd age range coif","3rd age range top","3rd age range legs","3rd age vambraces","3rd age mage hat","3rd age robe top","3rd aage robe","3rd age amulet","3rd age druidic robe top","3rd age druidic robe bottoms","3rd age druidic cloak","3rd age longsword","3rd age bow","3rd age wand","3rd age druidic staff","3rd age cloak","3rd age pickaxe","3rd age axe","Ring of 3rd age","Gilded scimitar","Gilded boots","Gilded coif","Gilded d'hide vambraces","Gilded d'hide body","Gilded d'hide chaps","Gilded pickaxe","Gilded axe","Gilded spade","Gilded full helm","Gilded platebody","Gilded platelegs","Gilded plateskirt","Gilded kiteshield","Gilded med helm","Gilded chainbody","Gilded sq shield","Gilded 2h sword","Gilded spear","Gilded hasta","Lava dragon mask","Ring of nature","Bucket helm (g)","Ring of coins"]
+*/
+
+#define MEGA_RARES_S_UNIQUES ["Gilded scimitar","Gilded boots","Gilded coif","Gilded d'hide vambraces","Gilded d'hide body","Gilded d'hide chaps","Gilded pickaxe","Gilded axe","Gilded spade","Gilded full helm","Gilded platebody","Gilded platelegs","Gilded plateskirt","Gilded kiteshield","Gilded med helm","Gilded chainbody","Gilded sq shield","Gilded 2h sword","Gilded spear","Gilded hasta","Lava dragon mask","Ring of nature","Bucket helm (g)","Ring of coins"]
+
+rule (name:MEGA_RARES_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: A Tier Uniques
+type: enumlist
+group: Mega Rares
+enum: ["3rd age full helmet","3rd age platebody","3rd age platelegs","3rd age plateskirt","3rd age kiteshield","3rd age range coif","3rd age range top","3rd age range legs","3rd age vambraces","3rd age mage hat","3rd age robe top","3rd aage robe","3rd age amulet","3rd age druidic robe top","3rd age druidic robe bottoms","3rd age druidic cloak","3rd age longsword","3rd age bow","3rd age wand","3rd age druidic staff","3rd age cloak","3rd age pickaxe","3rd age axe","Ring of 3rd age","Gilded scimitar","Gilded boots","Gilded coif","Gilded d'hide vambraces","Gilded d'hide body","Gilded d'hide chaps","Gilded pickaxe","Gilded axe","Gilded spade","Gilded full helm","Gilded platebody","Gilded platelegs","Gilded plateskirt","Gilded kiteshield","Gilded med helm","Gilded chainbody","Gilded sq shield","Gilded 2h sword","Gilded spear","Gilded hasta","Lava dragon mask","Ring of nature","Bucket helm (g)","Ring of coins"]
+*/
+
+#define MEGA_RARES_A_UNIQUES []
+
+rule (name:MEGA_RARES_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: B Tier Uniques
+type: enumlist
+group: Mega Rares
+enum: ["3rd age full helmet","3rd age platebody","3rd age platelegs","3rd age plateskirt","3rd age kiteshield","3rd age range coif","3rd age range top","3rd age range legs","3rd age vambraces","3rd age mage hat","3rd age robe top","3rd aage robe","3rd age amulet","3rd age druidic robe top","3rd age druidic robe bottoms","3rd age druidic cloak","3rd age longsword","3rd age bow","3rd age wand","3rd age druidic staff","3rd age cloak","3rd age pickaxe","3rd age axe","Ring of 3rd age","Gilded scimitar","Gilded boots","Gilded coif","Gilded d'hide vambraces","Gilded d'hide body","Gilded d'hide chaps","Gilded pickaxe","Gilded axe","Gilded spade","Gilded full helm","Gilded platebody","Gilded platelegs","Gilded plateskirt","Gilded kiteshield","Gilded med helm","Gilded chainbody","Gilded sq shield","Gilded 2h sword","Gilded spear","Gilded hasta","Lava dragon mask","Ring of nature","Bucket helm (g)","Ring of coins"]
+*/
+
+#define MEGA_RARES_B_UNIQUES []
+
+rule (name:MEGA_RARES_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: C Tier Uniques
+type: enumlist
+group: Mega Rares
+enum: ["3rd age full helmet","3rd age platebody","3rd age platelegs","3rd age plateskirt","3rd age kiteshield","3rd age range coif","3rd age range top","3rd age range legs","3rd age vambraces","3rd age mage hat","3rd age robe top","3rd aage robe","3rd age amulet","3rd age druidic robe top","3rd age druidic robe bottoms","3rd age druidic cloak","3rd age longsword","3rd age bow","3rd age wand","3rd age druidic staff","3rd age cloak","3rd age pickaxe","3rd age axe","Ring of 3rd age","Gilded scimitar","Gilded boots","Gilded coif","Gilded d'hide vambraces","Gilded d'hide body","Gilded d'hide chaps","Gilded pickaxe","Gilded axe","Gilded spade","Gilded full helm","Gilded platebody","Gilded platelegs","Gilded plateskirt","Gilded kiteshield","Gilded med helm","Gilded chainbody","Gilded sq shield","Gilded 2h sword","Gilded spear","Gilded hasta","Lava dragon mask","Ring of nature","Bucket helm (g)","Ring of coins"]
+*/
+
+#define MEGA_RARES_C_UNIQUES []
+
+rule (name:MEGA_RARES_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Master Clue Uniques
+enum: ["Ankou mask","Ankou top","Ankou gloves","Ankou's leggings","Ankou socks","Dragon platebody ornament kit","Dragon kiteshield ornament kit","Bandos godsword ornament kit","Saradomin godsword ornament kit","Armadyl godsword ornament kit","Zamorak godsword ornament kit","Anguish ornament kit","Occult ornament kit","Tormented ornament kit","Torture ornament kit","Mummy's body","Mummy's feet","Mummy's hands","Mummy's head","Mummy's legs","Ale of the gods","Arceuus hood","Black demon mask","Boots of darkness","Bowl wig","Dragon defender ornament kit","Fancy tiara","Gloves of darkness","Greater demon mask","Half moon spectacles","Hood of darkness","Hosidius hood","Jungle demon mask","Left eye patch","Lesser demon mask","Lovakengj hood","Obsidian cape (r)","Old demon mask","Piscarilius hood","Robe bottom of darkness","Robe top of darkness","Samurai boots","Samurai gloves","Samurai greaves","Samurai kasa","Samurai shirt","Shayzien hood"]
+*/
+
+#define MASTER_CLUE_SS_UNIQUES []
+
+rule (name:MASTER_CLUE_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: S Tier Uniques
+type: enumlist
+group: Master Clue Uniques
+enum: ["Ankou mask","Ankou top","Ankou gloves","Ankou's leggings","Ankou socks","Dragon platebody ornament kit","Dragon kiteshield ornament kit","Bandos godsword ornament kit","Saradomin godsword ornament kit","Armadyl godsword ornament kit","Zamorak godsword ornament kit","Anguish ornament kit","Occult ornament kit","Tormented ornament kit","Torture ornament kit","Mummy's body","Mummy's feet","Mummy's hands","Mummy's head","Mummy's legs","Ale of the gods","Arceuus hood","Black demon mask","Boots of darkness","Bowl wig","Dragon defender ornament kit","Fancy tiara","Gloves of darkness","Greater demon mask","Half moon spectacles","Hood of darkness","Hosidius hood","Jungle demon mask","Left eye patch","Lesser demon mask","Lovakengj hood","Obsidian cape (r)","Old demon mask","Piscarilius hood","Robe bottom of darkness","Robe top of darkness","Samurai boots","Samurai gloves","Samurai greaves","Samurai kasa","Samurai shirt","Shayzien hood"]
+*/
+
+#define MASTER_CLUE_S_UNIQUES ["Ankou mask","Ankou top","Ankou gloves","Ankou's leggings","Ankou socks","Dragon platebody ornament kit","Dragon kiteshield ornament kit","Mummy's body","Mummy's feet","Mummy's hands","Mummy's head","Mummy's legs"]
+
+rule (name:MASTER_CLUE_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: A Tier Uniques
+type: enumlist
+group: Master Clue Uniques
+enum: ["Ankou mask","Ankou top","Ankou gloves","Ankou's leggings","Ankou socks","Dragon platebody ornament kit","Dragon kiteshield ornament kit","Bandos godsword ornament kit","Saradomin godsword ornament kit","Armadyl godsword ornament kit","Zamorak godsword ornament kit","Anguish ornament kit","Occult ornament kit","Tormented ornament kit","Torture ornament kit","Mummy's body","Mummy's feet","Mummy's hands","Mummy's head","Mummy's legs","Ale of the gods","Arceuus hood","Black demon mask","Boots of darkness","Bowl wig","Dragon defender ornament kit","Fancy tiara","Gloves of darkness","Greater demon mask","Half moon spectacles","Hood of darkness","Hosidius hood","Jungle demon mask","Left eye patch","Lesser demon mask","Lovakengj hood","Obsidian cape (r)","Old demon mask","Piscarilius hood","Robe bottom of darkness","Robe top of darkness","Samurai boots","Samurai gloves","Samurai greaves","Samurai kasa","Samurai shirt","Shayzien hood"]
+*/
+
+#define MASTER_CLUE_A_UNIQUES ["Bandos godsword ornament kit","Saradomin godsword ornament kit","Armadyl godsword ornament kit","Zamorak godsword ornament kit"]
+
+rule (name:MASTER_CLUE_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: B Tier Uniques
+type: enumlist
+group: Master Clue Uniques
+enum: ["Ankou mask","Ankou top","Ankou gloves","Ankou's leggings","Ankou socks","Dragon platebody ornament kit","Dragon kiteshield ornament kit","Bandos godsword ornament kit","Saradomin godsword ornament kit","Armadyl godsword ornament kit","Zamorak godsword ornament kit","Anguish ornament kit","Occult ornament kit","Tormented ornament kit","Torture ornament kit","Mummy's body","Mummy's feet","Mummy's hands","Mummy's head","Mummy's legs","Ale of the gods","Arceuus hood","Black demon mask","Boots of darkness","Bowl wig","Dragon defender ornament kit","Fancy tiara","Gloves of darkness","Greater demon mask","Half moon spectacles","Hood of darkness","Hosidius hood","Jungle demon mask","Left eye patch","Lesser demon mask","Lovakengj hood","Obsidian cape (r)","Old demon mask","Piscarilius hood","Robe bottom of darkness","Robe top of darkness","Samurai boots","Samurai gloves","Samurai greaves","Samurai kasa","Samurai shirt","Shayzien hood"]
+*/
+
+#define MASTER_CLUE_B_UNIQUES ["Anguish ornament kit","Occult ornament kit","Tormented ornament kit","Torture ornament kit","Ale of the gods","Obsidian cape (r)"]
+
+rule (name:MASTER_CLUE_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: C Tier Uniques
+type: enumlist
+group: Master Clue Uniques
+enum: ["Ankou mask","Ankou top","Ankou gloves","Ankou's leggings","Ankou socks","Dragon platebody ornament kit","Dragon kiteshield ornament kit","Bandos godsword ornament kit","Saradomin godsword ornament kit","Armadyl godsword ornament kit","Zamorak godsword ornament kit","Anguish ornament kit","Occult ornament kit","Tormented ornament kit","Torture ornament kit","Mummy's body","Mummy's feet","Mummy's hands","Mummy's head","Mummy's legs","Ale of the gods","Arceuus hood","Black demon mask","Boots of darkness","Bowl wig","Dragon defender ornament kit","Fancy tiara","Gloves of darkness","Greater demon mask","Half moon spectacles","Hood of darkness","Hosidius hood","Jungle demon mask","Left eye patch","Lesser demon mask","Lovakengj hood","Obsidian cape (r)","Old demon mask","Piscarilius hood","Robe bottom of darkness","Robe top of darkness","Samurai boots","Samurai gloves","Samurai greaves","Samurai kasa","Samurai shirt","Shayzien hood"]
+*/
+
+#define MASTER_CLUE_C_UNIQUES ["Arceuus hood","Black demon mask","Boots of darkness","Bowl wig","Dragon defender ornament kit","Fancy tiara","Gloves of darkness","Greater demon mask","Half moon spectacles","Hood of darkness","Hosidius hood","Jungle demon mask","Left eye patch","Lesser demon mask","Lovakengj hood","Old demon mask","Piscarilius hood","Robe bottom of darkness","Robe top of darkness","Samurai boots","Samurai gloves","Samurai greaves","Samurai kasa","Samurai shirt","Shayzien hood"]
+
+rule (name:MASTER_CLUE_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Elite Clue Uniques
+enum: ["Fremennik kilt","Rangers' tunic","Light tuxedo*","Light bow tie","Dark tuxedo*","Dark bow tie","Sagacious spectacles","Big pirate hat","Ranger gloves","Holy wraps","Dragon full helm ornament kit","Dragon chainbody ornament kit","Dragon legs/skirt ornament kit","Dragon sq shield ornament kit","Dragon scimitar ornament kit","Fury ornament kit","Light infinity colour kit","Dark infinity colour kit","Royal crown","Royal gown top","Royal gown bottom","Royal sceptre","Musketeer*","Arceuus scarf","Hosidius scarf","Lovakengj scarf","Piscarilius scarf","Shayzien scarf","Katana","Dragon cane","Bucket helm","Blacksmith's helm","Deerstalker","Afro","Top hat","Monocle","Briefcase","Rangers' tights","Uri's hat","Giant boot"]
+*/
+
+#define ELITE_CLUE_SS_UNIQUES []
+
+rule (name:ELITE_CLUE_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: S Tier Uniques
+type: enumlist
+group: Elite Clue Uniques
+enum: ["Fremennik kilt","Rangers' tunic","Light tuxedo*","Light bow tie","Dark tuxedo*","Dark bow tie","Sagacious spectacles","Big pirate hat","Ranger gloves","Holy wraps","Dragon full helm ornament kit","Dragon chainbody ornament kit","Dragon legs/skirt ornament kit","Dragon sq shield ornament kit","Dragon scimitar ornament kit","Fury ornament kit","Light infinity colour kit","Dark infinity colour kit","Royal crown","Royal gown top","Royal gown bottom","Royal sceptre","Musketeer*","Arceuus scarf","Hosidius scarf","Lovakengj scarf","Piscarilius scarf","Shayzien scarf","Katana","Dragon cane","Bucket helm","Blacksmith's helm","Deerstalker","Afro","Top hat","Monocle","Briefcase","Rangers' tights","Uri's hat","Giant boot"]
+*/
+
+#define ELITE_CLUE_S_UNIQUES ["Light tuxedo*","Light bow tie","Dark tuxedo*","Dark bow tie"]
+
+rule (name:ELITE_CLUE_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: A Tier Uniques
+type: enumlist
+group: Elite Clue Uniques
+enum: ["Fremennik kilt","Rangers' tunic","Light tuxedo*","Light bow tie","Dark tuxedo*","Dark bow tie","Sagacious spectacles","Big pirate hat","Ranger gloves","Holy wraps","Dragon full helm ornament kit","Dragon chainbody ornament kit","Dragon legs/skirt ornament kit","Dragon sq shield ornament kit","Dragon scimitar ornament kit","Fury ornament kit","Light infinity colour kit","Dark infinity colour kit","Royal crown","Royal gown top","Royal gown bottom","Royal sceptre","Musketeer*","Arceuus scarf","Hosidius scarf","Lovakengj scarf","Piscarilius scarf","Shayzien scarf","Katana","Dragon cane","Bucket helm","Blacksmith's helm","Deerstalker","Afro","Top hat","Monocle","Briefcase","Rangers' tights","Uri's hat","Giant boot"]
+*/
+
+#define ELITE_CLUE_A_UNIQUES ["Fremennik kilt","Rangers' tunic"]
+
+rule (name:ELITE_CLUE_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: B Tier Uniques
+type: enumlist
+group: Elite Clue Uniques
+enum: ["Fremennik kilt","Rangers' tunic","Light tuxedo*","Light bow tie","Dark tuxedo*","Dark bow tie","Sagacious spectacles","Big pirate hat","Ranger gloves","Holy wraps","Dragon full helm ornament kit","Dragon chainbody ornament kit","Dragon legs/skirt ornament kit","Dragon sq shield ornament kit","Dragon scimitar ornament kit","Fury ornament kit","Light infinity colour kit","Dark infinity colour kit","Royal crown","Royal gown top","Royal gown bottom","Royal sceptre","Musketeer*","Arceuus scarf","Hosidius scarf","Lovakengj scarf","Piscarilius scarf","Shayzien scarf","Katana","Dragon cane","Bucket helm","Blacksmith's helm","Deerstalker","Afro","Top hat","Monocle","Briefcase","Rangers' tights","Uri's hat","Giant boot"]
+*/
+
+#define ELITE_CLUE_B_UNIQUES ["Sagacious spectacles","Holy wraps"]
+
+rule (name:ELITE_CLUE_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: C Tier Uniques
+type: enumlist
+group: Elite Clue Uniques
+enum: ["Fremennik kilt","Rangers' tunic","Light tuxedo*","Light bow tie","Dark tuxedo*","Dark bow tie","Sagacious spectacles","Big pirate hat","Ranger gloves","Holy wraps","Dragon full helm ornament kit","Dragon chainbody ornament kit","Dragon legs/skirt ornament kit","Dragon sq shield ornament kit","Dragon scimitar ornament kit","Fury ornament kit","Light infinity colour kit","Dark infinity colour kit","Royal crown","Royal gown top","Royal gown bottom","Royal sceptre","Musketeer*","Arceuus scarf","Hosidius scarf","Lovakengj scarf","Piscarilius scarf","Shayzien scarf","Katana","Dragon cane","Bucket helm","Blacksmith's helm","Deerstalker","Afro","Top hat","Monocle","Briefcase","Rangers' tights","Uri's hat","Giant boot"]
+*/
+
+#define ELITE_CLUE_C_UNIQUES ["Big pirate hat","Ranger gloves","Dragon full helm ornament kit","Dragon chainbody ornament kit","Dragon legs/skirt ornament kit","Dragon sq shield ornament kit","Dragon scimitar ornament kit","Fury ornament kit","Light infinity colour kit","Dark infinity colour kit","Royal crown","Royal gown top","Royal gown bottom","Royal sceptre","Musketeer*","Arceuus scarf","Hosidius scarf","Lovakengj scarf","Piscarilius scarf","Shayzien scarf","Katana","Dragon cane","Bucket helm","Blacksmith's helm","Deerstalker","Afro","Top hat","Monocle","Briefcase","Rangers' tights","Uri's hat","Giant boot"]
+
+rule (name:ELITE_CLUE_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Hard Clue Uniques
+enum: ["Robin hood hat","Zamorak full helm","Amulet of glory(t*)","Enchanted hat","Enchanted hat","Enchanted robe","Dragon boots ornament kit","Zamorak platebody","Zamorak platelegs","Guthix full helm","Guthix platebody","Guthix platelegs","Saradomin full helm","Saradomin platebody","Saradomin platelegs","Ancient full helm","Ancient platebody","Ancient platelegs","Armadyl full helm","Armadyl platebody","Armadyl platelegs","Bandos full helm","Bandos platebody","Bandos platelegs","Saradomin coif","Saradomin chaps" ,"Saradomin bracers","Saradomin d'hide body","Saradomin d'hide boots","Saradomin d'hide shield","Guthix coif","Guthix chaps","Guthix bracers" ,"Guthix d'hide body","Guthix d'hide boots","Guthix d'hide shield","Zamorak coif" ,"Zamorak chaps" ,"Zamorak bracers" ,"Zamorak d'hide body","Zamorak d'hide boots","Zamorak d'hide shield","Bandos coif","Bandos chaps","Bandos bracers","Bandos d'hide body","Bandos d'hide boots","Bandos d'hide shield","Armadyl coif" ,"Armadyl chaps" ,"Armadyl bracers","Armadyl d'hide body","Armadyl d'hide boots","Armadyl d'hide shield","Ancient coif" ,"Ancient chaps","Ancient bracers" ,"Ancient d'hide body","Ancient d'hide boots","Ancient d'hide shield","Zombie head" ,"Cyclops head","Pirate's hat" ,"* cavalier","Pith helmet","Explorer backpack","* dragon mask","Nunchaku","Rune cane","Dual sai","Thieving bag","Rune defender ornament kit*","Berserker necklace ornament kit","Tzhaar-ket-om ornament kit","Rune full helm (t)","Rune platebody (t)","Rune platelegs (t)","Rune plateskirt (t)","Rune kiteshield (t)","Rune full helm (g)","Rune platebody (g)","Rune platelegs (g)","Rune plateskirt (g)","Rune kiteshield (g)","Rune shield (h1)","Rune shield (h2)","Rune shield (h3)","Rune shield (h4)","Rune shield (h5)","Rune helm (h1)","Rune helm (h2)","Rune helm (h3)","Rune helm (h4)","Rune helm (h5)","Red d'hide body (g)","Red d'hide body (t)","Red d'hide chaps (g)","Red d'hide chaps (t)","Blue d'hide body (g)","Blue d'hide body (t)","Blue d'hide chaps (g)","Blue d'hide chaps (t)","Rune platebody (h1)","Rune platebody (h2)","Rune platebody (h3)","Rune platebody (h4)","Rune platebody (h5)","Magic comp bow"]
+*/
+
+#define HARD_CLUE_SS_UNIQUES []
+
+rule (name:HARD_CLUE_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: S Tier Uniques
+type: enumlist
+group: Hard Clue Uniques
+enum: ["Robin hood hat","Zamorak full helm","Amulet of glory(t*)","Enchanted hat","Enchanted hat","Enchanted robe","Dragon boots ornament kit","Zamorak platebody","Zamorak platelegs","Guthix full helm","Guthix platebody","Guthix platelegs","Saradomin full helm","Saradomin platebody","Saradomin platelegs","Ancient full helm","Ancient platebody","Ancient platelegs","Armadyl full helm","Armadyl platebody","Armadyl platelegs","Bandos full helm","Bandos platebody","Bandos platelegs","Saradomin coif","Saradomin chaps" ,"Saradomin bracers","Saradomin d'hide body","Saradomin d'hide boots","Saradomin d'hide shield","Guthix coif","Guthix chaps","Guthix bracers" ,"Guthix d'hide body","Guthix d'hide boots","Guthix d'hide shield","Zamorak coif" ,"Zamorak chaps" ,"Zamorak bracers" ,"Zamorak d'hide body","Zamorak d'hide boots","Zamorak d'hide shield","Bandos coif","Bandos chaps","Bandos bracers","Bandos d'hide body","Bandos d'hide boots","Bandos d'hide shield","Armadyl coif" ,"Armadyl chaps" ,"Armadyl bracers","Armadyl d'hide body","Armadyl d'hide boots","Armadyl d'hide shield","Ancient coif" ,"Ancient chaps","Ancient bracers" ,"Ancient d'hide body","Ancient d'hide boots","Ancient d'hide shield","Zombie head" ,"Cyclops head","Pirate's hat" ,"* cavalier","Pith helmet","Explorer backpack","* dragon mask","Nunchaku","Rune cane","Dual sai","Thieving bag","Rune defender ornament kit*","Berserker necklace ornament kit","Tzhaar-ket-om ornament kit","Rune full helm (t)","Rune platebody (t)","Rune platelegs (t)","Rune plateskirt (t)","Rune kiteshield (t)","Rune full helm (g)","Rune platebody (g)","Rune platelegs (g)","Rune plateskirt (g)","Rune kiteshield (g)","Rune shield (h1)","Rune shield (h2)","Rune shield (h3)","Rune shield (h4)","Rune shield (h5)","Rune helm (h1)","Rune helm (h2)","Rune helm (h3)","Rune helm (h4)","Rune helm (h5)","Red d'hide body (g)","Red d'hide body (t)","Red d'hide chaps (g)","Red d'hide chaps (t)","Blue d'hide body (g)","Blue d'hide body (t)","Blue d'hide chaps (g)","Blue d'hide chaps (t)","Rune platebody (h1)","Rune platebody (h2)","Rune platebody (h3)","Rune platebody (h4)","Rune platebody (h5)","Magic comp bow"]
+*/
+
+#define HARD_CLUE_S_UNIQUES ["Ancient d'hide shield","Armadyl d'hide shield","Guthix d'hide shield","Saradomin d'hide shield","Zamorak d'hide shield","Bandos d'hide shield"]
+
+rule (name:HARD_CLUE_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: A Tier Uniques
+type: enumlist
+group: Hard Clue Uniques
+enum: ["Robin hood hat","Zamorak full helm","Amulet of glory(t*)","Enchanted hat","Enchanted hat","Enchanted robe","Dragon boots ornament kit","Zamorak platebody","Zamorak platelegs","Guthix full helm","Guthix platebody","Guthix platelegs","Saradomin full helm","Saradomin platebody","Saradomin platelegs","Ancient full helm","Ancient platebody","Ancient platelegs","Armadyl full helm","Armadyl platebody","Armadyl platelegs","Bandos full helm","Bandos platebody","Bandos platelegs","Saradomin coif","Saradomin chaps" ,"Saradomin bracers","Saradomin d'hide body","Saradomin d'hide boots","Saradomin d'hide shield","Guthix coif","Guthix chaps","Guthix bracers" ,"Guthix d'hide body","Guthix d'hide boots","Guthix d'hide shield","Zamorak coif" ,"Zamorak chaps" ,"Zamorak bracers" ,"Zamorak d'hide body","Zamorak d'hide boots","Zamorak d'hide shield","Bandos coif","Bandos chaps","Bandos bracers","Bandos d'hide body","Bandos d'hide boots","Bandos d'hide shield","Armadyl coif" ,"Armadyl chaps" ,"Armadyl bracers","Armadyl d'hide body","Armadyl d'hide boots","Armadyl d'hide shield","Ancient coif" ,"Ancient chaps","Ancient bracers" ,"Ancient d'hide body","Ancient d'hide boots","Ancient d'hide shield","Zombie head" ,"Cyclops head","Pirate's hat" ,"* cavalier","Pith helmet","Explorer backpack","* dragon mask","Nunchaku","Rune cane","Dual sai","Thieving bag","Rune defender ornament kit*","Berserker necklace ornament kit","Tzhaar-ket-om ornament kit","Rune full helm (t)","Rune platebody (t)","Rune platelegs (t)","Rune plateskirt (t)","Rune kiteshield (t)","Rune full helm (g)","Rune platebody (g)","Rune platelegs (g)","Rune plateskirt (g)","Rune kiteshield (g)","Rune shield (h1)","Rune shield (h2)","Rune shield (h3)","Rune shield (h4)","Rune shield (h5)","Rune helm (h1)","Rune helm (h2)","Rune helm (h3)","Rune helm (h4)","Rune helm (h5)","Red d'hide body (g)","Red d'hide body (t)","Red d'hide chaps (g)","Red d'hide chaps (t)","Blue d'hide body (g)","Blue d'hide body (t)","Blue d'hide chaps (g)","Blue d'hide chaps (t)","Rune platebody (h1)","Rune platebody (h2)","Rune platebody (h3)","Rune platebody (h4)","Rune platebody (h5)","Magic comp bow"]
+*/
+
+#define HARD_CLUE_A_UNIQUES ["Saradomin coif","Saradomin chaps","Saradomin bracers","Saradomin d'hide body","Saradomin d'hide boots","Guthix coif","Guthix chaps","Guthix bracers","Guthix d'hide body","Guthix d'hide boots","Zamorak coif","Zamorak chaps","Zamorak bracers","Zamorak d'hide body","Zamorak d'hide boots","Bandos coif","Bandos chaps","Bandos bracers","Bandos d'hide body","Bandos d'hide boots","Armadyl coif" ,"Armadyl chaps" ,"Armadyl bracers","Armadyl d'hide body","Armadyl d'hide boots","Ancient coif","Ancient chaps","Ancient bracers","Ancient d'hide body","Ancient d'hide boots","Bandos platebody","Zamorak full helm"]
+
+rule (name:HARD_CLUE_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: B Tier Uniques
+type: enumlist
+group: Hard Clue Uniques
+enum: ["Robin hood hat","Zamorak full helm","Amulet of glory(t*)","Enchanted hat","Enchanted hat","Enchanted robe","Dragon boots ornament kit","Zamorak platebody","Zamorak platelegs","Guthix full helm","Guthix platebody","Guthix platelegs","Saradomin full helm","Saradomin platebody","Saradomin platelegs","Ancient full helm","Ancient platebody","Ancient platelegs","Armadyl full helm","Armadyl platebody","Armadyl platelegs","Bandos full helm","Bandos platebody","Bandos platelegs","Saradomin coif","Saradomin chaps" ,"Saradomin bracers","Saradomin d'hide body","Saradomin d'hide boots","Saradomin d'hide shield","Guthix coif","Guthix chaps","Guthix bracers" ,"Guthix d'hide body","Guthix d'hide boots","Guthix d'hide shield","Zamorak coif" ,"Zamorak chaps" ,"Zamorak bracers" ,"Zamorak d'hide body","Zamorak d'hide boots","Zamorak d'hide shield","Bandos coif","Bandos chaps","Bandos bracers","Bandos d'hide body","Bandos d'hide boots","Bandos d'hide shield","Armadyl coif" ,"Armadyl chaps" ,"Armadyl bracers","Armadyl d'hide body","Armadyl d'hide boots","Armadyl d'hide shield","Ancient coif" ,"Ancient chaps","Ancient bracers" ,"Ancient d'hide body","Ancient d'hide boots","Ancient d'hide shield","Zombie head" ,"Cyclops head","Pirate's hat" ,"* cavalier","Pith helmet","Explorer backpack","* dragon mask","Nunchaku","Rune cane","Dual sai","Thieving bag","Rune defender ornament kit*","Berserker necklace ornament kit","Tzhaar-ket-om ornament kit","Rune full helm (t)","Rune platebody (t)","Rune platelegs (t)","Rune plateskirt (t)","Rune kiteshield (t)","Rune full helm (g)","Rune platebody (g)","Rune platelegs (g)","Rune plateskirt (g)","Rune kiteshield (g)","Rune shield (h1)","Rune shield (h2)","Rune shield (h3)","Rune shield (h4)","Rune shield (h5)","Rune helm (h1)","Rune helm (h2)","Rune helm (h3)","Rune helm (h4)","Rune helm (h5)","Red d'hide body (g)","Red d'hide body (t)","Red d'hide chaps (g)","Red d'hide chaps (t)","Blue d'hide body (g)","Blue d'hide body (t)","Blue d'hide chaps (g)","Blue d'hide chaps (t)","Rune platebody (h1)","Rune platebody (h2)","Rune platebody (h3)","Rune platebody (h4)","Rune platebody (h5)","Magic comp bow"]
+*/
+
+#define HARD_CLUE_B_UNIQUES ["Rune shield (h1)","Rune shield (h2)","Rune shield (h3)","Rune shield (h4)","Rune shield (h5)","Rune helm (h1)","Rune helm (h2)","Rune helm (h3)","Rune helm (h4)","Rune helm (h5)","Robin hood hat"]
+
+rule (name:HARD_CLUE_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: C Tier Uniques
+type: enumlist
+group: Hard Clue Uniques
+enum: ["Robin hood hat","Zamorak full helm","Amulet of glory(t*)","Enchanted hat","Enchanted hat","Enchanted robe","Dragon boots ornament kit","Zamorak platebody","Zamorak platelegs","Guthix full helm","Guthix platebody","Guthix platelegs","Saradomin full helm","Saradomin platebody","Saradomin platelegs","Ancient full helm","Ancient platebody","Ancient platelegs","Armadyl full helm","Armadyl platebody","Armadyl platelegs","Bandos full helm","Bandos platebody","Bandos platelegs","Saradomin coif","Saradomin chaps" ,"Saradomin bracers","Saradomin d'hide body","Saradomin d'hide boots","Saradomin d'hide shield","Guthix coif","Guthix chaps","Guthix bracers" ,"Guthix d'hide body","Guthix d'hide boots","Guthix d'hide shield","Zamorak coif" ,"Zamorak chaps" ,"Zamorak bracers" ,"Zamorak d'hide body","Zamorak d'hide boots","Zamorak d'hide shield","Bandos coif","Bandos chaps","Bandos bracers","Bandos d'hide body","Bandos d'hide boots","Bandos d'hide shield","Armadyl coif" ,"Armadyl chaps" ,"Armadyl bracers","Armadyl d'hide body","Armadyl d'hide boots","Armadyl d'hide shield","Ancient coif" ,"Ancient chaps","Ancient bracers" ,"Ancient d'hide body","Ancient d'hide boots","Ancient d'hide shield","Zombie head" ,"Cyclops head","Pirate's hat" ,"* cavalier","Pith helmet","Explorer backpack","* dragon mask","Nunchaku","Rune cane","Dual sai","Thieving bag","Rune defender ornament kit*","Berserker necklace ornament kit","Tzhaar-ket-om ornament kit","Rune full helm (t)","Rune platebody (t)","Rune platelegs (t)","Rune plateskirt (t)","Rune kiteshield (t)","Rune full helm (g)","Rune platebody (g)","Rune platelegs (g)","Rune plateskirt (g)","Rune kiteshield (g)","Rune shield (h1)","Rune shield (h2)","Rune shield (h3)","Rune shield (h4)","Rune shield (h5)","Rune helm (h1)","Rune helm (h2)","Rune helm (h3)","Rune helm (h4)","Rune helm (h5)","Red d'hide body (g)","Red d'hide body (t)","Red d'hide chaps (g)","Red d'hide chaps (t)","Blue d'hide body (g)","Blue d'hide body (t)","Blue d'hide chaps (g)","Blue d'hide chaps (t)","Rune platebody (h1)","Rune platebody (h2)","Rune platebody (h3)","Rune platebody (h4)","Rune platebody (h5)","Magic comp bow"]
+*/
+
+#define HARD_CLUE_C_UNIQUES ["Amulet of glory(t*)","Enchanted hat","Enchanted hat","Enchanted robe","Dragon boots ornament kit","Zamorak platebody","Zamorak platelegs","Guthix full helm","Guthix platebody","Guthix platelegs","Saradomin full helm","Saradomin platebody","Saradomin platelegs","Ancient full helm","Ancient platebody","Ancient platelegs","Armadyl full helm","Armadyl platebody","Armadyl platelegs","Bandos full helm","Bandos platebody","Bandos platelegs","Zombie head" ,"Cyclops head","Pirate's hat" ,"* cavalier","Pith helmet","Explorer backpack","* dragon mask","Nunchaku","Rune cane","Dual sai","Thieving bag","Rune defender ornament kit*","Berserker necklace ornament kit","Tzhaar-ket-om ornament kit","Rune full helm (t)","Rune platebody (t)","Rune platelegs (t)","Rune plateskirt (t)","Rune kiteshield (t)","Rune full helm (g)","Rune platebody (g)","Rune platelegs (g)","Rune plateskirt (g)","Rune kiteshield (g)","Red d'hide body (g)","Red d'hide body (t)","Red d'hide chaps (g)","Red d'hide chaps (t)","Blue d'hide body (g)","Blue d'hide body (t)","Blue d'hide chaps (g)","Blue d'hide chaps (t)","Rune platebody (h1)","Rune platebody (h2)","Rune platebody (h3)","Rune platebody (h4)","Rune platebody (h5)","Magic comp bow"]
+
+rule (name:HARD_CLUE_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Medium Clue Uniques
+enum: ["Ranger boots","Holy sandles","Spiked manacles","Wizard boots","* mitre","Ancient cloak","Armadyl cloak","Bandos cloak","Guthix cloak","Saradomin cloak","Zamorak cloak","* stole","* crozier","* boater","* headband","Crier hat","Crier coat","Crier bell","Adamant cane","Arceuus banner","Piscarilius banner","Hosidius banner","Shayzien banner","Lovakengj banner","Cabbage round shield","* unicorn mask","Cat mask","Penguin mask","Leprechaun hat","Black leprechaun hat","Wolf mask","Wolf cloak","Purple elegant*","White elegant","Black elegant","Pink elegant","Gold elegant","Climbing boots (g)","Adamant full helm (t)","Adamant platebody (t)","Adamant platelegs (t)","Adamant plateskirt (t)","Adamant kiteshield (t)","Adamant full helm (g)","Adamant platebody (g)","Adamant platelegs (g)","Adamant plateskirt (g)","Adamant kiteshield (g)","Adamant shield (h1)","Adamant shield (h2)","Adamant shield (h3)","Adamant shield (h4)","Adamant shield (h5)","Adamant helm (h1)","Adamant helm (h2)","Adamant helm (h3)","Adamant helm (h4)","Adamant helm (h5)","Adamant platebody (h1)","Adamant platebody (h2)","Adamant platebody (h3)","Adamant platebody (h4)","Adamant platebody (h5)","Mithril full helm (g)","Mithril platebody (g)","Mithril platelegs (g)","Mithril plateskirt (g)","Mithril kiteshield (g)","Mithril full helm (t)","Mithril platebody (t)","Mithril platelegs (t)","Mithril plateskirt (t)","Mithril kiteshield (t)","Green d'hide body (g)","Green d'hide body (t)","Green d'hide chaps (g)","Green d'hide chaps (t)","Yew comp bow"]
+*/
+
+#define MEDIUM_CLUE_SS_UNIQUES []
+
+rule (name:MEDIUM_CLUE_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: S Tier Uniques
+type: enumlist
+group: Medium Clue Uniques
+enum: ["Ranger boots","Holy sandles","Spiked manacles","Wizard boots","* mitre","Ancient cloak","Armadyl cloak","Bandos cloak","Guthix cloak","Saradomin cloak","Zamorak cloak","* stole","* crozier","* boater","* headband","Crier hat","Crier coat","Crier bell","Adamant cane","Arceuus banner","Piscarilius banner","Hosidius banner","Shayzien banner","Lovakengj banner","Cabbage round shield","* unicorn mask","Cat mask","Penguin mask","Leprechaun hat","Black leprechaun hat","Wolf mask","Wolf cloak","Purple elegant*","White elegant","Black elegant","Pink elegant","Gold elegant","Climbing boots (g)","Adamant full helm (t)","Adamant platebody (t)","Adamant platelegs (t)","Adamant plateskirt (t)","Adamant kiteshield (t)","Adamant full helm (g)","Adamant platebody (g)","Adamant platelegs (g)","Adamant plateskirt (g)","Adamant kiteshield (g)","Adamant shield (h1)","Adamant shield (h2)","Adamant shield (h3)","Adamant shield (h4)","Adamant shield (h5)","Adamant helm (h1)","Adamant helm (h2)","Adamant helm (h3)","Adamant helm (h4)","Adamant helm (h5)","Adamant platebody (h1)","Adamant platebody (h2)","Adamant platebody (h3)","Adamant platebody (h4)","Adamant platebody (h5)","Mithril full helm (g)","Mithril platebody (g)","Mithril platelegs (g)","Mithril plateskirt (g)","Mithril kiteshield (g)","Mithril full helm (t)","Mithril platebody (t)","Mithril platelegs (t)","Mithril plateskirt (t)","Mithril kiteshield (t)","Green d'hide body (g)","Green d'hide body (t)","Green d'hide chaps (g)","Green d'hide chaps (t)","Yew comp bow"]
+*/
+
+#define MEDIUM_CLUE_S_UNIQUES ["Ranger boots","Holy sandles"]
+
+rule (name:MEDIUM_CLUE_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: A Tier Uniques
+type: enumlist
+group: Medium Clue Uniques
+enum: ["Ranger boots","Holy sandles","Spiked manacles","Wizard boots","* mitre","Ancient cloak","Armadyl cloak","Bandos cloak","Guthix cloak","Saradomin cloak","Zamorak cloak","* stole","* crozier","* boater","* headband","Crier hat","Crier coat","Crier bell","Adamant cane","Arceuus banner","Piscarilius banner","Hosidius banner","Shayzien banner","Lovakengj banner","Cabbage round shield","* unicorn mask","Cat mask","Penguin mask","Leprechaun hat","Black leprechaun hat","Wolf mask","Wolf cloak","Purple elegant*","White elegant","Black elegant","Pink elegant","Gold elegant","Climbing boots (g)","Adamant full helm (t)","Adamant platebody (t)","Adamant platelegs (t)","Adamant plateskirt (t)","Adamant kiteshield (t)","Adamant full helm (g)","Adamant platebody (g)","Adamant platelegs (g)","Adamant plateskirt (g)","Adamant kiteshield (g)","Adamant shield (h1)","Adamant shield (h2)","Adamant shield (h3)","Adamant shield (h4)","Adamant shield (h5)","Adamant helm (h1)","Adamant helm (h2)","Adamant helm (h3)","Adamant helm (h4)","Adamant helm (h5)","Adamant platebody (h1)","Adamant platebody (h2)","Adamant platebody (h3)","Adamant platebody (h4)","Adamant platebody (h5)","Mithril full helm (g)","Mithril platebody (g)","Mithril platelegs (g)","Mithril plateskirt (g)","Mithril kiteshield (g)","Mithril full helm (t)","Mithril platebody (t)","Mithril platelegs (t)","Mithril plateskirt (t)","Mithril kiteshield (t)","Green d'hide body (g)","Green d'hide body (t)","Green d'hide chaps (g)","Green d'hide chaps (t)","Yew comp bow"]
+*/
+
+#define MEDIUM_CLUE_A_UNIQUES ["Spiked manacles","Wizard boots","Bandos cloak"]
+
+rule (name:MEDIUM_CLUE_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: B Tier Uniques
+type: enumlist
+group: Medium Clue Uniques
+enum: ["Ranger boots","Holy sandles","Spiked manacles","Wizard boots","* mitre","Ancient cloak","Armadyl cloak","Bandos cloak","Guthix cloak","Saradomin cloak","Zamorak cloak","* stole","* crozier","* boater","* headband","Crier hat","Crier coat","Crier bell","Adamant cane","Arceuus banner","Piscarilius banner","Hosidius banner","Shayzien banner","Lovakengj banner","Cabbage round shield","* unicorn mask","Cat mask","Penguin mask","Leprechaun hat","Black leprechaun hat","Wolf mask","Wolf cloak","Purple elegant*","White elegant","Black elegant","Pink elegant","Gold elegant","Climbing boots (g)","Adamant full helm (t)","Adamant platebody (t)","Adamant platelegs (t)","Adamant plateskirt (t)","Adamant kiteshield (t)","Adamant full helm (g)","Adamant platebody (g)","Adamant platelegs (g)","Adamant plateskirt (g)","Adamant kiteshield (g)","Adamant shield (h1)","Adamant shield (h2)","Adamant shield (h3)","Adamant shield (h4)","Adamant shield (h5)","Adamant helm (h1)","Adamant helm (h2)","Adamant helm (h3)","Adamant helm (h4)","Adamant helm (h5)","Adamant platebody (h1)","Adamant platebody (h2)","Adamant platebody (h3)","Adamant platebody (h4)","Adamant platebody (h5)","Mithril full helm (g)","Mithril platebody (g)","Mithril platelegs (g)","Mithril plateskirt (g)","Mithril kiteshield (g)","Mithril full helm (t)","Mithril platebody (t)","Mithril platelegs (t)","Mithril plateskirt (t)","Mithril kiteshield (t)","Green d'hide body (g)","Green d'hide body (t)","Green d'hide chaps (g)","Green d'hide chaps (t)","Yew comp bow"]
+*/
+
+#define MEDIUM_CLUE_B_UNIQUES ["* mitre","* boater","* crozier","* headband","* stole"]
+
+rule (name:MEDIUM_CLUE_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: C Tier Uniques
+type: enumlist
+group: Medium Clue Uniques
+enum: ["Ranger boots","Holy sandles","Spiked manacles","Wizard boots","* mitre","Ancient cloak","Armadyl cloak","Bandos cloak","Guthix cloak","Saradomin cloak","Zamorak cloak","* stole","* crozier","* boater","* headband","Crier hat","Crier coat","Crier bell","Adamant cane","Arceuus banner","Piscarilius banner","Hosidius banner","Shayzien banner","Lovakengj banner","Cabbage round shield","* unicorn mask","Cat mask","Penguin mask","Leprechaun hat","Black leprechaun hat","Wolf mask","Wolf cloak","Purple elegant*","White elegant","Black elegant","Pink elegant","Gold elegant","Climbing boots (g)","Adamant full helm (t)","Adamant platebody (t)","Adamant platelegs (t)","Adamant plateskirt (t)","Adamant kiteshield (t)","Adamant full helm (g)","Adamant platebody (g)","Adamant platelegs (g)","Adamant plateskirt (g)","Adamant kiteshield (g)","Adamant shield (h1)","Adamant shield (h2)","Adamant shield (h3)","Adamant shield (h4)","Adamant shield (h5)","Adamant helm (h1)","Adamant helm (h2)","Adamant helm (h3)","Adamant helm (h4)","Adamant helm (h5)","Adamant platebody (h1)","Adamant platebody (h2)","Adamant platebody (h3)","Adamant platebody (h4)","Adamant platebody (h5)","Mithril full helm (g)","Mithril platebody (g)","Mithril platelegs (g)","Mithril plateskirt (g)","Mithril kiteshield (g)","Mithril full helm (t)","Mithril platebody (t)","Mithril platelegs (t)","Mithril plateskirt (t)","Mithril kiteshield (t)","Green d'hide body (g)","Green d'hide body (t)","Green d'hide chaps (g)","Green d'hide chaps (t)","Yew comp bow"]
+*/
+
+#define MEDIUM_CLUE_C_UNIQUES ["Ancient cloak","Armadyl cloak","Guthix cloak","Saradomin cloak","Zamorak cloak","Crier hat","Crier coat","Crier bell","Adamant cane","Arceuus banner","Piscarilius banner","Hosidius banner","Shayzien banner","Lovakengj banner","Cabbage round shield","* unicorn mask","Cat mask","Penguin mask","Leprechaun hat","Black leprechaun hat","Wolf mask","Wolf cloak","Purple elegant*","White elegant","Black elegant","Pink elegant","Gold elegant","Climbing boots (g)","Adamant full helm (t)","Adamant platebody (t)","Adamant platelegs (t)","Adamant plateskirt (t)","Adamant kiteshield (t)","Adamant full helm (g)","Adamant platebody (g)","Adamant platelegs (g)","Adamant plateskirt (g)","Adamant kiteshield (g)","Adamant shield (h1)","Adamant shield (h2)","Adamant shield (h3)","Adamant shield (h4)","Adamant shield (h5)","Adamant helm (h1)","Adamant helm (h2)","Adamant helm (h3)","Adamant helm (h4)","Adamant helm (h5)","Adamant platebody (h1)","Adamant platebody (h2)","Adamant platebody (h3)","Adamant platebody (h4)","Adamant platebody (h5)","Mithril full helm (g)","Mithril platebody (g)","Mithril platelegs (g)","Mithril plateskirt (g)","Mithril kiteshield (g)","Mithril full helm (t)","Mithril platebody (t)","Mithril platelegs (t)","Mithril plateskirt (t)","Mithril kiteshield (t)","Green d'hide body (g)","Green d'hide body (t)","Green d'hide chaps (g)","Green d'hide chaps (t)","Yew comp bow"]
+
+rule (name:MEDIUM_CLUE_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Easy Clue Uniques
+enum: ["Monk's robe top (g)","Monk's robe (g)","Team cape zero","Team cape i","Team Cape X","Cape of skulls","Flared Trousers","Ham joint","Golden chef's hat","Golden apron","Red elegant*","Green elegant*","Blue elegant*","Saradomin robe*","Guthix robe*","Zamorak robe*","Ancient robe*","Armadyl robe*","Bandos robe*","Bob's * shirt","Highwayman mask","* beret","A powdered wig","Beanie","Imp mask","Goblin mask","Sleeping cap","Pantaloons","Black Cane","Staff of bobthe cat","Rain bow","Wooden shield (g)","Black full helm (t)","Black platebody (t)","Black platebody (t)","Black plateskirt (t)","Black kiteshield (t)","Black full helm (g)","Black platebody (g)","Black platelegs (g)","Black plateskirt (g)","Black kiteshield (g)","Black shield (h1)","Black shield (h2)","Black shield (h3)","Black shield (h4)","Black shield (h5)","Black helm (h1)","Black helm (h2)","Black helm (h3)","Black helm (h4)","Black helm (h5)","Black platebody (h1)","Black platebody (h2)","Black platebody (h3)","Black platebody (h4)","Black platebody (h5)","Steel full helm (t)","Steel platebody (t)","Steel platelegs (t)","Steel plateskirt (t)","Steel kiteshield (t)","Steel full helm (g)","Steel platebody (g)","Steel platelegs (g)","Steel plateskirt (g)","Steel kiteshield (g)","Iron full helm (t)","Iron platebody (t)","Iron platelegs (t)","Iron plateskirt (t)","Iron kiteshield (t)","Iron full helm (g)","Iron platebody (g)","Iron platelegs (g)","Iron plateskirt (g)","Iron kiteshield (g)","Bronze full helm (t)","Bronze platebody (t)","Bronze platelegs (t)","Bronze plateskirt (t)","Bronze kiteshield (t)","Bronze full helm (g)","Bronze platebody (g)","Bronze platelegs (g)","Bronze plateskirt (g)","Bronze kiteshield (g)","Studded body (g)","Studded chaps (g)","Studded body (t)","Studded chaps (t)","Leather body (g)","Leather chaps (g)","Blue wizard hat (g)","Blue wizard robe (g)","Blue skirt (g)","Blue wizard hat (t)","Blue wizard robe (t)","Blue skirt (t)","Black wizard hat (g)","Black wizard robe (g)","Black skirt (g)","Black wizard hat (t)","Black wizard robe (t)","Black skirt (t)","Amulet of power (t)","Willow comp bow"]
+*/
+
+#define EASY_CLUE_SS_UNIQUES []
+
+rule (name:EASY_CLUE_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: S Tier Uniques
+type: enumlist
+group: Easy Clue Uniques
+enum: ["Monk's robe top (g)","Monk's robe (g)","Team cape zero","Team cape i","Team Cape X","Cape of skulls","Flared Trousers","Ham joint","Golden chef's hat","Golden apron","Red elegant*","Green elegant*","Blue elegant*","Saradomin robe*","Guthix robe*","Zamorak robe*","Ancient robe*","Armadyl robe*","Bandos robe*","Bob's * shirt","Highwayman mask","* beret","A powdered wig","Beanie","Imp mask","Goblin mask","Sleeping cap","Pantaloons","Black Cane","Staff of bobthe cat","Rain bow","Wooden shield (g)","Black full helm (t)","Black platebody (t)","Black platebody (t)","Black plateskirt (t)","Black kiteshield (t)","Black full helm (g)","Black platebody (g)","Black platelegs (g)","Black plateskirt (g)","Black kiteshield (g)","Black shield (h1)","Black shield (h2)","Black shield (h3)","Black shield (h4)","Black shield (h5)","Black helm (h1)","Black helm (h2)","Black helm (h3)","Black helm (h4)","Black helm (h5)","Black platebody (h1)","Black platebody (h2)","Black platebody (h3)","Black platebody (h4)","Black platebody (h5)","Steel full helm (t)","Steel platebody (t)","Steel platelegs (t)","Steel plateskirt (t)","Steel kiteshield (t)","Steel full helm (g)","Steel platebody (g)","Steel platelegs (g)","Steel plateskirt (g)","Steel kiteshield (g)","Iron full helm (t)","Iron platebody (t)","Iron platelegs (t)","Iron plateskirt (t)","Iron kiteshield (t)","Iron full helm (g)","Iron platebody (g)","Iron platelegs (g)","Iron plateskirt (g)","Iron kiteshield (g)","Bronze full helm (t)","Bronze platebody (t)","Bronze platelegs (t)","Bronze plateskirt (t)","Bronze kiteshield (t)","Bronze full helm (g)","Bronze platebody (g)","Bronze platelegs (g)","Bronze plateskirt (g)","Bronze kiteshield (g)","Studded body (g)","Studded chaps (g)","Studded body (t)","Studded chaps (t)","Leather body (g)","Leather chaps (g)","Blue wizard hat (g)","Blue wizard robe (g)","Blue skirt (g)","Blue wizard hat (t)","Blue wizard robe (t)","Blue skirt (t)","Black wizard hat (g)","Black wizard robe (g)","Black skirt (g)","Black wizard hat (t)","Black wizard robe (t)","Black skirt (t)","Amulet of power (t)","Willow comp bow"]
+*/
+
+#define EASY_CLUE_S_UNIQUES []
+
+rule (name:EASY_CLUE_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: A Tier Uniques
+type: enumlist
+group: Easy Clue Uniques
+enum: ["Monk's robe top (g)","Monk's robe (g)","Team cape zero","Team cape i","Team Cape X","Cape of skulls","Flared Trousers","Ham joint","Golden chef's hat","Golden apron","Red elegant*","Green elegant*","Blue elegant*","Saradomin robe*","Guthix robe*","Zamorak robe*","Ancient robe*","Armadyl robe*","Bandos robe*","Bob's * shirt","Highwayman mask","* beret","A powdered wig","Beanie","Imp mask","Goblin mask","Sleeping cap","Pantaloons","Black Cane","Staff of bobthe cat","Rain bow","Wooden shield (g)","Black full helm (t)","Black platebody (t)","Black platebody (t)","Black plateskirt (t)","Black kiteshield (t)","Black full helm (g)","Black platebody (g)","Black platelegs (g)","Black plateskirt (g)","Black kiteshield (g)","Black shield (h1)","Black shield (h2)","Black shield (h3)","Black shield (h4)","Black shield (h5)","Black helm (h1)","Black helm (h2)","Black helm (h3)","Black helm (h4)","Black helm (h5)","Black platebody (h1)","Black platebody (h2)","Black platebody (h3)","Black platebody (h4)","Black platebody (h5)","Steel full helm (t)","Steel platebody (t)","Steel platelegs (t)","Steel plateskirt (t)","Steel kiteshield (t)","Steel full helm (g)","Steel platebody (g)","Steel platelegs (g)","Steel plateskirt (g)","Steel kiteshield (g)","Iron full helm (t)","Iron platebody (t)","Iron platelegs (t)","Iron plateskirt (t)","Iron kiteshield (t)","Iron full helm (g)","Iron platebody (g)","Iron platelegs (g)","Iron plateskirt (g)","Iron kiteshield (g)","Bronze full helm (t)","Bronze platebody (t)","Bronze platelegs (t)","Bronze plateskirt (t)","Bronze kiteshield (t)","Bronze full helm (g)","Bronze platebody (g)","Bronze platelegs (g)","Bronze plateskirt (g)","Bronze kiteshield (g)","Studded body (g)","Studded chaps (g)","Studded body (t)","Studded chaps (t)","Leather body (g)","Leather chaps (g)","Blue wizard hat (g)","Blue wizard robe (g)","Blue skirt (g)","Blue wizard hat (t)","Blue wizard robe (t)","Blue skirt (t)","Black wizard hat (g)","Black wizard robe (g)","Black skirt (g)","Black wizard hat (t)","Black wizard robe (t)","Black skirt (t)","Amulet of power (t)","Willow comp bow"]
+*/
+
+#define EASY_CLUE_A_UNIQUES ["Monk's robe top (g)","Monk's robe (g)","Team cape zero","Team cape i","Team Cape X","Cape of skulls","Flared Trousers","Ham joint"]
+
+rule (name:EASY_CLUE_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: B Tier Uniques
+type: enumlist
+group: Easy Clue Uniques
+enum: ["Monk's robe top (g)","Monk's robe (g)","Team cape zero","Team cape i","Team Cape X","Cape of skulls","Flared Trousers","Ham joint","Golden chef's hat","Golden apron","Red elegant*","Green elegant*","Blue elegant*","Saradomin robe*","Guthix robe*","Zamorak robe*","Ancient robe*","Armadyl robe*","Bandos robe*","Bob's * shirt","Highwayman mask","* beret","A powdered wig","Beanie","Imp mask","Goblin mask","Sleeping cap","Pantaloons","Black Cane","Staff of bobthe cat","Rain bow","Wooden shield (g)","Black full helm (t)","Black platebody (t)","Black platebody (t)","Black plateskirt (t)","Black kiteshield (t)","Black full helm (g)","Black platebody (g)","Black platelegs (g)","Black plateskirt (g)","Black kiteshield (g)","Black shield (h1)","Black shield (h2)","Black shield (h3)","Black shield (h4)","Black shield (h5)","Black helm (h1)","Black helm (h2)","Black helm (h3)","Black helm (h4)","Black helm (h5)","Black platebody (h1)","Black platebody (h2)","Black platebody (h3)","Black platebody (h4)","Black platebody (h5)","Steel full helm (t)","Steel platebody (t)","Steel platelegs (t)","Steel plateskirt (t)","Steel kiteshield (t)","Steel full helm (g)","Steel platebody (g)","Steel platelegs (g)","Steel plateskirt (g)","Steel kiteshield (g)","Iron full helm (t)","Iron platebody (t)","Iron platelegs (t)","Iron plateskirt (t)","Iron kiteshield (t)","Iron full helm (g)","Iron platebody (g)","Iron platelegs (g)","Iron plateskirt (g)","Iron kiteshield (g)","Bronze full helm (t)","Bronze platebody (t)","Bronze platelegs (t)","Bronze plateskirt (t)","Bronze kiteshield (t)","Bronze full helm (g)","Bronze platebody (g)","Bronze platelegs (g)","Bronze plateskirt (g)","Bronze kiteshield (g)","Studded body (g)","Studded chaps (g)","Studded body (t)","Studded chaps (t)","Leather body (g)","Leather chaps (g)","Blue wizard hat (g)","Blue wizard robe (g)","Blue skirt (g)","Blue wizard hat (t)","Blue wizard robe (t)","Blue skirt (t)","Black wizard hat (g)","Black wizard robe (g)","Black skirt (g)","Black wizard hat (t)","Black wizard robe (t)","Black skirt (t)","Amulet of power (t)","Willow comp bow"]
+*/
+
+#define EASY_CLUE_B_UNIQUES ["Bob's * shirt"]
+
+rule (name:EASY_CLUE_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: C Tier Uniques
+type: enumlist
+group: Easy Clue Uniques
+enum: ["Monk's robe top (g)","Monk's robe (g)","Team cape zero","Team cape i","Team Cape X","Cape of skulls","Flared Trousers","Ham joint","Golden chef's hat","Golden apron","Red elegant*","Green elegant*","Blue elegant*","Saradomin robe*","Guthix robe*","Zamorak robe*","Ancient robe*","Armadyl robe*","Bandos robe*","Bob's * shirt","Highwayman mask","* beret","A powdered wig","Beanie","Imp mask","Goblin mask","Sleeping cap","Pantaloons","Black Cane","Staff of bobthe cat","Rain bow","Wooden shield (g)","Black full helm (t)","Black platebody (t)","Black platebody (t)","Black plateskirt (t)","Black kiteshield (t)","Black full helm (g)","Black platebody (g)","Black platelegs (g)","Black plateskirt (g)","Black kiteshield (g)","Black shield (h1)","Black shield (h2)","Black shield (h3)","Black shield (h4)","Black shield (h5)","Black helm (h1)","Black helm (h2)","Black helm (h3)","Black helm (h4)","Black helm (h5)","Black platebody (h1)","Black platebody (h2)","Black platebody (h3)","Black platebody (h4)","Black platebody (h5)","Steel full helm (t)","Steel platebody (t)","Steel platelegs (t)","Steel plateskirt (t)","Steel kiteshield (t)","Steel full helm (g)","Steel platebody (g)","Steel platelegs (g)","Steel plateskirt (g)","Steel kiteshield (g)","Iron full helm (t)","Iron platebody (t)","Iron platelegs (t)","Iron plateskirt (t)","Iron kiteshield (t)","Iron full helm (g)","Iron platebody (g)","Iron platelegs (g)","Iron plateskirt (g)","Iron kiteshield (g)","Bronze full helm (t)","Bronze platebody (t)","Bronze platelegs (t)","Bronze plateskirt (t)","Bronze kiteshield (t)","Bronze full helm (g)","Bronze platebody (g)","Bronze platelegs (g)","Bronze plateskirt (g)","Bronze kiteshield (g)","Studded body (g)","Studded chaps (g)","Studded body (t)","Studded chaps (t)","Leather body (g)","Leather chaps (g)","Blue wizard hat (g)","Blue wizard robe (g)","Blue skirt (g)","Blue wizard hat (t)","Blue wizard robe (t)","Blue skirt (t)","Black wizard hat (g)","Black wizard robe (g)","Black skirt (g)","Black wizard hat (t)","Black wizard robe (t)","Black skirt (t)","Amulet of power (t)","Willow comp bow"]
+*/
+
+#define EASY_CLUE_C_UNIQUES ["Golden chef's hat","Golden apron","Red elegant*","Green elegant*","Blue elegant*","Saradomin robe*","Guthix robe*","Zamorak robe*","Ancient robe*","Armadyl robe*","Bandos robe*","Highwayman mask","* beret","A powdered wig","Beanie","Imp mask","Goblin mask","Sleeping cap","Pantaloons","Black Cane","Staff of bobthe cat","Rain bow","Wooden shield (g)","Black full helm (t)","Black platebody (t)","Black platebody (t)","Black plateskirt (t)","Black kiteshield (t)","Black full helm (g)","Black platebody (g)","Black platelegs (g)","Black plateskirt (g)","Black kiteshield (g)","Black shield (h1)","Black shield (h2)","Black shield (h3)","Black shield (h4)","Black shield (h5)","Black helm (h1)","Black helm (h2)","Black helm (h3)","Black helm (h4)","Black helm (h5)","Black platebody (h1)","Black platebody (h2)","Black platebody (h3)","Black platebody (h4)","Black platebody (h5)","Steel full helm (t)","Steel platebody (t)","Steel platelegs (t)","Steel plateskirt (t)","Steel kiteshield (t)","Steel full helm (g)","Steel platebody (g)","Steel platelegs (g)","Steel plateskirt (g)","Steel kiteshield (g)","Iron full helm (t)","Iron platebody (t)","Iron platelegs (t)","Iron plateskirt (t)","Iron kiteshield (t)","Iron full helm (g)","Iron platebody (g)","Iron platelegs (g)","Iron plateskirt (g)","Iron kiteshield (g)","Bronze full helm (t)","Bronze platebody (t)","Bronze platelegs (t)","Bronze plateskirt (t)","Bronze kiteshield (t)","Bronze full helm (g)","Bronze platebody (g)","Bronze platelegs (g)","Bronze plateskirt (g)","Bronze kiteshield (g)","Studded body (g)","Studded chaps (g)","Studded body (t)","Studded chaps (t)","Leather body (g)","Leather chaps (g)","Blue wizard hat (g)","Blue wizard robe (g)","Blue skirt (g)","Blue wizard hat (t)","Blue wizard robe (t)","Blue skirt (t)","Black wizard hat (g)","Black wizard robe (g)","Black skirt (g)","Black wizard hat (t)","Black wizard robe (t)","Black skirt (t)","Amulet of power (t)","Willow comp bow"]
+
+rule (name:EASY_CLUE_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Beginner Clue Uniques
+enum: ["Mole slippers","Shoulder parrot","Frog Slippers","Bear feet","Demon feet","Jester cape","Sandwhich lady*","Rune scimitar ornament kit*","Monk's robe top (t)","Monk's robe (t)","Amulet of defence (t)"]
+*/
+
+#define BEGINNER_CLUE_SS_UNIQUES []
+
+rule (name:BEGINNER_CLUE_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: S Tier Uniques
+type: enumlist
+group: Beginner Clue Uniques
+enum: ["Mole slippers","Shoulder parrot","Frog Slippers","Bear feet","Demon feet","Jester cape","Sandwhich lady*","Rune scimitar ornament kit*","Monk's robe top (t)","Monk's robe (t)","Amulet of defence (t)"]
+*/
+
+#define BEGINNER_CLUE_S_UNIQUES []
+
+rule (name:BEGINNER_CLUE_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: A Tier Uniques
+type: enumlist
+group: Beginner Clue Uniques
+enum: ["Mole slippers","Shoulder parrot","Frog Slippers","Bear feet","Demon feet","Jester cape","Sandwhich lady*","Rune scimitar ornament kit*","Monk's robe top (t)","Monk's robe (t)","Amulet of defence (t)"]
+*/
+
+#define BEGINNER_CLUE_A_UNIQUES ["Mole slippers"]
+
+rule (name:BEGINNER_CLUE_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: B Tier Uniques
+type: enumlist
+group: Beginner Clue Uniques
+enum: ["Mole slippers","Shoulder parrot","Frog Slippers","Bear feet","Demon feet","Jester cape","Sandwhich lady*","Rune scimitar ornament kit*","Monk's robe top (t)","Monk's robe (t)","Amulet of defence (t)"]
+*/
+
+#define BEGINNER_CLUE_B_UNIQUES ["Shoulder parrot"]
+
+rule (name:BEGINNER_CLUE_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: C Tier Uniques
+type: enumlist
+group: Beginner Clue Uniques
+enum: ["Mole slippers","Shoulder parrot","Frog Slippers","Bear feet","Demon feet","Jester cape","Sandwhich lady*","Rune scimitar ornament kit*","Monk's robe top (t)","Monk's robe (t)","Amulet of defence (t)"]
+*/
+
+#define BEGINNER_CLUE_C_UNIQUES ["Frog Slippers","Bear feet","Demon feet","Jester cape","Sandwhich lady*","Rune scimitar ornament kit*","Monk's robe top (t)","Monk's robe (t)","Amulet of defence (t)"]
+
+rule (name:BEGINNER_CLUE_C_UNIQUES) {UNIQUE_C_STYLE}
+
+
+
+
+
+
+
+
 
 
 
