@@ -7690,7 +7690,6 @@ apply (name:["Clue scroll (master)", "Clue bottle (master)", "Clue nest (master)
 rule (ENABLE_WILDERNESS_CLUES && (id:CLUE_WILDERNESS_HARD_IDS || id:CLUE_WILDERNESS_ELITE_IDS)) {CLUE_WILDERNESS_STYLE}
 rule (name:["Clue scroll*", "Clue bottle*", "Clue nest*", "Clue geode *", "Scroll box*"]) {}
 
-
 /*@ define:input:clues
 label: Beginner Casket
 type: style
@@ -7704,7 +7703,6 @@ exampleItem: Reward casket (beginner)
 	borderColor = "#ffbf9bbf";
 
 rule (name:["Reward casket (beginner)"]) {CASKET_BEGINNER_STYLE}
-
 
 /*@ define:input:clues
 label: Easy Casket
@@ -7761,7 +7759,6 @@ exampleItem: Reward casket (elite)
 	borderColor = "#ffe6ad29";
 
 rule (name:["Reward casket (elite)"]) {CASKET_ELITE_STYLE}
-
 
 /*@ define:input:clues
 label: Master Casket
