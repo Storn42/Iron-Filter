@@ -8165,11 +8165,110 @@ enum: ["Mole slippers","Shoulder parrot","Frog Slippers","Bear feet","Demon feet
 
 rule (name:BEGINNER_CLUE_C_UNIQUES) {UNIQUE_C_STYLE}
 
+/*@ define:input:clue_scroll_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Shared Clue Uniques
+enum: ["Sardomin page *","Zamorak page *","Guthix page *","Bandos page *","Armadyl page *","Ancient page*","* Blessing","* firelighter","Master scroll book*","Purple sweets"]
+*/
 
+#define SHARED_CLUE_SS_UNIQUES []
 
+rule (name:SHARED_CLUE_SS_UNIQUES) {UNIQUE_SS_STYLE}
 
+/*@ define:input:clue_scroll_uniques
+label: S Tier Uniques
+type: enumlist
+group: Shared Clue Uniques
+enum: ["Sardomin page *","Zamorak page *","Guthix page *","Bandos page *","Armadyl page *","Ancient page*","* Blessing","* firelighter","Master scroll book*","Purple sweets"]
+*/
 
+#define SHARED_CLUE_S_UNIQUES []
 
+rule (name:SHARED_CLUE_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: A Tier Uniques
+type: enumlist
+group: Shared Clue Uniques
+enum: ["Sardomin page *","Zamorak page *","Guthix page *","Bandos page *","Armadyl page *","Ancient page*","* Blessing","* firelighter","Master scroll book*","Purple sweets"]
+*/
+
+#define SHARED_CLUE_A_UNIQUES []
+
+rule (name:SHARED_CLUE_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: B Tier Uniques
+type: enumlist
+group: Shared Clue Uniques
+enum: ["Sardomin page *","Zamorak page *","Guthix page *","Bandos page *","Armadyl page *","Ancient page*","* Blessing","* firelighter","Master scroll book*","Purple sweets"]
+*/
+
+#define SHARED_CLUE_B_UNIQUES ["Master scroll book*","Purple sweets"]
+
+rule (name:SHARED_CLUE_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: C Tier Uniques
+type: enumlist
+group: Shared Clue Uniques
+enum: ["Sardomin page *","Zamorak page *","Guthix page *","Bandos page *","Armadyl page *","Ancient page*","* Blessing","* firelighter","Master scroll book*","Purple sweets"]
+*/
+
+#define SHARED_CLUE_C_UNIQUES ["Sardomin page *","Zamorak page *","Guthix page *","Bandos page *","Armadyl page *","Ancient page*","* Blessing","* firelighter"]
+
+rule (name:SHARED_CLUE_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: Purple Sweets SS
+type: number
+group: Shared Clue Uniques
+*/
+ 
+ #define PURPLE_SWEETS_SS_QUANTITY 1000
+ 
+ rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_SS_QUANTITY) {UNIQUE_SS_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: Purple Sweets S
+type: number
+group: Shared Clue Uniques
+*/
+ 
+ #define PURPLE_SWEETS_S_QUANTITY 100
+ 
+ rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_S_QUANTITY) {UNIQUE_S_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: Purple Sweets A
+type: number
+group: Shared Clue Uniques
+*/
+ 
+ #define PURPLE_SWEETS_A_QUANTITY 10
+ 
+ rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_A_QUANTITY) {UNIQUE_A_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: Purple Sweets B
+type: number
+group: Shared Clue Uniques
+*/
+ 
+ #define PURPLE_SWEETS_B_QUANTITY 1
+ 
+ rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_B_QUANTITY) {UNIQUE_B_STYLE}
+
+/*@ define:input:clue_scroll_uniques
+label: Purple Sweets C
+type: number
+group: Shared Clue Uniques
+*/
+ 
+ #define PURPLE_SWEETS_C_QUANTITY 0
+ 
+ rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_C_QUANTITY) {UNIQUE_C_STYLE}
 
 
 
