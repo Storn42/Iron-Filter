@@ -7078,7 +7078,7 @@ rule (name:COX_SS_UNIQUES) {UNIQUE_SS_STYLE}
 label: S Tier Uniques
 type: enumlist
 group: Uniques
-enum: ["Dexterous prayer scroll","Arcane prayer scroll","Twisted buckler","Dragon hunter crossbow*","Dinh's *bulwark",,"*Ancestral hat","*Ancestral robe top","*Ancestral robe bottom","Dragon claws*","Elder maul*","Kodai insignia","Kodai wand","Twisted bow","Torn prayer scroll","Metamorphic dust","Twisted ancestral colour kit","Ancient tablet"]
+enum: ["Dexterous prayer scroll","Arcane prayer scroll","Twisted buckler","Dragon hunter crossbow*","Dinh's *bulwark","*Ancestral hat","*Ancestral robe top","*Ancestral robe bottom","Dragon claws*","Elder maul*","Kodai insignia","Kodai wand","Twisted bow","Torn prayer scroll","Metamorphic dust","Twisted ancestral colour kit","Ancient tablet"]
 */
 
 #define COX_S_UNIQUES ["Dexterous prayer scroll","Arcane prayer scroll","Twisted buckler","Dragon hunter crossbow*","Dinh's *bulwark"]
@@ -7581,6 +7581,201 @@ group: Red-X
 
 rule (area:[3786,5398,0,3828,5419,0] && ownership:2 && ENABLE_TOA_REDX) {TOA_REDX_STYLE}
 
+/*@ define:module:clues
+name: Clue Scrolls 
+subtitle: Go on a Treasure Hunt
+*/
+
+/*@ define:input:clues
+label: Wilderness Highlights
+type: boolean
+*/
+
+#define ENABLE_WILDERNESS_CLUES true
+
+/*@ define:input:clues
+label: Beginner Clue
+type: style
+group: Beginner
+exampleItem: Clue scroll (beginner)
+*/
+
+#define CLUE_BEGINNER_STYLE \
+	color = "#ffbf9bbf"; \
+	backgroundColor = "#99333333"; \
+	borderColor = "#ffbf9bbf";
+
+/*@ define:input:clues
+label: Easy Clue
+type: style
+group: Easy
+exampleItem: Clue scroll (easy)
+*/
+
+#define CLUE_EASY_STYLE \
+	color = "#ff00a33c"; \
+	backgroundColor = "#99333333"; \
+	borderColor = "#ff00a33c";
+
+/*@ define:input:clues
+label: Medium Clue
+type: style
+group: Medium
+exampleItem: Clue scroll (medium)
+*/
+
+#define CLUE_MEDIUM_STYLE \
+	color = "#ff52c7de"; \
+	backgroundColor = "#99333333"; \
+	borderColor = "#ff52c7de";
+
+/*@ define:input:clues
+label: Hard Clue
+type: style
+group: Hard
+exampleItem: Clue scroll (hard)
+*/
+
+#define CLUE_HARD_STYLE \
+	color = "#ffab43f0"; \
+	backgroundColor = "#99333333"; \
+	borderColor = "#ffab43f0";
+
+/*@ define:input:clues
+label: Elite Clue
+type: style
+group: Elite
+exampleItem: Clue scroll (elite)
+*/
+
+#define CLUE_ELITE_STYLE \
+	color = "#ffe6ad29"; \
+	backgroundColor = "#99333333"; \
+	borderColor = "#ffe6ad29";
+
+/*@ define:input:clues
+label: Master Clue
+type: style
+group: Master
+exampleItem: Clue scroll (master)
+*/
+
+#define CLUE_MASTER_STYLE \
+	color = "#ffc90808"; \
+	backgroundColor = "#99333333"; \
+	borderColor = "#ffc90808";
+
+
+/*@ define:input:clues
+label: Wilderness Clues
+type: style
+group: Wilderness Clues
+exampleItem: Clue scroll (hard)
+*/
+
+#define CLUE_WILDERNESS_STYLE \
+	borderColor = "#ffff0000"; \
+	menuTextColor = "#ffff0000"; \
+
+#define CLUE_WILDERNESS_HARD_IDS [2723,2725,2727,2729,2731,2733,2735,2737,2739,2741,2743,2745,2747,2786,2788,3525,3556,3558,7239,7260,7262,7264,10244,10234,12546,12564,19888,23168,23169]
+#define CLUE_WILDERNESS_ELITE_IDS [12075,12093,12095,12097,12109,12101,12134,12150,19807,23144,23146]
+
+apply (name:["Clue scroll (beginner)", "Clue bottle (beginner)", "Clue nest (beginner)", "Clue geode (beginner)", "Scroll box (beginner)"]) {CLUE_BEGINNER_STYLE}
+apply (name:["Clue scroll (easy)", "Clue bottle (easy)", "Clue nest (easy)", "Clue geode (easy)", "Scroll box (easy)"]) {CLUE_EASY_STYLE}
+apply (name:["Clue scroll (medium)", "Clue bottle (medium)", "Clue nest (medium)", "Clue geode (medium)", "Scroll box (medium)"]) {CLUE_MEDIUM_STYLE}
+apply (name:["Clue scroll (hard)", "Clue bottle (hard)", "Clue nest (hard)", "Clue geode (hard)", "Scroll box (hard)"]) {CLUE_HARD_STYLE}
+apply (name:["Clue scroll (elite)", "Clue bottle (elite)", "Clue nest (elite)", "Clue geode (elite)", "Scroll box (elite)"]) {CLUE_ELITE_STYLE}
+apply (name:["Clue scroll (master)", "Clue bottle (master)", "Clue nest (master)", "Clue geode (master)", "Scroll box (master)"]) {CLUE_MASTER_STYLE}
+
+rule (ENABLE_WILDERNESS_CLUES && (id:CLUE_WILDERNESS_HARD_IDS || id:CLUE_WILDERNESS_ELITE_IDS)) {CLUE_WILDERNESS_STYLE}
+rule (name:["Clue scroll*", "Clue bottle*", "Clue nest*", "Clue geode *", "Scroll box*"]) {}
+
+
+/*@ define:input:clues
+label: Beginner Casket
+type: style
+group: Beginner
+exampleItem: Reward casket (beginner)
+*/
+
+#define CASKET_BEGINNER_STYLE \
+	color = "#ffbf9bbf"; \
+	backgroundColor = "#ffffffff"; \
+	borderColor = "#ffbf9bbf";
+
+rule (name:["Reward casket (beginner)"]) {CASKET_BEGINNER_STYLE}
+
+
+/*@ define:input:clues
+label: Easy Casket
+type: style
+group: Easy
+exampleItem: Reward casket (easy)
+*/
+
+#define CASKET_EASY_STYLE \
+	color = "#ff00a33c"; \
+	backgroundColor = "#ffffffff"; \
+	borderColor = "#ff00a33c";
+
+rule (name:["Reward casket (easy)"]) {CASKET_EASY_STYLE}
+
+/*@ define:input:clues
+label: Medium Casket
+type: style
+group: Medium
+exampleItem: Reward casket (medium)
+*/
+
+#define CASKET_MEDIUM_STYLE \
+	color = "#ff52c7de"; \
+	backgroundColor = "#ffffffff"; \
+	borderColor = "#ff52c7de";
+
+rule (name:["Reward casket (medium)"]) {CASKET_MEDIUM_STYLE}
+
+/*@ define:input:clues
+label: Hard Casket
+type: style
+group: Hard
+exampleItem: Reward casket (hard)
+*/
+
+#define CASKET_HARD_STYLE \
+	color = "#ffab43f0"; \
+	backgroundColor = "#ffffffff"; \
+	borderColor = "#ffab43f0";
+
+rule (name:["Reward casket (hard)"]) {CASKET_HARD_STYLE}
+
+/*@ define:input:clues
+label: Elite Casket
+type: style
+group: Elite
+exampleItem: Reward casket (elite)
+*/
+
+#define CASKET_ELITE_STYLE \
+	color = "#ffe6ad29"; \
+	backgroundColor = "#ffffffff"; \
+	borderColor = "#ffe6ad29";
+
+rule (name:["Reward casket (elite)"]) {CASKET_ELITE_STYLE}
+
+
+/*@ define:input:clues
+label: Master Casket
+type: style
+group: Master
+exampleItem: Reward casket (master)
+*/
+
+#define CASKET_MASTER_STYLE \
+	color = "#ffc90808"; \
+	backgroundColor = "#ffffffff"; \
+	borderColor = "#ffc90808";
+
+rule (name:["Reward casket (master)"]) {CASKET_MASTER_STYLE}
 
 
 
