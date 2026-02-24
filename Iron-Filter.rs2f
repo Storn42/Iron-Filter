@@ -8455,7 +8455,7 @@ type: stringlist
 group: Hallowed Sepulchre
 */
 
-#define HALLOWED_SEPULCHRE_HIDE ["White lily","Monk's robe top","Monk's robe","Holy symbol"]
+#define HALLOWED_SEPULCHRE_HIDE []
 
 rule (area:[2224,5798,0,2582,6049,3] && name:HALLOWED_SEPULCHRE_HIDE) {hidden = true;}
 
@@ -9139,45 +9139,972 @@ enum: ["Bronze defender","Iron defender","Steel defender","Black defender","Mith
 
 rule (name:CYCLOPES_C_UNIQUES) {UNIQUE_C_STYLE}
 
+/*@ define:input:misc_uniques
+label: Hide Items
+type: stringlist
+group: Cyclopes
+*/
+
+#define CYCLOPES_HIDE []
+
+rule (area:[2837,3533,2,2878,3558,2] && name:CYCLOPES_HIDE) {hidden = true;} // Top Floor
+rule (area:[2904,9956,0,2942,9975,0] && name:CYCLOPES_HIDE) {hidden = true;} // Basement
+
+/*@ define:input:misc_uniques
+label: Supply Drop
+type: enumlist
+group: Cyclopes
+enum: ["Lobster"]
+*/
+
+#define CYCLOPES_SUPPLY []
+
+rule (area:[2837,3533,2,2878,3558,2] && name:CYCLOPES_SUPPLY) {SUPPLY_DROP_STYLE} // Top Floor
+rule (area:[2904,9956,0,2942,9975,0] && name:CYCLOPES_SUPPLY) {SUPPLY_DROP_STYLE} // Basement
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Elder Chaos Druids
+enum: ["Elder chaos hood","Elder chaos robe","Elder chaos top"]
+*/
+
+#define ELDER_CHAOS_DRUIDS_SS_UNIQUES []
+
+rule (name:ELDER_CHAOS_DRUIDS_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Elder Chaos Druids
+enum: ["Elder chaos hood","Elder chaos robe","Elder chaos top"]
+*/
+
+#define ELDER_CHAOS_DRUIDS_S_UNIQUES []
+
+rule (name:ELDER_CHAOS_DRUIDS_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Elder Chaos Druids
+enum: ["Elder chaos hood","Elder chaos robe","Elder chaos top"]
+*/
+
+#define ELDER_CHAOS_DRUIDS_A_UNIQUES ["Elder chaos hood","Elder chaos robe","Elder chaos top"]
+
+rule (name:ELDER_CHAOS_DRUIDS_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Elder Chaos Druids
+enum: ["Elder chaos hood","Elder chaos robe","Elder chaos top"]
+*/
+
+#define ELDER_CHAOS_DRUIDS_B_UNIQUES []
+
+rule (name:ELDER_CHAOS_DRUIDS_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Elder Chaos Druids
+enum: ["Elder chaos hood","Elder chaos robe","Elder chaos top"]
+*/
+
+#define ELDER_CHAOS_DRUIDS_C_UNIQUES []
+
+rule (name:ELDER_CHAOS_DRUIDS_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Forestry
+enum: ["Golden pheasant egg","Fox whistle","Petal garland"]
+*/
+
+#define FORESTRY_SS_UNIQUES []
+
+rule (name:FORESTRY_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Forestry
+enum: ["Golden pheasant egg","Fox whistle","Petal garland"]
+*/
+
+#define FORESTRY_S_UNIQUES ["Golden pheasant egg","Fox whistle"]
+
+rule (name:FORESTRY_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Forestry
+enum: ["Golden pheasant egg","Fox whistle","Petal garland"]
+*/
+
+#define FORESTRY_A_UNIQUES []
+
+rule (name:FORESTRY_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Forestry
+enum: ["Golden pheasant egg","Fox whistle","Petal garland"]
+*/
+
+#define FORESTRY_B_UNIQUES ["Petal garland"]
+
+rule (name:FORESTRY_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Forestry
+enum: ["Golden pheasant egg","Fox whistle","Petal garland"]
+*/
+
+#define FORESTRY_C_UNIQUES []
+
+rule (name:FORESTRY_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Demonic Gorillas
+enum: ["Zenyte shard","Light frame","Heavy frame","Monkey tail","Ballista limbs","Ballista spring"]
+*/
+
+#define DEMONIC_GORILLA_SS_UNIQUES []
+
+rule (name:DEMONIC_GORILLA_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Demonic Gorillas
+enum: ["Zenyte shard","Light frame","Heavy frame","Monkey tail","Ballista limbs","Ballista spring"]
+*/
+
+#define DEMONIC_GORILLA_S_UNIQUES ["Zenyte shard","Monkey tail"]
+
+rule (name:DEMONIC_GORILLA_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Demonic Gorillas
+enum: ["Zenyte shard","Light frame","Heavy frame","Monkey tail","Ballista limbs","Ballista spring"]
+*/
+
+#define DEMONIC_GORILLA_A_UNIQUES ["Heavy frame","Light frame"]
+
+rule (name:DEMONIC_GORILLA_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Demonic Gorillas
+enum: ["Zenyte shard","Light frame","Heavy frame","Monkey tail","Ballista limbs","Ballista spring"]
+*/
+
+#define DEMONIC_GORILLA_B_UNIQUES ["Ballista limbs","Ballista spring"]
+
+rule (name:DEMONIC_GORILLA_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Demonic Gorillas
+enum: ["Zenyte shard","Light frame","Heavy frame","Monkey tail","Ballista limbs","Ballista spring"]
+*/
+
+#define DEMONIC_GORILLA_C_UNIQUES []
+
+rule (name:DEMONIC_GORILLA_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: Hide Items
+type: stringlist
+group: Demonic Gorillas
+*/
+
+#define DEMONIC_GORILLA_HIDE []
+
+rule (area:[2066,5637,0,2166,5691,0] && name:DEMONIC_GORILLA_HIDE) {hidden = true;}
+
+/*@ define:input:misc_uniques
+label: Supply Drop
+type: enumlist
+group: Demonic Gorillas
+enum: ["Shark","Saradomin brew(*)"]
+*/
+
+#define DEMONIC_GORILLA_SUPPLY []
+
+rule (area:[2066,5637,0,2166,5691,0] && name:DEMONIC_GORILLA_SUPPLY) {SUPPLY_DROP_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Hunters' Rumours
+enum: ["Enhanced quetzal whistle blueprint","Perfected quetzal whistle blueprint","Huntsman's kit","Guild hunter headwear","Guild hunter top","Guild hunter legs","Guild hunter boots"]
+*/
+
+#define HUNTER_RUMOURS_SS_UNIQUES []
+
+rule (name:HUNTER_RUMOURS_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Hunters' Rumours
+enum: ["Enhanced quetzal whistle blueprint","Perfected quetzal whistle blueprint","Huntsman's kit","Guild hunter headwear","Guild hunter top","Guild hunter legs","Guild hunter boots"]
+*/
+
+#define HUNTER_RUMOURS_S_UNIQUES []
+
+rule (name:HUNTER_RUMOURS_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Hunters' Rumours
+enum: ["Enhanced quetzal whistle blueprint","Perfected quetzal whistle blueprint","Huntsman's kit","Guild hunter headwear","Guild hunter top","Guild hunter legs","Guild hunter boots"]
+*/
+
+#define HUNTER_RUMOURS_A_UNIQUES []
+
+rule (name:HUNTER_RUMOURS_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Hunters' Rumours
+enum: ["Enhanced quetzal whistle blueprint","Perfected quetzal whistle blueprint","Huntsman's kit","Guild hunter headwear","Guild hunter top","Guild hunter legs","Guild hunter boots"]
+*/
+
+#define HUNTER_RUMOURS_B_UNIQUES ["Enhanced quetzal whistle blueprint","Perfected quetzal whistle blueprint","Huntsman's kit","Guild hunter headwear","Guild hunter top","Guild hunter legs","Guild hunter boots"]
+
+rule (name:HUNTER_RUMOURS_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Hunters' Rumours
+enum: ["Enhanced quetzal whistle blueprint","Perfected quetzal whistle blueprint","Huntsman's kit","Guild hunter headwear","Guild hunter top","Guild hunter legs","Guild hunter boots"]
+*/
+
+#define HUNTER_RUMOURS_C_UNIQUES []
+
+rule (name:HUNTER_RUMOURS_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Lost Schematics
+enum: ["Salvaging station schematic","Gale catcher schematic","Eternal brazier schematic","Rosewood cargo hold schematic","Rosewood hull schematic","Rosewood & cotton sails schematic","Dragon helm schematic","Dragon keel schematic","Dragon salvaging hook schematic","Dragon cannon schematic"]
+*/
+
+#define LOST_SCHEMATICS_SS_UNIQUES []
+
+rule (name:LOST_SCHEMATICS_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Lost Schematics
+enum: ["Salvaging station schematic","Gale catcher schematic","Eternal brazier schematic","Rosewood cargo hold schematic","Rosewood hull schematic","Rosewood & cotton sails schematic","Dragon helm schematic","Dragon keel schematic","Dragon salvaging hook schematic","Dragon cannon schematic"]
+*/
+
+#define LOST_SCHEMATICS_S_UNIQUES []
+
+rule (name:LOST_SCHEMATICS_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Lost Schematics
+enum: ["Salvaging station schematic","Gale catcher schematic","Eternal brazier schematic","Rosewood cargo hold schematic","Rosewood hull schematic","Rosewood & cotton sails schematic","Dragon helm schematic","Dragon keel schematic","Dragon salvaging hook schematic","Dragon cannon schematic"]
+*/
+
+#define LOST_SCHEMATICS_A_UNIQUES []
+
+rule (name:LOST_SCHEMATICS_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Lost Schematics
+enum: ["Salvaging station schematic","Gale catcher schematic","Eternal brazier schematic","Rosewood cargo hold schematic","Rosewood hull schematic","Rosewood & cotton sails schematic","Dragon helm schematic","Dragon keel schematic","Dragon salvaging hook schematic","Dragon cannon schematic"]
+*/
+
+#define LOST_SCHEMATICS_B_UNIQUES ["Salvaging station schematic","Gale catcher schematic","Eternal brazier schematic","Rosewood cargo hold schematic","Rosewood hull schematic","Rosewood & cotton sails schematic","Dragon helm schematic","Dragon keel schematic","Dragon salvaging hook schematic","Dragon cannon schematic"]
+
+rule (name:LOST_SCHEMATICS_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Lost Schematics
+enum: ["Salvaging station schematic","Gale catcher schematic","Eternal brazier schematic","Rosewood cargo hold schematic","Rosewood hull schematic","Rosewood & cotton sails schematic","Dragon helm schematic","Dragon keel schematic","Dragon salvaging hook schematic","Dragon cannon schematic"]
+*/
+
+#define LOST_SCHEMATICS_C_UNIQUES []
+
+rule (name:LOST_SCHEMATICS_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Ocean Encounters
+enum: ["Tiny pearl","Small pearl","Shiny pearl","Bright pearl","Big pearl","Huge pearl","Enormous pearl","Shimmering pearl","Glistening peatl","Brilliant pearl","Radiant pearl"]
+*/
+
+#define OCEAN_ENCOUNTERS_SS_UNIQUES []
+
+rule (name:OCEAN_ENCOUNTERS_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Ocean Encounters
+enum: ["Tiny pearl","Small pearl","Shiny pearl","Bright pearl","Big pearl","Huge pearl","Enormous pearl","Shimmering pearl","Glistening peatl","Brilliant pearl","Radiant pearl"]
+*/
+
+#define OCEAN_ENCOUNTERS_S_UNIQUES []
+
+rule (name:OCEAN_ENCOUNTERS_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Ocean Encounters
+enum: ["Tiny pearl","Small pearl","Shiny pearl","Bright pearl","Big pearl","Huge pearl","Enormous pearl","Shimmering pearl","Glistening peatl","Brilliant pearl","Radiant pearl"]
+*/
+
+#define OCEAN_ENCOUNTERS_A_UNIQUES ["Radiant pearl"]
+
+rule (name:OCEAN_ENCOUNTERS_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Ocean Encounters
+enum: ["Tiny pearl","Small pearl","Shiny pearl","Bright pearl","Big pearl","Huge pearl","Enormous pearl","Shimmering pearl","Glistening peatl","Brilliant pearl","Radiant pearl"]
+*/
+
+#define OCEAN_ENCOUNTERS_B_UNIQUES ["Shimmering pearl","Glistening peatl","Brilliant pearl"]
+
+rule (name:OCEAN_ENCOUNTERS_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Ocean Encounters
+enum: ["Tiny pearl","Small pearl","Shiny pearl","Bright pearl","Big pearl","Huge pearl","Enormous pearl","Shimmering pearl","Glistening peatl","Brilliant pearl","Radiant pearl"]
+*/
+
+#define OCEAN_ENCOUNTERS_C_UNIQUES ["Tiny pearl","Small pearl","Shiny pearl","Bright pearl","Big pearl","Huge pearl","Enormous pearl"]
+
+rule (name:OCEAN_ENCOUNTERS_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Revenants
+enum: ["Amulet of avarice","Craw's bow*","Thammaron's sceptre*","Viggora's chainmace*","Ancient crystal","Bracelet of ethereum*","Ancient emblem","Ancient totem","Ancient statuette","Ancient medallion","Ancient effigy","Ancient relic"]
+*/
+
+#define REVENANTS_SS_UNIQUES []
+
+rule (name:REVENANTS_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Revenants
+enum: ["Amulet of avarice","Craw's bow*","Thammaron's sceptre*","Viggora's chainmace*","Ancient crystal","Bracelet of ethereum*","Ancient emblem","Ancient totem","Ancient statuette","Ancient medallion","Ancient effigy","Ancient relic"]
+*/
+
+#define REVENANTS_S_UNIQUES ["Craw's bow*","Thammaron's sceptre*","Viggora's chainmace*","Ancient relic"]
+
+rule (name:REVENANTS_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Revenants
+enum: ["Amulet of avarice","Craw's bow*","Thammaron's sceptre*","Viggora's chainmace*","Ancient crystal","Bracelet of ethereum*","Ancient emblem","Ancient totem","Ancient statuette","Ancient medallion","Ancient effigy","Ancient relic"]
+*/
+
+#define REVENANTS_A_UNIQUES ["Amulet of avarice","Ancient crystal","Ancient totem","Ancient statuette","Ancient medallion","Ancient effigy"]
+
+rule (name:REVENANTS_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Revenants
+enum: ["Amulet of avarice","Craw's bow*","Thammaron's sceptre*","Viggora's chainmace*","Ancient crystal","Bracelet of ethereum*","Ancient emblem","Ancient totem","Ancient statuette","Ancient medallion","Ancient effigy","Ancient relic"]
+*/
+
+#define REVENANTS_B_UNIQUES ["Ancient emblem"]
+
+rule (name:REVENANTS_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Revenants
+enum: ["Amulet of avarice","Craw's bow*","Thammaron's sceptre*","Viggora's chainmace*","Ancient crystal","Bracelet of ethereum*","Ancient emblem","Ancient totem","Ancient statuette","Ancient medallion","Ancient effigy","Ancient relic"]
+*/
+
+#define REVENANTS_C_UNIQUES ["Bracelet of ethereum*"]
+
+rule (name:REVENANTS_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: Hide Items
+type: stringlist
+group: Revenants
+*/
+
+#define REVENANTS_HIDE []
+
+rule (area:[3143,10050,0,3266,10237,0] && name:REVENANTS_HIDE) {hidden = true;}
+
+/*@ define:input:misc_uniques
+label: Supply Drop
+type: enumlist
+group: Revenants
+enum: ["Blighted manta ray","Blighted anglerfish","Blighted karambwan","Blighted super restore(*)"]
+*/
+
+#define REVENANTS_SUPPLY []
+
+rule (area:[3143,10050,0,3266,10237,0] && name:REVENANTS_SUPPLY) {SUPPLY_DROP_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Sailing Miscellaneous
+enum: ["Dragon metal sheet","Dragon nails","Dragon cannonball","Echo pearl","Swift albatross feather","Narwhal horn","Ray barbs","Broken dragon hook","Bottled storm","Dragon cannon barrel","Boat bottle (empty)","Facility bottle (empty)"]
+*/
+
+#define SAILING_SS_UNIQUES []
+
+rule (name:SAILING_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Sailing Miscellaneous
+enum: ["Dragon metal sheet","Dragon nails","Dragon cannonball","Echo pearl","Swift albatross feather","Narwhal horn","Ray barbs","Broken dragon hook","Bottled storm","Dragon cannon barrel","Boat bottle (empty)","Facility bottle (empty)"]
+*/
+
+#define SAILING_S_UNIQUES ["Dragon cannon barrel","Bottled storm","Broken dragon hook"]
+
+rule (name:SAILING_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Sailing Miscellaneous
+enum: ["Dragon metal sheet","Dragon nails","Dragon cannonball","Echo pearl","Swift albatross feather","Narwhal horn","Ray barbs","Broken dragon hook","Bottled storm","Dragon cannon barrel","Boat bottle (empty)","Facility bottle (empty)"]
+*/
+
+#define SAILING_A_UNIQUES ["Dragon metal sheet"]
+
+rule (name:SAILING_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Sailing Miscellaneous
+enum: ["Dragon metal sheet","Dragon nails","Dragon cannonball","Echo pearl","Swift albatross feather","Narwhal horn","Ray barbs","Broken dragon hook","Bottled storm","Dragon cannon barrel","Boat bottle (empty)","Facility bottle (empty)"]
+*/
+
+#define SAILING_B_UNIQUES ["Boat bottle (empty)","Facility bottle (empty)","Echo pearl","Swift albatross feather","Narwhal horn","Ray barbs"]
+
+rule (name:SAILING_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Sailing Miscellaneous
+enum: ["Dragon metal sheet","Dragon nails","Dragon cannonball","Echo pearl","Swift albatross feather","Narwhal horn","Ray barbs","Broken dragon hook","Bottled storm","Dragon cannon barrel","Boat bottle (empty)","Facility bottle (empty)"]
+*/
+
+#define SAILING_C_UNIQUES []
+
+rule (name:SAILING_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: Dragon Nails SS Tier
+type: number
+group: Sailing Miscellaneous
+*/
+
+#define SAILING_DRAGON_NAIL_SS_QUANT 10000
+
+rule(name:"Dragon nails" && quantity:>=SAILING_DRAGON_NAIL_SS_QUANT) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: Dragon Nails S Tier
+type: number
+group: Sailing Miscellaneous
+*/
+
+#define SAILING_DRAGON_NAIL_S_QUANT 1000
+
+rule(name:"Dragon nails" && quantity:>=SAILING_DRAGON_NAIL_S_QUANT) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: Dragon Nails A Tier
+type: number
+group: Sailing Miscellaneous
+*/
+
+#define SAILING_DRAGON_NAIL_A_QUANT 100
+
+rule(name:"Dragon nails" && quantity:>=SAILING_DRAGON_NAIL_A_QUANT) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: Dragon Nails B Tier
+type: number
+group: Sailing Miscellaneous
+*/
+
+#define SAILING_DRAGON_NAIL_B_QUANT 10
+
+rule(name:"Dragon nails" && quantity:>=SAILING_DRAGON_NAIL_B_QUANT) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: Dragon Nails SS Tier
+type: number
+group: Sailing Miscellaneous
+*/
+
+#define SAILING_DRAGON_CANNONBALL_SS_QUANT 1
+
+rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_C_QUANT) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: Dragon Nails SS Tier
+type: number
+group: Sailing Miscellaneous
+*/
+
+#define SAILING_DRAGON_CANNONBALL_SS_QUANT 10000
+
+rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_SS_QUANT) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: Dragon Nails S Tier
+type: number
+group: Sailing Miscellaneous
+*/
+
+#define SAILING_DRAGON_CANNONBALL_S_QUANT 1000
+
+rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_S_QUANT) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: Dragon Nails A Tier
+type: number
+group: Sailing Miscellaneous
+*/
+
+#define SAILING_DRAGON_CANNONBALL_A_QUANT 100
+
+rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_A_QUANT) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: Dragon Nails B Tier
+type: number
+group: Sailing Miscellaneous
+*/
+
+#define SAILING_DRAGON_CANNONBALL_B_QUANT 10
+
+rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_B_QUANT) {UNIQUE_B_STYLE}
 
 
+/*@ define:input:misc_uniques
+label: Dragon Nails SS Tier
+type: number
+group: Sailing Miscellaneous
+*/
 
+#define SAILING_DRAGON_CANNONBALL_SS_QUANT 1
 
+rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_C_QUANT) {UNIQUE_C_STYLE}
 
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Sea Treasures
+enum: ["Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Sailors' amulet (inert)","Rusty locket","Mouldy block","Dull knife","Broken compass","Rusty coin","Broken sextant","Mouldy doll","Smashed mirror"]
+*/
 
+#define SEA_TREASURES_SS_UNIQUES []
 
+rule (name:SEA_TREASURES_SS_UNIQUES) {UNIQUE_SS_STYLE}
 
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Sea Treasures
+enum: ["Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Sailors' amulet (inert)","Rusty locket","Mouldy block","Dull knife","Broken compass","Rusty coin","Broken sextant","Mouldy doll","Smashed mirror"]
+*/
 
+#define SEA_TREASURES_S_UNIQUES []
 
+rule (name:SEA_TREASURES_S_UNIQUES) {UNIQUE_S_STYLE}
 
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Sea Treasures
+enum: ["Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Sailors' amulet (inert)","Rusty locket","Mouldy block","Dull knife","Broken compass","Rusty coin","Broken sextant","Mouldy doll","Smashed mirror"]
+*/
 
+#define SEA_TREASURES_A_UNIQUES []
 
+rule (name:SEA_TREASURES_A_UNIQUES) {UNIQUE_A_STYLE}
 
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Sea Treasures
+enum: ["Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Sailors' amulet (inert)","Rusty locket","Mouldy block","Dull knife","Broken compass","Rusty coin","Broken sextant","Mouldy doll","Smashed mirror"]
+*/
 
+#define SEA_TREASURES_B_UNIQUES ["Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Sailors' amulet (inert)","Rusty locket","Mouldy block","Dull knife","Broken compass","Rusty coin","Broken sextant","Mouldy doll","Smashed mirror"]
 
+rule (name:SEA_TREASURES_B_UNIQUES) {UNIQUE_B_STYLE}
 
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Sea Treasures
+enum: ["Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Medallion fragment","Sailors' amulet (inert)","Rusty locket","Mouldy block","Dull knife","Broken compass","Rusty coin","Broken sextant","Mouldy doll","Smashed mirror"]
+*/
 
+#define SEA_TREASURES_C_UNIQUES []
 
+rule (name:SEA_TREASURES_C_UNIQUES) {UNIQUE_C_STYLE}
 
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Shayzien Armour
+enum: ["Shayzien helm (1)","Shayzien platebody (1)","Shayzien greaves (1)","Shayzien gloves (1)","Shayzien boots (1)","Shayzien helm (2)","Shayzien platebody (2)","Shayzien greaves (2)","Shayzien gloves (2)","Shayzien boots (2)","Shayzien helm (3)","Shayzien platebody (3)","Shayzien greaves (3)","Shayzien gloves (3)","Shayzien boots (3)","Shayzien helm (4)","Shayzien platebody (4)","Shayzien greaves (4)","Shayzien gloves (4)","Shayzien boots (4)","Shayzien helm (5)","Shayzien platebody (5)","Shayzien greaves (5)","Shayzien gloves (5)","Shayzien boots (5)"]
+*/
 
+#define SHAYZIEN_ARMOUR_SS_UNIQUES []
 
+rule (name:SHAYZIEN_ARMOUR_SS_UNIQUES) {UNIQUE_SS_STYLE}
 
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Shayzien Armour
+enum: ["Shayzien helm (1)","Shayzien platebody (1)","Shayzien greaves (1)","Shayzien gloves (1)","Shayzien boots (1)","Shayzien helm (2)","Shayzien platebody (2)","Shayzien greaves (2)","Shayzien gloves (2)","Shayzien boots (2)","Shayzien helm (3)","Shayzien platebody (3)","Shayzien greaves (3)","Shayzien gloves (3)","Shayzien boots (3)","Shayzien helm (4)","Shayzien platebody (4)","Shayzien greaves (4)","Shayzien gloves (4)","Shayzien boots (4)","Shayzien helm (5)","Shayzien platebody (5)","Shayzien greaves (5)","Shayzien gloves (5)","Shayzien boots (5)"]
+*/
 
+#define SHAYZIEN_ARMOUR_S_UNIQUES []
 
+rule (name:SHAYZIEN_ARMOUR_S_UNIQUES) {UNIQUE_S_STYLE}
 
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Shayzien Armour
+enum: ["Shayzien helm (1)","Shayzien platebody (1)","Shayzien greaves (1)","Shayzien gloves (1)","Shayzien boots (1)","Shayzien helm (2)","Shayzien platebody (2)","Shayzien greaves (2)","Shayzien gloves (2)","Shayzien boots (2)","Shayzien helm (3)","Shayzien platebody (3)","Shayzien greaves (3)","Shayzien gloves (3)","Shayzien boots (3)","Shayzien helm (4)","Shayzien platebody (4)","Shayzien greaves (4)","Shayzien gloves (4)","Shayzien boots (4)","Shayzien helm (5)","Shayzien platebody (5)","Shayzien greaves (5)","Shayzien gloves (5)","Shayzien boots (5)"]
+*/
 
+#define SHAYZIEN_ARMOUR_A_UNIQUES []
 
+rule (name:SHAYZIEN_ARMOUR_A_UNIQUES) {UNIQUE_A_STYLE}
 
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Shayzien Armour
+enum: ["Shayzien helm (1)","Shayzien platebody (1)","Shayzien greaves (1)","Shayzien gloves (1)","Shayzien boots (1)","Shayzien helm (2)","Shayzien platebody (2)","Shayzien greaves (2)","Shayzien gloves (2)","Shayzien boots (2)","Shayzien helm (3)","Shayzien platebody (3)","Shayzien greaves (3)","Shayzien gloves (3)","Shayzien boots (3)","Shayzien helm (4)","Shayzien platebody (4)","Shayzien greaves (4)","Shayzien gloves (4)","Shayzien boots (4)","Shayzien helm (5)","Shayzien platebody (5)","Shayzien greaves (5)","Shayzien gloves (5)","Shayzien boots (5)"]
+*/
 
+#define SHAYZIEN_ARMOUR_B_UNIQUES ["Shayzien helm (5)","Shayzien platebody (5)","Shayzien greaves (5)","Shayzien gloves (5)","Shayzien boots (5)"]
 
+rule (name:SHAYZIEN_ARMOUR_B_UNIQUES) {UNIQUE_B_STYLE}
 
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Shayzien Armour
+enum: ["Shayzien helm (1)","Shayzien platebody (1)","Shayzien greaves (1)","Shayzien gloves (1)","Shayzien boots (1)","Shayzien helm (2)","Shayzien platebody (2)","Shayzien greaves (2)","Shayzien gloves (2)","Shayzien boots (2)","Shayzien helm (3)","Shayzien platebody (3)","Shayzien greaves (3)","Shayzien gloves (3)","Shayzien boots (3)","Shayzien helm (4)","Shayzien platebody (4)","Shayzien greaves (4)","Shayzien gloves (4)","Shayzien boots (4)","Shayzien helm (5)","Shayzien platebody (5)","Shayzien greaves (5)","Shayzien gloves (5)","Shayzien boots (5)"]
+*/
 
+#define SHAYZIEN_ARMOUR_C_UNIQUES ["Shayzien helm (1)","Shayzien platebody (1)","Shayzien greaves (1)","Shayzien gloves (1)","Shayzien boots (1)","Shayzien helm (2)","Shayzien platebody (2)","Shayzien greaves (2)","Shayzien gloves (2)","Shayzien boots (2)","Shayzien helm (3)","Shayzien platebody (3)","Shayzien greaves (3)","Shayzien gloves (3)","Shayzien boots (3)","Shayzien helm (4)","Shayzien platebody (4)","Shayzien greaves (4)","Shayzien gloves (4)","Shayzien boots (4)"]
 
+rule (name:SHAYZIEN_ARMOUR_C_UNIQUES) {UNIQUE_C_STYLE}
 
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Slayer Uniques
+enum: ["Crawling hand","Cockatrice head","Basilisk head","Kurask head","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Mudskipper hat","Flippers","Brine sabre","Leaf-bladed sword","Leaf-bladed battleaxe","Black mask","Granite longsword","Granite boots","Wyvern visage","Granite legs","Granite helm","Bronze boots","Iron boots","Steel boots","Black boots","Mithril boots","Adamant boots","Rune boots","Dragon boots","Dark bow","Dragon sword","Broken dragon hasta","Drake's tooth","Drake's claw","Mystic hat (light)","Mystic robe top (light)","Mystic robe bottom (light)","Mystic gloves (light)","Mystic boots (light)","Mystic hat (dark)","Mystic robe top (dark)","Mystic robe bottom (dark)","Mystic gloves (dark)","Mystic boots (dark)","Mystic hat (dusk)","Mystic robe top (dusk)","Mystic robe bottom (dusk)","Mystic gloves (dusk)","Mystic boots (dusk)","Basilisk jaw","Dagon'hai hat","Dagon'hai robe top","Dagon'hai robe bottom","Blood shard","Ancient ceremonial mask","Ancient ceremonial top","Ancient ceremonial legs","Ancient ceremonial gloves","Ancient ceremonial boots","Warped sceptre","Sulphur blades","Teleport anchoring scroll","Aranea boots", "Earthbound tecpatl","Antler guard","Alchemist's signet","Broken antler","Dragon metal sheet","Horn of plenty (empty)","Gryphon feather"]
+*/
 
+#define SLAYER_SS_UNIQUES ["Imbued heart"]
 
+rule (name:SLAYER_SS_UNIQUES) {UNIQUE_SS_STYLE}
 
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Slayer Uniques
+enum: ["Crawling hand","Cockatrice head","Basilisk head","Kurask head","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Mudskipper hat","Flippers","Brine sabre","Leaf-bladed sword","Leaf-bladed battleaxe","Black mask","Granite longsword","Granite boots","Wyvern visage","Granite legs","Granite helm","Bronze boots","Iron boots","Steel boots","Black boots","Mithril boots","Adamant boots","Rune boots","Dragon boots","Dark bow","Dragon sword","Broken dragon hasta","Drake's tooth","Drake's claw","Mystic hat (light)","Mystic robe top (light)","Mystic robe bottom (light)","Mystic gloves (light)","Mystic boots (light)","Mystic hat (dark)","Mystic robe top (dark)","Mystic robe bottom (dark)","Mystic gloves (dark)","Mystic boots (dark)","Mystic hat (dusk)","Mystic robe top (dusk)","Mystic robe bottom (dusk)","Mystic gloves (dusk)","Mystic boots (dusk)","Basilisk jaw","Dagon'hai hat","Dagon'hai robe top","Dagon'hai robe bottom","Blood shard","Ancient ceremonial mask","Ancient ceremonial top","Ancient ceremonial legs","Ancient ceremonial gloves","Ancient ceremonial boots","Warped sceptre","Sulphur blades","Teleport anchoring scroll","Aranea boots", "Earthbound tecpatl","Antler guard","Alchemist's signet","Broken antler","Dragon metal sheet","Horn of plenty (empty)","Gryphon feather"]
+*/
 
+#define SLAYER_S_UNIQUES ["Eternal gem","Basilisk jaw","Wyvern visage","Blood shard"]
+
+rule (name:SLAYER_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Slayer Uniques
+enum: ["Crawling hand","Cockatrice head","Basilisk head","Kurask head","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Mudskipper hat","Flippers","Brine sabre","Leaf-bladed sword","Leaf-bladed battleaxe","Black mask","Granite longsword","Granite boots","Wyvern visage","Granite legs","Granite helm","Bronze boots","Iron boots","Steel boots","Black boots","Mithril boots","Adamant boots","Rune boots","Dragon boots","Dark bow","Dragon sword","Broken dragon hasta","Drake's tooth","Drake's claw","Mystic hat (light)","Mystic robe top (light)","Mystic robe bottom (light)","Mystic gloves (light)","Mystic boots (light)","Mystic hat (dark)","Mystic robe top (dark)","Mystic robe bottom (dark)","Mystic gloves (dark)","Mystic boots (dark)","Mystic hat (dusk)","Mystic robe top (dusk)","Mystic robe bottom (dusk)","Mystic gloves (dusk)","Mystic boots (dusk)","Basilisk jaw","Dagon'hai hat","Dagon'hai robe top","Dagon'hai robe bottom","Blood shard","Ancient ceremonial mask","Ancient ceremonial top","Ancient ceremonial legs","Ancient ceremonial gloves","Ancient ceremonial boots","Warped sceptre","Sulphur blades","Teleport anchoring scroll","Aranea boots", "Earthbound tecpatl","Antler guard","Alchemist's signet","Broken antler","Dragon metal sheet","Horn of plenty (empty)","Gryphon feather"]
+*/
+
+#define SLAYER_A_UNIQUES ["Dust battlestaff","Mist battlestaff","Dragon boots","Black mask","Broken dragon hasta","Mystic hat (dusk)","Mystic robe top (dusk)","Mystic robe bottom (dusk)","Mystic gloves (dusk)","Mystic boots (dusk)","Drake's tooth","Drake's claw","Dagon'hai hat","Dagon'hai robe top","Dagon'hai robe bottom","Teleport anchoring scroll","Aranea boots"]
+
+rule (name:SLAYER_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Slayer Uniques
+enum: ["Crawling hand","Cockatrice head","Basilisk head","Kurask head","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Mudskipper hat","Flippers","Brine sabre","Leaf-bladed sword","Leaf-bladed battleaxe","Black mask","Granite longsword","Granite boots","Wyvern visage","Granite legs","Granite helm","Bronze boots","Iron boots","Steel boots","Black boots","Mithril boots","Adamant boots","Rune boots","Dragon boots","Dark bow","Dragon sword","Broken dragon hasta","Drake's tooth","Drake's claw","Mystic hat (light)","Mystic robe top (light)","Mystic robe bottom (light)","Mystic gloves (light)","Mystic boots (light)","Mystic hat (dark)","Mystic robe top (dark)","Mystic robe bottom (dark)","Mystic gloves (dark)","Mystic boots (dark)","Mystic hat (dusk)","Mystic robe top (dusk)","Mystic robe bottom (dusk)","Mystic gloves (dusk)","Mystic boots (dusk)","Basilisk jaw","Dagon'hai hat","Dagon'hai robe top","Dagon'hai robe bottom","Blood shard","Ancient ceremonial mask","Ancient ceremonial top","Ancient ceremonial legs","Ancient ceremonial gloves","Ancient ceremonial boots","Warped sceptre","Sulphur blades","Teleport anchoring scroll","Aranea boots", "Earthbound tecpatl","Antler guard","Alchemist's signet","Broken antler","Dragon metal sheet","Horn of plenty (empty)","Gryphon feather"]
+*/
+
+#define SLAYER_B_UNIQUES ["Crawling hand","Cockatrice head","Basilisk head","Kurask head","Rune boots","Mudskipper hat","Flippers","Brine sabre","Leaf-bladed sword","Leaf-bladed battleaxe","Granite longsword","Granite boots",Granite legs","Granite helm","Warped sceptre","Antler guard","Antler guard","Broken antler","Horn of plenty (empty)"]
+
+rule (name:SLAYER_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Slayer Uniques
+enum: ["Crawling hand","Cockatrice head","Basilisk head","Kurask head","Imbued heart","Eternal gem","Dust battlestaff","Mist battlestaff","Mudskipper hat","Flippers","Brine sabre","Leaf-bladed sword","Leaf-bladed battleaxe","Black mask","Granite longsword","Granite boots","Wyvern visage","Granite legs","Granite helm","Bronze boots","Iron boots","Steel boots","Black boots","Mithril boots","Adamant boots","Rune boots","Dragon boots","Dark bow","Dragon sword","Broken dragon hasta","Drake's tooth","Drake's claw","Mystic hat (light)","Mystic robe top (light)","Mystic robe bottom (light)","Mystic gloves (light)","Mystic boots (light)","Mystic hat (dark)","Mystic robe top (dark)","Mystic robe bottom (dark)","Mystic gloves (dark)","Mystic boots (dark)","Mystic hat (dusk)","Mystic robe top (dusk)","Mystic robe bottom (dusk)","Mystic gloves (dusk)","Mystic boots (dusk)","Basilisk jaw","Dagon'hai hat","Dagon'hai robe top","Dagon'hai robe bottom","Blood shard","Ancient ceremonial mask","Ancient ceremonial top","Ancient ceremonial legs","Ancient ceremonial gloves","Ancient ceremonial boots","Warped sceptre","Sulphur blades","Teleport anchoring scroll","Aranea boots", "Earthbound tecpatl","Antler guard","Alchemist's signet","Broken antler","Dragon metal sheet","Horn of plenty (empty)","Gryphon feather"]
+*/
+
+#define SLAYER_C_UNIQUES ["Bronze boots","Iron boots","Steel boots","Black boots","Mithril boots","Adamant boots","Mystic hat (light)","Mystic robe top (light)","Mystic robe bottom (light)","Mystic gloves (light)","Mystic boots (light)","Mystic hat (dark)","Mystic robe top (dark)","Mystic robe bottom (dark)","Mystic gloves (dark)","Mystic boots (dark)","Ancient ceremonial mask","Ancient ceremonial top","Ancient ceremonial legs","Ancient ceremonial gloves","Ancient ceremonial boots","Sulphur blades","Earthbound tecpatl","Alchemist's signet","Gryphon feather"]
+
+rule (name:SLAYER_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Tormented Demons
+enum: ["Tormented synapse","Burning claw","Burning claws"]
+*/
+
+#define TORMENTED_DEMONS_SS_UNIQUES []
+
+rule (name:TORMENTED_DEMONS_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Tormented Demons
+enum: ["Tormented synapse","Burning claw","Burning claws"]
+*/
+
+#define TORMENTED_DEMONS_S_UNIQUES ["Tormented synapse","Burning claw","Burning claws"]
+
+rule (name:TORMENTED_DEMONS_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Tormented Demons
+enum: ["Tormented synapse","Burning claw","Burning claws"]
+*/
+
+#define TORMENTED_DEMONS_A_UNIQUES []
+
+rule (name:TORMENTED_DEMONS_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Tormented Demons
+enum: ["Tormented synapse","Burning claw","Burning claws"]
+*/
+
+#define TORMENTED_DEMONS_B_UNIQUES []
+
+rule (name:TORMENTED_DEMONS_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Tormented Demons
+enum: ["Tormented synapse","Burning claw","Burning claws"]
+*/
+
+#define TORMENTED_DEMONS_C_UNIQUES []
+
+rule (name:TORMENTED_DEMONS_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: Hide Items
+type: stringlist
+group: Tormented Demons
+*/
+
+#define TORMENTED_DEMONS_HIDE []
+
+rule (area:[4020,4352,0,4167,4479,0] && name:TORMENTED_DEMONS_HIDE) {hidden = true;}
+
+/*@ define:input:misc_uniques
+label: Supply Drop
+type: enumlist
+group: Tormented Demons
+enum: ["Manta ray","Smouldering gland","Smouldering pile of flesh","Prayer potion(*)","Smouldering heart"]
+*/
+
+#define TORMENTED_DEMONS_SUPPLY []
+
+rule (area:[4020,4352,0,4167,4479,0] && name:TORMENTED_DEMONS_SUPPLY) {SUPPLY_DROP_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: TzHaar
+enum: ["Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs"]
+*/
+
+#define TZHAAR_SS_UNIQUES []
+
+rule (name:TZHAAR_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: TzHaar
+enum: ["Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs"]
+*/
+
+#define TZHAAR_S_UNIQUES []
+
+rule (name:TZHAAR_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: TzHaar
+enum: ["Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs"]
+*/
+
+#define TZHAAR_A_UNIQUES ["Obsidian helmet","Obsidian platebody","Obsidian platelegs"]
+
+rule (name:TZHAAR_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: TzHaar
+enum: ["Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs"]
+*/
+
+#define TZHAAR_B_UNIQUES ["Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul"]
+
+rule (name:TZHAAR_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: TzHaar
+enum: ["Obsidian cape","Toktz-ket-xil","Tzhaar-ket-om","Toktz-xil-ak","Toktz-xil-ek","Toktz-mej-tal","Toktz-xil-ul","Obsidian helmet","Obsidian platebody","Obsidian platelegs"]
+*/
+
+#define TZHAAR_C_UNIQUES []
+
+rule (name:TZHAAR_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: Hide Items
+type: stringlist
+group: TzHaar
+*/
+
+#define TZHAAR_HIDE []
+
+rule (area:[2368,5055,0,2560,5185,0] && name:TZHAAR_HIDE) {hidden = true;}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Miscellaneous Uniques
+enum: ["Dragon warhammer","Big swordfish","Big shark","Big bass","Giant blue krill","Orangefin","Golden haddock","Huge halibut","Purplefin","Swift marlin","Long bone","Curved bone","Pharaoh's sceptre (*)","Chewed bones","Dragon full helm","Shield left half","Dragon metal slice","Dragon kiteshield","Dragon metal lump","Dragon platebody","Dragon limbs","Dragon crossbow","Dragon spear","Amulet of eternal glory","Shaman mask","Evil chicken head","Evil chicken wings","Evil chicken legs","Evil chicken feet","Mining gloves","Superior mining gloves","Expert mining gloves","Fresh crab claw","Fresh crab shell","Mask of ranul","Elven signet","Crystal grail","Enhanced crystal teleport seed","Dragonstone full helm","Dragonstone platebody","Dragonstone platelegs","Dragonstone gauntlets","Dragonstone boots","Merfolk trident","*zombie axe","*zombie helmet","Helmet of the moon","Squid beak"]
+*/
+
+#define MISC_SS_UNIQUES ["Dragon full helm","Dragon metal slice","Dragon kiteshield","Dragon metal lump","Dragon platebody","Amulet of eternal glory","Evil chicken head","Evil chicken wings","Evil chicken legs","Evil chicken feet","Dragonstone full helm","Dragonstone platebody","Dragonstone platelegs","Dragonstone gauntlets","Dragonstone boots","Helmet of the moon"]
+
+rule (name:MISC_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Miscellaneous Uniques
+enum: ["Dragon warhammer","Big swordfish","Big shark","Big bass","Giant blue krill","Orangefin","Golden haddock","Huge halibut","Purplefin","Swift marlin","Long bone","Curved bone","Pharaoh's sceptre (*)","Chewed bones","Dragon full helm","Shield left half","Dragon metal slice","Dragon kiteshield","Dragon metal lump","Dragon platebody","Dragon limbs","Dragon crossbow","Dragon spear","Amulet of eternal glory","Shaman mask","Evil chicken head","Evil chicken wings","Evil chicken legs","Evil chicken feet","Mining gloves","Superior mining gloves","Expert mining gloves","Fresh crab claw","Fresh crab shell","Mask of ranul","Elven signet","Crystal grail","Enhanced crystal teleport seed","Dragonstone full helm","Dragonstone platebody","Dragonstone platelegs","Dragonstone gauntlets","Dragonstone boots","Merfolk trident","*zombie axe","*zombie helmet","Helmet of the moon","Squid beak"]
+*/
+
+#define MISC_S_UNIQUES ["Dragon warhammer","Pharaoh's sceptre (*)","Dragon limbs","Dragon crossbow"]
+
+rule (name:MISC_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Miscellaneous Uniques
+enum: ["Dragon warhammer","Big swordfish","Big shark","Big bass","Giant blue krill","Orangefin","Golden haddock","Huge halibut","Purplefin","Swift marlin","Long bone","Curved bone","Pharaoh's sceptre (*)","Chewed bones","Dragon full helm","Shield left half","Dragon metal slice","Dragon kiteshield","Dragon metal lump","Dragon platebody","Dragon limbs","Dragon crossbow","Dragon spear","Amulet of eternal glory","Shaman mask","Evil chicken head","Evil chicken wings","Evil chicken legs","Evil chicken feet","Mining gloves","Superior mining gloves","Expert mining gloves","Fresh crab claw","Fresh crab shell","Mask of ranul","Elven signet","Crystal grail","Enhanced crystal teleport seed","Dragonstone full helm","Dragonstone platebody","Dragonstone platelegs","Dragonstone gauntlets","Dragonstone boots","Merfolk trident","*zombie axe","*zombie helmet","Helmet of the moon","Squid beak"]
+*/
+
+#define MISC_A_UNIQUES ["Elven signet","Crystal grail","Enhanced crystal teleport seed","Merfolk trident","*zombie axe"]
+
+rule (name:MISC_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Miscellaneous Uniques
+enum: ["Dragon warhammer","Big swordfish","Big shark","Big bass","Giant blue krill","Orangefin","Golden haddock","Huge halibut","Purplefin","Swift marlin","Long bone","Curved bone","Pharaoh's sceptre (*)","Chewed bones","Dragon full helm","Shield left half","Dragon metal slice","Dragon kiteshield","Dragon metal lump","Dragon platebody","Dragon limbs","Dragon crossbow","Dragon spear","Amulet of eternal glory","Shaman mask","Evil chicken head","Evil chicken wings","Evil chicken legs","Evil chicken feet","Mining gloves","Superior mining gloves","Expert mining gloves","Fresh crab claw","Fresh crab shell","Mask of ranul","Elven signet","Crystal grail","Enhanced crystal teleport seed","Dragonstone full helm","Dragonstone platebody","Dragonstone platelegs","Dragonstone gauntlets","Dragonstone boots","Merfolk trident","*zombie axe","*zombie helmet","Helmet of the moon","Squid beak"]
+*/
+
+#define MISC_B_UNIQUES ["Big swordfish","Big shark","Big bass","Giant blue krill","Orangefin","Golden haddock","Huge halibut","Purplefin","Swift marlin","Curved bone","Chewed bones","Shaman mask","Mining gloves","Superior mining gloves","Expert mining gloves","Fresh crab claw","Fresh crab shell","Mask of ranul","*zombie helmet","Squid beak"]
+
+rule (name:MISC_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Miscellaneous Uniques
+enum: ["Dragon warhammer","Big swordfish","Big shark","Big bass","Giant blue krill","Orangefin","Golden haddock","Huge halibut","Purplefin","Swift marlin","Long bone","Curved bone","Pharaoh's sceptre (*)","Chewed bones","Dragon full helm","Shield left half","Dragon metal slice","Dragon kiteshield","Dragon metal lump","Dragon platebody","Dragon limbs","Dragon crossbow","Dragon spear","Amulet of eternal glory","Shaman mask","Evil chicken head","Evil chicken wings","Evil chicken legs","Evil chicken feet","Mining gloves","Superior mining gloves","Expert mining gloves","Fresh crab claw","Fresh crab shell","Mask of ranul","Elven signet","Crystal grail","Enhanced crystal teleport seed","Dragonstone full helm","Dragonstone platebody","Dragonstone platelegs","Dragonstone gauntlets","Dragonstone boots","Merfolk trident","*zombie axe","*zombie helmet","Helmet of the moon","Squid beak"]
+*/
+
+#define MISC_C_UNIQUES ["Long bone","Shield left half","Dragon spear"]
+
+rule (name:MISC_C_UNIQUES) {UNIQUE_C_STYLE}
 
 /*@ define:module:currency
 name: Currency
