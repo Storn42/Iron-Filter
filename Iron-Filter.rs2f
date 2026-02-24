@@ -8799,9 +8799,115 @@ name: Miscellaneous Uniques
 subtitle: Set Unique Tiers, Hide Drops, and Highlight Supplies
 */
 
+/*@ define:input:mini_games
+label: SS Tier Uniques
+type: enumlist
+group: Arial Fishing
+enum: ["Golden tench"]
+*/
 
+#define ARIAL_FISHING_SS_UNIQUES []
 
+rule (name:ARIAL_FISHING_SS_UNIQUES) {UNIQUE_SS_STYLE}
 
+/*@ define:input:mini_games
+label: S Tier Uniques
+type: enumlist
+group: Arial Fishing
+enum: ["Golden tench"]
+*/
+
+#define ARIAL_FISHING_S_UNIQUES []
+
+rule (name:ARIAL_FISHING_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:mini_games
+label: A Tier Uniques
+type: enumlist
+group: Arial Fishing
+enum: ["Golden tench"]
+*/
+
+#define ARIAL_FISHING_A_UNIQUES ["Golden tench"]
+
+rule (name:ARIAL_FISHING_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:mini_games
+label: B Tier Uniques
+type: enumlist
+group: Arial Fishing
+enum: ["Golden tench"]
+*/
+
+#define ARIAL_FISHING_B_UNIQUES []
+
+rule (name:ARIAL_FISHING_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:mini_games
+label: C Tier Uniques
+type: enumlist
+group: Arial Fishing
+enum: ["Golden tench"]
+*/
+
+#define ARIAL_FISHING_C_UNIQUES []
+
+rule (name:ARIAL_FISHING_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:mini_games
+label: SS Tier Uniques
+type: enumlist
+group: Boat Paints
+enum: ["Barracuda paint","Shark paint","Inky paint","Angler's paint","Salvor's paint","Armadylean paint","Zamorakian paint","Guthixian paint","Saradominist paint","Merchant's paint","Sandy paint"]
+*/
+
+#define BOAT_PAINTS_SS_UNIQUES []
+
+rule (name:BOAT_PAINTS_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:mini_games
+label: S Tier Uniques
+type: enumlist
+group: Boat Paints
+enum: ["Barracuda paint","Shark paint","Inky paint","Angler's paint","Salvor's paint","Armadylean paint","Zamorakian paint","Guthixian paint","Saradominist paint","Merchant's paint","Sandy paint"]
+*/
+
+#define BOAT_PAINTS_S_UNIQUES ["Merchant's paint","Sandy paint"]
+
+rule (name:BOAT_PAINTS_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:mini_games
+label: A Tier Uniques
+type: enumlist
+group: Boat Paints
+enum: ["Barracuda paint","Shark paint","Inky paint","Angler's paint","Salvor's paint","Armadylean paint","Zamorakian paint","Guthixian paint","Saradominist paint","Merchant's paint","Sandy paint"]
+*/
+
+#define BOAT_PAINTS_A_UNIQUES ["Barracuda paint","Inky paint","Salvor's paint"]
+
+rule (name:BOAT_PAINTS_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:mini_games
+label: B Tier Uniques
+type: enumlist
+group: Boat Paints
+enum: ["Barracuda paint","Shark paint","Inky paint","Angler's paint","Salvor's paint","Armadylean paint","Zamorakian paint","Guthixian paint","Saradominist paint","Merchant's paint","Sandy paint"]
+*/
+
+#define BOAT_PAINTS_B_UNIQUES ["Shark paint"]
+
+rule (name:BOAT_PAINTS_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:mini_games
+label: C Tier Uniques
+type: enumlist
+group: Boat Paints
+enum: ["Barracuda paint","Shark paint","Inky paint","Angler's paint","Salvor's paint","Armadylean paint","Zamorakian paint","Guthixian paint","Saradominist paint","Merchant's paint","Sandy paint"]
+*/
+
+#define BOAT_PAINTS_C_UNIQUES ["Armadylean paint","Zamorakian paint","Guthixian paint","Saradominist paint"]
+
+rule (name:BOAT_PAINTS_C_UNIQUES) {UNIQUE_C_STYLE}
 
 
 
