@@ -109,7 +109,7 @@ group: User
 
 #define HIDE_USER_UNDER_10 []
 
-apply (name:HIDE_USER_UNDER_10 && quantity:<10) {hidden=true}
+apply (name:HIDE_USER_UNDER_10 && quantity:<10) {hidden=true;}
 
 /*@ define:input:hidden
 label: Hide if quant < 100
@@ -119,7 +119,7 @@ group: User
 
 #define HIDE_USER_UNDER_100 []
 
-apply (name:HIDE_USER_UNDER_100 && quantity:<100) {hidden=true}
+apply (name:HIDE_USER_UNDER_100 && quantity:<100) {hidden=true;}
 
 /*@ define:input:hidden
 label: Hide if quant < 1000
@@ -129,7 +129,7 @@ group: User
 
 #define HIDE_USER_UNDER_1000 []
 
-apply (name:HIDE_USER_UNDER_1000 && quantity:<1000) {hidden=true}
+apply (name:HIDE_USER_UNDER_1000 && quantity:<1000) {hidden=true;}
 
 /*@ define:input:hidden
 label: Hide if quant < 10000
@@ -139,7 +139,7 @@ group: User
 
 #define HIDE_USER_UNDER_10000 []
 
-apply (name:HIDE_USER_UNDER_10000 && quantity:<10000) {hidden=true}
+apply (name:HIDE_USER_UNDER_10000 && quantity:<10000) {hidden=true;}
 
 /*@ define:input:hidden
 label: Bronze
@@ -509,7 +509,7 @@ apply (_hidecondition && name:HIDE_USER_UNNOTED && stackable:false) {hidden = fa
 apply (_hidecondition && name:HIDE_USER_UNDER_10 && quantity:<10) {hidden = false; hideOverlay = true;} \
 apply (_hidecondition && name:HIDE_USER_UNDER_100 && quantity:<100) {hidden = false; hideOverlay = true;} \
 apply (_hidecondition && name:HIDE_USER_UNDER_1000 && quantity:<1000) {hidden = false; hideOverlay = true;} \
-apply (_hidecondition && name:HIDE_USER_UNDER_10000 && quantity:<10000) {hidden = false; hideOverlay = true;} \
+apply (_hidecondition && name:HIDE_USER_UNDER_10000 && quantity:<10000) {hidden = false; hideOverlay = true;}
 
 /*@ define:module:food_and_pots
 name: Food and Potions
@@ -832,11 +832,11 @@ group: Special Drops
 #define UNQIQUE_SPECIAL_C_NAMES []
 
 #define SPECIAL_UNIQUE_CHECK(_enabled, _area, _name) \
-	rule (_enabled && _area && name:_name && name:UNQIQUE_SPECIAL_SS_NAMES) {UNIQUE_SS_STYLE} \
-	rule (_enabled && _area && name:_name && name:UNQIQUE_SPECIAL_S_NAMES) {UNIQUE_S_STYLE} \
-	rule (_enabled && _area && name:_name && name:UNQIQUE_SPECIAL_A_NAMES) {UNIQUE_A_STYLE} \
-	rule (_enabled && _area && name:_name && name:UNQIQUE_SPECIAL_B_NAMES) {UNIQUE_B_STYLE} \
-	rule (_enabled && _area && name:_name && name:UNQIQUE_SPECIAL_C_NAMES) {UNIQUE_C_STYLE}
+	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_SS_NAMES) {UNIQUE_SS_STYLE} \
+	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_S_NAMES) {UNIQUE_S_STYLE} \
+	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_A_NAMES) {UNIQUE_A_STYLE} \
+	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_B_NAMES) {UNIQUE_B_STYLE} \
+	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_C_NAMES) {UNIQUE_C_STYLE}
 
 /*@ define:module:slayer_pvm
 name: Monsters
@@ -859,7 +859,7 @@ group: Abyssal Demons
 // [3331,10152,0,3352,10174,0] - Wilderness Slayer Cave
 // [3011,4867,0,3069,4926,0] - Abyssal Area
 
-#define ABBY_DEMON_AREA (area:[1666,10083,0,1682,10103,0] || area:[1667,10050,0,1684,10064,0] || area:[3405,3555,2,3580,10064,2] || area:[3423,9953,3,3448,9953,3] || area:[1666,10083,0,1682,10103,0] || area:[3331,10152,0,3352,10174,0]) 
+#define ABBY_DEMON_AREA area:[1666,10083,0,1682,10103,0] || area:[1667,10050,0,1684,10064,0] || area:[3405,3555,2,3580,10064,2] || area:[3423,9953,3,3448,9953,3] || area:[1666,10083,0,1682,10103,0] || area:[3331,10152,0,3352,10174,0]
 
 SPECIAL_UNIQUE_CHECK(ENABLE_ABBY_DAGGER_MEME, ABBY_DEMON_AREA, "Abyssal dagger")
 
@@ -1204,7 +1204,7 @@ group: Dust Devils
 // [3167,9345,0,3328,9407,0] Smoke dungeon
 // [3423,10113,0,3454,10133,0] Wilderness Slayer Cave
 
-#define DUST_DEVIL_AREA (area:[1699,10009,0,1721,10039,0] || area:[3167,9345,0,3328,9407,0] || area:[3423,10113,0,3454,10133,0])
+#define DUST_DEVIL_AREA area:[1699,10009,0,1721,10039,0] || area:[3167,9345,0,3328,9407,0] || area:[3423,10113,0,3454,10133,0]
 
 SPECIAL_UNIQUE_CHECK(ENABLE_DUST_DCHAIN_MEME, DUST_DEVIL_AREA, "Dragon chainbody")
 
@@ -1562,7 +1562,7 @@ group: Hellhounds
 // [2071,10062,0,2091,10078,0] - Buccaneers' Laboratory
 // [2624,8857,0,2639,8871,0] - Charred Dungeon
 
-#define DUST_DEVIL_AREA (area:[3155,3905,0,3207,3968,0] || area:[2728,9676,0,2748,9702,0] || area:[2819,5280,2,2944,5376,2] || area:[2405,9768,0,2437,9808,0] || area:[2837,9816,0,2876,9856,0] || area:[3427,10067,0,3454,10103,0] || area:[1635,10053,0,1655,10077,0] || area:[1325,10189,2,1358,10217,2] || area:[2071,10062,0,2091,10078,0] || area:[2624,8857,0,2639,8871,0])
+#define HELLHOUND_AREA area:[3155,3905,0,3207,3968,0] || area:[2728,9676,0,2748,9702,0] || area:[2819,5280,2,2944,5376,2] || area:[2405,9768,0,2437,9808,0] || area:[2837,9816,0,2876,9856,0] || area:[3427,10067,0,3454,10103,0] || area:[1635,10053,0,1655,10077,0] || area:[1325,10189,2,1358,10217,2] || area:[2071,10062,0,2091,10078,0] || area:[2624,8857,0,2639,8871,0]
 
 SPECIAL_UNIQUE_CHECK(ENABLE_HELLHOUND_STONE_MEME, HELLHOUND_AREA, "Smouldering stone")
 
@@ -2468,7 +2468,7 @@ group: Smoke Devils
 
 #define ENABLE_SMOKE_DCHAIN_MEME true
 
-SPECIAL_UNIQUE_CHECK(ENABLE_SMOKE_DCHAIN_MEME, [2378,9415,0,2429,9471,0], "Dragon chainbody")
+SPECIAL_UNIQUE_CHECK(ENABLE_SMOKE_DCHAIN_MEME, area:[2378,9415,0,2429,9471,0], "Dragon chainbody")
 
 /*@ define:input:slayer_pvm
 label: Ignore Me
@@ -3618,7 +3618,7 @@ group: Duke Sucellus
 
 #define ENABLE_DUKE_SUCELLUS_GOLDRING true
 
-SPECIAL_UNIQUE_CHECK(ENABLE_DUKE_SUCELLUS_GOLDRING, [3027,6433,0,3052,6459,0], "Gold ring")
+SPECIAL_UNIQUE_CHECK(ENABLE_DUKE_SUCELLUS_GOLDRING, area:[3027,6433,0,3052,6459,0], "Gold ring")
 
 /*@ define:input:boss_pvm
 label: Sound ID
@@ -3628,11 +3628,11 @@ group: Duke Sucellus
 
 #define DUKE_SUCELLUS_PERFECT_SOUND 3018
 
-#define DUKE_SUCELLUS_PERFECT_ITEMS ((name:"Bronze chainbody" && quantity:==17) || (name:"Mithril chainbody" && quantity:==7) || (name:"Adamant chainbody" && quantity:==7) || (name:"Dragon platelegs" && quantity:==7) || (name:"Coal" && quantity:==325) || (name: "Adamantite ore" && quantity:==112) || (name:"Rune javelin heads" && quantity:== 90) || (name:"Dragon javelin heads" && quantity:== 90) || (name:"Uncut ruby" && quantity:== 62) || (name:"Uncut diamond" && quantity:== 62) || (name:"Runite ore" && quantity:==45) || (name:"Dragon arrowtips" && quantity:==250) || (name:"Pure essence" && quantity:==300) || (name:"Iron ore" && quantity:==95) || (name:"Mithril ore" && quantity:==50) || (name:"Sapphire" && quantity:==42) || (name:"Emerald" && quantity:==42) || (name:"Ruby" && quantity:==42) || (name:"Bronze bar" && quantity:==95) || (name:"Raw sea turtle" && quantity:==300) || (name:"Chaos rune" && quantity:==150) || (name:"Mist rune" && quantity:==150) || (name:"Soul rune" && quantity:==1000) || (name:"Air rune" && quantity:==300))
+#define DUKE_SUCELLUS_PERFECT_ITEMS name:"Bronze chainbody" && quantity:==17) || (name:"Mithril chainbody" && quantity:==7) || (name:"Adamant chainbody" && quantity:==7) || (name:"Dragon platelegs" && quantity:==7) || (name:"Coal" && quantity:==325) || (name: "Adamantite ore" && quantity:==112) || (name:"Rune javelin heads" && quantity:== 90) || (name:"Dragon javelin heads" && quantity:== 90) || (name:"Uncut ruby" && quantity:== 62) || (name:"Uncut diamond" && quantity:== 62) || (name:"Runite ore" && quantity:==45) || (name:"Dragon arrowtips" && quantity:==250) || (name:"Pure essence" && quantity:==300) || (name:"Iron ore" && quantity:==95) || (name:"Mithril ore" && quantity:==50) || (name:"Sapphire" && quantity:==42) || (name:"Emerald" && quantity:==42) || (name:"Ruby" && quantity:==42) || (name:"Bronze bar" && quantity:==95) || (name:"Raw sea turtle" && quantity:==300) || (name:"Chaos rune" && quantity:==150) || (name:"Mist rune" && quantity:==150) || (name:"Soul rune" && quantity:==1000) || (name:"Air rune" && quantity:==300
 
-AREA_UNHIDE(area:[3027,6433,0,3052,6459,0] && ENABLE_DUKE_SUCELLUS_PERFECT && DUKE_SUCELLUS_PERFECT_ITEMS)
+AREA_UNHIDE(area:[3027,6433,0,3052,6459,0] && ENABLE_DUKE_SUCELLUS_PERFECT && ((DUKE_SUCELLUS_PERFECT_ITEMS)))
 
-apply (area:[3027,6433,0,3052,6459,0] && ENABLE_DUKE_SUCELLUS_PERFECT && DUKE_SUCELLUS_PERFECT_ITEMS) {sound=DUKE_SUCELLUS_PERFECT_SOUND;}
+apply (area:[3027,6433,0,3052,6459,0] && ENABLE_DUKE_SUCELLUS_PERFECT && ((DUKE_SUCELLUS_PERFECT_ITEMS))) {sound=DUKE_SUCELLUS_PERFECT_SOUND;}
 
 /*@ define:input:boss_pvm
 label: SS Tier Uniques
@@ -3697,7 +3697,7 @@ group: Duke Sucellus
 
 #define DUKE_SUCELLUS_HIDE []
 
-rule (area:[3027,6433,0,3052,6459,0] && name:DUKE_SUCELLUS_HIDE && ENABLE_DUKE_SUCELLUS_PERFECT && DUKE_SUCELLUS_PERFECT_ITEMS) {hideOverlay = true;}
+rule (area:[3027,6433,0,3052,6459,0] && name:DUKE_SUCELLUS_HIDE && ENABLE_DUKE_SUCELLUS_PERFECT && ((DUKE_SUCELLUS_PERFECT_ITEMS))) {hideOverlay = true;}
 
 rule (area:[3027,6433,0,3052,6459,0] && name:DUKE_SUCELLUS_HIDE) {hidden = true;}
 
@@ -4885,9 +4885,9 @@ type: boolean
 group: The Leviathan
 */
 
-#define ENABLE_LEVIATHAN_GOLDRING_ true
+#define ENABLE_LEVIATHAN_GOLDRING true
 
-SPECIAL_UNIQUE_CHECK(ENABLE_LEVIATHAN_GOLDRING, [2068,6360,0,2096,6386,3], "Gold ring")
+SPECIAL_UNIQUE_CHECK(ENABLE_LEVIATHAN_GOLDRING, area:[2068,6360,0,2096,6386,3], "Gold ring")
 
 /*@ define:input:boss_pvm
 label: Sound ID
@@ -4897,11 +4897,11 @@ group: The Leviathan
 
 #define LEVIATHAN_PERFECT_SOUND 3018
 
-#define LEVIATHAN_PERFECT_ITEMS ((name:"Coal" && quantity:==292) || (name:"Gold ore" && quantity:==101) || (name:"Dragon javelin head" && quantity:==81) || (name:"Anglerfish" && quantity:==6) || (name:"Uncut ruby" && quantity:==56) || (name: "Uncut diamond" && quantity:==56) || (name:"Runite ore" && quantity:== 40) || (name:"Dragon bolts (unf)" && quantity:== 225) || (name:"Pure essence" && quantity:== 270) || (name:"Iron ore" && quantity:== 85) || (name:"Silver ore" && quantity:==85) || (name:"Adamantite ore" && quantity:==85) || (name:"Sapphire" && quantity:==38) || (name:"Emerald" && quantity:==38) || (name:"Ruby" && quantity:==38) || (name:"Onyx bolt tips" && quantity:==135) || (name:"Raw manta ray" && quantity:==270) || (name:"Rune arrow" && quantity:==81) || (name:"Smoke rune" && quantity:==450) || (name:"Soul rune" && quantity:==900) || (name:"Bronze arrow" && quantity:==94) || (name:"Mithril arrow" && quantity:==94) || (name:"Adamant arrow" && quantity:==94) || (name:"Body rune" && quantity:==270) || (name:"Earth rune" && quantity:==270))
+#define LEVIATHAN_PERFECT_ITEMS name:"Coal" && quantity:==292) || (name:"Gold ore" && quantity:==101) || (name:"Dragon javelin head" && quantity:==81) || (name:"Anglerfish" && quantity:==6) || (name:"Uncut ruby" && quantity:==56) || (name: "Uncut diamond" && quantity:==56) || (name:"Runite ore" && quantity:== 40) || (name:"Dragon bolts (unf)" && quantity:== 225) || (name:"Pure essence" && quantity:== 270) || (name:"Iron ore" && quantity:== 85) || (name:"Silver ore" && quantity:==85) || (name:"Adamantite ore" && quantity:==85) || (name:"Sapphire" && quantity:==38) || (name:"Emerald" && quantity:==38) || (name:"Ruby" && quantity:==38) || (name:"Onyx bolt tips" && quantity:==135) || (name:"Raw manta ray" && quantity:==270) || (name:"Rune arrow" && quantity:==81) || (name:"Smoke rune" && quantity:==450) || (name:"Soul rune" && quantity:==900) || (name:"Bronze arrow" && quantity:==94) || (name:"Mithril arrow" && quantity:==94) || (name:"Adamant arrow" && quantity:==94) || (name:"Body rune" && quantity:==270) || (name:"Earth rune" && quantity:==270
 
-AREA_UNHIDE(area:[2068,6360,0,2096,6386,3] && ENABLE_LEVIATHAN_PERFECT && LEVIATHAN_PERFECT_ITEMS)
+AREA_UNHIDE(area:[2068,6360,0,2096,6386,3] && ENABLE_LEVIATHAN_PERFECT && ((LEVIATHAN_PERFECT_ITEMS)))
 
-apply (area:[2068,6360,0,2096,6386,3] && ENABLE_LEVIATHAN_PERFECT && LEVIATHAN_PERFECT_ITEMS) {sound=LEVIATHAN_PERFECT_SOUND;}
+apply (area:[2068,6360,0,2096,6386,3] && ENABLE_LEVIATHAN_PERFECT && ((LEVIATHAN_PERFECT_ITEMS))) {sound=LEVIATHAN_PERFECT_SOUND;}
 
 /*@ define:input:boss_pvm
 label: SS Tier Uniques
@@ -4966,7 +4966,7 @@ group: The Leviathan
 
 #define LEVIATHAN_HIDE []
 
-rule (area:[2068,6360,0,2096,6386,3] && name:LEVIATHAN_HIDE && ENABLE_LEVIATHAN_PERFECT && LEVIATHAN_PERFECT_ITEMS) {hideOverlay = true;}
+rule (area:[2068,6360,0,2096,6386,3] && name:LEVIATHAN_HIDE && ENABLE_LEVIATHAN_PERFECT && ((LEVIATHAN_PERFECT_ITEMS))) {hideOverlay = true;}
 
 rule (area:[2068,6360,0,2096,6386,3] && name:LEVIATHAN_HIDE) {hidden = true;}
 
@@ -6038,11 +6038,11 @@ group: Vardorvis
 
 #define VARDORVIS_PERFECT_SOUND 3018
 
-#define VARDORVIS_PERFECT_ITEMS ((name:"Coal" && quantity:==195) || (name:"Adamantite ore" && quantity:==67) || (name:"Rune javelin heads" && quantity:==54) || (name:"Dragon javelin heads" && quantity:==54) || (name:"Uncut ruby" && quantity:==37) || (name:"Uncut diamond" && quantity:==37) || (name:"Runite ore" && quantity:==27) || (name:"Dragon dart tip" && quantity:==150) || (name:"Pure essence" && quantity:==180) || (name:"Iron ore" && quantity:==57) || (name:"Silver ore" && quantity:==57) || (name:"Mithril ore" && quantity:==57) || (name:"Sapphire" && quantity:==25) || (name:"Emerald" && quantity:==25) || (name:"Ruby" && quantity:==25) || (name:"Raw shark" && quantity:==300) || (name:"Lava rune" && quantity:==300) || (name:"Blood rune" && quantity:==300) || (name:"Soul rune" && quantity:==600) || (name:"Bronze javelin" && quantity:==63) || (name:"Mithril javelin" && quantity:==63) || (name:"Adamant javelin" && quantity:==63) || (name:"Onyx bolts (e)" && quantity:==90) || (name:"Mind rune" && quantity:==180) || (name:"Fire rune" && quantity:==180))
+#define VARDORVIS_PERFECT_ITEMS name:"Coal" && quantity:==195) || (name:"Adamantite ore" && quantity:==67) || (name:"Rune javelin heads" && quantity:==54) || (name:"Dragon javelin heads" && quantity:==54) || (name:"Uncut ruby" && quantity:==37) || (name:"Uncut diamond" && quantity:==37) || (name:"Runite ore" && quantity:==27) || (name:"Dragon dart tip" && quantity:==150) || (name:"Pure essence" && quantity:==180) || (name:"Iron ore" && quantity:==57) || (name:"Silver ore" && quantity:==57) || (name:"Mithril ore" && quantity:==57) || (name:"Sapphire" && quantity:==25) || (name:"Emerald" && quantity:==25) || (name:"Ruby" && quantity:==25) || (name:"Raw shark" && quantity:==300) || (name:"Lava rune" && quantity:==300) || (name:"Blood rune" && quantity:==300) || (name:"Soul rune" && quantity:==600) || (name:"Bronze javelin" && quantity:==63) || (name:"Mithril javelin" && quantity:==63) || (name:"Adamant javelin" && quantity:==63) || (name:"Onyx bolts (e)" && quantity:==90) || (name:"Mind rune" && quantity:==180) || (name:"Fire rune" && quantity:==180
 
-AREA_UNHIDE(area:[1114,3407,0,1142,3434,0] && ENABLE_VARDORVIS_PERFECT && VARDORVIS_PERFECT_ITEMS)
+AREA_UNHIDE(area:[1114,3407,0,1142,3434,0] && ENABLE_VARDORVIS_PERFECT && ((VARDORVIS_PERFECT_ITEMS)))
 
-apply (area:[1114,3407,0,1142,3434,0] && ENABLE_VARDORVIS_PERFECT && VARDORVIS_PERFECT_ITEMS) {sound=VARDORVIS_PERFECT_SOUND;}
+apply (area:[1114,3407,0,1142,3434,0] && ENABLE_VARDORVIS_PERFECT && ((VARDORVIS_PERFECT_ITEMS))) {sound=VARDORVIS_PERFECT_SOUND;}
 
 /*@ define:input:boss_pvm
 label: Gold Ring T3 Unique
@@ -6052,7 +6052,7 @@ group: Vardorvis
 
 #define ENABLE_VARDORVIS_GOLDRING true
 
-SPECIAL_UNIQUE_CHECK(ENABLE_VARDORVIS_GOLDRING, [1114,3407,0,1142,3434,0], "Gold ring")
+SPECIAL_UNIQUE_CHECK(ENABLE_VARDORVIS_GOLDRING, area:[1114,3407,0,1142,3434,0], "Gold ring")
 
 /*@ define:input:boss_pvm
 label: SS Tier Uniques
@@ -6117,7 +6117,7 @@ group: Vardorvis
 
 #define VARDORVIS_HIDE []
 
-rule (area:[1114,3407,0,1142,3434,0] && name:VARDORVIS_HIDE && ENABLE_VARDORVIS_PERFECT && VARDORVIS_PERFECT_ITEMS) {hideOverlay = true;}
+rule (area:[1114,3407,0,1142,3434,0] && name:VARDORVIS_HIDE && ENABLE_VARDORVIS_PERFECT && ((VARDORVIS_PERFECT_ITEMS))) {hideOverlay = true;}
 rule (area:[1114,3407,0,1142,3434,0] && name:VARDORVIS_HIDE) {hidden = true;}
 
 /*@ define:input:boss_pvm
@@ -6428,8 +6428,8 @@ group: The Whisperer
 
 #define ENABLE_WHISPERER_GOLDRING true
 
-SPECIAL_UNIQUE_CHECK(ENABLE_WHISPERER_GOLDRING, [2370,6338,0,2429,6397,0], "Gold ring")
-SPECIAL_UNIQUE_CHECK(ENABLE_WHISPERER_GOLDRING, [2629,6338,0,2685,6397,0], "Gold ring")
+SPECIAL_UNIQUE_CHECK(ENABLE_WHISPERER_GOLDRING, area:[2370,6338,0,2429,6397,0], "Gold ring")
+SPECIAL_UNIQUE_CHECK(ENABLE_WHISPERER_GOLDRING, area:[2629,6338,0,2685,6397,0], "Gold ring")
 
 /*@ define:input:whisperer
 label: Sound ID
@@ -6439,13 +6439,13 @@ group: The Whisperer
 
 #define WHISPERER_PERFECT_SOUND 3018
 
-#define WHISPERER_PERFECT_ITEMS (name:"Battlestaff" && quantity:==105) || (name:"Bronze longsword" && quantity:==24) || (name:"Mithril longsword" && quantity:==10) || (name:"Adamant longsword" && quantity:==14) || (name:"Dragon plateskirt" && quantity:==10) || (name:"Coal" && quantity:==455) || (name:"Adamantite ore" && quantity:==157) || (name:"Dragon javelin heads" && quantity:==126) || (name:"Runite bolts (unf)" && quantity:==126) || (name:"Uncut ruby" && quantity:==87) || (name:"Uncut diamond" && quantity:==87) || (name:"Runite ore" && quantity:==63) || (name:"Pure essence" && quantity:==420) || (name:"Iron ore" && quantity:==133) || (name:"Gold ore" && quantity:==133) || (name:"Mithril ore" && quantity:==133) || (name:"Sapphire" && quantity:==59) || (name:"Emerald" && quantity:==59) || (name:"Ruby" && quantity:==59) || (name:"Raw monkfish" && quantity:==1050) || (name:"Steam rune" && quantity:==700) || (name:"Death rune" && quantity:==700) || (name:"Soul rune" && quantity:==1400) || (name:"Water rune" && quantity:==420) || (name:"Chaos rune" && quantity:==210))
+#define WHISPERER_PERFECT_ITEMS name:"Battlestaff" && quantity:==105) || (name:"Bronze longsword" && quantity:==24) || (name:"Mithril longsword" && quantity:==10) || (name:"Adamant longsword" && quantity:==14) || (name:"Dragon plateskirt" && quantity:==10) || (name:"Coal" && quantity:==455) || (name:"Adamantite ore" && quantity:==157) || (name:"Dragon javelin heads" && quantity:==126) || (name:"Runite bolts (unf)" && quantity:==126) || (name:"Uncut ruby" && quantity:==87) || (name:"Uncut diamond" && quantity:==87) || (name:"Runite ore" && quantity:==63) || (name:"Pure essence" && quantity:==420) || (name:"Iron ore" && quantity:==133) || (name:"Gold ore" && quantity:==133) || (name:"Mithril ore" && quantity:==133) || (name:"Sapphire" && quantity:==59) || (name:"Emerald" && quantity:==59) || (name:"Ruby" && quantity:==59) || (name:"Raw monkfish" && quantity:==1050) || (name:"Steam rune" && quantity:==700) || (name:"Death rune" && quantity:==700) || (name:"Soul rune" && quantity:==1400) || (name:"Water rune" && quantity:==420) || (name:"Chaos rune" && quantity:==210
 
-AREA_UNHIDE(area:[2370,6338,0,2429,6397,0] && ENABLE_WHISPERER_PERFECT && WHISPERER_PERFECT_ITEMS)
-AREA_UNHIDE(area:[2629,6338,0,2685,6397,0] && ENABLE_WHISPERER_PERFECT && WHISPERER_PERFECT_ITEMS)
+AREA_UNHIDE(area:[2370,6338,0,2429,6397,0] && ENABLE_WHISPERER_PERFECT && ((WHISPERER_PERFECT_ITEMS)))
+AREA_UNHIDE(area:[2629,6338,0,2685,6397,0] && ENABLE_WHISPERER_PERFECT && ((WHISPERER_PERFECT_ITEMS)))
 
-apply (area:[2370,6338,0,2429,6397,0] && ENABLE_WHISPERER_PERFECT && WHISPERER_PERFECT_ITEMS) {sound=WHISPERER_PERFECT_SOUND;}
-apply (area:[2370,6338,0,2429,6397,0] && ENABLE_WHISPERER_PERFECT && WHISPERER_PERFECT_ITEMS) {sound=WHISPERER_PERFECT_SOUND;}
+apply (area:[2370,6338,0,2429,6397,0] && ENABLE_WHISPERER_PERFECT && ((WHISPERER_PERFECT_ITEMS))) {sound=WHISPERER_PERFECT_SOUND;}
+apply (area:[2370,6338,0,2429,6397,0] && ENABLE_WHISPERER_PERFECT && ((WHISPERER_PERFECT_ITEMS))) {sound=WHISPERER_PERFECT_SOUND;}
 
 /*@ define:input:boss_pvm
 label: SS Tier Uniques
@@ -6510,8 +6510,8 @@ group: The Whisperer
 
 #define WHISPERER_HIDE []
 
-rule (area:[2370,6338,0,2429,6397,0] && name:WHISPERER_HIDE && ENABLE_WHISPERER_PERFECT && WHISPERER_PERFECT_ITEMS) {hideOverlay = true;}
-rule (area:[2629,6338,0,2685,6397,0] && name:WHISPERER_HIDE && ENABLE_WHISPERER_PERFECT && WHISPERER_PERFECT_ITEMS) {hideOverlay = true;}
+rule (area:[2370,6338,0,2429,6397,0] && name:WHISPERER_HIDE && ENABLE_WHISPERER_PERFECT && ((WHISPERER_PERFECT_ITEMS))) {hideOverlay = true;}
+rule (area:[2629,6338,0,2685,6397,0] && name:WHISPERER_HIDE && ENABLE_WHISPERER_PERFECT && ((WHISPERER_PERFECT_ITEMS))) {hideOverlay = true;}
 
 rule (area:[2370,6338,0,2429,6397,0] && name:WHISPERER_HIDE) {hidden = true;}
 rule (area:[2629,6338,0,2685,6397,0] && name:WHISPERER_HIDE) {hidden = true;}
@@ -6869,17 +6869,6 @@ enum: ["Tanzanite fang","Toxic blowpipe*","Magic fang","Toxic staff*","*toxic tr
 #define ZULRAH_C_UNIQUES []
 
 rule (name:ZULRAH_C_UNIQUES) {UNIQUE_C_STYLE}
-
-/*@ define:input:boss_pvm
-label: Unique T1
-type: enumlist
-group: Zulrah
-enum: ["Tanzanite fang","Toxic blowpipe*","Magic fang","Toxic staff*","*toxic trident*","Serpentine visage","Serpentine helm*","Tanzanite mutagen","Tanzanite helm*","Magma mutagen","Magma helm*","Jar of swamp"]
-*/
-
-#define ZULRAH_T1_UNIQUES []
-
-rule (name:ZULRAH_T1_UNIQUES) {UNIQUE_T1_STYLE}
 
 /*@ define:input:boss_pvm
 label: Hide Items
@@ -8224,9 +8213,9 @@ type: number
 group: Shared Clue Uniques
 */
  
- #define PURPLE_SWEETS_SS_QUANTITY 1000
+#define PURPLE_SWEETS_SS_QUANTITY 1000
  
- rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_SS_QUANTITY) {UNIQUE_SS_STYLE}
+rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_SS_QUANTITY) {UNIQUE_SS_STYLE}
 
 /*@ define:input:clue_scroll_uniques
 label: Purple Sweets S
@@ -8234,9 +8223,9 @@ type: number
 group: Shared Clue Uniques
 */
  
- #define PURPLE_SWEETS_S_QUANTITY 100
+#define PURPLE_SWEETS_S_QUANTITY 100
  
- rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_S_QUANTITY) {UNIQUE_S_STYLE}
+rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_S_QUANTITY) {UNIQUE_S_STYLE}
 
 /*@ define:input:clue_scroll_uniques
 label: Purple Sweets A
@@ -8244,9 +8233,9 @@ type: number
 group: Shared Clue Uniques
 */
  
- #define PURPLE_SWEETS_A_QUANTITY 10
+#define PURPLE_SWEETS_A_QUANTITY 10
  
- rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_A_QUANTITY) {UNIQUE_A_STYLE}
+rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_A_QUANTITY) {UNIQUE_A_STYLE}
 
 /*@ define:input:clue_scroll_uniques
 label: Purple Sweets B
@@ -8254,9 +8243,9 @@ type: number
 group: Shared Clue Uniques
 */
  
- #define PURPLE_SWEETS_B_QUANTITY 1
+#define PURPLE_SWEETS_B_QUANTITY 1
  
- rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_B_QUANTITY) {UNIQUE_B_STYLE}
+rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_B_QUANTITY) {UNIQUE_B_STYLE}
 
 /*@ define:input:clue_scroll_uniques
 label: Purple Sweets C
@@ -8264,9 +8253,9 @@ type: number
 group: Shared Clue Uniques
 */
  
- #define PURPLE_SWEETS_C_QUANTITY 0
+#define PURPLE_SWEETS_C_QUANTITY 0
  
- rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_C_QUANTITY) {UNIQUE_C_STYLE}
+rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_C_QUANTITY) {UNIQUE_C_STYLE}
 
 /*@ define:module:mini_games
 name: Minigames
@@ -9685,12 +9674,12 @@ group: Sailing Miscellaneous
 rule(name:"Dragon nails" && quantity:>=SAILING_DRAGON_NAIL_B_QUANT) {UNIQUE_B_STYLE}
 
 /*@ define:input:misc_uniques
-label: Dragon Nails SS Tier
+label: Dragon Nails C Tier
 type: number
 group: Sailing Miscellaneous
 */
 
-#define SAILING_DRAGON_CANNONBALL_SS_QUANT 1
+#define SAILING_DRAGON_CANNONBALL_C_QUANT 1
 
 rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_C_QUANT) {UNIQUE_C_STYLE}
 
@@ -15523,7 +15512,7 @@ rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES && quantity:>=FOOD_AND_POTS_STOCKPILE
 rule (name:FOOD_AND_POTS_STOCKPILE_D_NAMES) {FOOD_AND_POTS_STOCKPILE_D_STYLE}
 rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES && quantity:>=FOOD_AND_POTS_STOCKPILE_E_D_QUANT) {FOOD_AND_POTS_STOCKPILE_D_STYLE}
 
-rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES) {FOOD_AND_POTS_STOCKPILE_E_STYLE}s
+rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES) {FOOD_AND_POTS_STOCKPILE_E_STYLE}
 
 /*@ define:input:food_and_pots_stockpile
 label: SS Tier Blighted Food and Pots
@@ -24905,7 +24894,7 @@ label: A Value
 type: number
 */
 
-#define FALLBACK_VALUE_SS 100000
+#define FALLBACK_VALUE_A 100000
 
 
 /*@ define:input:fallback
