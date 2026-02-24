@@ -8909,6 +8909,267 @@ enum: ["Barracuda paint","Shark paint","Inky paint","Angler's paint","Salvor's p
 
 rule (name:BOAT_PAINTS_C_UNIQUES) {UNIQUE_C_STYLE}
 
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Camdozaal
+enum: ["Barronite handle","Barronite guard","Barronite head","Barronite mace"]
+*/
+
+#define CAMDOZAAL_SS_UNIQUES []
+
+rule (name:CAMDOZAAL_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Camdozaal
+enum: ["Barronite handle","Barronite guard","Barronite head","Barronite mace"]
+*/
+
+#define CAMDOZAAL_S_UNIQUES []
+
+rule (name:CAMDOZAAL_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Camdozaal
+enum: ["Barronite handle","Barronite guard","Barronite head","Barronite mace"]
+*/
+
+#define CAMDOZAAL_A_UNIQUES []
+
+rule (name:CAMDOZAAL_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Camdozaal
+enum: ["Barronite handle","Barronite guard","Barronite head","Barronite mace"]
+*/
+
+#define CAMDOZAAL_B_UNIQUES ["Barronite handle","Barronite guard","Barronite head","Barronite mace"]
+
+rule (name:CAMDOZAAL_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Camdozaal
+enum: ["Barronite handle","Barronite guard","Barronite head","Barronite mace"]
+*/
+
+#define CAMDOZAAL_C_UNIQUES []
+
+rule (name:CAMDOZAAL_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Champions' Challenge
+enum: ["Imp champion scroll","Goblin champion scroll","Skeleton champion scroll","Zombie champion scroll","Giant champion scroll","Hobgoblin champion scroll","Ghoul champion scroll","Earth warrior champion scroll","Jogre champion scroll","Lesser demon champion scroll","Champion's cape"]
+*/
+
+#define CHAMPIONS_CHALLENGE_SS_UNIQUES ["Imp champion scroll","Goblin champion scroll","Skeleton champion scroll","Zombie champion scroll","Giant champion scroll","Hobgoblin champion scroll","Ghoul champion scroll","Earth warrior champion scroll","Jogre champion scroll","Lesser demon champion scroll","Champion's cape"]
+
+rule (name:CHAMPIONS_CHALLENGE_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Champions' Challenge
+enum: ["Imp champion scroll","Goblin champion scroll","Skeleton champion scroll","Zombie champion scroll","Giant champion scroll","Hobgoblin champion scroll","Ghoul champion scroll","Earth warrior champion scroll","Jogre champion scroll","Lesser demon champion scroll","Champion's cape"]
+*/
+
+#define CHAMPIONS_CHALLENGE_S_UNIQUES []
+
+rule (name:CHAMPIONS_CHALLENGE_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Champions' Challenge
+enum: ["Imp champion scroll","Goblin champion scroll","Skeleton champion scroll","Zombie champion scroll","Giant champion scroll","Hobgoblin champion scroll","Ghoul champion scroll","Earth warrior champion scroll","Jogre champion scroll","Lesser demon champion scroll","Champion's cape"]
+*/
+
+#define CHAMPIONS_CHALLENGE_A_UNIQUES []
+
+rule (name:CHAMPIONS_CHALLENGE_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Champions' Challenge
+enum: ["Imp champion scroll","Goblin champion scroll","Skeleton champion scroll","Zombie champion scroll","Giant champion scroll","Hobgoblin champion scroll","Ghoul champion scroll","Earth warrior champion scroll","Jogre champion scroll","Lesser demon champion scroll","Champion's cape"]
+*/
+
+#define CHAMPIONS_CHALLENGE_B_UNIQUES []
+
+rule (name:CHAMPIONS_CHALLENGE_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Champions' Challenge
+enum: ["Imp champion scroll","Goblin champion scroll","Skeleton champion scroll","Zombie champion scroll","Giant champion scroll","Hobgoblin champion scroll","Ghoul champion scroll","Earth warrior champion scroll","Jogre champion scroll","Lesser demon champion scroll","Champion's cape"]
+*/
+
+#define CHAMPIONS_CHALLENGE_C_UNIQUES []
+
+rule (name:CHAMPIONS_CHALLENGE_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Creature Creation
+enum: ["Plain satchel","Gold satchel","Black satchel","Red satchel","Green satchel","Rune satchel","Tea flask"]
+*/
+
+#define CREATURE_CREATION_SS_UNIQUES []
+
+rule (name:CREATURE_CREATION_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Creature Creation
+enum: ["Plain satchel","Gold satchel","Black satchel","Red satchel","Green satchel","Rune satchel","Tea flask"]
+*/
+
+#define CREATURE_CREATION_S_UNIQUES []
+
+rule (name:CREATURE_CREATION_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Creature Creation
+enum: ["Plain satchel","Gold satchel","Black satchel","Red satchel","Green satchel","Rune satchel","Tea flask"]
+*/
+
+#define CREATURE_CREATION_A_UNIQUES []
+
+rule (name:CREATURE_CREATION_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Creature Creation
+enum: ["Plain satchel","Gold satchel","Black satchel","Red satchel","Green satchel","Rune satchel","Tea flask"]
+*/
+
+#define CREATURE_CREATION_B_UNIQUES []
+
+rule (name:CREATURE_CREATION_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Creature Creation
+enum: ["Plain satchel","Gold satchel","Black satchel","Red satchel","Green satchel","Rune satchel","Tea flask"]
+*/
+
+#define CREATURE_CREATION_C_UNIQUES ["Plain satchel","Gold satchel","Black satchel","Red satchel","Green satchel","Rune satchel","Tea flask"]
+
+rule (name:CREATURE_CREATION_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: Hide Items
+type: stringlist
+group: Creature Creation
+*/
+
+#define CREATURE_CREATION_HIDE []
+
+rule (area:[3007,4351,0,3072,4417,0] && name:CREATURE_CREATION_HIDE) {hidden = true;}
+
+/*@ define:input:misc_uniques
+label: SS Tier Uniques
+type: enumlist
+group: Cyclopes
+enum: ["Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender"]
+*/
+
+#define CYCLOPES_SS_UNIQUES []
+
+rule (name:CYCLOPES_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: S Tier Uniques
+type: enumlist
+group: Cyclopes
+enum: ["Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender"]
+*/
+
+#define CYCLOPES_S_UNIQUES []
+
+rule (name:CYCLOPES_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: A Tier Uniques
+type: enumlist
+group: Cyclopes
+enum: ["Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender"]
+*/
+
+#define CYCLOPES_A_UNIQUES ["Rune defender","Dragon defender"]
+
+rule (name:CYCLOPES_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: B Tier Uniques
+type: enumlist
+group: Cyclopes
+enum: ["Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender"]
+*/
+
+#define CYCLOPES_B_UNIQUES ["Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender"]
+
+rule (name:CYCLOPES_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: C Tier Uniques
+type: enumlist
+group: Cyclopes
+enum: ["Bronze defender","Iron defender","Steel defender","Black defender","Mithril defender","Adamant defender","Rune defender","Dragon defender"]
+*/
+
+#define CYCLOPES_C_UNIQUES []
+
+rule (name:CYCLOPES_C_UNIQUES) {UNIQUE_C_STYLE}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
