@@ -16,8 +16,6 @@ description:
 
   Things to Finish
 
-  - Minigames
-
   - Misc Uniques
 */
 
@@ -8269,6 +8267,540 @@ group: Shared Clue Uniques
  #define PURPLE_SWEETS_C_QUANTITY 0
  
  rule (name:"Purple sweets" && quantity:>=PURPLE_SWEETS_C_QUANTITY) {UNIQUE_C_STYLE}
+
+/*@ define:module:mini_games
+name: Minigames
+subtitle: Set Unique Teirs and Hide Drops
+*/
+
+/*@ define:input:mini_games
+label: SS Tier Uniques
+type: enumlist
+group: Fishing Trawler
+enum: ["Angler hat","Angler top","Angler waders","Angler boots"]
+*/
+
+#define FISHING_TRAWLER_SS_UNIQUES []
+
+rule (name:FISHING_TRAWLER_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:mini_games
+label: S Tier Uniques
+type: enumlist
+group: Fishing Trawler
+enum: ["Angler hat","Angler top","Angler waders","Angler boots"]
+*/
+
+#define FISHING_TRAWLER_S_UNIQUES []
+
+rule (name:FISHING_TRAWLER_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:mini_games
+label: A Tier Uniques
+type: enumlist
+group: Fishing Trawler
+enum: ["Angler hat","Angler top","Angler waders","Angler boots"]
+*/
+
+#define FISHING_TRAWLER_A_UNIQUES []
+
+rule (name:FISHING_TRAWLER_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:mini_games
+label: B Tier Uniques
+type: enumlist
+group: Fishing Trawler
+enum: ["Angler hat","Angler top","Angler waders","Angler boots"]
+*/
+
+#define FISHING_TRAWLER_B_UNIQUES ["Angler hat","Angler top","Angler waders","Angler boots"]
+
+rule (name:FISHING_TRAWLER_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:mini_games
+label: C Tier Uniques
+type: enumlist
+group: Fishing Trawler
+enum: ["Angler hat","Angler top","Angler waders","Angler boots"]
+*/
+
+#define FISHING_TRAWLER_C_UNIQUES []
+
+rule (name:FISHING_TRAWLER_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:mini_games
+label: SS Tier Uniques
+type: enumlist
+group: Guardians of the Rift
+enum: ["Catalytic talisman","Elemental talisman","Abyssal needle","Abyssal lantern","Abyssal red dye","Abyssal green dye","Abyssal blue dye","Intricate pouch","Tarnished locket","Lost bag"]
+*/
+
+#define GOTR_SS_UNIQUES []
+
+rule (name:GOTR_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:mini_games
+label: S Tier Uniques
+type: enumlist
+group: Guardians of the Rift
+enum: ["Catalytic talisman","Elemental talisman","Abyssal needle","Abyssal lantern","Abyssal red dye","Abyssal green dye","Abyssal blue dye","Intricate pouch","Tarnished locket","Lost bag"]
+*/
+
+#define GOTR_S_UNIQUES []
+
+rule (name:GOTR_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:mini_games
+label: A Tier Uniques
+type: enumlist
+group: Guardians of the Rift
+enum: ["Catalytic talisman","Elemental talisman","Abyssal needle","Abyssal lantern","Abyssal red dye","Abyssal green dye","Abyssal blue dye","Intricate pouch","Tarnished locket","Lost bag"]
+*/
+
+#define GOTR_A_UNIQUES ["Abyssal needle","Abyssal lantern","Abyssal red dye","Abyssal green dye","Abyssal blue dye"]
+
+rule (name:GOTR_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:mini_games
+label: B Tier Uniques
+type: enumlist
+group: Guardians of the Rift
+enum: ["Catalytic talisman","Elemental talisman","Abyssal needle","Abyssal lantern","Abyssal red dye","Abyssal green dye","Abyssal blue dye","Intricate pouch","Tarnished locket","Lost bag"]
+*/
+
+#define GOTR_B_UNIQUES ["Intricate pouch","Tarnished locket","Lost bag"]
+
+rule (name:GOTR_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:mini_games
+label: C Tier Uniques
+type: enumlist
+group: Guardians of the Rift
+enum: ["Catalytic talisman","Elemental talisman","Abyssal needle","Abyssal lantern","Abyssal red dye","Abyssal green dye","Abyssal blue dye","Intricate pouch","Tarnished locket","Lost bag"]
+*/
+
+#define GOTR_C_UNIQUES ["Catalytic talisman","Elemental talisman"]
+
+rule (name:GOTR_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:mini_games
+label: Hide Items
+type: stringlist
+group: Guardians of the Rift
+*/
+
+#define GOTR_HIDE []
+
+rule (area:[2368,5618,0,2497,5753,0] && name:GOTR_HIDE) {hidden = true;}
+rule (area:[3555,9441,0,3667,9536,0] && name:GOTR_HIDE) {hidden = true;}
+
+/*@ define:input:mini_games
+label: SS Tier Uniques
+type: enumlist
+group: Hallowed Sepulchre
+enum: ["Ring of endurance*","Strange old lockpick","Mysterious page"]
+*/
+
+#define HALLOWED_SEPULCHRE_SS_UNIQUES []
+
+rule (name:HALLOWED_SEPULCHRE_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:mini_games
+label: S Tier Uniques
+type: enumlist
+group: Hallowed Sepulchre
+enum: ["Ring of endurance*","Strange old lockpick","Mysterious page"]
+*/
+
+#define HALLOWED_SEPULCHRE_S_UNIQUES ["Ring of endurance*"]
+
+rule (name:HALLOWED_SEPULCHRE_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:mini_games
+label: A Tier Uniques
+type: enumlist
+group: Hallowed Sepulchre
+enum: ["Ring of endurance*","Strange old lockpick","Mysterious page"]
+*/
+
+#define HALLOWED_SEPULCHRE_A_UNIQUES []
+
+rule (name:HALLOWED_SEPULCHRE_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:mini_games
+label: B Tier Uniques
+type: enumlist
+group: Hallowed Sepulchre
+enum: ["Ring of endurance*","Strange old lockpick","Mysterious page"]
+*/
+
+#define HALLOWED_SEPULCHRE_B_UNIQUES ["Strange old lockpick","Mysterious page"]
+
+rule (name:HALLOWED_SEPULCHRE_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:mini_games
+label: C Tier Uniques
+type: enumlist
+group: Hallowed Sepulchre
+enum: ["Ring of endurance*","Strange old lockpick","Mysterious page"]
+*/
+
+#define HALLOWED_SEPULCHRE_C_UNIQUES []
+
+rule (name:HALLOWED_SEPULCHRE_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:mini_games
+label: Hide Items
+type: stringlist
+group: Hallowed Sepulchre
+*/
+
+#define HALLOWED_SEPULCHRE_HIDE ["White lily","Monk's robe top","Monk's robe","Holy symbol"]
+
+rule (area:[2224,5798,0,2582,6049,3] && name:HALLOWED_SEPULCHRE_HIDE) {hidden = true;}
+
+/*@ define:input:mini_games
+label: Supply Drop
+type: enumlist
+group: Hallowed Sepulchre
+enum: ["Prayer potion(*)","Monkfish","Sanfew serum(*)"]
+*/
+
+#define HALLOWED_SEPULCHRE_SUPPLY ["Monkfish"]
+
+rule (area:[2224,5798,0,2582,6049,3] && name:HALLOWED_SEPULCHRE_SUPPLY) {SUPPLY_DROP_STYLE}
+
+/*@ define:input:mini_games
+label: SS Tier Uniques
+type: enumlist
+group: Shades of Mort'ton
+enum: ["Amulet of the damned*","Flamtaer bag","Fine cloth","Bronze locks","Steel locks","Black locks","Silver locks","Gold locks","Runescroll of swampbark","Runescroll of bloodbark","Zealot's helm","Zealot's robe top","Zealot's robe bottom","Zealot's boots"]
+*/
+
+#define SHADES_OF_MORTON_SS_UNIQUES []
+
+rule (name:SHADES_OF_MORTON_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:mini_games
+label: S Tier Uniques
+type: enumlist
+group: Shades of Mort'ton
+enum: ["Amulet of the damned*","Flamtaer bag","Fine cloth","Bronze locks","Steel locks","Black locks","Silver locks","Gold locks","Runescroll of swampbark","Runescroll of bloodbark","Zealot's helm","Zealot's robe top","Zealot's robe bottom","Zealot's boots"]
+*/
+
+#define SHADES_OF_MORTON_S_UNIQUES []
+
+rule (name:SHADES_OF_MORTON_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:mini_games
+label: A Tier Uniques
+type: enumlist
+group: Shades of Mort'ton
+enum: ["Amulet of the damned*","Flamtaer bag","Fine cloth","Bronze locks","Steel locks","Black locks","Silver locks","Gold locks","Runescroll of swampbark","Runescroll of bloodbark","Zealot's helm","Zealot's robe top","Zealot's robe bottom","Zealot's boots"]
+*/
+
+#define SHADES_OF_MORTON_A_UNIQUES ["Zealot's helm","Zealot's robe top","Zealot's robe bottom","Zealot's boots"]
+
+rule (name:SHADES_OF_MORTON_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:mini_games
+label: B Tier Uniques
+type: enumlist
+group: Shades of Mort'ton
+enum: ["Amulet of the damned*","Flamtaer bag","Fine cloth","Bronze locks","Steel locks","Black locks","Silver locks","Gold locks","Runescroll of swampbark","Runescroll of bloodbark","Zealot's helm","Zealot's robe top","Zealot's robe bottom","Zealot's boots"]
+*/
+
+#define SHADES_OF_MORTON_B_UNIQUES ["Runescroll of swampbark","Runescroll of bloodbark","Silver locks","Gold locks","Flamtaer bag"]
+
+rule (name:SHADES_OF_MORTON_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:mini_games
+label: C Tier Uniques
+type: enumlist
+group: Shades of Mort'ton
+enum: ["Amulet of the damned*","Flamtaer bag","Fine cloth","Bronze locks","Steel locks","Black locks","Silver locks","Gold locks","Runescroll of swampbark","Runescroll of bloodbark","Zealot's helm","Zealot's robe top","Zealot's robe bottom","Zealot's boots"]
+*/
+
+#define SHADES_OF_MORTON_C_UNIQUES ["Fine cloth","Bronze locks","Steel locks","Black locks","Amulet of the damned*"]
+
+rule (name:SHADES_OF_MORTON_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:mini_games
+label: Hide Items
+type: stringlist
+group: Shades of Mort'ton
+*/
+
+#define SHADES_OF_MORTON_HIDE []
+
+rule (area:[3456,9662,0,3521,9729,0] && name:SHADES_OF_MORTON_HIDE) {hidden = true;}
+
+/*@ define:input:mini_games
+label: Enable Key Colors
+type: boolean
+group: Shades of Mort'ton
+*/
+
+#define ENABLE_SHADES_COLORS true
+
+/*@ define:input:mini_games
+label: Bronze Key Style
+type: style
+group: Shades of Mort'ton
+exampleItem: Bronze key red
+*/
+#define KEY_SHADES_BRONZE \
+	color = "#ffcd7f32"; \
+	borderColor = "#ffcd7f32"; \
+	backgroundColor = "#ff703818"; \
+	lootbeamColor = "#ffcd7f32"; \
+	showLootbeam = true; 
+
+apply (name:"Bronze key *") {KEY_SHADES_BRONZE}
+
+/*@ define:input:mini_games
+label: Steel KeyStyle
+type: style
+group: Shades of Mort'ton
+exampleItem: Steel key brown
+*/
+#define KEY_SHADES_STEEL \
+	color = "#ffb5c0c9"; \
+	borderColor = "#ffb5c0c9"; \
+	backgroundColor = "#ff636363"; \
+	lootbeamColor = "#ffb5c0c9"; \
+	showLootbeam = true;
+	
+apply (name:"Steel key *") {KEY_SHADES_STEEL}
+ 
+/*@ define:input:mini_games
+label: Black Key Style
+type: style
+group: Shades of Mort'ton
+exampleItem: Black key crimson
+*/
+#define KEY_SHADES_BLACK \
+	color = "#ff000000"; \
+	borderColor = "#ff000000"; \
+	backgroundColor = "#ff3b3b3b"; \
+	lootbeamColor = "#ff000000"; \
+	showLootbeam = true; 
+	
+apply (name:"Black key *") {KEY_SHADES_BLACK}
+
+/*@ define:input:mini_games
+label: Silver Key Style
+type: style
+group: Shades of Mort'ton
+exampleItem: Silver key black
+*/
+#define KEY_SHADES_SILVER \
+	color = "#ffffffff"; \
+	borderColor = "#ffffffff"; \
+	backgroundColor = "#ffbcbcbc"; \
+	lootbeamColor = "#ffbcbcbc"; \
+	showLootbeam = true; 
+	
+apply (name:"Silver key *") {KEY_SHADES_SILVER}
+
+/*@ define:input:mini_games
+label: Gold Key Style
+type: style
+group: Shades of Mort'ton
+exampleItem: Gold key purple
+*/
+#define KEY_SHADES_GOLD \
+	color = "#ffffd700"; \
+	borderColor = "#ffffd700"; \
+	backgroundColor = "#ff8c8600"; \
+	lootbeamColor = "#ffffd700"; \
+	showLootbeam = true; 
+	
+apply (name:"Gold key *") {KEY_SHADES_GOLD}
+
+/*@ define:input:mini_games
+label: Key Red Style
+type: style
+group: Shades of Mort'ton
+exampleItem: Bronze key red
+*/
+#define KEY_SHADES_RED\
+	color = "#ff78180D"; \
+	borderColor = "#ff78180D"; \
+	textAccent = 3;
+
+rule (name:"* key red" && ENABLE_SHADES_COLORS) {KEY_SHADES_RED}
+
+/*@ define:input:mini_games
+label: Key Brown Style
+type: style
+group: Shades of Mort'ton
+exampleItem: Steel key brown
+*/
+#define KEY_SHADES_BROWN \
+	color = "#ff6D510D"; \
+	borderColor = "#ff6D510D"; \
+	textAccent = 3;
+
+rule (name:"* key brown" && ENABLE_SHADES_COLORS) {KEY_SHADES_BROWN}
+
+/*@ define:input:mini_games
+label: Key Crimson Style
+type: style
+group: Shades of Mort'ton
+exampleItem: Black key brown
+*/
+#define KEY_SHADES_CRIMSON \
+	color = "#ffff0000"; \
+	borderColor = "#ffff0000"; \
+	textAccent = 3;
+
+rule (name:"* key crimson" && ENABLE_SHADES_COLORS) {KEY_SHADES_CRIMSON}
+
+/*@ define:input:mini_games
+label: Key Black Style
+type: style
+group: Shades of Mort'ton
+exampleItem: Silver key black
+*/
+#define KEY_SHADES_BLACK2 \
+	color = "#ff000000"; \
+	borderColor = "#ff000000"; \
+	textAccent = 3;
+
+rule (name:"* key black" && ENABLE_SHADES_COLORS) {KEY_SHADES_BLACK2}
+
+/*@ define:input:mini_games
+label: Key Purple Style
+type: style
+group: Shades of Mort'ton
+exampleItem: Gold key purple
+*/
+#define KEY_SHADES_PURPLE \
+	color = "#ff4C095B"; \
+	borderColor = "#ff4C095B"; \
+	textAccent = 3;
+
+rule (name:"* key purple" && ENABLE_SHADES_COLORS) {KEY_SHADES_PURPLE}
+rule (name:["Bronze key *", "Steel key *", "Black key *", "Silver key *", "Gold key *"]) {}
+
+/*@ define:input:mini_games
+label: SS Tier Uniques
+type: enumlist
+group: Temple Trekking
+enum: ["Lumberjack hat","Lumberjack top","Lumberjack legs","Lumberjack boots"]
+*/
+
+#define TEMPLE_TREKKING_SS_UNIQUES []
+
+rule (name:TEMPLE_TREKKING_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:mini_games
+label: S Tier Uniques
+type: enumlist
+group: Temple Trekking
+enum: ["Lumberjack hat","Lumberjack top","Lumberjack legs","Lumberjack boots"]
+*/
+
+#define TEMPLE_TREKKING_S_UNIQUES []
+
+rule (name:TEMPLE_TREKKING_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:mini_games
+label: A Tier Uniques
+type: enumlist
+group: Temple Trekking
+enum: ["Lumberjack hat","Lumberjack top","Lumberjack legs","Lumberjack boots"]
+*/
+
+#define TEMPLE_TREKKING_A_UNIQUES []
+
+rule (name:TEMPLE_TREKKING_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:mini_games
+label: B Tier Uniques
+type: enumlist
+group: Temple Trekking
+enum: ["Lumberjack hat","Lumberjack top","Lumberjack legs","Lumberjack boots"]
+*/
+
+#define TEMPLE_TREKKING_B_UNIQUES ["Lumberjack hat","Lumberjack top","Lumberjack legs","Lumberjack boots"]
+
+rule (name:TEMPLE_TREKKING_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:mini_games
+label: C Tier Uniques
+type: enumlist
+group: Temple Trekking
+enum: ["Lumberjack hat","Lumberjack top","Lumberjack legs","Lumberjack boots"]
+*/
+
+#define TEMPLE_TREKKING_C_UNIQUES []
+
+rule (name:TEMPLE_TREKKING_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:mini_games
+label: SS Tier Uniques
+type: enumlist
+group: Vale Fletching
+enum: ["Fletching knife","Bow string spool", "Ent Branch", "Greenman mask"]
+*/
+
+#define VALE_FLETCHING_SS_UNIQUES []
+
+rule (name:VALE_FLETCHING_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:mini_games
+label: S Tier Uniques
+type: enumlist
+group: Vale Fletching
+enum: ["Fletching knife","Bow string spool", "Ent Branch", "Greenman mask"]
+*/
+
+#define VALE_FLETCHING_S_UNIQUES []
+
+rule (name:VALE_FLETCHING_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:mini_games
+label: A Tier Uniques
+type: enumlist
+group: Vale Fletching
+enum: ["Fletching knife","Bow string spool", "Ent Branch", "Greenman mask"]
+*/
+
+#define VALE_FLETCHING_A_UNIQUES []
+
+rule (name:VALE_FLETCHING_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:mini_games
+label: B Tier Uniques
+type: enumlist
+group: Vale Fletching
+enum: ["Fletching knife","Bow string spool", "Ent Branch", "Greenman mask"]
+*/
+
+#define VALE_FLETCHING_B_UNIQUES ["Fletching knife", "Greenman mask", "Bow string spool"]
+
+rule (name:VALE_FLETCHING_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:mini_games
+label: C Tier Uniques
+type: enumlist
+group: Vale Fletching
+enum: ["Fletching knife","Bow string spool", "Ent Branch", "Greenman mask"]
+*/
+
+#define VALE_FLETCHING_C_UNIQUES ["Ent Branch"]
+
+rule (name:VALE_FLETCHING_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:module:misc_uniques
+name: Miscellaneous Uniques
+subtitle: Set Unique Tiers, Hide Drops, and Highlight Supplies
+*/
+
+
+
 
 
 
