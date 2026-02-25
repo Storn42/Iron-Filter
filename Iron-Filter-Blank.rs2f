@@ -16619,7 +16619,7 @@ enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Stee
 group: B Tier
 */
 
-#define ORES_AND_BARS_B_NAMES []
+#define ORES_AND_BARS_B_NAMES ["Runite bar","Cupronickel bar","Runite ore","Nickel ore"]
 
 /*@ define:input:ores_and_bars
 label: Show Unnoted
@@ -16688,7 +16688,7 @@ enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Stee
 group: C Tier
 */
 
-#define ORES_AND_BARS_C_NAMES ["Runite bar","Cupronickel bar","Runite ore","Nickel ore"]
+#define ORES_AND_BARS_C_NAMES ["Adamantite ore","Adamant bar"]
 
 /*@ define:input:ores_and_bars
 label: Show Unnoted
@@ -16765,7 +16765,7 @@ enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Stee
 group: D Tier
 */
 
-#define ORES_AND_BARS_D_NAMES ["Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamant bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore"]
+#define ORES_AND_BARS_D_NAMES ["Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Lead ore","Gold ore","Mithril ore","Lovakite ore"]
 
 /*@ define:input:ores_and_bars
 label: Show Unnoted
