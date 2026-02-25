@@ -88,7 +88,7 @@ type: stringlist
 group: User
 */
 
-#define HIDE_USER []
+#define HIDE_USER ["Leather gloves", "Leather boots", "Coif", "Leather body", "Leather chaps", "Leather cowl", "Leather vambraces", "Studded body", "Studded chaps","Frog-leather body","Frog-leather chaps", "Frog-leather boots","Snakeskin bandana","Snakeskin body","Snakeskin boots","Snakeskin chaps","Snakeskin vambraces","Shortbow","Oak shortbow","Willow shortbow","Maple shortbow","Yew shortbow","Magic shortbow","Longbow","Oak longbow","Willow longbow","Maple longbow","Yew longbow","Magic longbow","Dorgeshuun crossbow","Staff of air", "Staff of water", "Staff of earth", "Staff of fire", "magic staff","Staff", "Zamorak monk top", "Zamorak monk bottom","Blue wizard hat","Blue wizard robe","Blue skirt","Wizard hat","Black robe","Black skirt","Xerician hat","Xerician top","Xerician robe","Cake tin", "Pie dish", "Pot of flour", "Jug of water", "Bucket of water", "Bowl of water", "Bucket of milk", "Pineapple", "Raw shrimps", "Chopped garlic","Big fishing net", "Small fishing net", "Lobster pot", "Fishing rod", "Fly fishing rod", "Harpoon","Air talisman", "Mind talisman", "Water talisman", "Earth talisman", "Fire talisman", "Body talisman", "Cosmic talisman", "Chaos talisman", "Nature talisman", "Law talisman", "Wrath talisman","Bird snare", "Teasing stick", "Butterfly net", "Noose wand", "Rabbit snare","burnt *", "Ruined chompy", "Snake over-cooked", "Spider on shaft (burnt)","Bread", "Beer", "Asgarnian ale", "Cup of tea", "Beer tankard", "Keg of beer","Vial", "Pot", "Jug", "Bucket", "Bowl", "Barrel", "Beer glass", "Tankard","Hammer","Chisel","Rope","knife","Pestle and mortar","saw","shears","tinderbox","Gardening trowel","Rake","Secateurs","Seed dibber","Spade","Trowel","Watering can","Seaweed", "Waterskin*", "Doogle leaves", "Papyrus", "Broken glass", "Lit candle", "Candle", "King worm", "Tile", "Stone ball", "Silk", "Fingernails", "Rusty sword", "Red dye"]
 
 apply (name:HIDE_USER) {hidden=true;}
 
@@ -98,7 +98,7 @@ type: stringlist
 group: User
 */
 
-#define HIDE_USER_UNNOTED []
+#define HIDE_USER_UNNOTED ["Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide"]
 
 apply (name:HIDE_USER_UNNOTED && stackable:false)  {hidden=true;}
 
@@ -166,7 +166,7 @@ label: Hide Small Salvage
 type: stringlist
 group: Sailing
 */
-#define HIDE_SMALL_SALVAGE []
+#define HIDE_SMALL_SALVAGE ["Bronze bar", "Logs", "Plank", "Oak logs", "Iron bar", "Oak plank", "Steel bar", "Bones"]
 
 apply (area:[3838,6432,0,3896,6465,3] && name:HIDE_SMALL_SALVAGE) {hidden=true;}
 
@@ -176,7 +176,7 @@ label: Hide Fishy Salvage
 type: stringlist
 group: Sailing
 */
-#define HIDE_FISHY_SALVAGE []
+#define HIDE_FISHY_SALVAGE ["Oak logs", "Oak plank", "Logs", "Iron bar", "Iron nails", "Steel nails", "Plank", "Steel bar", "Raw lobster", "Raw mackerel", "Raw swordfish", "Fishing rod", "Harpoon", "Lobster pot", "Seaweed"]
 
 apply (area:[3838,6432,0,3896,6465,3] && name:HIDE_FISHY_SALVAGE) {hidden=true;}
 
@@ -186,7 +186,7 @@ label: Hide Barracuda Salvage
 type: stringlist
 group: Sailing
 */
-#define HIDE_BARRACUDA_SALVAGE []
+#define HIDE_BARRACUDA_SALVAGE ["Oak logs", "Teak logs", "Rope", "Oak plank", "Copper ore", "Teak plank", "Lead ore", "Raw swordfish", "Raw shark", "Rum", "Banana"]
 
 apply (area:[3838,6432,0,3896,6465,3] && name:HIDE_BARRACUDA_SALVAGE) {hidden=true;}
 
@@ -196,7 +196,7 @@ label: Hide Large Salvage
 type: stringlist
 group: Sailing
 */
-#define HIDE_LARGE_SALVAGE []
+#define HIDE_LARGE_SALVAGE ["Teak logs", "Oak plank", "Gold ring", "Sapphire ring", "Emerald ring", "Diamond ring", "Oyster pearl", "Oyster pearls", "Casket", "Giant seaweed"]
 
 apply (area:[3838,6432,0,3896,6465,3] && name:HIDE_LARGE_SALVAGE) {hidden=true;}
 
@@ -206,7 +206,7 @@ label: Hide Plundered Salvage
 type: stringlist
 group: Sailing
 */
-#define HIDE_PLUNDERED_SALVAGE []
+#define HIDE_PLUNDERED_SALVAGE ["Rum", "Mithril scimitar", "Gold ring", "Oyster pearls", "Sapphire ring", "Emerald bracelet", "Ruby bracelet", "Emerald ring", "Casket", "Diamond bracelet", "Diamond ring"]
 
 apply (area:[3838,6432,0,3896,6465,3] && name:HIDE_PLUNDERED_SALVAGE) {hidden=true;}
 
@@ -216,7 +216,7 @@ label: Hide Martial Salvage
 type: stringlist
 group: Sailing
 */
-#define HIDE_MARTIAL_SALVAGE []
+#define HIDE_MARTIAL_SALVAGE ["Mithril longsword", "Adamant longsword", "Mahogany logs", "Amulet of power"]
 
 apply (area:[3838,6432,0,3896,6465,3] && name:HIDE_MARTIAL_SALVAGE) {hidden=true;}
 
@@ -226,7 +226,7 @@ label: Hide Fremennik Salvage
 type: stringlist
 group: Sailing
 */
-#define HIDE_FREMENNIK_SALVAGE []
+#define HIDE_FREMENNIK_SALVAGE ["Raw salmon", "Raw tuna", "Raw lobster", "Raw monkfish", "Mithril ore", "Arctic pine logs", "Mahogany plank", "Ensouled troll head"]
 
 apply (area:[3838,6432,0,3896,6465,3] && name:HIDE_FREMENNIK_SALVAGE) {hidden=true;}
 
@@ -236,11 +236,9 @@ label: Hide Opulent Salvage
 type: stringlist
 group: Sailing
 */
-#define HIDE_OPULENT_SALVAGE []
+#define HIDE_OPULENT_SALVAGE ["Belladonna seed", "Poison ivy seed", "Cactus seed", "Potato cactus seed", "Uncut opal", "Uncut jade", "Uncut red topaz", "Silver ore", "Silver bar", "Tiara", "Jug of wine", "Spice", "Grey wolf fur", "Silk", "Nature talisman", "Rune javelin"]
 
 apply (area:[3838,6432,0,3896,6465,3] && name:HIDE_OPULENT_SALVAGE) {hidden=true;}
-
-apply (name:HIDE_MISC) {hidden=true;}
 
 #define HIDE_LIST name:HIDE_USER
 
@@ -263,7 +261,7 @@ type: stringlist
 group: My Food and Potoins
 */
 
-#define MYFOOD_NAMES [] 
+#define MYFOOD_NAMES ["Manta ray", "Dark crab", "Anglerfish", "Sea turtle", "Shark", "Cooked karambwan"] 
 
 /*@ define:input:food_and_pots
 label: Potions
@@ -271,7 +269,7 @@ type: stringlist
 group: My Food and Potoins
 */
 
-#define MYPOTS_NAMES []
+#define MYPOTS_NAMES ["Saradomin brew*", "Super restore*", "Ranging potion*", "Super combat potion*", "Prayer potion*", "Extended anti-venom+*", "Superantipoison*", "Stamina potion*", "Extended super antifire*", "Prayer regeneration*", "Goading potion*"]
 
 /*@ define:input:food_and_pots
 label: Food Style
@@ -573,11 +571,11 @@ group: Special Drops
 #define UNQIQUE_SPECIAL_C_NAMES []
 
 #define SPECIAL_UNIQUE_CHECK(_enabled, _area, _name) \
-	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_SS_NAMES) {UNIQUE_SS_STYLE} \
-	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_S_NAMES) {UNIQUE_S_STYLE} \
-	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_A_NAMES) {UNIQUE_A_STYLE} \
-	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_B_NAMES) {UNIQUE_B_STYLE} \
-	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_C_NAMES) {UNIQUE_C_STYLE}
+	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_SS_NAMES && ownership:1) {UNIQUE_SS_STYLE} \
+	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_S_NAMES && ownership:1) {UNIQUE_S_STYLE} \
+	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_A_NAMES && ownership:1) {UNIQUE_A_STYLE} \
+	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_B_NAMES && ownership:1) {UNIQUE_B_STYLE} \
+	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_C_NAMES && ownership:1) {UNIQUE_C_STYLE}
 
 /*@ define:module:slayer_pvm
 name: Monsters
@@ -693,7 +691,7 @@ label: Wilderness Slayer Cave - Hide Items
 type: stringlist
 group: Abyssal Demons
 */
-#define ABBYDEMONS_WILDERNESS_HIDE []
+#define ABBYDEMONS_WILDERNESS_HIDE ["Black sword", "Steel battleaxe", "Black axe", "Mithril kiteshield", "Lobster", "Cosmic talisman", "Chaos talisman", "Defence potion(3)", "Grimy guam leaf", "Grimy marrentill", "Grimy tarromin", "Grimy harralander", "Uncut sapphire", "Uncut emerald", "Uncut ruby", "Adamantite bar", "Pure essence", "Ensouled abyssal head", "Blighted teleport spell sack", "Blighted vengeance sack", "Blighted entangle sack", "Air rune"]
 
 rule (area:[3331,10152,0,3352,10174,0] && name:ABBYDEMONS_WILDERNESS_HIDE) {hidden = true;}
 
@@ -715,7 +713,7 @@ enum: ["Lobster","Blighted anglerfish","Blighted manta ray","Blighted karambwan"
 group: Abyssal Demons
 */
 
-#define ABBYDEMONS_WILDERNESS_SUPPLY []
+#define ABBYDEMONS_WILDERNESS_SUPPLY ["Blighted super restore(*)"]
 
 SUPPLY_DROP_RULESET([3331,10152,0,3352,10174,0], ABBYDEMONS_WILDERNESS_SUPPLY)
 
@@ -724,7 +722,7 @@ label: Catacombs of Kourend - Hide Items
 type: stringlist
 group: Ankou
 */
-#define ANKOU_CATACOMBS_HIDE []
+#define ANKOU_CATACOMBS_HIDE ["Weapon poison", "Black knife", "Black robe", "Fried mushrooms", "Bass"]
 
 rule (area:[1633,9986,0,1653,10003,0] && name:ANKOU_CATACOMBS_HIDE) {hidden = true;}
 
@@ -753,7 +751,7 @@ label: Deepfin Mine - Hide Items
 type: stringlist
 group: Ankou
 */
-#define ANKOU_DEEPFIN_HIDE []
+#define ANKOU_DEEPFIN_HIDE ["Weapon poison", "Black knife", "Black robe", "Fried mushrooms", "Bass"]
 
 rule (area:[2040,9165,0,2079,9189,0] && name:ANKOU_DEEPFIN_HIDE) {hidden = true;}
 
@@ -782,7 +780,7 @@ label: Stronghold of Security - Hide Items
 type: stringlist
 group: Ankou
 */
-#define ANKOU_SECURITY_HIDE []
+#define ANKOU_SECURITY_HIDE ["Weapon poison", "Black knife", "Black robe", "Fried mushrooms", "Bass"]
 
 rule (area:[2303,5183,0,2369,5249,0] && name:ANKOU_SECURITY_HIDE) {hidden = true;}
 
@@ -811,7 +809,7 @@ label: Stronghold Slayer Cave - Hide Items
 type: stringlist
 group: Ankou
 */
-#define ANKOU_STRONGHOLD_HIDE []
+#define ANKOU_STRONGHOLD_HIDE ["Weapon poison", "Black knife", "Black robe", "Fried mushrooms", "Bass"]
 
 rule (area:[2466,9792,0,2488,9814,0] && name:ANKOU_STRONGHOLD_HIDE) {hidden = true;}
 
@@ -841,7 +839,7 @@ label: Wilderness - Hide Items
 type: stringlist
 group: Ankou
 */
-#define ANKOU_WILDERNESS_HIDE []
+#define ANKOU_WILDERNESS_HIDE ["Weapon poison", "Black knife", "Black robe", "Fried mushrooms", "Bass", "Grimy guam leaf", "Grimy marrentill", "Grimy tarromin", "Grimy harralander", "Limpwurt seed", "Strawberry seed", "Marrentill seed", "Jangerberry seed", "Tarromin seed", "Wildblood seed", "Watermelon seed", "Harralander seed", "Whiteberry seed", "Mushroom spore", "Belladonna seed", "Poison ivy seed", "Cactus seed", "Potato cactus seed", "Uncut sapphire", "Uncut emerald", "Uncut ruby"]
 
 rule (area:[2950,3724,0,3004,3780,0] && name:ANKOU_WILDERNESS_HIDE) {hidden = true;}
 
@@ -870,7 +868,7 @@ label: Wilderness Slayer Cave - Hide Items
 type: stringlist
 group: Ankou
 */
-#define ANKOU_WILDERNESS_CAVE_HIDE []
+#define ANKOU_WILDERNESS_CAVE_HIDE ["Grimy guam leaf", "Grimy marrentill", "Grimy tarromin", "Grimy harralander", "Limpwurt seed", "Strawberry seed", "Marrentill seed", "Jangerberry seed", "Tarromin seed", "Wildblood seed", "Watermelon seed", "Harralander seed", "Whiteberry seed", "Mushroom spore", "Belladonna seed", "Poison ivy seed", "Cactus seed", "Potato cactus seed", "Uncut sapphire", "Uncut emerald", "Uncut ruby", "Dark fishing bait"]
 
 rule (area:[3339,10060,0,3377,10093,0] && name:ANKOU_WILDERNESS_CAVE_HIDE) {hidden = true;}
 
@@ -890,7 +888,7 @@ enum: ["Blighted anglerfish","Blighted manta ray","Blighted karambwan","Blighted
 group: Ankou
 */
 
-#define ANKOU_WILDERNESS_CAVE_SUPPLY []
+#define ANKOU_WILDERNESS_CAVE_SUPPLY ["Blighted super restore(*)"]
 
 SUPPLY_DROP_RULESET([3339,10060,0,3377,10093,0], ANKOU_WILDERNESS_CAVE_SUPPLY)
 
@@ -901,7 +899,7 @@ type: stringlist
 group: Araxyte
 */
 
-#define ARAXYTE_HIDE []
+#define ARAXYTE_HIDE ["Adamant longsword"]
 
 rule (area:[3654,9795,0,3711,9868,0]  && name:ARAXYTE_HIDE) {hidden=true;}
 
@@ -971,7 +969,7 @@ type: stringlist
 group: Dust Devils
 */
 
-#define DUST_DEVIL_CATACOMBS_HIDE []
+#define DUST_DEVIL_CATACOMBS_HIDE ["Adamant axe","Ugthanki kebab"]
 
 rule (area:[1699,10009,0,1721,10039,0] && name: DUST_DEVIL_CATACOMBS_HIDE) {hidden = true;}
 
@@ -1002,7 +1000,7 @@ type: stringlist
 group: Dust Devils
 */
 
-#define DUST_DEVIL_SMOKE_HIDE []
+#define DUST_DEVIL_SMOKE_HIDE ["Adamant axe","Ugthanki kebab"]
 
 rule (area:[3167,9345,0,3328,9407,0] && name: DUST_DEVIL_SMOKE_HIDE) {hidden = true;} 
 
@@ -1033,7 +1031,7 @@ type: stringlist
 group: Dust Devils
 */
 
-#define DUST_DEVIL_WILDY_HIDE []
+#define DUST_DEVIL_WILDY_HIDE ["Adamant axe","Ugthanki kebab","Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander", "Red d'hide vambraces", "Black d'hide vambraces", "Rune dagger","Uncut sapphire", "Uncut emerald", "Uncut ruby"]
 
 rule (area:[3423,10113,0,3454,10133,0] && name: DUST_DEVIL_WILDY_HIDE) {hidden = true;}
 
@@ -1054,7 +1052,7 @@ enum: ["Blighted anglerfish","Blighted manta ray","Blighted karambwan","Blighted
 group: Dust Devils
 */
 
-#define DUST_DEVIL_WILDY_SUPPLY []
+#define DUST_DEVIL_WILDY_SUPPLY ["Blighted super restore(*)"]
 
 SUPPLY_DROP_RULESET([3423,10113,0,3454,10133,0], DUST_DEVIL_WILDY_SUPPLY)
 
@@ -1064,7 +1062,7 @@ type: stringlist
 group: Elder Chaos Druids/Zombie Pirates
 */
 
-#define CHAOS_PIRATES_HIDE []
+#define CHAOS_PIRATES_HIDE ["Dark fishing bait","Snape grass","Unholy mould","Vial of water"]
 
 rule (area:[3216,3587,0,3261,3634,0] && name:CHAOS_PIRATES_HIDE) {hidden = true;}
 
@@ -1095,7 +1093,7 @@ type: stringlist
 group: Green Dragons
 */
 
-#define GREEN_DRAGON_MYTHS_HIDE []
+#define GREEN_DRAGON_MYTHS_HIDE ["Mithril kiteshield", "Adamant full helm"]
 
 rule (area:[1702,10060,0,1727,10076,0] && name:GREEN_DRAGON_MYTHS_HIDE) {hidden = true;}
 
@@ -1127,7 +1125,7 @@ type: stringlist
 group: Green Dragons
 */
 
-#define GREEN_DRAGON_BONEYARD_HIDE []
+#define GREEN_DRAGON_BONEYARD_HIDE ["Mithril kiteshield", "Adamant full helm", "Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander","Uncut sapphire", "Uncut emerald", "Uncut ruby"]
 
 rule (area:[3325,3668,0,3365,3729,0] && name:GREEN_DRAGON_BONEYARD_HIDE) {hidden = true;}
 
@@ -1159,7 +1157,7 @@ type: stringlist
 group: Green Dragons
 */
 
-#define GREEN_DRAGON_FORTRESS_HIDE []
+#define GREEN_DRAGON_FORTRESS_HIDE ["Mithril kiteshield", "Adamant full helm", "Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander","Uncut sapphire", "Uncut emerald", "Uncut ruby"]
 
 rule (area:[2962,3598,0,2996,3633,0] && name:GREEN_DRAGON_FORTRESS_HIDE) {hidden = true;}
 
@@ -1191,7 +1189,7 @@ type: stringlist
 group: Green Dragons
 */
 
-#define GREEN_DRAGON_GRAVEYARD_HIDE []
+#define GREEN_DRAGON_GRAVEYARD_HIDE ["Mithril kiteshield", "Adamant full helm", "Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander","Uncut sapphire", "Uncut emerald", "Uncut ruby"]
 
 rule (area:[3134,3691,0,3169,3722,0] && name:GREEN_DRAGON_GRAVEYARD_HIDE) {hidden = true;}
 
@@ -1223,7 +1221,7 @@ type: stringlist
 group: Green Dragons
 */
 
-#define GREEN_DRAGON_LAVA_MAZE_HIDE []
+#define GREEN_DRAGON_LAVA_MAZE_HIDE ["Mithril kiteshield", "Adamant full helm", "Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander","Uncut sapphire", "Uncut emerald", "Uncut ruby"]
 
 rule (area:[3067,3805,0,3122,3832,0] && name:GREEN_DRAGON_LAVA_MAZE_HIDE) {hidden = true;}
 
@@ -1255,7 +1253,7 @@ type: stringlist
 group: Green Dragons
 */
 
-#define GREEN_DRAGON_SLAYER_CAVE_HIDE []
+#define GREEN_DRAGON_SLAYER_CAVE_HIDE ["Mithril kiteshield", "Adamant full helm", "Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander","Uncut sapphire", "Uncut emerald", "Uncut ruby"]
 
 rule (area:[3392,10115,0,3410,10133,0] && name:GREEN_DRAGON_SLAYER_CAVE_HIDE) {hidden = true;} // North
 rule (area:[3407,10056,0,3424,10075,0] && name:GREEN_DRAGON_SLAYER_CAVE_HIDE) {hidden = true;} // South
@@ -1404,7 +1402,7 @@ type: stringlist
 group: Ice Giants/Ice Warriors
 */
 
-#define ICE_GIANTS_ASGARNIA_HIDE []
+#define ICE_GIANTS_ASGARNIA_HIDE ["Jug of wine" , "Banana"]
 
 rule (area:[2949,9548,0,2983,9597,0] && name:ICE_GIANTS_ASGARNIA_HIDE) {hidden = true;}
 
@@ -1435,7 +1433,7 @@ type: stringlist
 group: Ice Giants
 */
 
-#define ICE_GIANTS_TAPOYAUIK_HIDE []
+#define ICE_GIANTS_TAPOYAUIK_HIDE ["Jug of wine" , "Banana"]
 
 rule (area:[1577,9639,0,1622,9663,0] && name:ICE_GIANTS_TAPOYAUIK_HIDE) {hidden = true;}
 
@@ -1466,7 +1464,7 @@ type: stringlist
 group: Ice Giants
 */
 
-#define ICE_GIANTS_WILDERNESS_CAVE_HIDE []
+#define ICE_GIANTS_WILDERNESS_CAVE_HIDE ["Jug of wine", "Banana","Limpwurt seed", "Strawberry seed", "Marrentill seed", "Jangerberry seed", "Tarromin seed", "Wildblood seed", "Watermelon seed", "Harralander seed", "Whiteberry seed", "Mushroom spore", "Belladonna seed", "Poison ivy seed", "Cactus seed", "Potato cactus seed", "Adamant kiteshield", "Adamant sq shield", "Rune dagger"]
 
 rule (area:[3329,10049,0,3356,10064,0] && name:ICE_GIANTS_WILDERNESS_CAVE_HIDE) {hidden = true;}
 
@@ -1487,7 +1485,7 @@ enum: ["Blighted anglerfish", "Blighted manta ray", "Blighted karambwan", "Bligh
 group: Ice Giants
 */
 
-#define ICE_GIANTS_WILDERNESS_CAVE_SUPPLY []
+#define ICE_GIANTS_WILDERNESS_CAVE_SUPPLY ["Blighted super restore(*)"]
 
 SUPPLY_DROP_RULESET([3329,10049,0,3356,10064,0], ICE_GIANTS_WILDERNESS_CAVE_SUPPLY)
 
@@ -1497,7 +1495,7 @@ type: stringlist
 group: Ice Giants/Ice Warriors
 */
 
-#define ICE_GIANTS_WARRIORS_ASGARNIA_HIDE []
+#define ICE_GIANTS_WARRIORS_ASGARNIA_HIDE ["Jug of wine" , "Banana"]
 
 rule (area:[3030,9562,0,3069,9599,0] && name:ICE_GIANTS_WARRIORS_ASGARNIA_HIDE) {hidden = true;}
 
@@ -1528,7 +1526,7 @@ type: stringlist
 group: Ice Giants/Ice Warriors
 */
 
-#define ICE_GIANTS_WARRIORS_WILDERNESS_HIDE []
+#define ICE_GIANTS_WARRIORS_WILDERNESS_HIDE ["Jug of wine", "Banana", "Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander", "Limpwurt seed", "Strawberry seed", "Marrentill seed", "Jangerberry seed", "Tarromin seed", "Wildblood seed", "Watermelon seed", "Harralander seed", "Whiteberry seed", "Mushroom spore", "Belladonna seed", "Poison ivy seed", "Cactus seed", "Potato cactus seed", "Uncut sapphire", "Uncut emerald", "Uncut ruby"]
 
 rule (area:[2944,3853,0,2988,3943,0] && name:ICE_GIANTS_WARRIORS_WILDERNESS_HIDE) {hidden = true;}
 
@@ -1589,7 +1587,7 @@ type: stringlist
 group: Jellies
 */
 
-#define JELLIES_WILDERNESS_HIDE []
+#define JELLIES_WILDERNESS_HIDE ["Adamant battleaxe", "Adamant 2h sword", "Uncut sapphire", "Uncut emerald", "Uncut ruby"]
 
 rule (area:[3415,10094,0,3444,10113,0] && name:JELLIES_WILDERNESS_HIDE) {hidden = true;}
 
@@ -1610,7 +1608,7 @@ enum: ["Blighted anglerfish", "Blighted manta ray", "Blighted karambwan", "Bligh
 group: Jellies
 */
 
-#define JELLIES_WILDERNESS_SUPPLY []
+#define JELLIES_WILDERNESS_SUPPLY ["Blighted super restore(*)"]
 
 SUPPLY_DROP_RULESET([3415,10094,0,3444,10113,0], JELLIES_WILDERNESS_SUPPLY)
 
@@ -1684,7 +1682,7 @@ type: stringlist
 group: Warped Jellies
 */
 
-#define WARPED_JELLIES_HIDE []
+#define WARPED_JELLIES_HIDE ["Adamant battleaxe", "Adamant 2h sword"]
 
 rule (area:[1709,10039,0,1731,10061,0] && name:WARPED_JELLIES_HIDE) {hidden = true;} // Catacombs of Kourend - North
 rule (area:[1681,9990,0,1696,10008,0] && name:WARPED_JELLIES_HIDE) {hidden = true;} // Catacombs of Kourend - South
@@ -1718,7 +1716,7 @@ type: stringlist
 group: Lava Dragons
 */
 
-#define LAVA_DRAGON_HIDE []
+#define LAVA_DRAGON_HIDE ["Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander","Uncut sapphire", "Uncut emerald", "Uncut ruby", "Adamant 2h sword", "Chocolate cake"]
 
 rule (area:[3174,3800,0,3234,3856,0] && name:LAVA_DRAGON_HIDE) {hidden = true;}
 
@@ -1970,7 +1968,7 @@ type: stringlist
 group: Lesser Demons
 */
 
-#define LESSER_DEMON_WILDERNESS_CAVE_HIDE []
+#define LESSER_DEMON_WILDERNESS_CAVE_HIDE ["Adamant chainbody","Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander","Uncut sapphire", "Uncut emerald", "Uncut ruby", "Vile ashes", "Jug of wine"]
 
 rule (area:[3329,10121,0,3347,10150,0] && name:LESSER_DEMON_WILDERNESS_CAVE_HIDE) {hidden = true;}
 
@@ -1991,7 +1989,7 @@ enum: ["Blighted anglerfish", "Blighted manta ray", "Blighted karambwan", "Bligh
 group: Lesser Demons
 */
 
-#define LESSER_DEMON_WILDERNESS_CAVE_SUPPLY []
+#define LESSER_DEMON_WILDERNESS_CAVE_SUPPLY ["Blighted super restore(*)"]
 
 SUPPLY_DROP_RULESET([3329,10121,0,3347,10150,0], LESSER_DEMON_WILDERNESS_CAVE_SUPPLY)
 
@@ -2011,7 +2009,7 @@ type: stringlist
 group: Mithril Dragons
 */
 
-#define MITH_DRAGON_HIDE []
+#define MITH_DRAGON_HIDE ["Superattack mix(2)","Super def. mix(2)","Super str. mix(2)"]
 
 rule (area:[1617,5322,1,1795,5362,1] && name:MITH_DRAGON_HIDE) {hidden = true;}
 
@@ -2032,7 +2030,7 @@ enum: ["Shark", "Prayer mix(*)","Superattack mix(*)","Super def. mix(*)","Super 
 group: Mithril Dragons
 */
 
-#define MITH_DRAGON_SUPPLY []
+#define MITH_DRAGON_SUPPLY ["Shark", "Prayer mix(*)"]
 
 SUPPLY_DROP_RULESET([1617,5322,1,1795,5362,1], MITH_DRAGON_SUPPLY)
 
@@ -2110,7 +2108,7 @@ type: stringlist
 group: Greater Nechryaels
 */
 
-#define NECHRYAEL_CATACOMBS_HIDE []
+#define NECHRYAEL_CATACOMBS_HIDE ["Adamant battleaxe", "Adamant Kiteshield", "Tuna", "lobster","Malicious ashes"]
 
 rule (area:[1685,10073,0,1714,10089,0] && name:NECHRYAEL_CATACOMBS_HIDE) {hidden = true;}
 
@@ -2177,7 +2175,7 @@ type: stringlist
 group: Greater Nechryaels
 */
 
-#define NECHRYAEL_WILDERNESS_HIDE []
+#define NECHRYAEL_WILDERNESS_HIDE ["Adamant battleaxe", "Adamant Kiteshield", "Tuna", "lobster","Malicious ashes", "Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander", "Limpwurt seed", "Strawberry seed", "Marrentill seed", "Jangerberry seed", "Tarromin seed", "Wildblood seed", "Watermelon seed", "Harralander seed", "Whiteberry seed", "Mushroom spore", "Belladonna seed", "Poison ivy seed", "Cactus seed", "Potato cactus seed","Uncut sapphire", "Uncut emerald", "Uncut ruby", "Fiendish ashes"]
 
 rule (area:[3329,10096,0,3344,10120,0] && name:NECHRYAEL_WILDERNESS_HIDE) {hidden = true;}
 
@@ -2198,9 +2196,10 @@ enum: ["Lobster","Tuna","Blighted anglerfish","Blighted manta ray","Blighted kar
 group: Greater Nechryaels
 */
 
-#define NECHRYAEL_WILDERNESS_SUPPLY []
+#define NECHRYAEL_WILDERNESS_SUPPLY ["Blighted super restore(*)"]
 
 SUPPLY_DROP_RULESET([3329,10096,0,3344,10120,0], NECHRYAEL_WILDERNESS_SUPPLY)
+
 /*@ define:input:slayer_pvm
 label: Dragon Chainbody Meme Drop
 type: boolean
@@ -2403,7 +2402,7 @@ group: Alchemical Hydra
 enum: ["Shark", "Super restore(*)"]
 */
 
-#define ALCHEMICAL_HYDRA_SUPPLY []
+#define ALCHEMICAL_HYDRA_SUPPLY ["Shark", "Super restore(*)"]
 
 rule (area:[1355,10254,0,1380,10282,0] && name:ALCHEMICAL_HYDRA_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -2479,7 +2478,7 @@ enum: ["Prayer potion(*)"]
 group: Amoxliatl
 */
 
-#define AMOXLIATL_SUPPLY []
+#define AMOXLIATL_SUPPLY ["Prayer potion(*)"]
 
 rule (area:[1346,4493,0,1388,4530,0] && name:AMOXLIATL_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -2555,7 +2554,7 @@ group: Araxxor
 enum: ["Shark", "*Wild pie", "Prayer potion(*)", "Super combat potion(*)", "Araxyte venom sack"]
 */
 
-#define ARAXXOR_SUPPLY []
+#define ARAXXOR_SUPPLY ["Shark", "*Wild pie", "Prayer potion(*)"]
 
 rule (area:[3607,9795,0,3651,9837,0] && name:ARAXXOR_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -2795,7 +2794,7 @@ group: Callisto and Artio
 enum: ["Blighted anglerfish","Blighted karambwan","Blighted super restore(*)","Ranging potion(*)","Super combat potion(*)","Dark crab","Super restore(*)"]
 */
 
-#define CALLISTO_AND_ARTIO_SUPPLY []
+#define CALLISTO_AND_ARTIO_SUPPLY ["Blighted anglerfish","Blighted karambwan","Blighted super restore(*)","Dark crab","Super restore(*)"]
 
 rule (area:[3336,10306,0,3383,10349,0] && name:CALLISTO_AND_ARTIO_SUPPLY && stackable:false) {SUPPLY_DROP_STYLE}
 rule (area:[1739,11522,0,1782,11566,0] && name:CALLISTO_AND_ARTIO_SUPPLY && stackable:false) {SUPPLY_DROP_STYLE}
@@ -2861,7 +2860,7 @@ type: stringlist
 group: Cerberus
 */
 
-#define CERBERUS_HIDE []
+#define CERBERUS_HIDE ["Unholy symbol"]
 
 rule (area:[1211,1213,0,1390,1346,0] && name:CERBERUS_HIDE) {hidden = true;}
 
@@ -2872,7 +2871,7 @@ group: Cerberus
 enum: ["Super restore(*)", "*Summer pie"]
 */
 
-#define CERBERUS_SUPPLY []
+#define CERBERUS_SUPPLY ["Super restore(*)", "*Summer pie"]
 
 rule (area:[1211,1213,0,1390,1346,0] && name:CERBERUS_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -2883,7 +2882,7 @@ type: stringlist
 group: Chaos Elemental
 */
 
-#define CHAOS_ELEMENTAL_HIDE []
+#define CHAOS_ELEMENTAL_HIDE ["Weapon poison(++)"]
 
 rule (area:[3172,3904,0,3300,3967,0] && name:CHAOS_ELEMENTAL_HIDE) {hidden = true;}
 
@@ -2894,7 +2893,7 @@ group: Chaos Elemental
 enum: ["Blighted anglerfish", "Blighted karambwan", "Blighted super restore(*)", "Super combat potion(*)"]
 */
 
-#define CHAOS_ELEMENTAL_SUPPLY []
+#define CHAOS_ELEMENTAL_SUPPLY ["Blighted anglerfish", "Blighted karambwan", "Blighted super restore(*)"]
 
 rule (area:[3172,3904,0,3300,3967,0] && name:CHAOS_ELEMENTAL_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -2970,7 +2969,7 @@ group: Chaos Fanatic
 enum: ["Monkfish", "Shark", "Prayer potion(*)"]
 */
 
-#define CHAOS_FANATIC_SUPPLY []
+#define CHAOS_FANATIC_SUPPLY ["Prayer potion(*)"]
 
 rule (area:[2961,3830,0,2995,3856,0] && name:CHAOS_FANATIC_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -3035,7 +3034,7 @@ type: stringlist
 group: Commander Zilyana
 */
 
-#define COMMANDER_ZILYANA_HIDE []
+#define COMMANDER_ZILYANA_HIDE ["Steel dart","Steel arrow","Magic potion(3)"]
 
 rule (area:[2884,5255,0,2909,5278,0] && name:COMMANDER_ZILYANA_HIDE) {hidden = true;}
 
@@ -3046,7 +3045,7 @@ group: Commander Zilyana
 enum: ["Monkfish", "*Summer pie", "Prayer potion(*)","Super defence(*)","Magic potion(*)","Saradomin brew(*)", "Super restore(*)"]
 */
 
-#define COMMANDER_ZILYANA_SUPPLY []
+#define COMMANDER_ZILYANA_SUPPLY ["Monkfish", "*Summer pie", "Prayer potion(*)", "Saradomin brew(*)", "Super restore(*)"]
 
 rule (area:[2884,5255,0,2909,5278,0] && name:COMMANDER_ZILYANA_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -3058,7 +3057,7 @@ group: Commander Zilyana
 
 #define ENABLE_COMMANDER_ZILYANA_PEACHES true
 
-rule (area:[2884,5255,0,2909,5278,0] && name:"Bones" && ENABLE_COMMANDER_ZILYANA_PEACHES) {hidden=false;}
+apply (area:[2884,5255,0,2909,5278,0] && name:"Bones" && ENABLE_COMMANDER_ZILYANA_PEACHES) {hidden=false;}
 
 /*@ define:input:boss_pvm
 label: SS Tier Uniques
@@ -3208,7 +3207,7 @@ group: Crazy Archaeologist
 enum: ["Shark","Potato with cheese","Prayer potion(*)"]
 */
 
-#define CRAZY_ARCHAEOLOGIST_SUPPLY []
+#define CRAZY_ARCHAEOLOGIST_SUPPLY ["Shark","Potato with cheese","Prayer potion(*)"]
 
 rule (area:[2950,3675,0,3008,3724,0] && name:CRAZY_ARCHAEOLOGIST_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -3273,7 +3272,7 @@ type: stringlist
 group: Dagannoth Kings
 */
 
-#define DAGANNOTH_KINGS_HIDE []
+#define DAGANNOTH_KINGS_HIDE ["Dagannoth hide", "Fremennik blade", "Rune axe", "Fremennik shield", "Fremennik helm", "Ring of life", "Antifire potion(2)", "Restore potion(2)", "Zamorak brew(2)", "Oyster pearls", "Red d'hide vambraces", "Ensouled dagannoth head"]
 
 rule (area:[2889,4362,0,2937,4473,0] && name:DAGANNOTH_KINGS_HIDE) {hidden = true;}
 
@@ -3284,7 +3283,7 @@ group: Dagannoth Kings
 enum: ["Bass", "Swordfish", "Shark"]
 */
 
-#define DAGANNOTH_KINGS_SUPPLY []
+#define DAGANNOTH_KINGS_SUPPLY ["Swordfish", "Shark"]
 
 rule (area:[2889,4362,0,2937,4473,0] && name:DAGANNOTH_KINGS_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -3449,7 +3448,7 @@ group: Duke Sucellus
 enum: ["*Pineapple pizza", "Prayer potion(*)", "Super combat potion(*)"]
 */
 
-#define DUKE_SUCELLUS_SUPPLY []
+#define DUKE_SUCELLUS_SUPPLY ["*Pineapple pizza", "Prayer potion(*)"]
 
 rule (area:[3027,6433,0,3052,6459,0] && name:DUKE_SUCELLUS_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -3829,7 +3828,7 @@ type: stringlist
 group: General Graardor
 */
 
-#define GENERAL_GRAARDOR_HIDE []
+#define GENERAL_GRAARDOR_HIDE ["Right eye patch"]
 
 rule (area:[2863,5350,2,2878,5374,2] && name:GENERAL_GRAARDOR_HIDE) {hidden = true;}
 
@@ -3840,7 +3839,7 @@ group: General Graardor
 enum: ["Super restore(*)", "Shark", "Chilli potato"]
 */
 
-#define GENERAL_GRAARDOR_SUPPLY []
+#define GENERAL_GRAARDOR_SUPPLY ["Super restore(*)", "Shark", "Chilli potato"]
 
 rule (area:[2863,5350,2,2878,5374,2] && name:GENERAL_GRAARDOR_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -3852,7 +3851,7 @@ group: General Graardor
 
 #define ENABLE_GENERAL_GRAARDOR_HAMMER true
 
-apply (area:[2848,5316,2,2883,5348,2] && name:["hammer"] && ENABLE_GENERAL_GRAARDOR_HAMMER) {hidden=false;}
+rule (area:[2848,5316,2,2883,5348,2] && name:["hammer"] && ENABLE_GENERAL_GRAARDOR_HAMMER) {hidden=false;}
 
 /*@ define:input:boss_pvm
 label: Bones to Peaches
@@ -3925,7 +3924,7 @@ type: stringlist
 group: Giant Mole
 */
 
-#define GIANT_MOLE_HIDE []
+#define GIANT_MOLE_HIDE ["Amulet of strength", "Oyster pearls"]
 
 rule (area:[1728,5129,0,1792,5247,0] && name:GIANT_MOLE_HIDE) {hidden = true;}
 
@@ -3936,7 +3935,7 @@ group: Giant Mole
 enum: ["Shark"]
 */
 
-#define GIANT_MOLE_SUPPLY []
+#define GIANT_MOLE_SUPPLY ["Shark"]
 
 rule (area:[1728,5129,0,1792,5247,0] && name:GIANT_MOLE_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -4001,7 +4000,7 @@ type: stringlist
 group: Grotesque Guardians
 */
 
-#define GROTESQUE_GUARDIANS_HIDE []
+#define GROTESQUE_GUARDIANS_HIDE ["Magic potion(*)"]
 
 rule (area:[1671,4549,0,1724,4603,0] && name:GROTESQUE_GUARDIANS_HIDE) {hidden = true;}
 
@@ -4012,7 +4011,7 @@ group: Grotesque Guardians
 enum: ["Mushroom potato", "Saradomin brew(*)", "Magic potion(*)", "Ranging potion(*)", "Super combat potion(*)", "Prayer potion(*)"]
 */
 
-#define GROTESQUE_GUARDIANS_SUPPLY []
+#define GROTESQUE_GUARDIANS_SUPPLY ["Mushroom potato", "Saradomin brew(*)", "Prayer potion(*)"]
 
 rule (area:[1671,4549,0,1724,4603,0] && name:GROTESQUE_GUARDIANS_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -4294,7 +4293,7 @@ group: Kalphite Queen
 enum: ["Monkfish", "Shark", "Dark crab", "Saradomin brew(*)", "Prayer potion(*)", "Super restore(*)", "Super combat potion(*)", "Ranging potion(*)", "Superantipoison(*)"]
 */
 
-#define KALPHITE_QUEEN_SUPPLY []
+#define KALPHITE_QUEEN_SUPPLY ["Monkfish", "Shark", "Dark crab", "Saradomin brew(*)", "Prayer potion(*)", "Super restore(*)"]
 
 rule (area:[3464,9480,0,3510,9521,0] && name:KALPHITE_QUEEN_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -4370,7 +4369,7 @@ group: King Black Dragon
 enum: ["Shark"]
 */
 
-#define KING_BLACK_DRAGON_SUPPLY []
+#define KING_BLACK_DRAGON_SUPPLY ["Shark"]
 
 rule (area:[2253,4676,0,2291,4716,0] && name:KING_BLACK_DRAGON_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -4435,7 +4434,7 @@ type: stringlist
 group: Kraken
 */
 
-#define KRAKEN_HIDE []
+#define KRAKEN_HIDE ["Rusty sword", "Harpoon", "Pirate boots", "Seaweed"]
 
 rule (area:[2268,10020,0,2292,10049,0] && name:KRAKEN_HIDE) {hidden = true;}
 
@@ -4446,7 +4445,7 @@ group: Kraken
 enum: ["Shark", "Edible seaweed", "Sanfew serum(*)"]
 */
 
-#define KRAKEN_SUPPLY []
+#define KRAKEN_SUPPLY ["Shark"]
 
 rule (area:[2268,10020,0,2292,10049,0] && name:KRAKEN_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -4522,7 +4521,7 @@ group: Kree'arra
 enum: ["Ranging potion(*)", "Super defence(*)", "Manta ray", "Mushroom potato"]
 */
 
-#define KREEARRA_SUPPLY []
+#define KREEARRA_SUPPLY ["Manta ray", "Mushroom potato"]
 
 rule (area:[2820,5295,2,2844,5310,2] && name:KREEARRA_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -4597,7 +4596,7 @@ type: stringlist
 group: K'ril Tsutsaraoth
 */
 
-#define KRIL_TSUTSAROTH_HIDE []
+#define KRIL_TSUTSAROTH_HIDE ["Malicious ashes"]
 
 rule (area:[2917,5317,2,2942,5333,2] && name:KRIL_TSUTSAROTH_HIDE) {hidden = true;}
 
@@ -4608,7 +4607,7 @@ group: K'ril Tsutsaraoth
 enum: ["Super attack(*)", "Super strength(*)", "Super restore(*)", "Zamorak brew(*)", "Shark", "Tuna potato"]
 */
 
-#define KRIL_TSUTSAROTH_SUPPLY []
+#define KRIL_TSUTSAROTH_SUPPLY ["Super restore(*)", "Shark", "Tuna potato"]
 
 rule (area:[2917,5317,2,2942,5333,2] && name:KRIL_TSUTSAROTH_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -4718,7 +4717,7 @@ group: The Leviathan
 enum: ["Sea turtle", "Prayer potion(*)", "Ranging potion(*)", "Anglerfish"]
 */
 
-#define LEVIATHAN_SUPPLY []
+#define LEVIATHAN_SUPPLY ["Sea turtle", "Prayer potion(*)", "Anglerfish"]
 
 rule (area:[2068,6360,0,2096,6386,3] && name:LEVIATHAN_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -4896,7 +4895,7 @@ group: Nex
 enum: ["Shark", "Prayer potion(*)", "Saradomin brew(*)", "Super restore(*)"]
 */
 
-#define NEX_SUPPLY []
+#define NEX_SUPPLY ["Shark", "Prayer potion(*)", "Saradomin brew(*)", "Super restore(*)"]
 
 rule (area:[2910,5187,0,2944,5219,0] && name:NEX_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -4993,7 +4992,7 @@ group: The Nightmare
 enum: ["Bass","Shark","Prayer potion(*)","Sanfew serum(*)","Saradomin brew(*)","Zamorak brew(*)"]
 */
 
-#define NIGHTMARE_SUPPLY []
+#define NIGHTMARE_SUPPLY ["Bass","Shark","Prayer potion(*)","Sanfew serum(*)","Saradomin brew(*)","Zamorak brew(*)"]
 
 rule (area:[3830,9910,3,3914,9988,3] && name:NIGHTMARE_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -5134,7 +5133,7 @@ group: Phantom Muspah
 enum: ["Shark","*Summer pie","Ancient brew(*)","Ranging potion(*)","Super restore(*)","Prayer potion(*)"]
 */
 
-#define PHANTOM_MUSPAH_SUPPLY []
+#define PHANTOM_MUSPAH_SUPPLY ["Shark","*Summer pie","Super restore(*)","Prayer potion(*)"]
 
 rule (area:[2831,4244,0,2861,4275,0] && name:PHANTOM_MUSPAH_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -5210,7 +5209,7 @@ group: Royal Titans
 enum: ["Prayer potion(*)"]
 */
 
-#define ROYAL_TITANS_SUPPLY []
+#define ROYAL_TITANS_SUPPLY ["Prayer potion(*)"]
 
 rule (area:[2894,9556,0,2931,9583,0] && name:ROYAL_TITANS_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -5286,7 +5285,7 @@ group: Sarachnis
 enum: ["Egg potato"]
 */
 
-#define SARACHNIS_SUPPLY []
+#define SARACHNIS_SUPPLY ["Egg potato"]
 
 rule (area:[1829,9889,0,1855,9914,0] && name:SARACHNIS_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -5362,7 +5361,7 @@ group: Scorpia
 enum: ["Blighted anglerfish","Blighted super restore(*)"]
 */
 
-#define SCORPIA_SUPPLY []
+#define SCORPIA_SUPPLY ["Blighted anglerfish","Blighted super restore(*)"]
 
 rule (area:[3218,10330,0,3249,10354,0] && name:SCORPIA_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -5438,7 +5437,7 @@ group: Scurrius
 enum: ["Trout","Tuna","Lobster","Prayer potion(*)","Shark","Ranging potion(*)","Super strength(*)","Cheese"]
 */
 
-#define SCURRIUS_SUPPLY []
+#define SCURRIUS_SUPPLY ["Trout","Tuna","Lobster","Prayer potion(*)","Shark"]
 
 rule (area:[3286,9856,0,3311,9880,0] && name:SCURRIUS_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -5626,6 +5625,7 @@ enum: ["Big harpoonfish","Tackle box","Fish barrel","Tome of water*","Dragon har
 #define TEMPOROSS_C_UNIQUES []
 
 rule (name:TEMPOROSS_C_UNIQUES) {UNIQUE_C_STYLE}
+
 /*@ define:input:boss_pvm
 label: Hide Items
 type: stringlist
@@ -5642,9 +5642,9 @@ type: stringlist
 group: Tempoross
 */
 
-#define TEMPOROSS_SHOW []
+#define TEMPOROSS_SHOW ["Bucket", "Bucket of water", "Rope", "Hammer"]
 
-apply (area:[3008,2818,0,3067,2883,0] && name:TEMPOROSS_SHOW && ((!SHOW_OTHER_DROPS && ownership:1) || SHOW_OTHER_DROPS)) {hidden = false;}
+rule (area:[3008,2818,0,3067,2883,0] && name:TEMPOROSS_SHOW && ((!SHOW_OTHER_DROPS && ownership:1) || SHOW_OTHER_DROPS)) {hidden = false;}
 
 /*@ define:input:boss_pvm
 label: Raw Fish
@@ -5748,7 +5748,7 @@ type: stringlist
 group: Thermonuclear Smoke Devil
 */
 
-#define THERMONUCLEAR_SMOKE_DEVIL_HIDE []
+#define THERMONUCLEAR_SMOKE_DEVIL_HIDE ["Ashes","Tinderbox","Fire talisman","Bullseye lantern"]
 
 rule (area:[2347,9437,0,2378,9463,0] && name:THERMONUCLEAR_SMOKE_DEVIL_HIDE) {hidden = true;}
 
@@ -5759,7 +5759,7 @@ group: Thermonuclear Smoke Devil
 enum: ["Tuna potato", "Sanfew serum(*)","Ugthanki kebab","Prayer potion(*)"]
 */
 
-#define THERMONUCLEAR_SMOKE_DEVIL_SUPPLY []
+#define THERMONUCLEAR_SMOKE_DEVIL_SUPPLY ["Tuna potato","Ugthanki kebab","Prayer potion(*)"]
 
 rule (area:[2347,9437,0,2378,9463,0] && name:THERMONUCLEAR_SMOKE_DEVIL_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -5868,7 +5868,7 @@ group: Vardorvis
 enum: ["Tuna potato","Prayer potion(*)","Super combat potion(*)"]
 */
 
-#define VARDORVIS_SUPPLY []
+#define VARDORVIS_SUPPLY ["Tuna potato","Prayer potion(*)"]
 
 rule (area:[1114,3407,0,1142,3434,0] && name:VARDORVIS_SUPPLY) {SUPPLY_DROP_STYLE}
 
@@ -5970,7 +5970,7 @@ group: Venenatis and Spindel
 enum: ["Blighted anglerfish","Blighted karambwan","Blighted super restore(*)","Ranging potion(*)","Super combat potion(*)","Dark crab","Super restore(*)"]
 */
 
-#define VENENATIS_AND_SPINDEL_SUPPLY []
+#define VENENATIS_AND_SPINDEL_SUPPLY ["Blighted anglerfish","Blighted karambwan","Blighted super restore(*)","Dark crab","Super restore(*)"]
 
 rule (area:[3403,10183,2,3443,10225,2] && name:VENENATIS_AND_SPINDEL_SUPPLY) {SUPPLY_DROP_STYLE}
 rule (area:[1608,11527,2,1652,11569,2] && name:VENENATIS_AND_SPINDEL_SUPPLY) {SUPPLY_DROP_STYLE}
@@ -6073,7 +6073,7 @@ group: Vet'ion and Calver'ion
 enum: ["Blighted anglerfish","Blighted karambwan","Blighted super restore(*)","Ranging potion(*)","Super combat potion(*)","Dark crab","Super restore(*)"]
 */
 
-#define VETION_AND_CALVARION_SUPPLY []
+#define VETION_AND_CALVARION_SUPPLY ["Blighted anglerfish","Blighted karambwan","Blighted super restore(*)","Dark crab","Super restore(*)"]
 
 rule (area:[3283,10190,1,3307,10216,1] && name:VETION_AND_CALVARION_SUPPLY && stackable:false) {SUPPLY_DROP_STYLE}
 rule (area:[1877,11533,1,1898,11560,1] && name:VETION_AND_CALVARION_SUPPLY && stackable:false) {SUPPLY_DROP_STYLE}
@@ -6149,7 +6149,7 @@ type: stringlist
 group: Vorkath
 */
 
-#define VORKATH_HIDE []
+#define VORKATH_HIDE ["Wrath talisman"]
 
 rule (area:[2257,4050,0,2288,4081,0] && name:VORKATH_HIDE) {hidden = true;}
 
@@ -6264,7 +6264,7 @@ group: The Whisperer
 enum: ["Ancient brew(*)","Prayer potion(*)","Manta ray"]
 */
 
-#define WHISPERER_SUPPLY []
+#define WHISPERER_SUPPLY ["Ancient brew(*)","Prayer potion(*)","Manta ray"]
 
 rule (area:[2370,6338,0,2429,6397,0] && name:WHISPERER_SUPPLY) {SUPPLY_DROP_STYLE}
 rule (area:[2629,6338,0,2685,6397,0] && name:WHISPERER_SUPPLY) {SUPPLY_DROP_STYLE}
@@ -7066,7 +7066,7 @@ group: Raid Items
 
 #define SHOW_COX ["Hammer", "Bronze pickaxe", "tindebox", "Bronze axe"]
 
-apply (area:[3210,5120,0,3369,5776,1] && name:SHOW_COX) {hidden = false;}
+rule (area:[3210,5120,0,3369,5776,1] && name:SHOW_COX) {hidden = false;}
 
 /*@ define:module:tob
 name: Theatre of Blood
@@ -7237,7 +7237,7 @@ type: stringlist
 group: Raid Items
 */
 
-#define TOA_HIDE []
+#define TOA_HIDE ["Apmeken's capture","Crondis' capture","Het's capture","Scabaras' capture","The wardens", "the jackal's torch"]
 
 rule (area:[3509,5107,0,3973,5443,3] && name:TOA_HIDE && ENABLE_TOA_MVP && name:["Big Banana", "Eldritch ashes", "Fang", "Scarab dung"]) {hideOverlay = true;}
 apply (area:[3509,5107,0,3973,5443,3] && name:TOA_HIDE) {hidden = true;}
@@ -10618,7 +10618,6 @@ name: Keys
 subtitle: Keys for Chests and Bosses
 */
 
-
 /*@ define:input:keys
 label: SS Tier Keys
 type: enumlist
@@ -10626,7 +10625,7 @@ enum: ["Dark totem base","Dark totem middle","Dark totem top","Dark Totem","Awak
 group: SS Tier
 */
 
-#define KEYS_SS_NAMES ["Contract of oathplate acquisition","Contract of oathplate acquisition"]
+#define KEYS_SS_NAMES ["Contract of oathplate acquisition","Contract of shard acquisition"]
 
 /*@ define:input:keys
 label: Show Unnoted
@@ -10684,7 +10683,7 @@ enum: ["Dark totem base","Dark totem middle","Dark totem top","Dark Totem","Awak
 group: S Tier
 */
 
-#define KEYS_S_NAMES ["Awakener's orb","Moon key","Contract of familiar acquisition","Contract of harmony acquisition","Contract of familiar acquisition","Contract of harmony acquisition"]
+#define KEYS_S_NAMES ["Awakener's orb","Moon key","Contract of familiar acquisition","Contract of harmony acquisition"]
 
 /*@ define:input:keys
 label: Show Unnoted
@@ -10750,7 +10749,7 @@ enum: ["Dark totem base","Dark totem middle","Dark totem top","Dark Totem","Awak
 group: A Tier
 */
 
-#define KEYS_A_NAMES ["Dark Totem","Brimstone key","Ecumenical key","Enhanced crystal key","Larran's key","Contract of bloodied blows","Contract of divine severance","Contract of forfeit breath","Contract of glyphic attenuation","Contract of sensory clouding","Contract of familiar acquisition","Contract of bloodied blows","Contract of divine severance","Contract of forfeit breath","Contract of glyphic attenuation","Contract of sensory clouding","Contract of familiar acquisition"]
+#define KEYS_A_NAMES ["Dark Totem","Brimstone key","Ecumenical key","Enhanced crystal key","Larran's key","Contract of bloodied blows","Contract of divine severance","Contract of forfeit breath","Contract of glyphic attenuation","Contract of sensory clouding"]
 
 /*@ define:input:keys
 label: Show Unnoted
@@ -11537,7 +11536,7 @@ enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right 
 group: D Tier
 */
 
-#define TELEPORTS_D_NAMES ["Lizardman fang","Frozen tear","Bone fragments","Varrock teleport","Falador teleport","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport","Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrains Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Revenant cave teleport","Teleport crystal (*)"]
+#define TELEPORTS_D_NAMES ["Lizardman fang","Frozen tear","Bone fragments","Varrock teleport","Falador teleport","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport","Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrains Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Revenant cave teleport"]
 
 /*@ define:input:teleports
 label: Show Unnoted
@@ -11619,7 +11618,7 @@ enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right 
 group: E Tier
 */
 
-#define TELEPORTS_E_NAMES []
+#define TELEPORTS_E_NAMES ["Teleport crystal (*)"]
 
 /*@ define:input:teleports
 label: Show Unnoted
@@ -11638,7 +11637,7 @@ type: number
 group: E Tier
 */
 
-#define TELEPORTS_E_MIN_QUANT 0
+#define TELEPORTS_E_MIN_QUANT 10
 
 rule (name:TELEPORTS_E_NAMES && quantity:<TELEPORTS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:TELEPORTS_E_NAMES && quantity:<TELEPORTS_E_MIN_QUANT) {hidden = true;}
@@ -12624,7 +12623,7 @@ type: number
 group: D Tier
 */
 
-#define SEEDS_D_MIN_QUANT 0
+#define SEEDS_D_MIN_QUANT 10
 
 rule (name:SEEDS_D_NAMES && quantity:<SEEDS_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:SEEDS_D_NAMES && quantity:<SEEDS_D_MIN_QUANT) {hidden = true;}
@@ -12706,7 +12705,7 @@ type: number
 group: E Tier
 */
 
-#define SEEDS_E_MIN_QUANT 0
+#define SEEDS_E_MIN_QUANT 25
 
 rule (name:SEEDS_E_NAMES && quantity:<SEEDS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:SEEDS_E_NAMES && quantity:<SEEDS_E_MIN_QUANT) {hidden = true;}
@@ -13776,7 +13775,7 @@ subtitle: Mix with Herbs for Wonderful Potions
 /*@ define:input:herblore_secondaries
 label: SS Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale*","Araxyte venom sack"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sack"]
 group: SS Tier
 */
 
@@ -13826,7 +13825,7 @@ exampleItem: Crushed superior dragon bones
 /*@ define:input:herblore_secondaries
 label: S Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale*","Araxyte venom sack"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sack"]
 group: S Tier
 */
 
@@ -13885,7 +13884,7 @@ exampleItem: Lava scale shard
 /*@ define:input:herblore_secondaries
 label: A Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale*","Araxyte venom sack"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sack"]
 group: A Tier
 */
 
@@ -13950,7 +13949,7 @@ exampleItem: Wine of zamorak
 /*@ define:input:herblore_secondaries
 label: B Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale*","Araxyte venom sack"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sack"]
 group: B Tier
 */
 
@@ -14019,11 +14018,11 @@ exampleItem: Red spiders' eggs
 /*@ define:input:herblore_secondaries
 label: C Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale*","Araxyte venom sack"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sack"]
 group: C Tier
 */
 
-#define HERBLORE_SECONDARIES_C_NAMES ["Wine of zamorak","Nail beast nails","Magic roots"]
+#define HERBLORE_SECONDARIES_C_NAMES ["Wine of zamorak","Nail beast nails","Magic roots","Lava scale*"]
 
 /*@ define:input:herblore_secondaries
 label: Show Unnoted
@@ -14096,11 +14095,11 @@ exampleItem: Limpwurt root
 /*@ define:input:herblore_secondaries
 label: D Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale*","Araxyte venom sack"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sack"]
 group: D Tier
 */
 
-#define HERBLORE_SECONDARIES_D_NAMES ["Unicorn horn","Unicorn horn dust","Limpwurt root","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Jangerberries","Volcanic ash","Nihil dust","Lily of the sands","Crystal dust","Araxyte venom sack","Lava scale*"]
+#define HERBLORE_SECONDARIES_D_NAMES ["Unicorn horn","Unicorn horn dust","Limpwurt root","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Jangerberries","Volcanic ash","Nihil dust","Lily of the sands","Crystal dust","Araxyte venom sack","Lava scale shard"]
 
 /*@ define:input:herblore_secondaries
 label: Show Unnoted
@@ -14108,7 +14107,7 @@ type: boolean
 group: D Tier
 */
 
-#define HERBLORE_SECONDARIES_D_SHOW_UNNOTED true
+#define HERBLORE_SECONDARIES_D_SHOW_UNNOTED false
 
 rule (name:HERBLORE_SECONDARIES_D_NAMES && !HERBLORE_SECONDARIES_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_D_NAMES && !HERBLORE_SECONDARIES_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -14178,7 +14177,7 @@ exampleItem: Eye of newt
 /*@ define:input:herblore_secondaries
 label: E Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale*","Araxyte venom sack"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sack"]
 group: E Tier
 */
 
@@ -14201,7 +14200,7 @@ type: number
 group: E Tier
 */
 
-#define HERBLORE_SECONDARIES_E_MIN_QUANT 0
+#define HERBLORE_SECONDARIES_E_MIN_QUANT 25
 
 rule (name:HERBLORE_SECONDARIES_E_NAMES && quantity:<HERBLORE_SECONDARIES_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_E_NAMES && quantity:<HERBLORE_SECONDARIES_E_MIN_QUANT) {hidden = true;}
@@ -14642,7 +14641,7 @@ type: boolean
 group: D Tier
 */
 
-#define COOKING_D_SHOW_UNNOTED true
+#define COOKING_D_SHOW_UNNOTED false
 
 rule (name:COOKING_D_NAMES && !COOKING_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:COOKING_D_NAMES && !COOKING_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -14724,7 +14723,7 @@ type: boolean
 group: E Tier
 */
 
-#define COOKING_E_SHOW_UNNOTED true
+#define COOKING_E_SHOW_UNNOTED false
 
 rule (name:COOKING_E_NAMES && !COOKING_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:COOKING_E_NAMES && !COOKING_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -14735,7 +14734,7 @@ type: number
 group: E Tier
 */
 
-#define COOKING_E_MIN_QUANT 0
+#define COOKING_E_MIN_QUANT 25
 
 rule (name:COOKING_E_NAMES && quantity:<COOKING_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:COOKING_E_NAMES && quantity:<COOKING_E_MIN_QUANT) {hidden = true;}
@@ -15705,7 +15704,7 @@ type: boolean
 group: Blighted D Tier
 */
 
-#define BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED true
+#define BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED false
 
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -16250,7 +16249,7 @@ type: number
 group: D Tier
 */
 
-#define RUNES_D_MIN_QUANT 0
+#define RUNES_D_MIN_QUANT 10
 
 rule (name:RUNES_D_NAMES && quantity:<RUNES_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:RUNES_D_NAMES && quantity:<RUNES_D_MIN_QUANT) {hidden = true;}
@@ -16332,7 +16331,7 @@ type: number
 group: E Tier
 */
 
-#define RUNES_E_MIN_QUANT 0
+#define RUNES_E_MIN_QUANT 50
 
 rule (name:RUNES_E_NAMES && quantity:<RUNES_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:RUNES_E_NAMES && quantity:<RUNES_E_MIN_QUANT) {hidden = true;}
@@ -16773,7 +16772,7 @@ type: boolean
 group: D Tier
 */
 
-#define ORES_AND_BARS_D_SHOW_UNNOTED true
+#define ORES_AND_BARS_D_SHOW_UNNOTED false
 
 rule (name:ORES_AND_BARS_D_NAMES && !ORES_AND_BARS_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_D_NAMES && !ORES_AND_BARS_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -16855,7 +16854,7 @@ type: boolean
 group: E Tier
 */
 
-#define ORES_AND_BARS_E_SHOW_UNNOTED true
+#define ORES_AND_BARS_E_SHOW_UNNOTED false
 
 rule (name:ORES_AND_BARS_E_NAMES && !ORES_AND_BARS_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_E_NAMES && !ORES_AND_BARS_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -16866,7 +16865,7 @@ type: number
 group: E Tier
 */
 
-#define ORES_AND_BARS_E_MIN_QUANT 0
+#define ORES_AND_BARS_E_MIN_QUANT 25
 
 rule (name:ORES_AND_BARS_E_NAMES && quantity:<ORES_AND_BARS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_E_NAMES && quantity:<ORES_AND_BARS_E_MIN_QUANT) {hidden = true;}
@@ -17307,7 +17306,7 @@ type: boolean
 group: D Tier
 */
 
-#define LOGS_D_SHOW_UNNOTED true
+#define LOGS_D_SHOW_UNNOTED false
 
 rule (name:LOGS_D_NAMES && !LOGS_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:LOGS_D_NAMES && !LOGS_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -17389,7 +17388,7 @@ type: boolean
 group: E Tier
 */
 
-#define LOGS_E_SHOW_UNNOTED true
+#define LOGS_E_SHOW_UNNOTED false
 
 rule (name:LOGS_E_NAMES && !LOGS_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:LOGS_E_NAMES && !LOGS_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -17400,7 +17399,7 @@ type: number
 group: E Tier
 */
 
-#define LOGS_E_MIN_QUANT 0
+#define LOGS_E_MIN_QUANT 50
 
 rule (name:LOGS_E_NAMES && quantity:<LOGS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:LOGS_E_NAMES && quantity:<LOGS_E_MIN_QUANT) {hidden = true;}
@@ -17764,7 +17763,7 @@ type: boolean
 group: C Tier
 */
 
-#define PLANKS_C_SHOW_UNNOTED true
+#define PLANKS_C_SHOW_UNNOTED false
 
 rule (name:PLANKS_C_NAMES && !PLANKS_C_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:PLANKS_C_NAMES && !PLANKS_C_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -17841,7 +17840,7 @@ type: boolean
 group: D Tier
 */
 
-#define PLANKS_D_SHOW_UNNOTED true
+#define PLANKS_D_SHOW_UNNOTED false
 
 rule (name:PLANKS_D_NAMES && !PLANKS_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:PLANKS_D_NAMES && !PLANKS_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -17852,7 +17851,7 @@ type: number
 group: D Tier
 */
 
-#define PLANKS_D_MIN_QUANT 0
+#define PLANKS_D_MIN_QUANT 10
 
 rule (name:PLANKS_D_NAMES && quantity:<PLANKS_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:PLANKS_D_NAMES && quantity:<PLANKS_D_MIN_QUANT) {hidden = true;}
@@ -17923,7 +17922,7 @@ type: boolean
 group: E Tier
 */
 
-#define PLANKS_E_SHOW_UNNOTED true
+#define PLANKS_E_SHOW_UNNOTED false
 
 rule (name:PLANKS_E_NAMES && !PLANKS_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:PLANKS_E_NAMES && !PLANKS_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -17934,7 +17933,7 @@ type: number
 group: E Tier
 */
 
-#define PLANKS_E_MIN_QUANT 0
+#define PLANKS_E_MIN_QUANT 25
 
 rule (name:PLANKS_E_NAMES && quantity:<PLANKS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:PLANKS_E_NAMES && quantity:<PLANKS_E_MIN_QUANT) {hidden = true;}
@@ -18375,7 +18374,7 @@ type: boolean
 group: D Tier
 */
 
-#define CRAFTING_D_SHOW_UNNOTED true
+#define CRAFTING_D_SHOW_UNNOTED false
 
 rule (name:CRAFTING_D_NAMES && !CRAFTING_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:CRAFTING_D_NAMES && !CRAFTING_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -18457,7 +18456,7 @@ type: boolean
 group: E Tier
 */
 
-#define CRAFTING_E_SHOW_UNNOTED true
+#define CRAFTING_E_SHOW_UNNOTED false
 
 rule (name:CRAFTING_E_NAMES && !CRAFTING_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:CRAFTING_E_NAMES && !CRAFTING_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -18468,7 +18467,7 @@ type: number
 group: E Tier
 */
 
-#define CRAFTING_E_MIN_QUANT 0
+#define CRAFTING_E_MIN_QUANT 10
 
 rule (name:CRAFTING_E_NAMES && quantity:<CRAFTING_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:CRAFTING_E_NAMES && quantity:<CRAFTING_E_MIN_QUANT) {hidden = true;}
@@ -19007,7 +19006,7 @@ type: boolean
 group: Bones E Tier
 */
 
-#define PRAYER_BONES_E_SHOW_UNNOTED true
+#define PRAYER_BONES_E_SHOW_UNNOTED false
 
 rule (name:PRAYER_BONES_E_NAMES && !PRAYER_BONES_E_SHOW_UNNOTED && noted:true && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
 rule (name:PRAYER_BONES_E_NAMES && !PRAYER_BONES_E_SHOW_UNNOTED && noted:true && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
@@ -19550,7 +19549,7 @@ type: boolean
 group: Ashes E Tier
 */
 
-#define PRAYER_ASHES_E_SHOW_UNNOTED true
+#define PRAYER_ASHES_E_SHOW_UNNOTED false
 
 rule (name:PRAYER_ASHES_E_NAMES && !PRAYER_ASHES_E_SHOW_UNNOTED && noted:true && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_E_NAMES && !PRAYER_ASHES_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
@@ -19922,7 +19921,7 @@ type: boolean
 group: Ensouled Heads C Tier
 */
 
-#define PRAYER_HEADS_C_SHOW_UNNOTED true
+#define PRAYER_HEADS_C_SHOW_UNNOTED false
 
 rule (name:PRAYER_HEADS_C_NAMES && !PRAYER_HEADS_C_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_C_NAMES && !PRAYER_HEADS_C_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -19999,7 +19998,7 @@ type: boolean
 group: Ensouled Heads D Tier
 */
 
-#define PRAYER_HEADS_D_SHOW_UNNOTED true
+#define PRAYER_HEADS_D_SHOW_UNNOTED false
 
 rule (name:PRAYER_HEADS_D_NAMES && !PRAYER_HEADS_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_D_NAMES && !PRAYER_HEADS_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -20081,7 +20080,7 @@ type: boolean
 group: Ensouled Heads E Tier
 */
 
-#define PRAYER_HEADS_E_SHOW_UNNOTED true
+#define PRAYER_HEADS_E_SHOW_UNNOTED false
 
 rule (name:PRAYER_HEADS_E_NAMES && !PRAYER_HEADS_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_E_NAMES && !PRAYER_HEADS_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -21080,7 +21079,7 @@ type: number
 group: D Tier
 */
 
-#define RUNITE_GEAR_D_MIN_QUANT 0
+#define RUNITE_GEAR_D_MIN_QUANT 10
 
 rule (name:RUNITE_GEAR_D_NAMES && quantity:<RUNITE_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_D_NAMES && quantity:<RUNITE_GEAR_D_MIN_QUANT) {hidden = true;}
@@ -21604,7 +21603,7 @@ type: boolean
 group: D Tier
 */
 
-#define ADAMANTITE_GEAR_D_SHOW_UNNOTED true
+#define ADAMANTITE_GEAR_D_SHOW_UNNOTED false
 
 rule (name:ADAMANTITE_GEAR_D_NAMES && !ADAMANTITE_GEAR_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_D_NAMES && !ADAMANTITE_GEAR_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -21686,7 +21685,7 @@ type: boolean
 group: E Tier
 */
 
-#define ADAMANTITE_GEAR_E_SHOW_UNNOTED true
+#define ADAMANTITE_GEAR_E_SHOW_UNNOTED false
 
 rule (name:ADAMANTITE_GEAR_E_NAMES && !ADAMANTITE_GEAR_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_E_NAMES && !ADAMANTITE_GEAR_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -21697,7 +21696,7 @@ type: number
 group: E Tier
 */
 
-#define ADAMANTITE_GEAR_E_MIN_QUANT 0
+#define ADAMANTITE_GEAR_E_MIN_QUANT 50
 
 rule (name:ADAMANTITE_GEAR_E_NAMES && quantity:<ADAMANTITE_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_E_NAMES && quantity:<ADAMANTITE_GEAR_E_MIN_QUANT) {hidden = true;}
@@ -22139,7 +22138,7 @@ type: boolean
 group: D Tier
 */
 
-#define MITHRIL_GEAR_D_SHOW_UNNOTED true
+#define MITHRIL_GEAR_D_SHOW_UNNOTED false
 
 rule (name:MITHRIL_GEAR_D_NAMES && !MITHRIL_GEAR_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_D_NAMES && !MITHRIL_GEAR_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -22221,7 +22220,7 @@ type: boolean
 group: E Tier
 */
 
-#define MITHRIL_GEAR_E_SHOW_UNNOTED true
+#define MITHRIL_GEAR_E_SHOW_UNNOTED false
 
 rule (name:MITHRIL_GEAR_E_NAMES && !MITHRIL_GEAR_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_E_NAMES && !MITHRIL_GEAR_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -22232,7 +22231,7 @@ type: number
 group: E Tier
 */
 
-#define MITHRIL_GEAR_E_MIN_QUANT 0
+#define MITHRIL_GEAR_E_MIN_QUANT 50
 
 rule (name:MITHRIL_GEAR_E_NAMES && quantity:<MITHRIL_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_E_NAMES && quantity:<MITHRIL_GEAR_E_MIN_QUANT) {hidden = true;}
@@ -22674,8 +22673,7 @@ type: boolean
 group: D Tier
 */
 
-#define BLACK_GEAR_D_SHOW_UNNOTED true
-
+#define BLACK_GEAR_D_SHOW_UNNOTED false
 rule (name:BLACK_GEAR_D_NAMES && !BLACK_GEAR_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_D_NAMES && !BLACK_GEAR_D_SHOW_UNNOTED && noted:true) {hidden = true;}
 
@@ -22685,7 +22683,7 @@ type: number
 group: D Tier
 */
 
-#define BLACK_GEAR_D_MIN_QUANT 0
+#define BLACK_GEAR_D_MIN_QUANT 10
 
 rule (name:BLACK_GEAR_D_NAMES && quantity:<BLACK_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_D_NAMES && quantity:<BLACK_GEAR_D_MIN_QUANT) {hidden = true;}
@@ -22756,7 +22754,7 @@ type: boolean
 group: E Tier
 */
 
-#define BLACK_GEAR_E_SHOW_UNNOTED true
+#define BLACK_GEAR_E_SHOW_UNNOTED false
 
 rule (name:BLACK_GEAR_E_NAMES && !BLACK_GEAR_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_E_NAMES && !BLACK_GEAR_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -22767,7 +22765,7 @@ type: number
 group: E Tier
 */
 
-#define BLACK_GEAR_E_MIN_QUANT 0
+#define BLACK_GEAR_E_MIN_QUANT 50
 
 rule (name:BLACK_GEAR_E_NAMES && quantity:<BLACK_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_E_NAMES && quantity:<BLACK_GEAR_E_MIN_QUANT) {hidden = true;}
@@ -23744,7 +23742,7 @@ type: boolean
 group: D Tier
 */
 
-#define STEEL_GEAR_D_SHOW_UNNOTED true
+#define STEEL_GEAR_D_SHOW_UNNOTED false
 
 rule (name:STEEL_GEAR_D_NAMES && !STEEL_GEAR_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_D_NAMES && !STEEL_GEAR_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -23755,7 +23753,7 @@ type: number
 group: D Tier
 */
 
-#define STEEL_GEAR_D_MIN_QUANT 0
+#define STEEL_GEAR_D_MIN_QUANT 10
 
 rule (name:STEEL_GEAR_D_NAMES && quantity:<STEEL_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_D_NAMES && quantity:<STEEL_GEAR_D_MIN_QUANT) {hidden = true;}
@@ -23826,7 +23824,7 @@ type: boolean
 group: E Tier
 */
 
-#define STEEL_GEAR_E_SHOW_UNNOTED true
+#define STEEL_GEAR_E_SHOW_UNNOTED false
 
 rule (name:STEEL_GEAR_E_NAMES && !STEEL_GEAR_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_E_NAMES && !STEEL_GEAR_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -23837,7 +23835,7 @@ type: number
 group: E Tier
 */
 
-#define STEEL_GEAR_E_MIN_QUANT 0
+#define STEEL_GEAR_E_MIN_QUANT 100
 
 rule (name:STEEL_GEAR_E_NAMES && quantity:<STEEL_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_E_NAMES && quantity:<STEEL_GEAR_E_MIN_QUANT) {hidden = true;}
@@ -24279,7 +24277,7 @@ type: boolean
 group: D Tier
 */
 
-#define IRON_GEAR_D_SHOW_UNNOTED true
+#define IRON_GEAR_D_SHOW_UNNOTED false
 
 rule (name:IRON_GEAR_D_NAMES && !IRON_GEAR_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:IRON_GEAR_D_NAMES && !IRON_GEAR_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -24361,8 +24359,7 @@ type: boolean
 group: E Tier
 */
 
-#define IRON_GEAR_E_SHOW_UNNOTED true
-
+#define IRON_GEAR_E_SHOW_UNNOTED false
 rule (name:IRON_GEAR_E_NAMES && !IRON_GEAR_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:IRON_GEAR_E_NAMES && !IRON_GEAR_E_SHOW_UNNOTED && noted:true) {hidden = true;}
 
@@ -24372,7 +24369,7 @@ type: number
 group: E Tier
 */
 
-#define IRON_GEAR_E_MIN_QUANT 0
+#define IRON_GEAR_E_MIN_QUANT 10
 
 rule (name:IRON_GEAR_E_NAMES && quantity:<IRON_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:IRON_GEAR_E_NAMES && quantity:<IRON_GEAR_E_MIN_QUANT) {hidden = true;}
@@ -24814,7 +24811,7 @@ type: boolean
 group: D Tier
 */
 
-#define BRONZE_GEAR_D_SHOW_UNNOTED true
+#define BRONZE_GEAR_D_SHOW_UNNOTED false
 
 rule (name:BRONZE_GEAR_D_NAMES && !BRONZE_GEAR_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_D_NAMES && !BRONZE_GEAR_D_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -24825,7 +24822,7 @@ type: number
 group: D Tier
 */
 
-#define BRONZE_GEAR_D_MIN_QUANT 0
+#define BRONZE_GEAR_D_MIN_QUANT 10
 
 rule (name:BRONZE_GEAR_D_NAMES && quantity:<BRONZE_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_D_NAMES && quantity:<BRONZE_GEAR_D_MIN_QUANT) {hidden = true;}
@@ -24896,7 +24893,7 @@ type: boolean
 group: E Tier
 */
 
-#define BRONZE_GEAR_E_SHOW_UNNOTED true
+#define BRONZE_GEAR_E_SHOW_UNNOTED false
 
 rule (name:BRONZE_GEAR_E_NAMES && !BRONZE_GEAR_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_E_NAMES && !BRONZE_GEAR_E_SHOW_UNNOTED && noted:true) {hidden = true;}
@@ -24907,7 +24904,7 @@ type: number
 group: E Tier
 */
 
-#define BRONZE_GEAR_E_MIN_QUANT 0
+#define BRONZE_GEAR_E_MIN_QUANT 100
 
 rule (name:BRONZE_GEAR_E_NAMES && quantity:<BRONZE_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_E_NAMES && quantity:<BRONZE_GEAR_E_MIN_QUANT) {hidden = true;}
