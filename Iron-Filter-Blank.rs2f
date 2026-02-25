@@ -9484,9 +9484,9 @@ type: number
 group: Sailing Miscellaneous
 */
 
-#define SAILING_DRAGON_CANNONBALL_C_QUANT 1
+#define SAILING_DRAGON_NAIL_C_QUANT 1
 
-rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_C_QUANT) {UNIQUE_C_STYLE}
+rule(name:"Dragon nails" && quantity:>=SAILING_DRAGON_NAIL_C_QUANT) {UNIQUE_C_STYLE}
 
 /*@ define:input:misc_uniques
 label: Dragon Nails SS Tier
@@ -9530,12 +9530,12 @@ rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_B_QUANT) {
 
 
 /*@ define:input:misc_uniques
-label: Dragon Nails SS Tier
+label: Dragon Nails C Tier
 type: number
 group: Sailing Miscellaneous
 */
 
-#define SAILING_DRAGON_CANNONBALL_SS_QUANT 1
+#define SAILING_DRAGON_CANNONBALL_C_QUANT 1
 
 rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_C_QUANT) {UNIQUE_C_STYLE}
 
