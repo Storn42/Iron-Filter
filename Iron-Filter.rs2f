@@ -24434,7 +24434,7 @@ type: number
 group: E Tier
 */
 
-#define IRON_GEAR_E_MIN_QUANT 10
+#define IRON_GEAR_E_MIN_QUANT 50
 
 rule (name:IRON_GEAR_E_NAMES && quantity:<IRON_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:IRON_GEAR_E_NAMES && quantity:<IRON_GEAR_E_MIN_QUANT) {hidden = true;}
