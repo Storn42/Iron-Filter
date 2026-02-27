@@ -12939,6 +12939,18 @@ enum: [
   {
     "value": "*Torstol",
     "label": "Torstol"
+  },
+  {
+    "value": "Umbral coral",
+    "label": "Umbral coral"
+  },
+  {
+    "value": "Pillar coral",
+    "label": "Pillar coral"
+  },
+  {
+    "value": "Elkhorn coral",
+    "label": "Elkhorn coral"
   }
 ]
 group: SS Tier
@@ -13050,6 +13062,18 @@ enum: [
   {
     "value": "*Torstol",
     "label": "Torstol"
+  },
+  {
+    "value": "Umbral coral",
+    "label": "Umbral coral"
+  },
+  {
+    "value": "Pillar coral",
+    "label": "Pillar coral"
+  },
+  {
+    "value": "Elkhorn coral",
+    "label": "Elkhorn coral"
   }
 ]
 group: S Tier
@@ -13170,6 +13194,18 @@ enum: [
   {
     "value": "*Torstol",
     "label": "Torstol"
+  },
+  {
+    "value": "Umbral coral",
+    "label": "Umbral coral"
+  },
+  {
+    "value": "Pillar coral",
+    "label": "Pillar coral"
+  },
+  {
+    "value": "Elkhorn coral",
+    "label": "Elkhorn coral"
   }
 ]
 group: A Tier
@@ -13296,6 +13332,18 @@ enum: [
   {
     "value": "*Torstol",
     "label": "Torstol"
+  },
+  {
+    "value": "Umbral coral",
+    "label": "Umbral coral"
+  },
+  {
+    "value": "Pillar coral",
+    "label": "Pillar coral"
+  },
+  {
+    "value": "Elkhorn coral",
+    "label": "Elkhorn coral"
   }
 ]
 group: B Tier
@@ -13426,12 +13474,24 @@ enum: [
   {
     "value": "*Torstol",
     "label": "Torstol"
+  },
+  {
+    "value": "Umbral coral",
+    "label": "Umbral coral"
+  },
+  {
+    "value": "Pillar coral",
+    "label": "Pillar coral"
+  },
+  {
+    "value": "Elkhorn coral",
+    "label": "Elkhorn coral"
   }
 ]
 group: C Tier
 */
 
-#define HERBS_C_NAMES ["*Ranarr weed","*Snapdragon","*Torstol"]
+#define HERBS_C_NAMES ["*Ranarr weed","*Snapdragon","*Torstol","Umbral coral"]
 
 /*@ define:input:herbs
 label: Show Unnoted
@@ -13564,12 +13624,24 @@ enum: [
   {
     "value": "*Torstol",
     "label": "Torstol"
+  },
+  {
+    "value": "Umbral coral",
+    "label": "Umbral coral"
+  },
+  {
+    "value": "Pillar coral",
+    "label": "Pillar coral"
+  },
+  {
+    "value": "Elkhorn coral",
+    "label": "Elkhorn coral"
   }
 ]
 group: D Tier
 */
 
-#define HERBS_D_NAMES ["*Toadflax","*Irit leaf","*Avantoe","*Kwuarm","*Cadantine","*Lantadyme","*Dwarf weed"]
+#define HERBS_D_NAMES ["*Toadflax","*Irit leaf","*Avantoe","*Kwuarm","*Cadantine","*Lantadyme","*Dwarf weed","Pillar coral","Elkhorn coral"]
 
 /*@ define:input:herbs
 label: Show Unnoted
@@ -13707,6 +13779,18 @@ enum: [
   {
     "value": "*Torstol",
     "label": "Torstol"
+  },
+  {
+    "value": "Umbral coral",
+    "label": "Umbral coral"
+  },
+  {
+    "value": "Pillar coral",
+    "label": "Pillar coral"
+  },
+  {
+    "value": "Elkhorn coral",
+    "label": "Elkhorn coral"
   }
 ]
 group: E Tier
