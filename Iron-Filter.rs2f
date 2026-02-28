@@ -9941,7 +9941,7 @@ type: number
 group: Coins
 */
 
-#define COINS_A_VALUE 10000
+#define COINS_A_VALUE 100000
 
 /*@ define:input:currency
 label: B Value
@@ -9949,7 +9949,7 @@ type: number
 group: Coins
 */
 
-#define COINS_B_VALUE 1000
+#define COINS_B_VALUE 10000
 
 /*@ define:input:currency
 label: C Value
@@ -9957,7 +9957,7 @@ type: number
 group: Coins
 */
 
-#define COINS_C_VALUE 100
+#define COINS_C_VALUE 1000
 
 /*@ define:input:currency
 label: D Value
