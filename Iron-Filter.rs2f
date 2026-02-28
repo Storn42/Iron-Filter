@@ -5282,7 +5282,7 @@ rule (area:[2894,9556,0,2931,9583,0] && name:ROYAL_TITANS_SUPPLY) {SUPPLY_DROP_S
 label: SS Tier Uniques
 type: enumlist
 group: Sarachnis
-enum: ["Sarachnis cudgel","Jar of eyes","Orange egg sac","Blue egg sac"] 
+enum: ["Sarachnis cudgel","Jar of eyes","Orange egg sac","Blue egg sac","Pristine spider silk"] 
 */
 
 #define SARACHNIS_SS_UNIQUES ["Jar of eyes"]
@@ -5293,7 +5293,7 @@ rule (name:SARACHNIS_SS_UNIQUES) {UNIQUE_SS_STYLE}
 label: S Tier Uniques
 type: enumlist
 group: Sarachnis
-enum: ["Sarachnis cudgel","Jar of eyes","Orange egg sac","Blue egg sac"] 
+enum: ["Sarachnis cudgel","Jar of eyes","Orange egg sac","Blue egg sac","Pristine spider silk"] 
 */
 
 #define SARACHNIS_S_UNIQUES []
@@ -5304,7 +5304,7 @@ rule (name:SARACHNIS_S_UNIQUES) {UNIQUE_S_STYLE}
 label: A Tier Uniques
 type: enumlist
 group: Sarachnis
-enum: ["Sarachnis cudgel","Jar of eyes","Orange egg sac","Blue egg sac"] 
+enum: ["Sarachnis cudgel","Jar of eyes","Orange egg sac","Blue egg sac","Pristine spider silk"] 
 */
 
 #define SARACHNIS_A_UNIQUES ["Orange egg sac","Blue egg sac"]
@@ -5315,10 +5315,10 @@ rule (name:SARACHNIS_A_UNIQUES) {UNIQUE_A_STYLE}
 label: B Tier Uniques
 type: enumlist
 group: Sarachnis
-enum: ["Sarachnis cudgel","Jar of eyes","Orange egg sac","Blue egg sac"] 
+enum: ["Sarachnis cudgel","Jar of eyes","Orange egg sac","Blue egg sac","Pristine spider silk"] 
 */
 
-#define SARACHNIS_B_UNIQUES ["Sarachnis cudgel"]
+#define SARACHNIS_B_UNIQUES ["Sarachnis cudgel","Pristine spider silk"]
 
 rule (name:SARACHNIS_B_UNIQUES) {UNIQUE_B_STYLE}
 
@@ -5326,7 +5326,7 @@ rule (name:SARACHNIS_B_UNIQUES) {UNIQUE_B_STYLE}
 label: C Tier Uniques
 type: enumlist
 group: Sarachnis
-enum: ["Sarachnis cudgel","Jar of eyes","Orange egg sac","Blue egg sac"] 
+enum: ["Sarachnis cudgel","Jar of eyes","Orange egg sac","Blue egg sac","Pristine spider silk"] 
 */
 
 #define SARACHNIS_C_UNIQUES []
