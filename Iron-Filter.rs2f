@@ -16398,7 +16398,7 @@ type: number
 group: D Tier
 */
 
-#define RUNES_D_MIN_QUANT 10
+#define RUNES_D_MIN_QUANT 5
 
 rule (name:RUNES_D_NAMES && quantity:<RUNES_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:RUNES_D_NAMES && quantity:<RUNES_D_MIN_QUANT) {hidden = true;}
