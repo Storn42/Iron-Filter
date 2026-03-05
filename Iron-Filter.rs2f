@@ -16303,7 +16303,7 @@ enum: ["Air rune","Water rune","Earth rune","Fire rune","Mind rune","Body Rune",
 group: C Tier
 */
 
-#define RUNES_C_NAMES ["Aether rune"]
+#define RUNES_C_NAMES ["Aether rune","Blighted ancient ice sack"]
 
 /*@ define:input:runes
 label: Show Unnoted
@@ -16380,7 +16380,7 @@ enum: ["Air rune","Water rune","Earth rune","Fire rune","Mind rune","Body Rune",
 group: D Tier
 */
 
-#define RUNES_D_NAMES ["Cosmic rune","Chaos rune","Nature rune","Law rune","Death rune","Sunfire rune","Astral rune","Blood rune","Soul rune","Wrath rune","Blighted ancient ice sack","Blighted entangle sack","Blighted surge sack"]
+#define RUNES_D_NAMES ["Cosmic rune","Chaos rune","Nature rune","Law rune","Death rune","Sunfire rune","Astral rune","Blood rune","Soul rune","Wrath rune","Blighted entangle sack","Blighted surge sack"]
 
 /*@ define:input:runes
 label: Show Unnoted
