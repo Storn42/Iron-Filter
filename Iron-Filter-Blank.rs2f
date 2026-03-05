@@ -5,7 +5,8 @@ name: header
 
 meta {
     name = "Storn's Iron Filter";
-    description = "A Filter for the Ironman Experience. Turn off GE value and enjoy";
+    description = "A Filter for the Ironman Experience. 
+	Turn off GE value and enjoy!";
 	}
 	
 /*@ define:module:warning
@@ -25330,7 +25331,8 @@ type: style
 	menuTextColor = "#ffff0000"; \
 	textAccent = 3; \
 	fontType = 3; \
-	showLootbeam = true;
+	showLootbeam = true; \
+	sound = "DropSS.wav";
 
 /*@ define:input:fallback
 label: S Tier
@@ -25345,7 +25347,8 @@ type: style
 	menuTextColor = "#FFFFBFEA"; \
 	textAccent = 3; \
 	fontType = 3; \
-	showLootbeam = true;
+	showLootbeam = true; \
+	sound = "DropS.wav";
 
 /*@ define:input:fallback
 label: A Tier
@@ -25358,7 +25361,8 @@ type: style
 	borderColor = "#ffffffff"; \
 	menuTextColor = "#ffffcc00"; \
 	textAccent = 3; \
-	fontType = 2;
+	fontType = 2; \
+	sound = "DropA.wav";
 
 /*@ define:input:fallback
 label: B Tier
