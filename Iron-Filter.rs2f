@@ -5,8 +5,7 @@ name: header
 
 meta {
     name = "Storn's Iron Filter";
-    description = "A Filter for the Ironman Experience.
-	Turn off GE value and enjoy!";
+    description = "A Filter for the Ironman Experience.     Turn off GE value and enjoy!";
 	}
 	
 /*@ define:module:warning
