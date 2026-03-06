@@ -1062,7 +1062,7 @@ type: stringlist
 group: Elder Chaos Druids/Zombie Pirates
 */
 
-#define CHAOS_PIRATES_HIDE ["Dark fishing bait","Snape grass","Unholy mould","Vial of water"]
+#define CHAOS_PIRATES_HIDE ["Dark fishing bait","Snape grass","Unholy mould","Vial of water","Grimy guam leaf","Grimy marrentill","Grimy tarromin","Grimy harralander"]
 
 rule (area:[3216,3587,0,3261,3634,0] && name:CHAOS_PIRATES_HIDE) {hidden = true;}
 
