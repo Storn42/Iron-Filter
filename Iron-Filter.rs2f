@@ -20391,6 +20391,540 @@ rule (name:PRAYER_HEADS_E_NAMES && quantity:>=PRAYER_HEADS_E_D_QUANT) {PRAYER_HE
 
 rule (name:PRAYER_HEADS_E_NAMES) {PRAYER_HEADS_E_STYLE}
 
+/*@ define:module:fletching
+name: Fletching
+subtitle: Creating Ranged Weapons and Ammo
+*/
+
+/*@ define:input:fletching
+label: SS Tier
+type: enumlist
+enum: ["Dragon crossbow (u)","Dragon limbs","Runite crossbow (u)","Runite limbs","Onyx bolt tips","Magic longbow (u)","Magic shortbow (u)","Adamant crossbow (u)","Magic stock","Adamantite limbs","Dragon arrowtips","Dragon bolts (unf)","Mith grapple tip","Dragon dart tip","bowstring","Maple longbow (u)","Maple shortbow (u)","Yew longbow (u)","Yew shortbow (u)","Unstrung comp bow","Maple stock","Mithril crossbow (u)","Yew stock","Mahogany stock","Mithril limbs","Rune arrowtips","Amethyst arrowtips",Adamant bolts(unf),"Runite bolts (unf)","Ruby bolt tips","Diamond bolt tips","Dragonstone bolt tips","Amethyst bolt tips","Headless atlatl dart","Atlatl dart tips","Adamant dart tip","Rune dart tip","Amethyst dart tip","Adamant javelin tips","Rune javelin tips","Amethyst javelin tips","Dragon javelin tips","Shortbow (u)","Longbow (u)","Oak longbow (u)","Oak shortbow (u)","Willow longbow (u)","Willow shortbow (u)","Wooden stock","Bronze crossbow (u)","Oak stock","Blurite crossbow (u)","Willow stock","Iron crossbow (u)","Teak stock","Steel crossbow (u)","Bronze limbs","Blurite limbs","Iron limbs","Steel limbs","Feather","Arrow shaft","Headless arrow","Bronze arrowtips","Iron arrowtips","Steel arrowtips","Mithril arrowtips","Broad arrowheads","Adamant arrowtips","Ogre arrow shaft","Flighted ogre arrow","Wolfbone arrowtips","Bronze bolts (unf)","Blurite bolts (unf)","Iron bolts (unf)","Silver bolts (unf)","Steel bolts (unf)","Mithril bolts (unf)","Unfinished broad bolts","Opal bolt tips","Jade bolt tips","Pearl bolt tips","Topaz bolt tips","Barb bolttips","Sapphire bolt tips","Emerald bolt tips","Bronze dart tip","Iron dart tip","Steel dart tip","Mithril dart tip","Javelin shaft","Bronze javelin tips","Iron javelin tips","Steel javelin tips","Mithril javelin tips"]
+group: SS Tier
+*/
+
+#define FLETCHING_SS_NAMES ["Dragon crossbow (u)","Dragon limbs"]
+
+/*@ define:input:fletching
+label: Show Unnoted
+type: boolean
+group: SS Tier
+*/
+
+#define FLETCHING_SS_SHOW_UNNOTED true
+
+rule (name:FLETCHING_SS_NAMES && !FLETCHING_SS_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_SS_NAMES && !FLETCHING_SS_SHOW_UNNOTED && noted:true) {hidden = true;}
+
+/*@ define:input:fletching
+label: Minimum Quantity
+type: number
+group: SS Tier
+*/
+
+#define FLETCHING_SS_MIN_QUANT 0
+
+rule (name:FLETCHING_SS_NAMES && quantity:<FLETCHING_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_SS_NAMES && quantity:<FLETCHING_SS_MIN_QUANT) {hidden = true;}
+
+/*@ define:input:fletching
+label: SS Tier
+type: style
+group: SS Tier
+exampleItem: Raw anglerfish
+*/
+
+#define FLETCHING_SS_STYLE \
+	backgroundColor = "#ffffffff";\
+	menuTextColor = "#ff094A4C";\
+	color = "#ff094A4C";\
+	fontType = 3;\
+	textAccent = 3;\
+	borderColor = "#ffffffff";\
+	showLootbeam = true;\
+	lootbeamColor = "#ff094A4C";\
+	menuSort = 50000;\
+	sound = "DropSS.wav";
+
+/*@ define:input:fletching
+label: S Tier
+type: enumlist
+enum: ["Dragon crossbow (u)","Dragon limbs","Runite crossbow (u)","Runite limbs","Onyx bolt tips","Magic longbow (u)","Magic shortbow (u)","Adamant crossbow (u)","Magic stock","Adamantite limbs","Dragon arrowtips","Dragon bolts (unf)","Mith grapple tip","Dragon dart tip","bowstring","Maple longbow (u)","Maple shortbow (u)","Yew longbow (u)","Yew shortbow (u)","Unstrung comp bow","Maple stock","Mithril crossbow (u)","Yew stock","Mahogany stock","Mithril limbs","Rune arrowtips","Amethyst arrowtips",Adamant bolts(unf),"Runite bolts (unf)","Ruby bolt tips","Diamond bolt tips","Dragonstone bolt tips","Amethyst bolt tips","Headless atlatl dart","Atlatl dart tips","Adamant dart tip","Rune dart tip","Amethyst dart tip","Adamant javelin tips","Rune javelin tips","Amethyst javelin tips","Dragon javelin tips","Shortbow (u)","Longbow (u)","Oak longbow (u)","Oak shortbow (u)","Willow longbow (u)","Willow shortbow (u)","Wooden stock","Bronze crossbow (u)","Oak stock","Blurite crossbow (u)","Willow stock","Iron crossbow (u)","Teak stock","Steel crossbow (u)","Bronze limbs","Blurite limbs","Iron limbs","Steel limbs","Feather","Arrow shaft","Headless arrow","Bronze arrowtips","Iron arrowtips","Steel arrowtips","Mithril arrowtips","Broad arrowheads","Adamant arrowtips","Ogre arrow shaft","Flighted ogre arrow","Wolfbone arrowtips","Bronze bolts (unf)","Blurite bolts (unf)","Iron bolts (unf)","Silver bolts (unf)","Steel bolts (unf)","Mithril bolts (unf)","Unfinished broad bolts","Opal bolt tips","Jade bolt tips","Pearl bolt tips","Topaz bolt tips","Barb bolttips","Sapphire bolt tips","Emerald bolt tips","Bronze dart tip","Iron dart tip","Steel dart tip","Mithril dart tip","Javelin shaft","Bronze javelin tips","Iron javelin tips","Steel javelin tips","Mithril javelin tips"]
+group: S Tier
+*/
+
+#define FLETCHING_S_NAMES []
+
+/*@ define:input:fletching
+label: Show Unnoted
+type: boolean
+group: S Tier
+*/
+
+#define FLETCHING_S_SHOW_UNNOTED true
+
+rule (name:FLETCHING_S_NAMES && !FLETCHING_S_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_S_NAMES && !FLETCHING_S_SHOW_UNNOTED && noted:true) {hidden = true;}
+
+/*@ define:input:fletching
+label: Minimum Quantity
+type: number
+group: S Tier
+*/
+
+#define FLETCHING_S_MIN_QUANT 0
+
+rule (name:FLETCHING_S_NAMES && quantity:<FLETCHING_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_S_NAMES && quantity:<FLETCHING_S_MIN_QUANT) {hidden = true;}
+
+/*@ define:input:fletching
+label: SS Quantity
+type: number
+group: S Tier
+*/
+
+#define FLETCHING_S_SS_QUANT 10
+
+
+/*@ define:input:fletching
+label: S Tier
+type: style
+group: S Tier
+exampleItem: Raw manta ray
+*/
+
+#define FLETCHING_S_STYLE \
+	backgroundColor = "#ff094A4C";\
+	menuTextColor = "#ff094A4C";\
+	color = "#ffFFBF1E";\
+	fontType = 3;\
+	textAccent = 3;\
+	borderColor = "#ffFFBF1E";\
+	showLootbeam = true;\
+	lootbeamColor = "#ffFFBF1E";\
+	menuSort = 40000;\
+	sound = "DropS.wav";
+
+/*@ define:input:fletching
+label: A Tier
+type: enumlist
+enum: ["Dragon crossbow (u)","Dragon limbs","Runite crossbow (u)","Runite limbs","Onyx bolt tips","Magic longbow (u)","Magic shortbow (u)","Adamant crossbow (u)","Magic stock","Adamantite limbs","Dragon arrowtips","Dragon bolts (unf)","Mith grapple tip","Dragon dart tip","bowstring","Maple longbow (u)","Maple shortbow (u)","Yew longbow (u)","Yew shortbow (u)","Unstrung comp bow","Maple stock","Mithril crossbow (u)","Yew stock","Mahogany stock","Mithril limbs","Rune arrowtips","Amethyst arrowtips",Adamant bolts(unf),"Runite bolts (unf)","Ruby bolt tips","Diamond bolt tips","Dragonstone bolt tips","Amethyst bolt tips","Headless atlatl dart","Atlatl dart tips","Adamant dart tip","Rune dart tip","Amethyst dart tip","Adamant javelin tips","Rune javelin tips","Amethyst javelin tips","Dragon javelin tips","Shortbow (u)","Longbow (u)","Oak longbow (u)","Oak shortbow (u)","Willow longbow (u)","Willow shortbow (u)","Wooden stock","Bronze crossbow (u)","Oak stock","Blurite crossbow (u)","Willow stock","Iron crossbow (u)","Teak stock","Steel crossbow (u)","Bronze limbs","Blurite limbs","Iron limbs","Steel limbs","Feather","Arrow shaft","Headless arrow","Bronze arrowtips","Iron arrowtips","Steel arrowtips","Mithril arrowtips","Broad arrowheads","Adamant arrowtips","Ogre arrow shaft","Flighted ogre arrow","Wolfbone arrowtips","Bronze bolts (unf)","Blurite bolts (unf)","Iron bolts (unf)","Silver bolts (unf)","Steel bolts (unf)","Mithril bolts (unf)","Unfinished broad bolts","Opal bolt tips","Jade bolt tips","Pearl bolt tips","Topaz bolt tips","Barb bolttips","Sapphire bolt tips","Emerald bolt tips","Bronze dart tip","Iron dart tip","Steel dart tip","Mithril dart tip","Javelin shaft","Bronze javelin tips","Iron javelin tips","Steel javelin tips","Mithril javelin tips"]
+group: A Tier
+*/
+
+#define FLETCHING_A_NAMES []
+
+/*@ define:input:fletching
+label: Show Unnoted
+type: boolean
+group: A Tier
+*/
+
+#define FLETCHING_A_SHOW_UNNOTED true
+
+rule (name:FLETCHING_A_NAMES && !FLETCHING_A_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_A_NAMES && !FLETCHING_A_SHOW_UNNOTED && noted:true) {hidden = true;}
+
+/*@ define:input:fletching
+label: Minimum Quantity
+type: number
+group: A Tier
+*/
+
+#define FLETCHING_A_MIN_QUANT 0
+
+rule (name:FLETCHING_A_NAMES && quantity:<FLETCHING_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_A_NAMES && quantity:<FLETCHING_A_MIN_QUANT) {hidden = true;}
+
+/*@ define:input:fletching
+label: S Quantity
+type: number
+group: A Tier
+*/
+
+#define FLETCHING_A_S_QUANT 10
+
+/*@ define:input:fletching
+label: SS Quantity
+type: number
+group: A Tier
+*/
+
+#define FLETCHING_A_SS_QUANT 100
+
+
+/*@ define:input:fletching
+label: A Tier
+type: style
+group: A Tier
+exampleItem: Raw sea turtle
+*/
+
+#define FLETCHING_A_STYLE \
+	color = "#ffFFBF1E";\
+	backgroundColor = "#cc094A4C";\
+	menuTextColor = "#ffbbbbbb"; \
+	fontType = 2;\
+	textAccent = 3;\
+	borderColor = "#ffFFBF1E";\
+	menuSort = 30000;\
+	sound = "DropA.wav";
+
+/*@ define:input:fletching
+label: B Tier
+type: enumlist
+enum: ["Dragon crossbow (u)","Dragon limbs","Runite crossbow (u)","Runite limbs","Onyx bolt tips","Magic longbow (u)","Magic shortbow (u)","Adamant crossbow (u)","Magic stock","Adamantite limbs","Dragon arrowtips","Dragon bolts (unf)","Mith grapple tip","Dragon dart tip","bowstring","Maple longbow (u)","Maple shortbow (u)","Yew longbow (u)","Yew shortbow (u)","Unstrung comp bow","Maple stock","Mithril crossbow (u)","Yew stock","Mahogany stock","Mithril limbs","Rune arrowtips","Amethyst arrowtips",Adamant bolts(unf),"Runite bolts (unf)","Ruby bolt tips","Diamond bolt tips","Dragonstone bolt tips","Amethyst bolt tips","Headless atlatl dart","Atlatl dart tips","Adamant dart tip","Rune dart tip","Amethyst dart tip","Adamant javelin tips","Rune javelin tips","Amethyst javelin tips","Dragon javelin tips","Shortbow (u)","Longbow (u)","Oak longbow (u)","Oak shortbow (u)","Willow longbow (u)","Willow shortbow (u)","Wooden stock","Bronze crossbow (u)","Oak stock","Blurite crossbow (u)","Willow stock","Iron crossbow (u)","Teak stock","Steel crossbow (u)","Bronze limbs","Blurite limbs","Iron limbs","Steel limbs","Feather","Arrow shaft","Headless arrow","Bronze arrowtips","Iron arrowtips","Steel arrowtips","Mithril arrowtips","Broad arrowheads","Adamant arrowtips","Ogre arrow shaft","Flighted ogre arrow","Wolfbone arrowtips","Bronze bolts (unf)","Blurite bolts (unf)","Iron bolts (unf)","Silver bolts (unf)","Steel bolts (unf)","Mithril bolts (unf)","Unfinished broad bolts","Opal bolt tips","Jade bolt tips","Pearl bolt tips","Topaz bolt tips","Barb bolttips","Sapphire bolt tips","Emerald bolt tips","Bronze dart tip","Iron dart tip","Steel dart tip","Mithril dart tip","Javelin shaft","Bronze javelin tips","Iron javelin tips","Steel javelin tips","Mithril javelin tips"]
+group: B Tier
+*/
+
+#define FLETCHING_B_NAMES ["Runite crossbow (u)","Runite limbs","Onyx bolt tips"]
+
+/*@ define:input:fletching
+label: Show Unnoted
+type: boolean
+group: B Tier
+*/
+
+#define FLETCHING_B_SHOW_UNNOTED true
+
+rule (name:FLETCHING_B_NAMES && !FLETCHING_B_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_B_NAMES && !FLETCHING_B_SHOW_UNNOTED && noted:true) {hidden = true;}
+
+/*@ define:input:fletching
+label: Minimum Quantity
+type: number
+group: B Tier
+*/
+
+#define FLETCHING_B_MIN_QUANT 0
+
+rule (name:FLETCHING_B_NAMES && quantity:<FLETCHING_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_B_NAMES && quantity:<FLETCHING_B_MIN_QUANT) {hidden = true;}
+
+/*@ define:input:fletching
+label: A Quantity
+type: number
+group: B Tier
+*/
+
+#define FLETCHING_B_A_QUANT 10
+
+/*@ define:input:fletching
+label: S Quantity
+type: number
+group: B Tier
+*/
+
+#define FLETCHING_B_S_QUANT 100
+
+/*@ define:input:fletching
+label: SS Quantity
+type: number
+group: B Tier
+*/
+
+#define FLETCHING_B_SS_QUANT 1000
+
+/*@ define:input:fletching
+label: B Tier
+type: style
+group: B Tier
+exampleItem: Raw shark
+*/
+
+#define FLETCHING_B_STYLE \
+	color = "#ffFFBF1E";\
+    backgroundColor = "#99094A4C";\
+	menuTextColor = "#ff094A4C";\
+	textAccent = 3;\
+	menuSort = 20000;
+
+/*@ define:input:fletching
+label: C Tier
+type: enumlist
+enum: ["Dragon crossbow (u)","Dragon limbs","Runite crossbow (u)","Runite limbs","Onyx bolt tips","Magic longbow (u)","Magic shortbow (u)","Adamant crossbow (u)","Magic stock","Adamantite limbs","Dragon arrowtips","Dragon bolts (unf)","Mith grapple tip","Dragon dart tip","bowstring","Maple longbow (u)","Maple shortbow (u)","Yew longbow (u)","Yew shortbow (u)","Unstrung comp bow","Maple stock","Mithril crossbow (u)","Yew stock","Mahogany stock","Mithril limbs","Rune arrowtips","Amethyst arrowtips",Adamant bolts(unf),"Runite bolts (unf)","Ruby bolt tips","Diamond bolt tips","Dragonstone bolt tips","Amethyst bolt tips","Headless atlatl dart","Atlatl dart tips","Adamant dart tip","Rune dart tip","Amethyst dart tip","Adamant javelin tips","Rune javelin tips","Amethyst javelin tips","Dragon javelin tips","Shortbow (u)","Longbow (u)","Oak longbow (u)","Oak shortbow (u)","Willow longbow (u)","Willow shortbow (u)","Wooden stock","Bronze crossbow (u)","Oak stock","Blurite crossbow (u)","Willow stock","Iron crossbow (u)","Teak stock","Steel crossbow (u)","Bronze limbs","Blurite limbs","Iron limbs","Steel limbs","Feather","Arrow shaft","Headless arrow","Bronze arrowtips","Iron arrowtips","Steel arrowtips","Mithril arrowtips","Broad arrowheads","Adamant arrowtips","Ogre arrow shaft","Flighted ogre arrow","Wolfbone arrowtips","Bronze bolts (unf)","Blurite bolts (unf)","Iron bolts (unf)","Silver bolts (unf)","Steel bolts (unf)","Mithril bolts (unf)","Unfinished broad bolts","Opal bolt tips","Jade bolt tips","Pearl bolt tips","Topaz bolt tips","Barb bolttips","Sapphire bolt tips","Emerald bolt tips","Bronze dart tip","Iron dart tip","Steel dart tip","Mithril dart tip","Javelin shaft","Bronze javelin tips","Iron javelin tips","Steel javelin tips","Mithril javelin tips"]
+group: C Tier
+*/
+
+#define FLETCHING_C_NAMES ["Magic longbow (u)","Magic shortbow (u)","Adamant crossbow (u)","Magic stock","Adamantite limbs","Dragon arrowtips","Dragon bolts (unf)","Mith grapple tip","Dragon dart tip"]
+
+/*@ define:input:fletching
+label: Show Unnoted
+type: boolean
+group: C Tier
+*/
+
+#define FLETCHING_C_SHOW_UNNOTED false
+
+rule (name:FLETCHING_C_NAMES && !FLETCHING_C_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_C_NAMES && !FLETCHING_C_SHOW_UNNOTED && noted:true) {hidden = true;}
+
+/*@ define:input:fletching
+label: Minimum Quantity
+type: number
+group: C Tier
+*/
+
+#define FLETCHING_C_MIN_QUANT 0
+
+rule (name:FLETCHING_C_NAMES && quantity:<FLETCHING_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_C_NAMES && quantity:<FLETCHING_C_MIN_QUANT) {hidden = true;}
+
+/*@ define:input:fletching
+label: B Quantity
+type: number
+group: C Tier
+*/
+
+#define FLETCHING_C_B_QUANT 10
+
+/*@ define:input:fletching
+label: A Quantity
+type: number
+group: C Tier
+*/
+
+#define FLETCHING_C_A_QUANT 100
+
+/*@ define:input:fletching
+label: S Quantity
+type: number
+group: C Tier
+*/
+
+#define FLETCHING_C_S_QUANT 1000
+
+/*@ define:input:fletching
+label: SS Quantity
+type: number
+group: C Tier
+*/
+
+#define FLETCHING_C_SS_QUANT 10000
+
+/*@ define:input:fletching
+label: C Tier
+type: style
+group: C Tier
+exampleItem: Raw monkfish
+*/
+
+#define FLETCHING_C_STYLE \
+    color = "#ffFFBF1E";\
+    backgroundColor = "#33094A4C";\
+	menuTextColor = "#ff094A4C";\
+	textAccent = 3;\
+	menuSort = 10000;\
+
+/*@ define:input:fletching
+label: D Tier
+type: enumlist
+enum: ["Dragon crossbow (u)","Dragon limbs","Runite crossbow (u)","Runite limbs","Onyx bolt tips","Magic longbow (u)","Magic shortbow (u)","Adamant crossbow (u)","Magic stock","Adamantite limbs","Dragon arrowtips","Dragon bolts (unf)","Mith grapple tip","Dragon dart tip","bowstring","Maple longbow (u)","Maple shortbow (u)","Yew longbow (u)","Yew shortbow (u)","Unstrung comp bow","Maple stock","Mithril crossbow (u)","Yew stock","Mahogany stock","Mithril limbs","Rune arrowtips","Amethyst arrowtips",Adamant bolts(unf),"Runite bolts (unf)","Ruby bolt tips","Diamond bolt tips","Dragonstone bolt tips","Amethyst bolt tips","Headless atlatl dart","Atlatl dart tips","Adamant dart tip","Rune dart tip","Amethyst dart tip","Adamant javelin tips","Rune javelin tips","Amethyst javelin tips","Dragon javelin tips","Shortbow (u)","Longbow (u)","Oak longbow (u)","Oak shortbow (u)","Willow longbow (u)","Willow shortbow (u)","Wooden stock","Bronze crossbow (u)","Oak stock","Blurite crossbow (u)","Willow stock","Iron crossbow (u)","Teak stock","Steel crossbow (u)","Bronze limbs","Blurite limbs","Iron limbs","Steel limbs","Feather","Arrow shaft","Headless arrow","Bronze arrowtips","Iron arrowtips","Steel arrowtips","Mithril arrowtips","Broad arrowheads","Adamant arrowtips","Ogre arrow shaft","Flighted ogre arrow","Wolfbone arrowtips","Bronze bolts (unf)","Blurite bolts (unf)","Iron bolts (unf)","Silver bolts (unf)","Steel bolts (unf)","Mithril bolts (unf)","Unfinished broad bolts","Opal bolt tips","Jade bolt tips","Pearl bolt tips","Topaz bolt tips","Barb bolttips","Sapphire bolt tips","Emerald bolt tips","Bronze dart tip","Iron dart tip","Steel dart tip","Mithril dart tip","Javelin shaft","Bronze javelin tips","Iron javelin tips","Steel javelin tips","Mithril javelin tips"]
+group: D Tier
+*/
+
+#define FLETCHING_D_NAMES ["bowstring","Maple longbow (u)","Maple shortbow (u)","Yew longbow (u)","Yew shortbow (u)","Unstrung comp bow","Maple stock","Mithril crossbow (u)","Yew stock","Mahogany stock","Mithril limbs","Rune arrowtips","Amethyst arrowtips",Adamant bolts(unf),"Runite bolts (unf)","Ruby bolt tips","Diamond bolt tips","Dragonstone bolt tips","Amethyst bolt tips","Headless atlatl dart","Atlatl dart tips","Adamant dart tip","Rune dart tip","Amethyst dart tip","Adamant javelin tips","Rune javelin tips","Amethyst javelin tips","Dragon javelin tips"]
+
+/*@ define:input:fletching
+label: Show Unnoted
+type: boolean
+group: D Tier
+*/
+
+#define FLETCHING_D_SHOW_UNNOTED false
+
+rule (name:FLETCHING_D_NAMES && !FLETCHING_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_D_NAMES && !FLETCHING_D_SHOW_UNNOTED && noted:true) {hidden = true;}
+
+/*@ define:input:fletching
+label: Minimum Quantity
+type: number
+group: D Tier
+*/
+
+#define FLETCHING_D_MIN_QUANT 10
+
+rule (name:FLETCHING_D_NAMES && quantity:<FLETCHING_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_D_NAMES && quantity:<FLETCHING_D_MIN_QUANT) {hidden = true;}
+
+/*@ define:input:fletching
+label: C Quantity
+type: number
+group: D Tier
+*/
+
+#define FLETCHING_D_C_QUANT 10
+
+/*@ define:input:fletching
+label: B Quantity
+type: number
+group: D Tier
+*/
+
+#define FLETCHING_D_B_QUANT 100
+
+/*@ define:input:fletching
+label: A Quantity
+type: number
+group: D Tier
+*/
+
+#define FLETCHING_D_A_QUANT 1000
+
+/*@ define:input:fletching
+label: S Quantity
+type: number
+group: D Tier
+*/
+
+#define FLETCHING_D_S_QUANT 10000
+
+/*@ define:input:fletching
+label: SS Quantity
+type: number
+group: D Tier
+*/
+
+#define FLETCHING_D_SS_QUANT 100000
+
+/*@ define:input:fletching
+label: D Tier
+type: style
+group: D Tier
+exampleItem: Grapes
+*/
+
+#define FLETCHING_D_STYLE \
+    color = "#ff094A4C"; \
+	menuTextColor = "#ff094A4C";
+
+/*@ define:input:fletching
+label: E Tier
+type: enumlist
+enum: ["Dragon crossbow (u)","Dragon limbs","Runite crossbow (u)","Runite limbs","Onyx bolt tips","Magic longbow (u)","Magic shortbow (u)","Adamant crossbow (u)","Magic stock","Adamantite limbs","Dragon arrowtips","Dragon bolts (unf)","Mith grapple tip","Dragon dart tip","bowstring","Maple longbow (u)","Maple shortbow (u)","Yew longbow (u)","Yew shortbow (u)","Unstrung comp bow","Maple stock","Mithril crossbow (u)","Yew stock","Mahogany stock","Mithril limbs","Rune arrowtips","Amethyst arrowtips",Adamant bolts(unf),"Runite bolts (unf)","Ruby bolt tips","Diamond bolt tips","Dragonstone bolt tips","Amethyst bolt tips","Headless atlatl dart","Atlatl dart tips","Adamant dart tip","Rune dart tip","Amethyst dart tip","Adamant javelin tips","Rune javelin tips","Amethyst javelin tips","Dragon javelin tips","Shortbow (u)","Longbow (u)","Oak longbow (u)","Oak shortbow (u)","Willow longbow (u)","Willow shortbow (u)","Wooden stock","Bronze crossbow (u)","Oak stock","Blurite crossbow (u)","Willow stock","Iron crossbow (u)","Teak stock","Steel crossbow (u)","Bronze limbs","Blurite limbs","Iron limbs","Steel limbs","Feather","Arrow shaft","Headless arrow","Bronze arrowtips","Iron arrowtips","Steel arrowtips","Mithril arrowtips","Broad arrowheads","Adamant arrowtips","Ogre arrow shaft","Flighted ogre arrow","Wolfbone arrowtips","Bronze bolts (unf)","Blurite bolts (unf)","Iron bolts (unf)","Silver bolts (unf)","Steel bolts (unf)","Mithril bolts (unf)","Unfinished broad bolts","Opal bolt tips","Jade bolt tips","Pearl bolt tips","Topaz bolt tips","Barb bolttips","Sapphire bolt tips","Emerald bolt tips","Bronze dart tip","Iron dart tip","Steel dart tip","Mithril dart tip","Javelin shaft","Bronze javelin tips","Iron javelin tips","Steel javelin tips","Mithril javelin tips"]
+group: E Tier
+*/
+
+#define FLETCHING_E_NAMES ["Shortbow (u)","Longbow (u)","Oak longbow (u)","Oak shortbow (u)","Willow longbow (u)","Willow shortbow (u)","Wooden stock","Bronze crossbow (u)","Oak stock","Blurite crossbow (u)","Willow stock","Iron crossbow (u)","Teak stock","Steel crossbow (u)","Bronze limbs","Blurite limbs","Iron limbs","Steel limbs","Feather","Arrow shaft","Headless arrow","Bronze arrowtips","Iron arrowtips","Steel arrowtips","Mithril arrowtips","Broad arrowheads","Adamant arrowtips","Ogre arrow shaft","Flighted ogre arrow","Wolfbone arrowtips","Bronze bolts (unf)","Blurite bolts (unf)","Iron bolts (unf)","Silver bolts (unf)","Steel bolts (unf)","Mithril bolts (unf)","Unfinished broad bolts","Opal bolt tips","Jade bolt tips","Pearl bolt tips","Topaz bolt tips","Barb bolttips","Sapphire bolt tips","Emerald bolt tips","Bronze dart tip","Iron dart tip","Steel dart tip","Mithril dart tip","Javelin shaft","Bronze javelin tips","Iron javelin tips","Steel javelin tips","Mithril javelin tips"]
+
+/*@ define:input:fletching
+label: Show Unnoted
+type: boolean
+group: E Tier
+*/
+
+#define FLETCHING_E_SHOW_UNNOTED false
+
+rule (name:FLETCHING_E_NAMES && !FLETCHING_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_E_NAMES && !FLETCHING_E_SHOW_UNNOTED && noted:true) {hidden = true;}
+
+/*@ define:input:fletching
+label: Minimum Quantity
+type: number
+group: E Tier
+*/
+
+#define FLETCHING_E_MIN_QUANT 100
+
+rule (name:FLETCHING_E_NAMES && quantity:<FLETCHING_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_E_NAMES && quantity:<FLETCHING_E_MIN_QUANT) {hidden = true;}
+
+/*@ define:input:fletching
+label: D Quantity
+type: number
+group: E Tier
+*/
+
+#define FLETCHING_E_D_QUANT 10
+
+/*@ define:input:fletching
+label: C Quantity
+type: number
+group: E Tier
+*/
+
+#define FLETCHING_E_C_QUANT 100
+
+/*@ define:input:fletching
+label: B Quantity
+type: number
+group: E Tier
+*/
+
+#define FLETCHING_E_B_QUANT 1000
+
+/*@ define:input:fletching
+label: A Quantity
+type: number
+group: E Tier
+*/
+
+#define FLETCHING_E_A_QUANT 10000
+
+/*@ define:input:fletching
+label: S Quantity
+type: number
+group: E Tier
+*/
+
+#define FLETCHING_E_S_QUANT 100000
+
+/*@ define:input:fletching
+label: SS Quantity
+type: number
+group: E Tier
+*/
+
+#define FLETCHING_E_SS_QUANT 1000000
+
+/*@ define:input:fletching
+label: E Tier
+type: style
+group: E Tier
+exampleItem: Raw shrimps
+*/
+
+#define FLETCHING_E_STYLE \
+    color = "#66094A4C"; \
+	textAccentColor = "#66000000"; \
+	menuTextColor = "#ff094A4C";\
+	menuSort = -10000;
+
+rule (name:FLETCHING_SS_NAMES) {FLETCHING_SS_STYLE}
+rule (name:FLETCHING_S_NAMES && quantity:>=FLETCHING_S_SS_QUANT) {FLETCHING_SS_STYLE}
+rule (name:FLETCHING_A_NAMES && quantity:>=FLETCHING_A_SS_QUANT) {FLETCHING_SS_STYLE}
+rule (name:FLETCHING_B_NAMES && quantity:>=FLETCHING_B_SS_QUANT) {FLETCHING_SS_STYLE}
+rule (name:FLETCHING_C_NAMES && quantity:>=FLETCHING_C_SS_QUANT) {FLETCHING_SS_STYLE}
+rule (name:FLETCHING_D_NAMES && quantity:>=FLETCHING_D_SS_QUANT) {FLETCHING_SS_STYLE}
+rule (name:FLETCHING_E_NAMES && quantity:>=FLETCHING_E_SS_QUANT) {FLETCHING_SS_STYLE}
+
+rule (name:FLETCHING_S_NAMES) {FLETCHING_S_STYLE}
+rule (name:FLETCHING_A_NAMES && quantity:>=FLETCHING_A_S_QUANT) {FLETCHING_S_STYLE}
+rule (name:FLETCHING_B_NAMES && quantity:>=FLETCHING_B_S_QUANT) {FLETCHING_S_STYLE}
+rule (name:FLETCHING_C_NAMES && quantity:>=FLETCHING_C_S_QUANT) {FLETCHING_S_STYLE}
+rule (name:FLETCHING_D_NAMES && quantity:>=FLETCHING_D_S_QUANT) {FLETCHING_S_STYLE}
+rule (name:FLETCHING_E_NAMES && quantity:>=FLETCHING_E_S_QUANT) {FLETCHING_S_STYLE}
+
+rule (name:FLETCHING_A_NAMES) {FLETCHING_A_STYLE}
+rule (name:FLETCHING_B_NAMES && quantity:>=FLETCHING_B_A_QUANT) {FLETCHING_A_STYLE}
+rule (name:FLETCHING_C_NAMES && quantity:>=FLETCHING_C_A_QUANT) {FLETCHING_A_STYLE}
+rule (name:FLETCHING_D_NAMES && quantity:>=FLETCHING_D_A_QUANT) {FLETCHING_A_STYLE}
+rule (name:FLETCHING_E_NAMES && quantity:>=FLETCHING_E_A_QUANT) {FLETCHING_A_STYLE}
+
+rule (name:FLETCHING_B_NAMES) {FLETCHING_B_STYLE}
+rule (name:FLETCHING_C_NAMES && quantity:>=FLETCHING_C_B_QUANT) {FLETCHING_B_STYLE}
+rule (name:FLETCHING_D_NAMES && quantity:>=FLETCHING_D_B_QUANT) {FLETCHING_B_STYLE}
+rule (name:FLETCHING_E_NAMES && quantity:>=FLETCHING_E_B_QUANT) {FLETCHING_B_STYLE}
+
+rule (name:FLETCHING_C_NAMES) {FLETCHING_C_STYLE}
+rule (name:FLETCHING_D_NAMES && quantity:>=FLETCHING_D_C_QUANT) {FLETCHING_C_STYLE}
+rule (name:FLETCHING_E_NAMES && quantity:>=FLETCHING_E_C_QUANT) {FLETCHING_C_STYLE}
+
+rule (name:FLETCHING_D_NAMES) {FLETCHING_D_STYLE}
+rule (name:FLETCHING_E_NAMES && quantity:>=FLETCHING_E_D_QUANT) {FLETCHING_D_STYLE}
+
+rule (name:FLETCHING_E_NAMES) {FLETCHING_E_STYLE}
+
 /*@ define:module:dragon_gear
 name: Dragon Gear
 subtitle: Made from Real Dragons
