@@ -7,12 +7,6 @@ meta {
     name = "Storn's Iron Filter";
     description = "A Filter for the Ironman Experience.     Turn off GE value and enjoy!";
 	}
-	
-/*@ define:module:warning
-name: WARNING
-description:
-    This filter currently takes a while to load. It is common to have to wait 2+ minutes for the filter to import. In this time you will be unable to interact with the game. Please be patient. The filter will eventually load. 
-*/
 
 /*@ define:module:greetings
 name: Welcome to Storn's Iron Filter
