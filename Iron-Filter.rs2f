@@ -15374,7 +15374,7 @@ type: boolean
 group: D Tier
 */
 
-#define FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED true
+#define FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED false
 
 rule (name:FOOD_AND_POTS_STOCKPILE_D_NAMES && !FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_D_NAMES && !FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
@@ -15456,7 +15456,7 @@ type: boolean
 group: E Tier
 */
 
-#define FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED true
+#define FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED false
 
 rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES && !FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES && !FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
@@ -15985,7 +15985,7 @@ type: boolean
 group: Blighted E Tier
 */
 
-#define BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED true
+#define BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED false
 
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
