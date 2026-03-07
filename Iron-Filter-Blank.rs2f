@@ -579,6 +579,56 @@ group: Special Drops
 	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_B_NAMES && ownership:1) {UNIQUE_B_STYLE} \
 	rule (_enabled && (_area) && name:_name && name:UNQIQUE_SPECIAL_C_NAMES && ownership:1) {UNIQUE_C_STYLE}
 
+/*@ define:input:uniques
+label: SS Tier Uniques
+type: stringlist
+group: Custom Uniques
+*/
+
+#define UNIQUE_CUSTOM_SS_NAMES []
+
+rule (name:UNIQUE_CUSTOM_SS_NAMES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:uniques
+label: S Tier Uniques
+type: stringlist
+group: Custom Uniques
+*/
+
+#define UNIQUE_CUSTOM_S_NAMES []
+
+rule (name:UNIQUE_CUSTOM_S_NAMES) {UNIQUE_S_STYLE}
+
+/*@ define:input:uniques
+label: A Tier Uniques
+type: stringlist
+group: Custom Uniques
+*/
+
+#define UNIQUE_CUSTOM_A_NAMES ["Trouver parchment"]
+
+rule (name:UNIQUE_CUSTOM_A_NAMES) {UNIQUE_A_STYLE}
+
+/*@ define:input:uniques
+label: B Tier Uniques
+type: stringlist
+group: Custom Uniques
+*/
+
+#define UNIQUE_CUSTOM_B_NAMES ["Magic shortbow scroll", "Ring of wealth scroll"]
+
+rule (name:UNIQUE_CUSTOM_B_NAMES) {UNIQUE_B_STYLE}
+
+/*@ define:input:uniques
+label: C Tier Uniques
+type: stringlist
+group: Custom Uniques
+*/
+
+#define UNIQUE_CUSTOM_C_NAMES ["Looting bag note"]
+
+rule (name:UNIQUE_CUSTOM_C_NAMES) {UNIQUE_C_STYLE}
+
 /*@ define:module:slayer_pvm
 name: Monsters
 subtitle: Hide Drops, Highlight Supplies, and Enable Meme Drops
