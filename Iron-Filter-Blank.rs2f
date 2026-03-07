@@ -20429,7 +20429,7 @@ rule (name:FLETCHING_SS_NAMES && quantity:<FLETCHING_SS_MIN_QUANT) {hidden = tru
 label: SS Tier
 type: style
 group: SS Tier
-exampleItem: Raw anglerfish
+exampleItem: Dragon crossbow (u)
 */
 
 #define FLETCHING_SS_STYLE \
@@ -20488,7 +20488,7 @@ group: S Tier
 label: S Tier
 type: style
 group: S Tier
-exampleItem: Raw manta ray
+exampleItem: Onyx bolt tips
 */
 
 #define FLETCHING_S_STYLE \
@@ -20555,7 +20555,7 @@ group: A Tier
 label: A Tier
 type: style
 group: A Tier
-exampleItem: Raw sea turtle
+exampleItem: Runite limbs
 */
 
 #define FLETCHING_A_STYLE \
@@ -20627,7 +20627,7 @@ group: B Tier
 label: B Tier
 type: style
 group: B Tier
-exampleItem: Raw shark
+exampleItem: Dragon bolts (unf)
 */
 
 #define FLETCHING_B_STYLE \
@@ -20704,7 +20704,7 @@ group: C Tier
 label: C Tier
 type: style
 group: C Tier
-exampleItem: Raw monkfish
+exampleItem: Magic shortbow (u)
 */
 
 #define FLETCHING_C_STYLE \
@@ -20789,7 +20789,7 @@ group: D Tier
 label: D Tier
 type: style
 group: D Tier
-exampleItem: Grapes
+exampleItem: Bowstring
 */
 
 #define FLETCHING_D_STYLE \
@@ -20879,7 +20879,7 @@ group: E Tier
 label: E Tier
 type: style
 group: E Tier
-exampleItem: Raw shrimps
+exampleItem: Headless arrow
 */
 
 #define FLETCHING_E_STYLE \
