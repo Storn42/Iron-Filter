@@ -70,6 +70,13 @@ group: Show
 
 apply (SHOW_ITEM_ICON) {icon = CurrentItem();}
 
+/*@ define:input:settings
+label: UIM Death Piles (Turns off filter) 
+type: boolean
+group: Show
+*/
+
+#define ENABLE_UIM_DEATH_PILES false
 
 /*@ define:module:hidden
 name: Hidden Items
@@ -243,6 +250,68 @@ apply (_hidecondition && name:HIDE_USER_UNDER_100 && quantity:<100) {hidden = fa
 apply (_hidecondition && name:HIDE_USER_UNDER_1000 && quantity:<1000) {hidden = false; hideOverlay = true;} \
 apply (_hidecondition && name:HIDE_USER_UNDER_10000 && quantity:<10000) {hidden = false; hideOverlay = true;}
 
+#define UIM_FALLBACK_VALUE_SS 10000000
+#define UIM_FALLBACK_VALUE_S 1000000
+#define UIM_FALLBACK_VALUE_A 100000
+#define UIM_FALLBACK_VALUE_B 10000
+#define UIM_FALLBACK_VALUE_C 1000
+#define UIM_FALLBACK_VALUE_D 100
+#define UIM_FALLBACK_VALUE_E 0
+
+#define UIM_FALLBACK_SS_STYLE \
+	textColor = "#ffff0000"; \
+	backgroundColor = "#ffffffff"; \
+	borderColor = "#ffff0000"; \
+	lootbeamColor = "#ffff0000"; \
+	menuTextColor = "#ffff0000"; \
+	textAccent = 3; \
+	fontType = 3; \
+	showLootbeam = true; \
+
+#define UIM_FALLBACK_S_STYLE \
+	textColor = "#ffffffff"; \
+	backgroundColor = "#FFFFBFEA"; \
+	borderColor = "#ffffffff"; \
+	lootbeamColor = "#FFFFBFEA"; \
+	menuTextColor = "#FFFFBFEA"; \
+	textAccent = 3; \
+	fontType = 3; \
+	showLootbeam = true; \
+
+#define UIM_FALLBACK_A_STYLE \
+	textColor = "#ffffffff"; \
+	backgroundColor = "#ccffcc00"; \
+	borderColor = "#ffffffff"; \
+	menuTextColor = "#ffffcc00"; \
+	textAccent = 3; \
+	fontType = 2; \
+
+#define UIM_FALLBACK_B_STYLE \
+	textColor = "#ffffffff"; \
+	backgroundColor = "#7000c8ff"; \
+	menuTextColor = "#ff00c9ff"; \
+	textAccent = 3;
+
+#define UIM_FALLBACK_C_STYLE \
+	textColor = "#ffffffff"; \
+	backgroundColor = "#337bff1f"; \
+	menuTextColor = "#ff7bff1f"; \
+	textAccent = 3;
+
+#define UIM_FALLBACK_D_STYLE \
+	textColor = "#ffffffff";
+
+#define UIM_FALLBACK_E_STYLE \
+	textColor = "#66ffffff"; \
+	textAccentColor = "#66000000";
+
+rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2958, 3335, 0, 2983, 3355, 0] || area:[3088, 3468, 0, 3092, 3470, 0] || area:[3042, 3480, 1, 3062, 3501, 1] || area:[2672, 3305, 0, 2678, 3312, 0]  || area:[1794, 9479, 0, 1856, 9538, 0]  || area:[3206, 9600, 0, 3237, 9628, 0]) && value:>=UIM_FALLBACK_VALUE_SS)) {UIM_FALLBACK_SS_STYLE}
+rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2958, 3335, 0, 2983, 3355, 0] || area:[3088, 3468, 0, 3092, 3470, 0] || area:[3042, 3480, 1, 3062, 3501, 1] || area:[2672, 3305, 0, 2678, 3312, 0]  || area:[1794, 9479, 0, 1856, 9538, 0]  || area:[3206, 9600, 0, 3237, 9628, 0]) && value:>=UIM_FALLBACK_VALUE_S)) {UIM_FALLBACK_S_STYLE}
+rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2958, 3335, 0, 2983, 3355, 0] || area:[3088, 3468, 0, 3092, 3470, 0] || area:[3042, 3480, 1, 3062, 3501, 1] || area:[2672, 3305, 0, 2678, 3312, 0]  || area:[1794, 9479, 0, 1856, 9538, 0]  || area:[3206, 9600, 0, 3237, 9628, 0]) && value:>=UIM_FALLBACK_VALUE_A)) {UIM_FALLBACK_A_STYLE}
+rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2958, 3335, 0, 2983, 3355, 0] || area:[3088, 3468, 0, 3092, 3470, 0] || area:[3042, 3480, 1, 3062, 3501, 1] || area:[2672, 3305, 0, 2678, 3312, 0]  || area:[1794, 9479, 0, 1856, 9538, 0]  || area:[3206, 9600, 0, 3237, 9628, 0]) && value:>=UIM_FALLBACK_VALUE_B)) {UIM_FALLBACK_B_STYLE}
+rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2958, 3335, 0, 2983, 3355, 0] || area:[3088, 3468, 0, 3092, 3470, 0] || area:[3042, 3480, 1, 3062, 3501, 1] || area:[2672, 3305, 0, 2678, 3312, 0]  || area:[1794, 9479, 0, 1856, 9538, 0]  || area:[3206, 9600, 0, 3237, 9628, 0]) && value:>=UIM_FALLBACK_VALUE_C)) {UIM_FALLBACK_C_STYLE}
+rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2958, 3335, 0, 2983, 3355, 0] || area:[3088, 3468, 0, 3092, 3470, 0] || area:[3042, 3480, 1, 3062, 3501, 1] || area:[2672, 3305, 0, 2678, 3312, 0]  || area:[1794, 9479, 0, 1856, 9538, 0]  || area:[3206, 9600, 0, 3237, 9628, 0]) && value:>=UIM_FALLBACK_VALUE_D)) {UIM_FALLBACK_D_STYLE}
+rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2958, 3335, 0, 2983, 3355, 0] || area:[3088, 3468, 0, 3092, 3470, 0] || area:[3042, 3480, 1, 3062, 3501, 1] || area:[2672, 3305, 0, 2678, 3312, 0]  || area:[1794, 9479, 0, 1856, 9538, 0]  || area:[3206, 9600, 0, 3237, 9628, 0]) && value:>=UIM_FALLBACK_VALUE_E)) {UIM_FALLBACK_E_STYLE}
 
 /*@ define:module:food_and_pots
 name: Food and Potions
