@@ -267,6 +267,7 @@ apply (_hidecondition && name:HIDE_USER_UNDER_10000 && quantity:<10000) {hidden 
 	textAccent = 3; \
 	fontType = 3; \
 	showLootbeam = true; \
+	menuSort = 50000; 
 
 #define UIM_FALLBACK_S_STYLE \
 	textColor = "#ffffffff"; \
@@ -277,6 +278,7 @@ apply (_hidecondition && name:HIDE_USER_UNDER_10000 && quantity:<10000) {hidden 
 	textAccent = 3; \
 	fontType = 3; \
 	showLootbeam = true; \
+	menuSort = 40000; 
 
 #define UIM_FALLBACK_A_STYLE \
 	textColor = "#ffffffff"; \
@@ -285,25 +287,29 @@ apply (_hidecondition && name:HIDE_USER_UNDER_10000 && quantity:<10000) {hidden 
 	menuTextColor = "#ffffcc00"; \
 	textAccent = 3; \
 	fontType = 2; \
+	menuSort = 30000; 
 
 #define UIM_FALLBACK_B_STYLE \
 	textColor = "#ffffffff"; \
 	backgroundColor = "#7000c8ff"; \
 	menuTextColor = "#ff00c9ff"; \
-	textAccent = 3;
+	textAccent = 3; \
+	menuSort = 20000; 
 
 #define UIM_FALLBACK_C_STYLE \
 	textColor = "#ffffffff"; \
 	backgroundColor = "#337bff1f"; \
 	menuTextColor = "#ff7bff1f"; \
-	textAccent = 3;
+	textAccent = 3; \
+	menuSort = 10000; 
 
 #define UIM_FALLBACK_D_STYLE \
-	textColor = "#ffffffff";
+	textColor = "#ffffffff"; 
 
 #define UIM_FALLBACK_E_STYLE \
 	textColor = "#66ffffff"; \
-	textAccentColor = "#66000000";
+	textAccentColor = "#66000000";\
+	menuSort = -10000; 
 
 rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2958, 3335, 0, 2983, 3355, 0] || area:[3088, 3468, 0, 3092, 3470, 0] || area:[3042, 3480, 1, 3062, 3501, 1] || area:[2672, 3305, 0, 2678, 3312, 0]  || area:[1794, 9479, 0, 1856, 9538, 0]  || area:[3206, 9600, 0, 3237, 9628, 0]) && value:>=UIM_FALLBACK_VALUE_SS)) {UIM_FALLBACK_SS_STYLE}
 rule (ENABLE_UIM_DEATH_PILES && ((area:[3238, 6066, 0, 3284, 6102, 0] || area:[2958, 3335, 0, 2983, 3355, 0] || area:[3088, 3468, 0, 3092, 3470, 0] || area:[3042, 3480, 1, 3062, 3501, 1] || area:[2672, 3305, 0, 2678, 3312, 0]  || area:[1794, 9479, 0, 1856, 9538, 0]  || area:[3206, 9600, 0, 3237, 9628, 0]) && value:>=UIM_FALLBACK_VALUE_S)) {UIM_FALLBACK_S_STYLE}
@@ -25976,7 +25982,8 @@ type: style
 	textAccent = 3; \
 	fontType = 3; \
 	showLootbeam = true; \
-	sound = "DropSS.wav";
+	sound = "DropSS.wav"; \
+	menuSort = 50000; 
 
 /*@ define:input:fallback
 label: S Tier
@@ -25992,8 +25999,9 @@ type: style
 	textAccent = 3; \
 	fontType = 3; \
 	showLootbeam = true; \
-	sound = "DropS.wav";
-
+	sound = "DropS.wav"; \
+	menuSort = 40000; 
+	
 /*@ define:input:fallback
 label: A Tier
 type: style
@@ -26006,7 +26014,8 @@ type: style
 	menuTextColor = "#ffffcc00"; \
 	textAccent = 3; \
 	fontType = 2; \
-	sound = "DropA.wav";
+	sound = "DropA.wav"; \
+	menuSort = 30000;
 
 /*@ define:input:fallback
 label: B Tier
@@ -26017,7 +26026,8 @@ type: style
 	textColor = "#ffffffff"; \
 	backgroundColor = "#7000c8ff"; \
 	menuTextColor = "#ff00c9ff"; \
-	textAccent = 3;
+	textAccent = 3; \
+	menuSort = 20000;
 
 /*@ define:input:fallback
 label: C Tier
@@ -26028,7 +26038,8 @@ type: style
 	textColor = "#ffffffff"; \
 	backgroundColor = "#337bff1f"; \
 	menuTextColor = "#ff7bff1f"; \
-	textAccent = 3;
+	textAccent = 3; \
+	menuSort = 10000;
 	
 /*@ define:input:fallback
 label: D Tier
@@ -26045,7 +26056,8 @@ type: style
 
 #define FALLBACK_E_STYLE \
 	textColor = "#66ffffff"; \
-	textAccentColor = "#66000000";
+	textAccentColor = "#66000000"; \
+	menuSort = -10000;
 
 rule (value:>=FALLBACK_VALUE_SS) {FALLBACK_SS_STYLE}
 rule (value:>=FALLBACK_VALUE_S) {FALLBACK_S_STYLE}
