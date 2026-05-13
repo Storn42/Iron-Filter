@@ -4049,7 +4049,7 @@ apply (area:[2863,5350,2,2878,5374,2] && name:["Bones", "Big Bones"] && ENABLE_G
 label: SS Tier Uniques
 type: enumlist
 group: Giant Mole
-enum: ["Mole claw", "Mole skin"]
+enum: ["Mole claw", "Mole skin", "Immaculate mole skin"]
 */
 
 #define GIANT_MOLE_SS_UNIQUES []
@@ -4060,7 +4060,7 @@ rule (name:GIANT_MOLE_SS_UNIQUES) {UNIQUE_SS_STYLE}
 label: S Tier Uniques
 type: enumlist
 group: Giant Mole
-enum: ["Mole claw", "Mole skin"]
+enum: ["Mole claw", "Mole skin", "Immaculate mole skin"]
 */
 
 #define GIANT_MOLE_S_UNIQUES []
@@ -4071,7 +4071,7 @@ rule (name:GIANT_MOLE_S_UNIQUES) {UNIQUE_S_STYLE}
 label: A Tier Uniques
 type: enumlist
 group: Giant Mole
-enum: ["Mole claw", "Mole skin"]
+enum: ["Mole claw", "Mole skin", "Immaculate mole skin"]
 */
 
 #define GIANT_MOLE_A_UNIQUES []
@@ -4082,10 +4082,10 @@ rule (name:GIANT_MOLE_A_UNIQUES) {UNIQUE_A_STYLE}
 label: B Tier Uniques
 type: enumlist
 group: Giant Mole
-enum: ["Mole claw", "Mole skin"]
+enum: ["Mole claw", "Mole skin","Immaculate mole skin"]
 */
 
-#define GIANT_MOLE_B_UNIQUES []
+#define GIANT_MOLE_B_UNIQUES ["Immaculate mole skin"]
 
 rule (name:GIANT_MOLE_B_UNIQUES) {UNIQUE_B_STYLE}
 
@@ -4093,7 +4093,7 @@ rule (name:GIANT_MOLE_B_UNIQUES) {UNIQUE_B_STYLE}
 label: C Tier Uniques
 type: enumlist
 group: Giant Mole
-enum: ["Mole claw", "Mole skin"]
+enum: ["Mole claw", "Mole skin","Immaculate mole skin"]
 */
 
 #define GIANT_MOLE_C_UNIQUES ["Mole claw", "Mole skin"]
