@@ -9612,7 +9612,7 @@ group: Sailing Miscellaneous
 rule(name:"Dragon nails" && quantity:>=SAILING_DRAGON_NAIL_C_QUANT) {UNIQUE_C_STYLE}
 
 /*@ define:input:misc_uniques
-label: Dragon Nails SS Tier
+label: Dragon Cannonballs SS Tier
 type: number
 group: Sailing Miscellaneous
 */
@@ -9622,7 +9622,7 @@ group: Sailing Miscellaneous
 rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_SS_QUANT) {UNIQUE_SS_STYLE}
 
 /*@ define:input:misc_uniques
-label: Dragon Nails S Tier
+label: Dragon Cannonballs S Tier
 type: number
 group: Sailing Miscellaneous
 */
@@ -9632,7 +9632,7 @@ group: Sailing Miscellaneous
 rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_S_QUANT) {UNIQUE_S_STYLE}
 
 /*@ define:input:misc_uniques
-label: Dragon Nails A Tier
+label: Dragon Cannonballs A Tier
 type: number
 group: Sailing Miscellaneous
 */
@@ -9642,7 +9642,7 @@ group: Sailing Miscellaneous
 rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_A_QUANT) {UNIQUE_A_STYLE}
 
 /*@ define:input:misc_uniques
-label: Dragon Nails B Tier
+label: Dragon Cannonballs B Tier
 type: number
 group: Sailing Miscellaneous
 */
@@ -9653,7 +9653,7 @@ rule(name:"Dragon cannonball" && quantity:>=SAILING_DRAGON_CANNONBALL_B_QUANT) {
 
 
 /*@ define:input:misc_uniques
-label: Dragon Nails C Tier
+label: Dragon Cannonballs C Tier
 type: number
 group: Sailing Miscellaneous
 */
