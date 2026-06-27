@@ -12463,6 +12463,32 @@ name: Seeds
 subtitle: Grow some Herbs and Feed some Birds
 */
 
+/*@ define:input:seeds
+label: Enable Underwater Seaweed Spore Highlight
+type: boolean
+group: Seaweed Spores
+*/
+
+#define ENABLE_SEAWEED_SPORE_HIGHLIGHT false
+
+/*@ define:input:seeds
+label: Seaweed Spore Highlight
+type: style
+exampleItem: Seaweed spore
+group: Seaweed Spores
+*/
+
+#define SEAWEED_SPORE_HIGHLIGHT_STYLE \
+	color = "#ff00e024";\
+	backgroundColor = "#cc017300";\
+	menuTextColor = "#ff017300"; \
+	fontType = 2;\
+	textAccent = 3;\
+	borderColor = "#ff00e024";\
+	menuSort = 30000;\
+	sound = 3018;
+
+rule (ENABLE_SEAWEED_SPORE_HIGHLIGHT && area:[3718,10247,1,3762,10303,1] && name:"Seaweed spore") {SEAWEED_SPORE_HIGHLIGHT_STYLE}
 
 /*@ define:input:seeds
 label: SS Tier Seeds
