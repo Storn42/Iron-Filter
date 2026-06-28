@@ -10400,18 +10400,18 @@ rule (name:"Tokkul" && quantity:>=TOKKUL_MIN_QUANT && quantity:>=TOKKUL_E_QUANT)
 /*@ define:input:currency
 label: Minimum Value
 type: number
-group: Numalite
+group: Numulite
 */
 
 #define NUMALITE_MIN_QUANT 0
 
-rule (name:"Numalite" && quantity:<NUMALITE_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
-rule (name:"Numalite" && quantity:<NUMALITE_MIN_QUANT) {hidden = true;}
+rule (name:"Numulite" && quantity:<NUMALITE_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:"Numulite" && quantity:<NUMALITE_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:currency
 label: SS Value
 type: number
-group: Numalite
+group: Numulite
 */
 
 #define NUMALITE_SS_QUANT 1000000
@@ -10419,7 +10419,7 @@ group: Numalite
 /*@ define:input:currency
 label: S Value
 type: number
-group: Numalite
+group: Numulite
 */
 
 #define NUMALITE_S_QUANT 100000
@@ -10427,7 +10427,7 @@ group: Numalite
 /*@ define:input:currency
 label: A Value
 type: number
-group: Numalite
+group: Numulite
 */
 
 #define NUMALITE_A_QUANT 10000
@@ -10435,7 +10435,7 @@ group: Numalite
 /*@ define:input:currency
 label: B Value
 type: number
-group: Numalite
+group: Numulite
 */
 
 #define NUMALITE_B_QUANT 1000
@@ -10443,7 +10443,7 @@ group: Numalite
 /*@ define:input:currency
 label: C Value
 type: number
-group: Numalite
+group: Numulite
 */
 
 #define NUMALITE_C_QUANT 100
@@ -10451,7 +10451,7 @@ group: Numalite
 /*@ define:input:currency
 label: D Quantity
 type: number
-group: Numalite
+group: Numulite
 */
 
 #define NUMALITE_D_QUANT 10
@@ -10459,7 +10459,7 @@ group: Numalite
 /*@ define:input:currency
 label: E Quantity
 type: number
-group: Numalite
+group: Numulite
 */
 
 #define NUMALITE_E_QUANT 1
@@ -10467,8 +10467,8 @@ group: Numalite
 /*@ define:input:currency
 label: SS Tier
 type: style
-group: Numalite
-exampleItem: Numalite
+group: Numulite
+exampleItem: Numulite
 */
 
 #define NUMALITE_SS_STYLE \
@@ -10486,8 +10486,8 @@ exampleItem: Numalite
 /*@ define:input:currency
 label: S Tier
 type: style
-group: Numalite
-exampleItem: Numalite 
+group: Numulite
+exampleItem: Numulite 
 */
 
 #define NUMALITE_S_STYLE \
@@ -10505,8 +10505,8 @@ exampleItem: Numalite
 /*@ define:input:currency
 label: A Tier
 type: style
-group: Numalite
-exampleItem: Numalite
+group: Numulite
+exampleItem: Numulite
 */
 
 #define NUMALITE_A_STYLE \
@@ -10522,8 +10522,8 @@ exampleItem: Numalite
 /*@ define:input:currency
 label: B Tier
 type: style
-group: Numalite
-exampleItem: Numalite
+group: Numulite
+exampleItem: Numulite
 */
 
 #define NUMALITE_B_STYLE \
@@ -10536,8 +10536,8 @@ exampleItem: Numalite
 /*@ define:input:currency
 label: C Tier
 type: style
-group: Numalite
-exampleItem: Numalite
+group: Numulite
+exampleItem: Numulite
 */
 
 #define NUMALITE_C_STYLE \
@@ -10550,8 +10550,8 @@ exampleItem: Numalite
 /*@ define:input:currency
 label: D Tier
 type: style
-group: Numalite
-exampleItem: Numalite
+group: Numulite
+exampleItem: Numulite
 */
 
 #define NUMALITE_D_STYLE \
@@ -10563,8 +10563,8 @@ exampleItem: Numalite
 /*@ define:input:currency
 label: E Tier
 type: style
-group: Numalite
-exampleItem: Numalite
+group: Numulite
+exampleItem: Numulite
 */
 
 #define NUMALITE_E_STYLE \
@@ -10574,13 +10574,13 @@ exampleItem: Numalite
 	menuSort = -10000;\
 
 
-rule (name:"Numalite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_SS_QUANT) {NUMALITE_SS_STYLE}
-rule (name:"Numalite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_S_QUANT) {NUMALITE_S_STYLE}
-rule (name:"Numalite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_A_QUANT) {NUMALITE_A_STYLE}
-rule (name:"Numalite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_B_QUANT) {NUMALITE_B_STYLE}
-rule (name:"Numalite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_C_QUANT) {NUMALITE_C_STYLE}
-rule (name:"Numalite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_D_QUANT) {NUMALITE_D_STYLE}
-rule (name:"Numalite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_E_QUANT) {NUMALITE_E_STYLE}
+rule (name:"Numulite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_SS_QUANT) {NUMALITE_SS_STYLE}
+rule (name:"Numulite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_S_QUANT) {NUMALITE_S_STYLE}
+rule (name:"Numulite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_A_QUANT) {NUMALITE_A_STYLE}
+rule (name:"Numulite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_B_QUANT) {NUMALITE_B_STYLE}
+rule (name:"Numulite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_C_QUANT) {NUMALITE_C_STYLE}
+rule (name:"Numulite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_D_QUANT) {NUMALITE_D_STYLE}
+rule (name:"Numulite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_E_QUANT) {NUMALITE_E_STYLE}
 
 /*@ define:module:alchs
 name: Alchs
