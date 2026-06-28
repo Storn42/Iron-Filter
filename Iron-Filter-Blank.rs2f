@@ -17595,7 +17595,7 @@ enum: ["Redwood logs","Rosewood logs","Yew logs","Magic logs","Mahogany logs","C
 group: D Tier
 */
 
-#define LOGS_D_NAMES ["Yew logs","Magic logs","Mahogany logs","Camphor logs","Ironwood logs"]
+#define LOGS_D_NAMES ["Yew logs","Teak logs","Magic logs","Mahogany logs","Camphor logs","Ironwood logs"]
 
 /*@ define:input:logs
 label: Show Unnoted
@@ -17677,7 +17677,7 @@ enum: ["Redwood logs","Rosewood logs","Yew logs","Magic logs","Mahogany logs","C
 group: E Tier
 */
 
-#define LOGS_E_NAMES ["Logs","Oak logs","Willow logs","Maple logs","Teak logs","Achey tree logs","Jatoba logs","Arctic pine logs","Bark","Juniper logs","Blisterwood logs"]
+#define LOGS_E_NAMES ["Logs","Oak logs","Willow logs","Maple logs","Achey tree logs","Jatoba logs","Arctic pine logs","Bark","Juniper logs","Blisterwood logs"]
 
 /*@ define:input:logs
 label: Show Unnoted
