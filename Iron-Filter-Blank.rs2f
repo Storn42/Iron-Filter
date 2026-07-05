@@ -4976,6 +4976,71 @@ rule (area:[2068,6360,0,2096,6386,3] && name:LEVIATHAN_SUPPLY) {SUPPLY_DROP_STYL
 /*@ define:input:boss_pvm
 label: SS Tier Uniques
 type: enumlist
+group: Maggot King
+enum: ["Elder venator fang","Etched elder venator fang","Necklace of rupture","Crimson kisten"]
+*/
+
+#define MAGGOT_KING_SS_UNIQUES ["Elder venator fang","Etched elder venator fang","Necklace of rupture"]
+
+rule (name:MAGGOT_KING_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:boss_pvm
+label: S Tier Uniques
+type: enumlist
+group: Maggot King
+enum: ["Elder venator fang","Etched elder venator fang","Necklace of rupture","Crimson kisten"]
+*/
+
+#define MAGGOT_KING_S_UNIQUES ["Crimson kisten"]
+
+rule (name:MAGGOT_KING_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:boss_pvm
+label: A Tier Uniques
+type: enumlist
+group: Maggot King
+enum: ["Elder venator fang","Etched elder venator fang","Necklace of rupture","Crimson kisten"]
+*/
+
+#define MAGGOT_KING_A_UNIQUES []
+
+rule (name:MAGGOT_KING_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:boss_pvm
+label: B Tier Uniques
+type: enumlist
+group: Maggot King
+enum: ["Elder venator fang","Etched elder venator fang","Necklace of rupture","Crimson kisten"]
+*/
+
+#define MAGGOT_KING_B_UNIQUES []
+
+rule (name:MAGGOT_KING_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:boss_pvm
+label: C Tier Uniques
+type: enumlist
+group: Maggot King
+enum: ["Elder venator fang","Etched elder venator fang","Necklace of rupture","Crimson kisten"]
+*/
+
+#define MAGGOT_KING_C_UNIQUES []
+
+rule (name:MAGGOT_KING_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:boss_pvm
+label: Hide Items
+type: stringlist
+group: Maggot King
+*/
+
+#define MAGGOT_KING_HIDE []
+
+rule (area:[2902,8030,0,2921,8038,0] && name:MAGGOT_KING_HIDE) {hidden = true;}
+
+/*@ define:input:boss_pvm
+label: SS Tier Uniques
+type: enumlist
 group: Moons of Peril
 enum: ["Eclipse atlatl", "Eclipse moon helm*", "Eclipse moon chestplate*","Eclipse moon tassets*","Dual macuahuitl", "Blood moon helm*","Blood moon chestplate*","Blood moon tassets*","Blue moon spear","Blue moon helm*","Blue moon chestplate*","Blue moon tassets*"]
 */
