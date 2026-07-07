@@ -5036,7 +5036,7 @@ type: stringlist
 group: Maggot King
 */
 
-#define MAGGOT_KING_HIDE []
+#define MAGGOT_KING_HIDE ["Leechfin"]
 
 rule (area:[2902,8030,0,2921,8038,0] && name:MAGGOT_KING_HIDE) {hidden = true;}
 
