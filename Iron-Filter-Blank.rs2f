@@ -9968,6 +9968,107 @@ enum: ["Crawling hand","Cockatrice head","Basilisk head","Kurask head","Imbued h
 rule (name:SLAYER_C_UNIQUES) {UNIQUE_C_STYLE}
 
 /*@ define:input:misc_uniques
+label: Venator Teeth SS Tier
+type: number
+group: Slayer Uniques
+*/
+
+#define SLAYER_VENATOR_TEETH_SS_QUANT 10000
+
+rule(name:"Venator tooth" && quantity:>=SLAYER_VENATOR_TEETH_SS_QUANT) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: Venator Teeth S Tier
+type: number
+group: Slayer Uniques
+*/
+
+#define SLAYER_VENATOR_TEETH_S_QUANT 1000
+
+rule(name:"Venator tooth" && quantity:>=SLAYER_VENATOR_TEETH_S_QUANT) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: Venator Teeth A Tier
+type: number
+group: Slayer Uniques
+*/
+
+#define SLAYER_VENATOR_TEETH_A_QUANT 100
+
+rule(name:"Venator tooth" && quantity:>=SLAYER_VENATOR_TEETH_A_QUANT) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: Venator Teeth B Tier
+type: number
+group: Slayer Uniques
+*/
+
+#define SLAYER_VENATOR_TEETH_B_QUANT 10
+
+rule(name:"Venator tooth" && quantity:>=SLAYER_VENATOR_TEETH_B_QUANT) {UNIQUE_B_STYLE}
+
+/*@ define:input:misc_uniques
+label: Venator Teeth C Tier
+type: number
+group: Slayer Uniques
+*/
+
+#define SLAYER_VENATOR_TEETH_C_QUANT 1
+
+rule(name:"Venator tooth" && quantity:>=SLAYER_VENATOR_TEETH_C_QUANT) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
+label: Venator Fangs SS Tier
+type: number
+group: Slayer Uniques
+*/
+
+#define SLAYER_VENATOR_FANGS_SS_QUANT 10000
+
+rule(name:"Venator fang" && quantity:>=SLAYER_VENATOR_FANGS_SS_QUANT) {UNIQUE_SS_STYLE}
+
+/*@ define:input:misc_uniques
+label: Venator Fangs S Tier
+type: number
+group: Slayer Uniques
+*/
+
+#define SLAYER_VENATOR_FANGS_S_QUANT 1000
+
+rule(name:"Venator fang" && quantity:>=SLAYER_VENATOR_FANGS_S_QUANT) {UNIQUE_S_STYLE}
+
+/*@ define:input:misc_uniques
+label: Venator Fangs A Tier
+type: number
+group: Slayer Uniques
+*/
+
+#define SLAYER_VENATOR_FANGS_A_QUANT 100
+
+rule(name:"Venator fang" && quantity:>=SLAYER_VENATOR_FANGS_A_QUANT) {UNIQUE_A_STYLE}
+
+/*@ define:input:misc_uniques
+label: Venator Fangs B Tier
+type: number
+group: Slayer Uniques
+*/
+
+#define SLAYER_VENATOR_FANGS_B_QUANT 10
+
+rule(name:"Venator fang" && quantity:>=SLAYER_VENATOR_FANGS_B_QUANT) {UNIQUE_B_STYLE}
+
+
+/*@ define:input:misc_uniques
+label: Venator Fangs C Tier
+type: number
+group: Slayer Uniques
+*/
+
+#define SLAYER_VENATOR_FANGS_C_QUANT 1
+
+rule(name:"Venator fang" && quantity:>=SLAYER_VENATOR_FANGS_C_QUANT) {UNIQUE_C_STYLE}
+
+/*@ define:input:misc_uniques
 label: SS Tier Uniques
 type: enumlist
 group: Tormented Demons
