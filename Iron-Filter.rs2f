@@ -5832,9 +5832,19 @@ type: stringlist
 group: Shellbane Gryphon
 */
 
-#define SHELLBANE_GRYPHON_HIDE []
+#define SHELLBANE_GRYPHON_HIDE ["Watermelon","Basket","Sweetcorn"]
 
 rule (area:[3166,8863,0,3193,8888,0] && name:SHELLBANE_GRYPHON_HIDE) {hidden = true;}
+
+/*@ define:input:boss_pvm
+label: Show Items
+type: stringlist
+group: Shellbane Gryphon
+*/
+
+#define SHELLBANE_GRYPHON_SHOW []
+
+rule (area:[3166,8863,0,3193,8888,0] && name:SHELLBANE_GRYPHON_SHOW) {hidden = false;}
 
 /*@ define:input:boss_pvm
 label: SS Tier Uniques
