@@ -437,7 +437,7 @@ rule (name:EXTRA_FOOD_3_NAMES && stackable:false) {EXTRA_FOOD_3_STYLE}
 /*@ define:module:uniques
 name: Uniques 
 subtitle: Style your Collection Log drops 
-description: Uniques Item Tier Placement can be found Under Their Boss/Raid/Collection log Category 
+description: Uniques Item Tier Placement can be found under their Boss/Raid/Collection Log Category 
 */
 
 /*@ define:input:uniques
@@ -26095,7 +26095,7 @@ rule (name:BRONZE_GEAR_E_NAMES) {BRONZE_GEAR_E_STYLE}
 
 /*@ define:module:misc
 name: Miscellaneous
-subtitle: Things Too Small for their own Catagory  
+subtitle: Things Too Small for their own Category  
 */
 
 /*@ define:input:misc
@@ -26196,7 +26196,7 @@ rule (name:"Orange spice*") {ORANGE_SPICE_STYLE}
 
 /*@ define:module:fallback
 name: Fallback Tier Styles
-subtitle: For Items that haven't been Changed by Other Catagories
+subtitle: For Items that haven't been Changed by Other Categories
 */
 
 /*@ define:input:fallback
