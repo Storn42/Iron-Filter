@@ -436,7 +436,8 @@ rule (name:EXTRA_FOOD_3_NAMES && stackable:false) {EXTRA_FOOD_3_STYLE}
 
 /*@ define:module:uniques
 name: Uniques 
-subtitle: Style your Collection Log drops 
+subtitle: Style your Collection Log drops
+description: Uniques Item Tier Placement can be found Under Their Boss/Raid/Collection log Category 
 */
 
 /*@ define:input:uniques
