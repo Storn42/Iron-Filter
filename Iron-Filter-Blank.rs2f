@@ -5437,6 +5437,82 @@ rule (area:[2068,6360,0,2096,6386,3] && name:LEVIATHAN_SUPPLY) {SUPPLY_DROP_STYL
 /*@ define:input:boss_pvm
 label: SS Tier Uniques
 type: enumlist
+group: Mad Angel
+enum: ["Hallowfell","Jar of light"]
+*/
+
+#define MAD_ANGEL_SS_UNIQUES ["Jar of light"]
+
+rule (name:MAD_ANGEL_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:boss_pvm
+label: S Tier Uniques
+type: enumlist
+group: Mad Angel
+enum: ["Hallowfell","Jar of light"]
+*/
+
+#define MAD_ANGEL_S_UNIQUES []
+
+rule (name:MAD_ANGEL_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:boss_pvm
+label: A Tier Uniques
+type: enumlist
+group: Mad Angel
+enum: ["Hallowfell","Jar of light"]
+*/
+
+#define MAD_ANGEL_A_UNIQUES ["Hallowfell"]
+
+rule (name:MAD_ANGEL_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:boss_pvm
+label: B Tier Uniques
+type: enumlist
+group: Mad Angel
+enum: ["Hallowfell","Jar of light"]
+*/
+
+#define MAD_ANGEL_B_UNIQUES []
+
+rule (name:MAD_ANGEL_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:boss_pvm
+label: C Tier Uniques
+type: enumlist
+group: Mad Angel
+enum: ["Hallowfell","Jar of light"]
+*/
+
+#define MAD_ANGEL_C_UNIQUES []
+
+rule (name:MAD_ANGEL_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:boss_pvm
+label: Hide Items
+type: stringlist
+group: Mad Angel
+*/
+
+#define MAD_ANGEL_HIDE []
+
+rule (area:[2518,2202,0,2546,2228,0] && name:MAD_ANGEL_HIDE) {hidden = true;}
+
+/*@ define:input:boss_pvm
+label: Supply Drop
+type: enumlist
+group: Mad Angel
+enum: ["Prayer potion(*)","Super combat potion(*)","Shark","Yellowfin"]
+*/
+
+#define MAD_ANGEL_SUPPLY ["Prayer potion(*)","Super combat potion(*)","Shark","Yellowfin"]
+
+rule (area:[2518,2202,0,2546,2228,0] && name:MAD_ANGEL_SUPPLY) {SUPPLY_DROP_STYLE}
+
+/*@ define:input:boss_pvm
+label: SS Tier Uniques
+type: enumlist
 group: Maggot King
 enum: ["Elder venator fang","Etched elder venator fang","Necklace of rupture","Crimson kisten"]
 */
@@ -12114,7 +12190,7 @@ subtitle: Teleport Items and Teleport Charges
 /*@ define:input:teleports
 label: SS Tier Teleports
 type: enumlist
-enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth"]
+enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth","Ardeaglais teleport"]
 group: SS Tier
 */
 
@@ -12164,7 +12240,7 @@ exampleItem: Eternal teleport crystal
 /*@ define:input:teleports
 label: S Tier Teleports
 type: enumlist
-enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth"]
+enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth","Ardeaglais teleport"]
 group: S Tier
 */
 
@@ -12223,7 +12299,7 @@ exampleItem: Teleport to house
 /*@ define:input:teleports
 label: A Tier Teleports
 type: enumlist
-enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth"]
+enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth","Ardeaglais teleport"]
 group: A Tier
 */
 
@@ -12288,7 +12364,7 @@ exampleItem: Dorgesh-kaan sphere
 /*@ define:input:teleports
 label: B Tier Teleports
 type: enumlist
-enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth"]
+enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth","Ardeaglais teleport"]
 group: B Tier
 */
 
@@ -12357,11 +12433,11 @@ exampleItem: Xeric's talisman (inert)
 /*@ define:input:teleports
 label: C Tier Teleports
 type: enumlist
-enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth"]
+enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth","Ardeaglais teleport"]
 group: C Tier
 */
 
-#define TELEPORTS_C_NAMES ["Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Volcanic mine teleport","Wilderness crabs teleport","Zul-andra teleport","Key master teleport","Watson teleport","Guthixian temple teleport","Icy basalt","Stony basalt","Calcified moth"]
+#define TELEPORTS_C_NAMES ["Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Volcanic mine teleport","Wilderness crabs teleport","Zul-andra teleport","Key master teleport","Watson teleport","Guthixian temple teleport","Icy basalt","Stony basalt","Calcified moth","Ardeaglais teleport"]
 
 /*@ define:input:teleports
 label: Show Unnoted
@@ -12434,7 +12510,7 @@ exampleItem: Revenant cave teleport
 /*@ define:input:teleports
 label: D Tier Teleports
 type: enumlist
-enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth"]
+enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth","Ardeaglais teleport"]
 group: D Tier
 */
 
@@ -12516,7 +12592,7 @@ exampleItem: Lizardman fang
 /*@ define:input:teleports
 label: E Tier Teleports
 type: enumlist
-enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth"]
+enum: ["Lizardman fang","Frozen tear","Bone fragments","Left skull half","Right skull half","Top of sceptre","Bottom of sceptre","Xeric's talisman (inert)","Giantsoul amulet (uncharged)","Pendant of ates (inert)","Mokhaiotl waystone","Varrock teleport","Falador teleport","Lumbridge teleport","Camelot teleport","Ardougne teleport","Civitas illa Fortis teleport","Watchtower teleport","Teleport to house","Kourend Castle teleport","Rimmington teleport","Taverley teleport","Pollnivneach teleport","Rellekka teleport","Brimhaven teleport","Yanille teleport","Trollheim teleport","Hosidius teleport","Prifddinas teleport","Paddewwa teleport","Senntisten teleport","Kharyrll teleport","Lassar teleport","Dareeyak teleport","Carrallanger teleport","Annakarl teleport","Ghorrock teleport","Eternal teleport crystal","Moonclan teleport","Ourania teleport","Waterbirth teleport","Barbarian teleport","Khazard teleport","Fishing guild teleport",Catherby teleport","Ice plateau teleport","Arceuus Library teleport","Draynor Manor teleport","Battlefront teleport","Mind altar teleport","Salve Graveyard teleport","Fenkenstrain's Castle teleport","West Ardougne teleport","Harmony Island teleport","Cemetery teleport","Barrows teleport","Ape Atoll teleport","Target teleport","Wilderness crabs teleport","Nardah teleport","Digsite teleport","Feldip hills teleport","Lunar isle teleport","Mort'ton teleport","Pest control teleport","Piscatoris teleport","Tai bwo wannai teleport","Iorwerth camp teleport","Mos le'harmless teleport","Lumberyard teleport","Zul-andra teleport","Key master teleport","Revenant cave teleport","Watson teleport","Guthixian temple teleport","Spider cave teleport","Colossal wyrm teleport scroll","Chasm teleport scroll","Teleport crystal (*)","Icy basalt","Stony basalt","Calcified moth","Ardeaglais teleport"]
 group: E Tier
 */
 
