@@ -17596,7 +17596,7 @@ subtitle: Everything from Bronze to Rune
 /*@ define:input:ores_and_bars
 label: SS Tier Ores & Bars
 type: enumlist
-enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamant bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Iron ore","Silver ore"]
+enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamantite bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Iron ore","Silver ore"]
 group: SS Tier
 */
 
@@ -17646,7 +17646,7 @@ exampleItem: Runite bar
 /*@ define:input:ores_and_bars
 label: S Tier Ores & Bars
 type: enumlist
-enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamant bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Iron ore","Silver ore"]
+enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamantite bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Iron ore","Silver ore"]
 group: S Tier
 */
 
@@ -17705,7 +17705,7 @@ exampleItem: Cupronickel bar
 /*@ define:input:ores_and_bars
 label: A Tier Ores & Bars
 type: enumlist
-enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamant bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Iron ore","Silver ore"]
+enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamantite bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Iron ore","Silver ore"]
 group: A Tier
 */
 
@@ -17770,7 +17770,7 @@ exampleItem: Adamant bar
 /*@ define:input:ores_and_bars
 label: B Tier Ores & Bars
 type: enumlist
-enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamant bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Bronze bar","Iron bar","Silver bar","Gold bar","Copper ore","Tin ore","Iron ore","Silver ore"]
+enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamantite bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Bronze bar","Iron bar","Silver bar","Gold bar","Copper ore","Tin ore","Iron ore","Silver ore"]
 group: B Tier
 */
 
@@ -17839,11 +17839,11 @@ exampleItem: Gold ore
 /*@ define:input:ores_and_bars
 label: C Tier Ores & Bars
 type: enumlist
-enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamant bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Bronze bar","Iron bar","Silver bar","Gold bar","Copper ore","Tin ore","Iron ore","Silver ore"]
+enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamantite bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Bronze bar","Iron bar","Silver bar","Gold bar","Copper ore","Tin ore","Iron ore","Silver ore"]
 group: C Tier
 */
 
-#define ORES_AND_BARS_C_NAMES ["Adamantite ore","Adamant bar"]
+#define ORES_AND_BARS_C_NAMES ["Adamantite ore","Adamantite bar"]
 
 /*@ define:input:ores_and_bars
 label: Show Unnoted
@@ -17916,7 +17916,7 @@ exampleItem: Mithril bar
 /*@ define:input:ores_and_bars
 label: D Tier Ores & Bars
 type: enumlist
-enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamant bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Bronze bar","Iron bar","Silver bar","Gold bar","Copper ore","Tin ore","Iron ore","Silver ore"]
+enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamantite bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Bronze bar","Iron bar","Silver bar","Gold bar","Copper ore","Tin ore","Iron ore","Silver ore"]
 group: D Tier
 */
 
@@ -17998,7 +17998,7 @@ exampleItem: Steel bar
 /*@ define:input:ores_and_bars
 label: E Tier Ores & Bars
 type: enumlist
-enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamant bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Bronze bar","Iron bar","Silver bar","Gold bar","Copper ore","Tin ore","Iron ore","Silver ore"]
+enum: ["Runite bar","Cupronickel bar","Runite ore","Nickel ore","Lead bar","Steel bar","Lovakite bar","Mithril bar","Coal","Adamantite bar","Lead ore","Gold ore","Mithril ore","Lovakite ore","Adamantite ore","Bronze bar","Iron bar","Silver bar","Gold bar","Copper ore","Tin ore","Iron ore","Silver ore"]
 group: E Tier
 */
 
