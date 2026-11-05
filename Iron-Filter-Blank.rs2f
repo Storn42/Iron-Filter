@@ -8393,6 +8393,77 @@ group: Red-X
 
 rule (area:[3786,5398,0,3828,5419,0] && ownership:2 && ENABLE_TOA_REDX) {TOA_REDX_STYLE}
 
+
+/*@ define:module:tfa
+name: The Fractured Archive
+subtitle: Set Unique Teirs, Hide Drops, and Highlight Supplies
+*/
+
+/*@ define:input:tfa
+label: SS Tier Uniques
+type: enumlist
+group: Uniques
+enum: ["Rondache", "Zorya's tome*", "Horn of Bran", "Ascension crossbows", "Obligator*", "Fragment of whispering wind", "Fragment of deep water", "Fragment of living earth", "Fragment of burning fire", "Archivist's folio*"]
+*/
+
+#define TFA_SS_UNIQUES ["Horn of Bran", "Ascension crossbows", "Obligator*"]
+
+rule (name:TFA_SS_UNIQUES) {UNIQUE_SS_STYLE}
+
+/*@ define:input:tfa
+label: S Tier Uniques
+type: enumlist
+group: Uniques
+enum: ["Rondache", "Zorya's tome*", "Horn of Bran", "Ascension crossbows", "Obligator*", "Fragment of whispering wind", "Fragment of deep water", "Fragment of living earth", "Fragment of burning fire", "Archivist's folio*"]
+*/
+
+#define TFA_S_UNIQUES ["Rondache", "Zorya's tome*"]
+
+rule (name:TFA_S_UNIQUES) {UNIQUE_S_STYLE}
+
+/*@ define:input:tfa
+label: A Tier Uniques
+type: enumlist
+group: Uniques
+enum: ["Rondache", "Zorya's tome*", "Horn of Bran", "Ascension crossbows", "Obligator*", "Fragment of whispering wind", "Fragment of deep water", "Fragment of living earth", "Fragment of burning fire", "Archivist's folio*"]
+*/
+
+#define TFA_A_UNIQUES ["Fragment of whispering wind", "Fragment of deep water", "Fragment of living earth", "Fragment of burning fire"]
+
+rule (name:TFA_A_UNIQUES) {UNIQUE_A_STYLE}
+
+/*@ define:input:tfa
+label: B Tier Uniques
+type: enumlist
+group: Uniques
+enum: ["Rondache", "Zorya's tome*", "Horn of Bran", "Ascension crossbows", "Obligator*", "Fragment of whispering wind", "Fragment of deep water", "Fragment of living earth", "Fragment of burning fire", "Archivist's folio*"]
+*/
+
+#define TFA_B_UNIQUES ["Archivist's folio*"]
+
+rule (name:TFA_B_UNIQUES) {UNIQUE_B_STYLE}
+
+/*@ define:input:tfa
+label: C Tier Uniques
+type: enumlist
+group: Uniques
+enum: ["Rondache", "Zorya's tome*", "Horn of Bran", "Ascension crossbows", "Obligator*", "Fragment of whispering wind", "Fragment of deep water", "Fragment of living earth", "Fragment of burning fire", "Archivist's folio*"]
+*/
+
+#define TFA_C_UNIQUES []
+
+rule (name:TFA_C_UNIQUES) {UNIQUE_C_STYLE}
+
+/*@ define:input:tfa
+label: Hide Items
+type: stringlist
+group: Raid Items
+*/
+
+#define TFA_HIDE []
+
+rule (area:[4032,5440,0,4223,5631,0] && name:TFA_HIDE) {hidden = true;}
+
 /*@ define:module:clues
 name: Clue Scrolls 
 subtitle: Go on a Treasure Hunt
