@@ -4832,7 +4832,7 @@ group: Giant Mole
 enum: ["Mole claw", "Mole skin","Immaculate mole skin"]
 */
 
-#define GIANT_MOLE_C_UNIQUES ["Mole claw", "Mole skin"]
+#define GIANT_MOLE_C_UNIQUES []
 
 rule (name:GIANT_MOLE_C_UNIQUES) {UNIQUE_C_STYLE}
 
@@ -15174,7 +15174,7 @@ subtitle: Mix with Herbs for Wonderful Potions
 /*@ define:input:herblore_secondaries
 label: SS Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin","Immaculate mole skin"]
 group: SS Tier
 */
 
@@ -15224,7 +15224,7 @@ exampleItem: Crushed superior dragon bones
 /*@ define:input:herblore_secondaries
 label: S Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin","Immaculate mole skin"]
 group: S Tier
 */
 
@@ -15283,7 +15283,7 @@ exampleItem: Lava scale shard
 /*@ define:input:herblore_secondaries
 label: A Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin","Immaculate mole skin"]
 group: A Tier
 */
 
@@ -15348,11 +15348,11 @@ exampleItem: Wine of zamorak
 /*@ define:input:herblore_secondaries
 label: B Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin","Immaculate mole skin"]
 group: B Tier
 */
 
-#define HERBLORE_SECONDARIES_B_NAMES ["Giant egg sac","Scaly blue dragonhide","Aldarium","Crushed superior dragon bones"]
+#define HERBLORE_SECONDARIES_B_NAMES ["Giant egg sac","Scaly blue dragonhide","Aldarium","Crushed superior dragon bones","Immaculate mole skin"]
 
 /*@ define:input:herblore_secondaries
 label: Show Unnoted
@@ -15417,7 +15417,7 @@ exampleItem: Red spiders' eggs
 /*@ define:input:herblore_secondaries
 label: C Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin","Immaculate mole skin"]
 group: C Tier
 */
 
@@ -15494,7 +15494,7 @@ exampleItem: Limpwurt root
 /*@ define:input:herblore_secondaries
 label: D Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin","Immaculate mole skin"]
 group: D Tier
 */
 
@@ -15576,7 +15576,7 @@ exampleItem: Eye of newt
 /*@ define:input:herblore_secondaries
 label: E Tier Herblore Secondaries
 type: enumlist
-enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin"]
+enum: ["Eye of newt","Unicorn horn","Unicorn horn dust","Limpwurt root","Ashes","Red spiders' eggs","White berries","Toad's legs","Goat horn dust","Desert goat horn","Snape grass","Mort myre fungus","Kebbit teeth dust","Kebbit teeth","Dragon scale dust","Blue dragon scale","Potato cactus","Wine of zamorak","Jangerberries","Volcanic ash","Giant egg sac","Aldarium","Scaly blue dragonhide","Nail beast nails","Magic roots","Nihil dust","Lily of the sands","Crushed superior dragon bones","Crystal dust", "Swamp tar","Lava scale","Lava scale shard","Araxyte venom sac","Bird nest","Crushed nest","Marlin scales","Yellow fin","Rainbow crab paste","Crab paste","Haddock eye","Squid paste","Mole claw","Mole skin","Immaculate mole skin"]
 group: E Tier
 */
 
