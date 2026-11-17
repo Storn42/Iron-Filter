@@ -2536,6 +2536,37 @@ SUPPLY_DROP_RULESET([1681,9990,0,1696,10008,0], WARPED_JELLIES_SUPPLY) // Cataco
 /*@ define:input:slayer_pvm
 label: Hide Items
 type: stringlist
+group: Killerwatt
+*/
+
+#define KILLERWATT_HIDE []
+
+rule (area:[2639,5196,0,2683,5235,0] && name:KILLERWATT_HIDE) {hidden = true;}
+
+/*@ define:input:slayer_pvm
+label: Show Items
+type: stringlist
+group: Killerwatt
+*/
+
+#define KILLERWATT_SHOW []
+
+FORCE_SHOW_RULESET([2639,5196,0,2683,5235,0], KILLERWATT_SHOW)
+
+/*@ define:input:slayer_pvm
+label: Supply Drop
+type: enumlist
+enum: ["Energy potion(*)"]
+group: Killerwatt
+*/
+
+#define KILLERWATT_SUPPLY []
+
+SUPPLY_DROP_RULESET([2639,5196,0,2683,5235,0], KILLERWATT_SUPPLY)
+
+/*@ define:input:slayer_pvm
+label: Hide Items
+type: stringlist
 group: Lava Dragons
 */
 
