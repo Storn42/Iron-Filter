@@ -2542,7 +2542,7 @@ group: Killerwatt
 
 #define KILLERWATT_HIDE ["Fire orb","Soda ash"]
 
-rule (area:[2639,5196,0,2683,5235,0] && name:KILLERWATT_HIDE) {hidden = true;}
+rule (area:[2639,5196,0,2683,5235,3] && name:KILLERWATT_HIDE) {hidden = true;}
 
 /*@ define:input:slayer_pvm
 label: Show Items
@@ -2552,7 +2552,7 @@ group: Killerwatt
 
 #define KILLERWATT_SHOW []
 
-FORCE_SHOW_RULESET([2639,5196,0,2683,5235,0], KILLERWATT_SHOW)
+FORCE_SHOW_RULESET([2639,5196,0,2683,5235,3], KILLERWATT_SHOW)
 
 /*@ define:input:slayer_pvm
 label: Supply Drop
@@ -2563,7 +2563,7 @@ group: Killerwatt
 
 #define KILLERWATT_SUPPLY []
 
-SUPPLY_DROP_RULESET([2639,5196,0,2683,5235,0], KILLERWATT_SUPPLY)
+SUPPLY_DROP_RULESET([2639,5196,0,2683,5235,3], KILLERWATT_SUPPLY)
 
 /*@ define:input:slayer_pvm
 label: Hide Items
