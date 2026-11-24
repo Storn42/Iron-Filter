@@ -11239,7 +11239,7 @@ group: Coins
 
 #define COINS_MIN_VALUE 100
 
-rule (name:"Coins" && quantity:<COINS_MIN_VALUE && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:"Coins" && quantity:<COINS_MIN_VALUE && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:"Coins" && quantity:<COINS_MIN_VALUE) {hidden = true;}
 
 /*@ define:input:currency
@@ -11422,7 +11422,7 @@ group: Tokkul
 
 #define TOKKUL_MIN_QUANT 10
 
-rule (name:"Tokkul" && quantity:<TOKKUL_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:"Tokkul" && quantity:<TOKKUL_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:"Tokkul" && quantity:<TOKKUL_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:currency
@@ -11607,7 +11607,7 @@ group: Numulite
 
 #define NUMALITE_MIN_QUANT 10
 
-rule (name:"Numulite" && quantity:<NUMALITE_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:"Numulite" && quantity:<NUMALITE_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:"Numulite" && quantity:<NUMALITE_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:currency
@@ -12023,7 +12023,7 @@ group: SS Tier
 
 #define KEYS_SS_SHOW_UNNOTED true
 
-rule (name:KEYS_SS_NAMES && !KEYS_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_SS_NAMES && !KEYS_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_SS_NAMES && !KEYS_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:keys
@@ -12034,7 +12034,7 @@ group: SS Tier
 
 #define KEYS_SS_MIN_QUANT 0
 
-rule (name:KEYS_SS_NAMES && quantity:<KEYS_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_SS_NAMES && quantity:<KEYS_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_SS_NAMES && quantity:<KEYS_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:keys
@@ -12081,7 +12081,7 @@ group: S Tier
 
 #define KEYS_S_SHOW_UNNOTED true
 
-rule (name:KEYS_S_NAMES && !KEYS_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_S_NAMES && !KEYS_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_S_NAMES && !KEYS_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:keys
@@ -12092,7 +12092,7 @@ group: S Tier
 
 #define KEYS_S_MIN_QUANT 0
 
-rule (name:KEYS_S_NAMES && quantity:<KEYS_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_S_NAMES && quantity:<KEYS_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_S_NAMES && quantity:<KEYS_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:keys
@@ -12147,7 +12147,7 @@ group: A Tier
 
 #define KEYS_A_SHOW_UNNOTED true
 
-rule (name:KEYS_A_NAMES && !KEYS_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_A_NAMES && !KEYS_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_A_NAMES && !KEYS_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:keys
@@ -12158,7 +12158,7 @@ group: A Tier
 
 #define KEYS_A_MIN_QUANT 0
 
-rule (name:KEYS_A_NAMES && quantity:<KEYS_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_A_NAMES && quantity:<KEYS_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_A_NAMES && quantity:<KEYS_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:keys
@@ -12220,7 +12220,7 @@ group: B Tier
 
 #define KEYS_B_SHOW_UNNOTED true
 
-rule (name:KEYS_B_NAMES && !KEYS_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_B_NAMES && !KEYS_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_B_NAMES && !KEYS_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:keys
@@ -12231,7 +12231,7 @@ group: B Tier
 
 #define KEYS_B_MIN_QUANT 0
 
-rule (name:KEYS_B_NAMES && quantity:<KEYS_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_B_NAMES && quantity:<KEYS_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_B_NAMES && quantity:<KEYS_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:keys
@@ -12297,7 +12297,7 @@ group: C Tier
 
 #define KEYS_C_SHOW_UNNOTED true
 
-rule (name:KEYS_C_NAMES && !KEYS_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_C_NAMES && !KEYS_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_C_NAMES && !KEYS_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:keys
@@ -12308,7 +12308,7 @@ group: C Tier
 
 #define KEYS_C_MIN_QUANT 0
 
-rule (name:KEYS_C_NAMES && quantity:<KEYS_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_C_NAMES && quantity:<KEYS_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_C_NAMES && quantity:<KEYS_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:keys
@@ -12383,7 +12383,7 @@ group: D Tier
 
 #define KEYS_D_SHOW_UNNOTED true
 
-rule (name:KEYS_D_NAMES && !KEYS_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_D_NAMES && !KEYS_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_D_NAMES && !KEYS_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:keys
@@ -12394,7 +12394,7 @@ group: D Tier
 
 #define KEYS_D_MIN_QUANT 0
 
-rule (name:KEYS_D_NAMES && quantity:<KEYS_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_D_NAMES && quantity:<KEYS_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_D_NAMES && quantity:<KEYS_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:keys
@@ -12473,7 +12473,7 @@ group: E Tier
 
 #define KEYS_E_SHOW_UNNOTED true
 
-rule (name:KEYS_E_NAMES && !KEYS_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_E_NAMES && !KEYS_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_E_NAMES && !KEYS_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:keys
@@ -12484,7 +12484,7 @@ group: E Tier
 
 #define KEYS_E_MIN_QUANT 0
 
-rule (name:KEYS_E_NAMES && quantity:<KEYS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:KEYS_E_NAMES && quantity:<KEYS_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:KEYS_E_NAMES && quantity:<KEYS_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:keys
@@ -12614,7 +12614,7 @@ group: SS Tier
 
 #define TELEPORTS_SS_SHOW_UNNOTED true
 
-rule (name:TELEPORTS_SS_NAMES && !TELEPORTS_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_SS_NAMES && !TELEPORTS_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_SS_NAMES && !TELEPORTS_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12625,7 +12625,7 @@ group: SS Tier
 
 #define TELEPORTS_SS_MIN_QUANT 0
 
-rule (name:TELEPORTS_SS_NAMES && quantity:<TELEPORTS_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_SS_NAMES && quantity:<TELEPORTS_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_SS_NAMES && quantity:<TELEPORTS_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12664,7 +12664,7 @@ group: S Tier
 
 #define TELEPORTS_S_SHOW_UNNOTED true
 
-rule (name:TELEPORTS_S_NAMES && !TELEPORTS_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_S_NAMES && !TELEPORTS_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_S_NAMES && !TELEPORTS_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12675,7 +12675,7 @@ group: S Tier
 
 #define TELEPORTS_S_MIN_QUANT 0
 
-rule (name:TELEPORTS_S_NAMES && quantity:<TELEPORTS_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_S_NAMES && quantity:<TELEPORTS_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_S_NAMES && quantity:<TELEPORTS_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12723,7 +12723,7 @@ group: A Tier
 
 #define TELEPORTS_A_SHOW_UNNOTED true
 
-rule (name:TELEPORTS_A_NAMES && !TELEPORTS_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_A_NAMES && !TELEPORTS_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_A_NAMES && !TELEPORTS_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12734,7 +12734,7 @@ group: A Tier
 
 #define TELEPORTS_A_MIN_QUANT 0
 
-rule (name:TELEPORTS_A_NAMES && quantity:<TELEPORTS_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_A_NAMES && quantity:<TELEPORTS_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_A_NAMES && quantity:<TELEPORTS_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12788,7 +12788,7 @@ group: B Tier
 
 #define TELEPORTS_B_SHOW_UNNOTED true
 
-rule (name:TELEPORTS_B_NAMES && !TELEPORTS_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_B_NAMES && !TELEPORTS_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_B_NAMES && !TELEPORTS_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12799,7 +12799,7 @@ group: B Tier
 
 #define TELEPORTS_B_MIN_QUANT 0
 
-rule (name:TELEPORTS_B_NAMES && quantity:<TELEPORTS_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_B_NAMES && quantity:<TELEPORTS_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_B_NAMES && quantity:<TELEPORTS_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12857,7 +12857,7 @@ group: C Tier
 
 #define TELEPORTS_C_SHOW_UNNOTED true
 
-rule (name:TELEPORTS_C_NAMES && !TELEPORTS_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_C_NAMES && !TELEPORTS_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_C_NAMES && !TELEPORTS_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12868,7 +12868,7 @@ group: C Tier
 
 #define TELEPORTS_C_MIN_QUANT 0
 
-rule (name:TELEPORTS_C_NAMES && quantity:<TELEPORTS_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_C_NAMES && quantity:<TELEPORTS_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_C_NAMES && quantity:<TELEPORTS_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12934,7 +12934,7 @@ group: D Tier
 
 #define TELEPORTS_D_SHOW_UNNOTED true
 
-rule (name:TELEPORTS_D_NAMES && !TELEPORTS_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_D_NAMES && !TELEPORTS_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_D_NAMES && !TELEPORTS_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:teleports
@@ -12945,7 +12945,7 @@ group: D Tier
 
 #define TELEPORTS_D_MIN_QUANT 0
 
-rule (name:TELEPORTS_D_NAMES && quantity:<TELEPORTS_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_D_NAMES && quantity:<TELEPORTS_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_D_NAMES && quantity:<TELEPORTS_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:teleports
@@ -13016,7 +13016,7 @@ group: E Tier
 
 #define TELEPORTS_E_SHOW_UNNOTED true
 
-rule (name:TELEPORTS_E_NAMES && !TELEPORTS_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_E_NAMES && !TELEPORTS_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_E_NAMES && !TELEPORTS_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:teleports
@@ -13027,7 +13027,7 @@ group: E Tier
 
 #define TELEPORTS_E_MIN_QUANT 10
 
-rule (name:TELEPORTS_E_NAMES && quantity:<TELEPORTS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:TELEPORTS_E_NAMES && quantity:<TELEPORTS_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:TELEPORTS_E_NAMES && quantity:<TELEPORTS_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:teleports
@@ -13149,7 +13149,7 @@ group: SS Tier
 
 #define CHARGES_SS_SHOW_UNNOTED true
 
-rule (name:CHARGES_SS_NAMES && !CHARGES_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_SS_NAMES && !CHARGES_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_SS_NAMES && !CHARGES_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:charges
@@ -13160,7 +13160,7 @@ group: SS Tier
 
 #define CHARGES_SS_MIN_QUANT 0
 
-rule (name:CHARGES_SS_NAMES && quantity:<CHARGES_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_SS_NAMES && quantity:<CHARGES_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_SS_NAMES && quantity:<CHARGES_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:charges
@@ -13199,7 +13199,7 @@ group: S Tier
 
 #define CHARGES_S_SHOW_UNNOTED true
 
-rule (name:CHARGES_S_NAMES && !CHARGES_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_S_NAMES && !CHARGES_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_S_NAMES && !CHARGES_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:charges
@@ -13210,7 +13210,7 @@ group: S Tier
 
 #define CHARGES_S_MIN_QUANT 0
 
-rule (name:CHARGES_S_NAMES && quantity:<CHARGES_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_S_NAMES && quantity:<CHARGES_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_S_NAMES && quantity:<CHARGES_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:charges
@@ -13258,7 +13258,7 @@ group: A Tier
 
 #define CHARGES_A_SHOW_UNNOTED true
 
-rule (name:CHARGES_A_NAMES && !CHARGES_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_A_NAMES && !CHARGES_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_A_NAMES && !CHARGES_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:charges
@@ -13269,7 +13269,7 @@ group: A Tier
 
 #define CHARGES_A_MIN_QUANT 0
 
-rule (name:CHARGES_A_NAMES && quantity:<CHARGES_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_A_NAMES && quantity:<CHARGES_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_A_NAMES && quantity:<CHARGES_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:charges
@@ -13323,7 +13323,7 @@ group: B Tier
 
 #define CHARGES_B_SHOW_UNNOTED true
 
-rule (name:CHARGES_B_NAMES && !CHARGES_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_B_NAMES && !CHARGES_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_B_NAMES && !CHARGES_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:charges
@@ -13334,7 +13334,7 @@ group: B Tier
 
 #define CHARGES_B_MIN_QUANT 0
 
-rule (name:CHARGES_B_NAMES && quantity:<CHARGES_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_B_NAMES && quantity:<CHARGES_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_B_NAMES && quantity:<CHARGES_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:charges
@@ -13392,7 +13392,7 @@ group: C Tier
 
 #define CHARGES_C_SHOW_UNNOTED true
 
-rule (name:CHARGES_C_NAMES && !CHARGES_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_C_NAMES && !CHARGES_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_C_NAMES && !CHARGES_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:charges
@@ -13403,7 +13403,7 @@ group: C Tier
 
 #define CHARGES_C_MIN_QUANT 0
 
-rule (name:CHARGES_C_NAMES && quantity:<CHARGES_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_C_NAMES && quantity:<CHARGES_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_C_NAMES && quantity:<CHARGES_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:charges
@@ -13549,7 +13549,7 @@ group: E Tier
 
 #define CHARGES_E_SHOW_UNNOTED true
 
-rule (name:CHARGES_E_NAMES && !CHARGES_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_E_NAMES && !CHARGES_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_E_NAMES && !CHARGES_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:charges
@@ -13560,7 +13560,7 @@ group: E Tier
 
 #define CHARGES_E_MIN_QUANT 0
 
-rule (name:CHARGES_E_NAMES && quantity:<CHARGES_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CHARGES_E_NAMES && quantity:<CHARGES_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CHARGES_E_NAMES && quantity:<CHARGES_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:charges
@@ -13708,7 +13708,7 @@ group: SS Tier
 
 #define SEEDS_SS_SHOW_UNNOTED true
 
-rule (name:SEEDS_SS_NAMES && !SEEDS_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_SS_NAMES && !SEEDS_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_SS_NAMES && !SEEDS_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:seeds
@@ -13719,7 +13719,7 @@ group: SS Tier
 
 #define SEEDS_SS_MIN_QUANT 0
 
-rule (name:SEEDS_SS_NAMES && quantity:<SEEDS_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_SS_NAMES && quantity:<SEEDS_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_SS_NAMES && quantity:<SEEDS_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:seeds
@@ -13758,7 +13758,7 @@ group: S Tier
 
 #define SEEDS_S_SHOW_UNNOTED true
 
-rule (name:SEEDS_S_NAMES && !SEEDS_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_S_NAMES && !SEEDS_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_S_NAMES && !SEEDS_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:seeds
@@ -13769,7 +13769,7 @@ group: S Tier
 
 #define SEEDS_S_MIN_QUANT 0
 
-rule (name:SEEDS_S_NAMES && quantity:<SEEDS_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_S_NAMES && quantity:<SEEDS_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_S_NAMES && quantity:<SEEDS_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:seeds
@@ -13817,7 +13817,7 @@ group: A Tier
 
 #define SEEDS_A_SHOW_UNNOTED true
 
-rule (name:SEEDS_A_NAMES && !SEEDS_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_A_NAMES && !SEEDS_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_A_NAMES && !SEEDS_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:seeds
@@ -13828,7 +13828,7 @@ group: A Tier
 
 #define SEEDS_A_MIN_QUANT 0
 
-rule (name:SEEDS_A_NAMES && quantity:<SEEDS_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_A_NAMES && quantity:<SEEDS_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_A_NAMES && quantity:<SEEDS_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:seeds
@@ -13882,7 +13882,7 @@ group: B Tier
 
 #define SEEDS_B_SHOW_UNNOTED true
 
-rule (name:SEEDS_B_NAMES && !SEEDS_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_B_NAMES && !SEEDS_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_B_NAMES && !SEEDS_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:seeds
@@ -13893,7 +13893,7 @@ group: B Tier
 
 #define SEEDS_B_MIN_QUANT 0
 
-rule (name:SEEDS_B_NAMES && quantity:<SEEDS_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_B_NAMES && quantity:<SEEDS_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_B_NAMES && quantity:<SEEDS_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:seeds
@@ -13951,7 +13951,7 @@ group: C Tier
 
 #define SEEDS_C_SHOW_UNNOTED true
 
-rule (name:SEEDS_C_NAMES && !SEEDS_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_C_NAMES && !SEEDS_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_C_NAMES && !SEEDS_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:seeds
@@ -13962,7 +13962,7 @@ group: C Tier
 
 #define SEEDS_C_MIN_QUANT 0
 
-rule (name:SEEDS_C_NAMES && quantity:<SEEDS_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_C_NAMES && quantity:<SEEDS_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_C_NAMES && quantity:<SEEDS_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:seeds
@@ -14028,7 +14028,7 @@ group: D Tier
 
 #define SEEDS_D_SHOW_UNNOTED true
 
-rule (name:SEEDS_D_NAMES && !SEEDS_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_D_NAMES && !SEEDS_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_D_NAMES && !SEEDS_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:seeds
@@ -14039,7 +14039,7 @@ group: D Tier
 
 #define SEEDS_D_MIN_QUANT 10
 
-rule (name:SEEDS_D_NAMES && quantity:<SEEDS_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_D_NAMES && quantity:<SEEDS_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_D_NAMES && quantity:<SEEDS_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:seeds
@@ -14110,7 +14110,7 @@ group: E Tier
 
 #define SEEDS_E_SHOW_UNNOTED true
 
-rule (name:SEEDS_E_NAMES && !SEEDS_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_E_NAMES && !SEEDS_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_E_NAMES && !SEEDS_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:seeds
@@ -14121,7 +14121,7 @@ group: E Tier
 
 #define SEEDS_E_MIN_QUANT 25
 
-rule (name:SEEDS_E_NAMES && quantity:<SEEDS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:SEEDS_E_NAMES && quantity:<SEEDS_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:SEEDS_E_NAMES && quantity:<SEEDS_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:seeds
@@ -14315,7 +14315,7 @@ group: SS Tier
 
 #define HERBS_SS_SHOW_UNNOTED true
 
-rule (name:HERBS_SS_NAMES && !HERBS_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_SS_NAMES && !HERBS_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_SS_NAMES && !HERBS_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herbs
@@ -14326,7 +14326,7 @@ group: SS Tier
 
 #define HERBS_SS_MIN_QUANT 0
 
-rule (name:HERBS_SS_NAMES && quantity:<HERBS_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_SS_NAMES && quantity:<HERBS_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_SS_NAMES && quantity:<HERBS_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herbs
@@ -14438,7 +14438,7 @@ group: S Tier
 
 #define HERBS_S_SHOW_UNNOTED true
 
-rule (name:HERBS_S_NAMES && !HERBS_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_S_NAMES && !HERBS_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_S_NAMES && !HERBS_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herbs
@@ -14449,7 +14449,7 @@ group: S Tier
 
 #define HERBS_S_MIN_QUANT 0
 
-rule (name:HERBS_S_NAMES && quantity:<HERBS_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_S_NAMES && quantity:<HERBS_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_S_NAMES && quantity:<HERBS_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herbs
@@ -14570,7 +14570,7 @@ group: A Tier
 
 #define HERBS_A_SHOW_UNNOTED true
 
-rule (name:HERBS_A_NAMES && !HERBS_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_A_NAMES && !HERBS_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_A_NAMES && !HERBS_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herbs
@@ -14581,7 +14581,7 @@ group: A Tier
 
 #define HERBS_A_MIN_QUANT 0
 
-rule (name:HERBS_A_NAMES && quantity:<HERBS_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_A_NAMES && quantity:<HERBS_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_A_NAMES && quantity:<HERBS_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herbs
@@ -14708,7 +14708,7 @@ group: B Tier
 
 #define HERBS_B_SHOW_UNNOTED true
 
-rule (name:HERBS_B_NAMES && !HERBS_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_B_NAMES && !HERBS_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_B_NAMES && !HERBS_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herbs
@@ -14719,7 +14719,7 @@ group: B Tier
 
 #define HERBS_B_MIN_QUANT 0
 
-rule (name:HERBS_B_NAMES && quantity:<HERBS_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_B_NAMES && quantity:<HERBS_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_B_NAMES && quantity:<HERBS_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herbs
@@ -14850,7 +14850,7 @@ group: C Tier
 
 #define HERBS_C_SHOW_UNNOTED true
 
-rule (name:HERBS_C_NAMES && !HERBS_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_C_NAMES && !HERBS_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_C_NAMES && !HERBS_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herbs
@@ -14861,7 +14861,7 @@ group: C Tier
 
 #define HERBS_C_MIN_QUANT 0
 
-rule (name:HERBS_C_NAMES && quantity:<HERBS_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_C_NAMES && quantity:<HERBS_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_C_NAMES && quantity:<HERBS_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herbs
@@ -15000,7 +15000,7 @@ group: D Tier
 
 #define HERBS_D_SHOW_UNNOTED true
 
-rule (name:HERBS_D_NAMES && !HERBS_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_D_NAMES && !HERBS_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_D_NAMES && !HERBS_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herbs
@@ -15011,7 +15011,7 @@ group: D Tier
 
 #define HERBS_D_MIN_QUANT 0
 
-rule (name:HERBS_D_NAMES && quantity:<HERBS_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_D_NAMES && quantity:<HERBS_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_D_NAMES && quantity:<HERBS_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herbs
@@ -15155,7 +15155,7 @@ group: E Tier
 
 #define HERBS_E_SHOW_UNNOTED true
 
-rule (name:HERBS_E_NAMES && !HERBS_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_E_NAMES && !HERBS_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_E_NAMES && !HERBS_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herbs
@@ -15166,7 +15166,7 @@ group: E Tier
 
 #define HERBS_E_MIN_QUANT 0
 
-rule (name:HERBS_E_NAMES && quantity:<HERBS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBS_E_NAMES && quantity:<HERBS_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBS_E_NAMES && quantity:<HERBS_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herbs
@@ -15287,7 +15287,7 @@ group: SS Tier
 
 #define HERBLORE_SECONDARIES_SS_SHOW_UNNOTED true
 
-rule (name:HERBLORE_SECONDARIES_SS_NAMES && !HERBLORE_SECONDARIES_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_SS_NAMES && !HERBLORE_SECONDARIES_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_SS_NAMES && !HERBLORE_SECONDARIES_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15298,7 +15298,7 @@ group: SS Tier
 
 #define HERBLORE_SECONDARIES_SS_MIN_QUANT 0
 
-rule (name:HERBLORE_SECONDARIES_SS_NAMES && quantity:<HERBLORE_SECONDARIES_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_SS_NAMES && quantity:<HERBLORE_SECONDARIES_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_SS_NAMES && quantity:<HERBLORE_SECONDARIES_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15337,7 +15337,7 @@ group: S Tier
 
 #define HERBLORE_SECONDARIES_S_SHOW_UNNOTED true
 
-rule (name:HERBLORE_SECONDARIES_S_NAMES && !HERBLORE_SECONDARIES_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_S_NAMES && !HERBLORE_SECONDARIES_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_S_NAMES && !HERBLORE_SECONDARIES_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15348,7 +15348,7 @@ group: S Tier
 
 #define HERBLORE_SECONDARIES_S_MIN_QUANT 0
 
-rule (name:HERBLORE_SECONDARIES_S_NAMES && quantity:<HERBLORE_SECONDARIES_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_S_NAMES && quantity:<HERBLORE_SECONDARIES_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_S_NAMES && quantity:<HERBLORE_SECONDARIES_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15396,7 +15396,7 @@ group: A Tier
 
 #define HERBLORE_SECONDARIES_A_SHOW_UNNOTED true
 
-rule (name:HERBLORE_SECONDARIES_A_NAMES && !HERBLORE_SECONDARIES_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_A_NAMES && !HERBLORE_SECONDARIES_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_A_NAMES && !HERBLORE_SECONDARIES_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15407,7 +15407,7 @@ group: A Tier
 
 #define HERBLORE_SECONDARIES_A_MIN_QUANT 0
 
-rule (name:HERBLORE_SECONDARIES_A_NAMES && quantity:<HERBLORE_SECONDARIES_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_A_NAMES && quantity:<HERBLORE_SECONDARIES_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_A_NAMES && quantity:<HERBLORE_SECONDARIES_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15461,7 +15461,7 @@ group: B Tier
 
 #define HERBLORE_SECONDARIES_B_SHOW_UNNOTED true
 
-rule (name:HERBLORE_SECONDARIES_B_NAMES && !HERBLORE_SECONDARIES_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_B_NAMES && !HERBLORE_SECONDARIES_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_B_NAMES && !HERBLORE_SECONDARIES_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15472,7 +15472,7 @@ group: B Tier
 
 #define HERBLORE_SECONDARIES_B_MIN_QUANT 0
 
-rule (name:HERBLORE_SECONDARIES_B_NAMES && quantity:<HERBLORE_SECONDARIES_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_B_NAMES && quantity:<HERBLORE_SECONDARIES_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_B_NAMES && quantity:<HERBLORE_SECONDARIES_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15530,7 +15530,7 @@ group: C Tier
 
 #define HERBLORE_SECONDARIES_C_SHOW_UNNOTED true
 
-rule (name:HERBLORE_SECONDARIES_C_NAMES && !HERBLORE_SECONDARIES_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_C_NAMES && !HERBLORE_SECONDARIES_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_C_NAMES && !HERBLORE_SECONDARIES_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15541,7 +15541,7 @@ group: C Tier
 
 #define HERBLORE_SECONDARIES_C_MIN_QUANT 0
 
-rule (name:HERBLORE_SECONDARIES_C_NAMES && quantity:<HERBLORE_SECONDARIES_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_C_NAMES && quantity:<HERBLORE_SECONDARIES_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_C_NAMES && quantity:<HERBLORE_SECONDARIES_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15607,7 +15607,7 @@ group: D Tier
 
 #define HERBLORE_SECONDARIES_D_SHOW_UNNOTED false
 
-rule (name:HERBLORE_SECONDARIES_D_NAMES && !HERBLORE_SECONDARIES_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_D_NAMES && !HERBLORE_SECONDARIES_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_D_NAMES && !HERBLORE_SECONDARIES_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15618,7 +15618,7 @@ group: D Tier
 
 #define HERBLORE_SECONDARIES_D_MIN_QUANT 0
 
-rule (name:HERBLORE_SECONDARIES_D_NAMES && quantity:<HERBLORE_SECONDARIES_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_D_NAMES && quantity:<HERBLORE_SECONDARIES_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_D_NAMES && quantity:<HERBLORE_SECONDARIES_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15689,7 +15689,7 @@ group: E Tier
 
 #define HERBLORE_SECONDARIES_E_SHOW_UNNOTED true
 
-rule (name:HERBLORE_SECONDARIES_E_NAMES && !HERBLORE_SECONDARIES_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_E_NAMES && !HERBLORE_SECONDARIES_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_E_NAMES && !HERBLORE_SECONDARIES_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15700,7 +15700,7 @@ group: E Tier
 
 #define HERBLORE_SECONDARIES_E_MIN_QUANT 25
 
-rule (name:HERBLORE_SECONDARIES_E_NAMES && quantity:<HERBLORE_SECONDARIES_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:HERBLORE_SECONDARIES_E_NAMES && quantity:<HERBLORE_SECONDARIES_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:HERBLORE_SECONDARIES_E_NAMES && quantity:<HERBLORE_SECONDARIES_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:herblore_secondaries
@@ -15821,7 +15821,7 @@ group: SS Tier
 
 #define COOKING_SS_SHOW_UNNOTED true
 
-rule (name:COOKING_SS_NAMES && !COOKING_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_SS_NAMES && !COOKING_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_SS_NAMES && !COOKING_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:cooking
@@ -15832,7 +15832,7 @@ group: SS Tier
 
 #define COOKING_SS_MIN_QUANT 0
 
-rule (name:COOKING_SS_NAMES && quantity:<COOKING_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_SS_NAMES && quantity:<COOKING_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_SS_NAMES && quantity:<COOKING_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:cooking
@@ -15871,7 +15871,7 @@ group: S Tier
 
 #define COOKING_S_SHOW_UNNOTED true
 
-rule (name:COOKING_S_NAMES && !COOKING_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_S_NAMES && !COOKING_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_S_NAMES && !COOKING_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:cooking
@@ -15882,7 +15882,7 @@ group: S Tier
 
 #define COOKING_S_MIN_QUANT 0
 
-rule (name:COOKING_S_NAMES && quantity:<COOKING_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_S_NAMES && quantity:<COOKING_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_S_NAMES && quantity:<COOKING_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:cooking
@@ -15930,7 +15930,7 @@ group: A Tier
 
 #define COOKING_A_SHOW_UNNOTED true
 
-rule (name:COOKING_A_NAMES && !COOKING_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_A_NAMES && !COOKING_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_A_NAMES && !COOKING_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:cooking
@@ -15941,7 +15941,7 @@ group: A Tier
 
 #define COOKING_A_MIN_QUANT 0
 
-rule (name:COOKING_A_NAMES && quantity:<COOKING_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_A_NAMES && quantity:<COOKING_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_A_NAMES && quantity:<COOKING_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:cooking
@@ -15995,7 +15995,7 @@ group: B Tier
 
 #define COOKING_B_SHOW_UNNOTED true
 
-rule (name:COOKING_B_NAMES && !COOKING_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_B_NAMES && !COOKING_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_B_NAMES && !COOKING_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:cooking
@@ -16006,7 +16006,7 @@ group: B Tier
 
 #define COOKING_B_MIN_QUANT 0
 
-rule (name:COOKING_B_NAMES && quantity:<COOKING_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_B_NAMES && quantity:<COOKING_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_B_NAMES && quantity:<COOKING_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:cooking
@@ -16064,7 +16064,7 @@ group: C Tier
 
 #define COOKING_C_SHOW_UNNOTED true
 
-rule (name:COOKING_C_NAMES && !COOKING_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_C_NAMES && !COOKING_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_C_NAMES && !COOKING_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:cooking
@@ -16075,7 +16075,7 @@ group: C Tier
 
 #define COOKING_C_MIN_QUANT 0
 
-rule (name:COOKING_C_NAMES && quantity:<COOKING_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_C_NAMES && quantity:<COOKING_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_C_NAMES && quantity:<COOKING_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:cooking
@@ -16141,7 +16141,7 @@ group: D Tier
 
 #define COOKING_D_SHOW_UNNOTED false
 
-rule (name:COOKING_D_NAMES && !COOKING_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_D_NAMES && !COOKING_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_D_NAMES && !COOKING_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:cooking
@@ -16152,7 +16152,7 @@ group: D Tier
 
 #define COOKING_D_MIN_QUANT 0
 
-rule (name:COOKING_D_NAMES && quantity:<COOKING_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_D_NAMES && quantity:<COOKING_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_D_NAMES && quantity:<COOKING_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:cooking
@@ -16223,7 +16223,7 @@ group: E Tier
 
 #define COOKING_E_SHOW_UNNOTED false
 
-rule (name:COOKING_E_NAMES && !COOKING_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_E_NAMES && !COOKING_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_E_NAMES && !COOKING_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:cooking
@@ -16234,7 +16234,7 @@ group: E Tier
 
 #define COOKING_E_MIN_QUANT 25
 
-rule (name:COOKING_E_NAMES && quantity:<COOKING_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:COOKING_E_NAMES && quantity:<COOKING_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:COOKING_E_NAMES && quantity:<COOKING_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:cooking
@@ -16355,7 +16355,7 @@ group: SS Tier
 
 #define FOOD_AND_POTS_STOCKPILE_SS_SHOW_UNNOTED true
 
-rule (name:FOOD_AND_POTS_STOCKPILE_SS_NAMES && !FOOD_AND_POTS_STOCKPILE_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_SS_NAMES && !FOOD_AND_POTS_STOCKPILE_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_SS_NAMES && !FOOD_AND_POTS_STOCKPILE_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16366,7 +16366,7 @@ group: SS Tier
 
 #define FOOD_AND_POTS_STOCKPILE_SS_MIN_QUANT 0
 
-rule (name:FOOD_AND_POTS_STOCKPILE_SS_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_SS_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_SS_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16405,7 +16405,7 @@ group: S Tier
 
 #define FOOD_AND_POTS_STOCKPILE_S_SHOW_UNNOTED true
 
-rule (name:FOOD_AND_POTS_STOCKPILE_S_NAMES && !FOOD_AND_POTS_STOCKPILE_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_S_NAMES && !FOOD_AND_POTS_STOCKPILE_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_S_NAMES && !FOOD_AND_POTS_STOCKPILE_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16416,7 +16416,7 @@ group: S Tier
 
 #define FOOD_AND_POTS_STOCKPILE_S_MIN_QUANT 0
 
-rule (name:FOOD_AND_POTS_STOCKPILE_S_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_S_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_S_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16464,7 +16464,7 @@ group: A Tier
 
 #define FOOD_AND_POTS_STOCKPILE_A_SHOW_UNNOTED true
 
-rule (name:FOOD_AND_POTS_STOCKPILE_A_NAMES && !FOOD_AND_POTS_STOCKPILE_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_A_NAMES && !FOOD_AND_POTS_STOCKPILE_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_A_NAMES && !FOOD_AND_POTS_STOCKPILE_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16475,7 +16475,7 @@ group: A Tier
 
 #define FOOD_AND_POTS_STOCKPILE_A_MIN_QUANT 0
 
-rule (name:FOOD_AND_POTS_STOCKPILE_A_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_A_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_A_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16529,7 +16529,7 @@ group: B Tier
 
 #define FOOD_AND_POTS_STOCKPILE_B_SHOW_UNNOTED true
 
-rule (name:FOOD_AND_POTS_STOCKPILE_B_NAMES && !FOOD_AND_POTS_STOCKPILE_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_B_NAMES && !FOOD_AND_POTS_STOCKPILE_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_B_NAMES && !FOOD_AND_POTS_STOCKPILE_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16540,7 +16540,7 @@ group: B Tier
 
 #define FOOD_AND_POTS_STOCKPILE_B_MIN_QUANT 0
 
-rule (name:FOOD_AND_POTS_STOCKPILE_B_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_B_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_B_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16598,7 +16598,7 @@ group: C Tier
 
 #define FOOD_AND_POTS_STOCKPILE_C_SHOW_UNNOTED true
 
-rule (name:FOOD_AND_POTS_STOCKPILE_C_NAMES && !FOOD_AND_POTS_STOCKPILE_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_C_NAMES && !FOOD_AND_POTS_STOCKPILE_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_C_NAMES && !FOOD_AND_POTS_STOCKPILE_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16609,7 +16609,7 @@ group: C Tier
 
 #define FOOD_AND_POTS_STOCKPILE_C_MIN_QUANT 0
 
-rule (name:FOOD_AND_POTS_STOCKPILE_C_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_C_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_C_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16675,7 +16675,7 @@ group: D Tier
 
 #define FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED false
 
-rule (name:FOOD_AND_POTS_STOCKPILE_D_NAMES && !FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_D_NAMES && !FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_D_NAMES && !FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16686,7 +16686,7 @@ group: D Tier
 
 #define FOOD_AND_POTS_STOCKPILE_D_MIN_QUANT 0
 
-rule (name:FOOD_AND_POTS_STOCKPILE_D_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_D_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_D_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16757,7 +16757,7 @@ group: E Tier
 
 #define FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED false
 
-rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES && !FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES && !FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES && !FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16768,7 +16768,7 @@ group: E Tier
 
 #define FOOD_AND_POTS_STOCKPILE_E_MIN_QUANT 0
 
-rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FOOD_AND_POTS_STOCKPILE_E_NAMES && quantity:<FOOD_AND_POTS_STOCKPILE_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16884,7 +16884,7 @@ group: Blighted SS Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_SHOW_UNNOTED true
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16895,7 +16895,7 @@ group: Blighted SS Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_MIN_QUANT 0
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16934,7 +16934,7 @@ group: Blighted S Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_SHOW_UNNOTED true
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16945,7 +16945,7 @@ group: Blighted S Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_MIN_QUANT 0
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -16993,7 +16993,7 @@ group: Blighted A Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_SHOW_UNNOTED true
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -17004,7 +17004,7 @@ group: Blighted A Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_MIN_QUANT 0
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -17058,7 +17058,7 @@ group: Blighted B Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_SHOW_UNNOTED true
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -17069,7 +17069,7 @@ group: Blighted B Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_MIN_QUANT 0
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -17127,7 +17127,7 @@ group: Blighted C Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_SHOW_UNNOTED true
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -17138,7 +17138,7 @@ group: Blighted C Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_MIN_QUANT 0
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -17204,7 +17204,7 @@ group: Blighted D Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED false
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -17215,7 +17215,7 @@ group: Blighted D Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_MIN_QUANT 0
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -17286,7 +17286,7 @@ group: Blighted E Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED false
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_NAMES && !BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -17297,7 +17297,7 @@ group: Blighted E Tier
 
 #define BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_MIN_QUANT 0
 
-rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_NAMES && quantity:<BLIGHTED_FOOD_AND_POTS_STOCKPILE_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:food_and_pots_stockpile
@@ -17418,7 +17418,7 @@ group: SS Tier
 
 #define RUNES_SS_SHOW_UNNOTED true
 
-rule (name:RUNES_SS_NAMES && !RUNES_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_SS_NAMES && !RUNES_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_SS_NAMES && !RUNES_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runes
@@ -17429,7 +17429,7 @@ group: SS Tier
 
 #define RUNES_SS_MIN_QUANT 0
 
-rule (name:RUNES_SS_NAMES && quantity:<RUNES_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_SS_NAMES && quantity:<RUNES_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_SS_NAMES && quantity:<RUNES_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runes
@@ -17468,7 +17468,7 @@ group: S Tier
 
 #define RUNES_S_SHOW_UNNOTED true
 
-rule (name:RUNES_S_NAMES && !RUNES_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_S_NAMES && !RUNES_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_S_NAMES && !RUNES_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runes
@@ -17479,7 +17479,7 @@ group: S Tier
 
 #define RUNES_S_MIN_QUANT 0
 
-rule (name:RUNES_S_NAMES && quantity:<RUNES_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_S_NAMES && quantity:<RUNES_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_S_NAMES && quantity:<RUNES_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runes
@@ -17527,7 +17527,7 @@ group: A Tier
 
 #define RUNES_A_SHOW_UNNOTED true
 
-rule (name:RUNES_A_NAMES && !RUNES_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_A_NAMES && !RUNES_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_A_NAMES && !RUNES_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runes
@@ -17538,7 +17538,7 @@ group: A Tier
 
 #define RUNES_A_MIN_QUANT 0
 
-rule (name:RUNES_A_NAMES && quantity:<RUNES_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_A_NAMES && quantity:<RUNES_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_A_NAMES && quantity:<RUNES_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runes
@@ -17592,7 +17592,7 @@ group: B Tier
 
 #define RUNES_B_SHOW_UNNOTED true
 
-rule (name:RUNES_B_NAMES && !RUNES_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_B_NAMES && !RUNES_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_B_NAMES && !RUNES_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runes
@@ -17603,7 +17603,7 @@ group: B Tier
 
 #define RUNES_B_MIN_QUANT 0
 
-rule (name:RUNES_B_NAMES && quantity:<RUNES_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_B_NAMES && quantity:<RUNES_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_B_NAMES && quantity:<RUNES_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runes
@@ -17661,7 +17661,7 @@ group: C Tier
 
 #define RUNES_C_SHOW_UNNOTED true
 
-rule (name:RUNES_C_NAMES && !RUNES_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_C_NAMES && !RUNES_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_C_NAMES && !RUNES_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runes
@@ -17672,7 +17672,7 @@ group: C Tier
 
 #define RUNES_C_MIN_QUANT 0
 
-rule (name:RUNES_C_NAMES && quantity:<RUNES_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_C_NAMES && quantity:<RUNES_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_C_NAMES && quantity:<RUNES_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runes
@@ -17738,7 +17738,7 @@ group: D Tier
 
 #define RUNES_D_SHOW_UNNOTED true
 
-rule (name:RUNES_D_NAMES && !RUNES_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_D_NAMES && !RUNES_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_D_NAMES && !RUNES_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runes
@@ -17749,7 +17749,7 @@ group: D Tier
 
 #define RUNES_D_MIN_QUANT 5
 
-rule (name:RUNES_D_NAMES && quantity:<RUNES_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_D_NAMES && quantity:<RUNES_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_D_NAMES && quantity:<RUNES_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runes
@@ -17820,7 +17820,7 @@ group: E Tier
 
 #define RUNES_E_SHOW_UNNOTED true
 
-rule (name:RUNES_E_NAMES && !RUNES_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_E_NAMES && !RUNES_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_E_NAMES && !RUNES_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runes
@@ -17831,7 +17831,7 @@ group: E Tier
 
 #define RUNES_E_MIN_QUANT 50
 
-rule (name:RUNES_E_NAMES && quantity:<RUNES_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNES_E_NAMES && quantity:<RUNES_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNES_E_NAMES && quantity:<RUNES_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runes
@@ -17952,7 +17952,7 @@ group: SS Tier
 
 #define ORES_AND_BARS_SS_SHOW_UNNOTED true
 
-rule (name:ORES_AND_BARS_SS_NAMES && !ORES_AND_BARS_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_SS_NAMES && !ORES_AND_BARS_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_SS_NAMES && !ORES_AND_BARS_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -17963,7 +17963,7 @@ group: SS Tier
 
 #define ORES_AND_BARS_SS_MIN_QUANT 0
 
-rule (name:ORES_AND_BARS_SS_NAMES && quantity:<ORES_AND_BARS_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_SS_NAMES && quantity:<ORES_AND_BARS_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_SS_NAMES && quantity:<ORES_AND_BARS_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18002,7 +18002,7 @@ group: S Tier
 
 #define ORES_AND_BARS_S_SHOW_UNNOTED true
 
-rule (name:ORES_AND_BARS_S_NAMES && !ORES_AND_BARS_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_S_NAMES && !ORES_AND_BARS_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_S_NAMES && !ORES_AND_BARS_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18013,7 +18013,7 @@ group: S Tier
 
 #define ORES_AND_BARS_S_MIN_QUANT 0
 
-rule (name:ORES_AND_BARS_S_NAMES && quantity:<ORES_AND_BARS_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_S_NAMES && quantity:<ORES_AND_BARS_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_S_NAMES && quantity:<ORES_AND_BARS_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18061,7 +18061,7 @@ group: A Tier
 
 #define ORES_AND_BARS_A_SHOW_UNNOTED true
 
-rule (name:ORES_AND_BARS_A_NAMES && !ORES_AND_BARS_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_A_NAMES && !ORES_AND_BARS_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_A_NAMES && !ORES_AND_BARS_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18072,7 +18072,7 @@ group: A Tier
 
 #define ORES_AND_BARS_A_MIN_QUANT 0
 
-rule (name:ORES_AND_BARS_A_NAMES && quantity:<ORES_AND_BARS_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_A_NAMES && quantity:<ORES_AND_BARS_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_A_NAMES && quantity:<ORES_AND_BARS_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18126,7 +18126,7 @@ group: B Tier
 
 #define ORES_AND_BARS_B_SHOW_UNNOTED true
 
-rule (name:ORES_AND_BARS_B_NAMES && !ORES_AND_BARS_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_B_NAMES && !ORES_AND_BARS_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_B_NAMES && !ORES_AND_BARS_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18137,7 +18137,7 @@ group: B Tier
 
 #define ORES_AND_BARS_B_MIN_QUANT 0
 
-rule (name:ORES_AND_BARS_B_NAMES && quantity:<ORES_AND_BARS_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_B_NAMES && quantity:<ORES_AND_BARS_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_B_NAMES && quantity:<ORES_AND_BARS_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18195,7 +18195,7 @@ group: C Tier
 
 #define ORES_AND_BARS_C_SHOW_UNNOTED true
 
-rule (name:ORES_AND_BARS_C_NAMES && !ORES_AND_BARS_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_C_NAMES && !ORES_AND_BARS_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_C_NAMES && !ORES_AND_BARS_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18206,7 +18206,7 @@ group: C Tier
 
 #define ORES_AND_BARS_C_MIN_QUANT 0
 
-rule (name:ORES_AND_BARS_C_NAMES && quantity:<ORES_AND_BARS_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_C_NAMES && quantity:<ORES_AND_BARS_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_C_NAMES && quantity:<ORES_AND_BARS_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18272,7 +18272,7 @@ group: D Tier
 
 #define ORES_AND_BARS_D_SHOW_UNNOTED false
 
-rule (name:ORES_AND_BARS_D_NAMES && !ORES_AND_BARS_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_D_NAMES && !ORES_AND_BARS_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_D_NAMES && !ORES_AND_BARS_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18283,7 +18283,7 @@ group: D Tier
 
 #define ORES_AND_BARS_D_MIN_QUANT 0
 
-rule (name:ORES_AND_BARS_D_NAMES && quantity:<ORES_AND_BARS_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_D_NAMES && quantity:<ORES_AND_BARS_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_D_NAMES && quantity:<ORES_AND_BARS_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18354,7 +18354,7 @@ group: E Tier
 
 #define ORES_AND_BARS_E_SHOW_UNNOTED false
 
-rule (name:ORES_AND_BARS_E_NAMES && !ORES_AND_BARS_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_E_NAMES && !ORES_AND_BARS_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_E_NAMES && !ORES_AND_BARS_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18365,7 +18365,7 @@ group: E Tier
 
 #define ORES_AND_BARS_E_MIN_QUANT 25
 
-rule (name:ORES_AND_BARS_E_NAMES && quantity:<ORES_AND_BARS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ORES_AND_BARS_E_NAMES && quantity:<ORES_AND_BARS_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ORES_AND_BARS_E_NAMES && quantity:<ORES_AND_BARS_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:ores_and_bars
@@ -18486,7 +18486,7 @@ group: SS Tier
 
 #define LOGS_SS_SHOW_UNNOTED true
 
-rule (name:LOGS_SS_NAMES && !LOGS_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_SS_NAMES && !LOGS_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_SS_NAMES && !LOGS_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:logs
@@ -18497,7 +18497,7 @@ group: SS Tier
 
 #define LOGS_SS_MIN_QUANT 0
 
-rule (name:LOGS_SS_NAMES && quantity:<LOGS_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_SS_NAMES && quantity:<LOGS_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_SS_NAMES && quantity:<LOGS_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:logs
@@ -18536,7 +18536,7 @@ group: S Tier
 
 #define LOGS_S_SHOW_UNNOTED true
 
-rule (name:LOGS_S_NAMES && !LOGS_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_S_NAMES && !LOGS_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_S_NAMES && !LOGS_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:logs
@@ -18547,7 +18547,7 @@ group: S Tier
 
 #define LOGS_S_MIN_QUANT 0
 
-rule (name:LOGS_S_NAMES && quantity:<LOGS_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_S_NAMES && quantity:<LOGS_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_S_NAMES && quantity:<LOGS_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:logs
@@ -18595,7 +18595,7 @@ group: A Tier
 
 #define LOGS_A_SHOW_UNNOTED true
 
-rule (name:LOGS_A_NAMES && !LOGS_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_A_NAMES && !LOGS_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_A_NAMES && !LOGS_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:logs
@@ -18606,7 +18606,7 @@ group: A Tier
 
 #define LOGS_A_MIN_QUANT 0
 
-rule (name:LOGS_A_NAMES && quantity:<LOGS_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_A_NAMES && quantity:<LOGS_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_A_NAMES && quantity:<LOGS_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:logs
@@ -18660,7 +18660,7 @@ group: B Tier
 
 #define LOGS_B_SHOW_UNNOTED true
 
-rule (name:LOGS_B_NAMES && !LOGS_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_B_NAMES && !LOGS_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_B_NAMES && !LOGS_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:logs
@@ -18671,7 +18671,7 @@ group: B Tier
 
 #define LOGS_B_MIN_QUANT 0
 
-rule (name:LOGS_B_NAMES && quantity:<LOGS_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_B_NAMES && quantity:<LOGS_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_B_NAMES && quantity:<LOGS_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:logs
@@ -18729,7 +18729,7 @@ group: C Tier
 
 #define LOGS_C_SHOW_UNNOTED true
 
-rule (name:LOGS_C_NAMES && !LOGS_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_C_NAMES && !LOGS_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_C_NAMES && !LOGS_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:logs
@@ -18740,7 +18740,7 @@ group: C Tier
 
 #define LOGS_C_MIN_QUANT 0
 
-rule (name:LOGS_C_NAMES && quantity:<LOGS_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_C_NAMES && quantity:<LOGS_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_C_NAMES && quantity:<LOGS_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:logs
@@ -18806,7 +18806,7 @@ group: D Tier
 
 #define LOGS_D_SHOW_UNNOTED false
 
-rule (name:LOGS_D_NAMES && !LOGS_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_D_NAMES && !LOGS_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_D_NAMES && !LOGS_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:logs
@@ -18817,7 +18817,7 @@ group: D Tier
 
 #define LOGS_D_MIN_QUANT 0
 
-rule (name:LOGS_D_NAMES && quantity:<LOGS_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_D_NAMES && quantity:<LOGS_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_D_NAMES && quantity:<LOGS_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:logs
@@ -18888,7 +18888,7 @@ group: E Tier
 
 #define LOGS_E_SHOW_UNNOTED false
 
-rule (name:LOGS_E_NAMES && !LOGS_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_E_NAMES && !LOGS_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_E_NAMES && !LOGS_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:logs
@@ -18899,7 +18899,7 @@ group: E Tier
 
 #define LOGS_E_MIN_QUANT 50
 
-rule (name:LOGS_E_NAMES && quantity:<LOGS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:LOGS_E_NAMES && quantity:<LOGS_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:LOGS_E_NAMES && quantity:<LOGS_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:logs
@@ -19020,7 +19020,7 @@ group: SS Tier
 
 #define PLANKS_SS_SHOW_UNNOTED true
 
-rule (name:PLANKS_SS_NAMES && !PLANKS_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_SS_NAMES && !PLANKS_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_SS_NAMES && !PLANKS_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:planks
@@ -19031,7 +19031,7 @@ group: SS Tier
 
 #define PLANKS_SS_MIN_QUANT 0
 
-rule (name:PLANKS_SS_NAMES && quantity:<PLANKS_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_SS_NAMES && quantity:<PLANKS_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_SS_NAMES && quantity:<PLANKS_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:planks
@@ -19070,7 +19070,7 @@ group: S Tier
 
 #define PLANKS_S_SHOW_UNNOTED true
 
-rule (name:PLANKS_S_NAMES && !PLANKS_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_S_NAMES && !PLANKS_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_S_NAMES && !PLANKS_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:planks
@@ -19081,7 +19081,7 @@ group: S Tier
 
 #define PLANKS_S_MIN_QUANT 0
 
-rule (name:PLANKS_S_NAMES && quantity:<PLANKS_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_S_NAMES && quantity:<PLANKS_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_S_NAMES && quantity:<PLANKS_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:planks
@@ -19129,7 +19129,7 @@ group: A Tier
 
 #define PLANKS_A_SHOW_UNNOTED true
 
-rule (name:PLANKS_A_NAMES && !PLANKS_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_A_NAMES && !PLANKS_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_A_NAMES && !PLANKS_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:planks
@@ -19140,7 +19140,7 @@ group: A Tier
 
 #define PLANKS_A_MIN_QUANT 0
 
-rule (name:PLANKS_A_NAMES && quantity:<PLANKS_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_A_NAMES && quantity:<PLANKS_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_A_NAMES && quantity:<PLANKS_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:planks
@@ -19194,7 +19194,7 @@ group: B Tier
 
 #define PLANKS_B_SHOW_UNNOTED true
 
-rule (name:PLANKS_B_NAMES && !PLANKS_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_B_NAMES && !PLANKS_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_B_NAMES && !PLANKS_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:planks
@@ -19205,7 +19205,7 @@ group: B Tier
 
 #define PLANKS_B_MIN_QUANT 0
 
-rule (name:PLANKS_B_NAMES && quantity:<PLANKS_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_B_NAMES && quantity:<PLANKS_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_B_NAMES && quantity:<PLANKS_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:planks
@@ -19263,7 +19263,7 @@ group: C Tier
 
 #define PLANKS_C_SHOW_UNNOTED false
 
-rule (name:PLANKS_C_NAMES && !PLANKS_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_C_NAMES && !PLANKS_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_C_NAMES && !PLANKS_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:planks
@@ -19274,7 +19274,7 @@ group: C Tier
 
 #define PLANKS_C_MIN_QUANT 0
 
-rule (name:PLANKS_C_NAMES && quantity:<PLANKS_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_C_NAMES && quantity:<PLANKS_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_C_NAMES && quantity:<PLANKS_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:planks
@@ -19340,7 +19340,7 @@ group: D Tier
 
 #define PLANKS_D_SHOW_UNNOTED false
 
-rule (name:PLANKS_D_NAMES && !PLANKS_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_D_NAMES && !PLANKS_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_D_NAMES && !PLANKS_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:planks
@@ -19351,7 +19351,7 @@ group: D Tier
 
 #define PLANKS_D_MIN_QUANT 10
 
-rule (name:PLANKS_D_NAMES && quantity:<PLANKS_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_D_NAMES && quantity:<PLANKS_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_D_NAMES && quantity:<PLANKS_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:planks
@@ -19422,7 +19422,7 @@ group: E Tier
 
 #define PLANKS_E_SHOW_UNNOTED false
 
-rule (name:PLANKS_E_NAMES && !PLANKS_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_E_NAMES && !PLANKS_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_E_NAMES && !PLANKS_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:planks
@@ -19433,7 +19433,7 @@ group: E Tier
 
 #define PLANKS_E_MIN_QUANT 25
 
-rule (name:PLANKS_E_NAMES && quantity:<PLANKS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PLANKS_E_NAMES && quantity:<PLANKS_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PLANKS_E_NAMES && quantity:<PLANKS_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:planks
@@ -19554,7 +19554,7 @@ group: SS Tier
 
 #define CRAFTING_SS_SHOW_UNNOTED true
 
-rule (name:CRAFTING_SS_NAMES && !CRAFTING_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_SS_NAMES && !CRAFTING_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_SS_NAMES && !CRAFTING_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19565,7 +19565,7 @@ group: SS Tier
 
 #define CRAFTING_SS_MIN_QUANT 0
 
-rule (name:CRAFTING_SS_NAMES && quantity:<CRAFTING_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_SS_NAMES && quantity:<CRAFTING_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_SS_NAMES && quantity:<CRAFTING_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19604,7 +19604,7 @@ group: S Tier
 
 #define CRAFTING_S_SHOW_UNNOTED true
 
-rule (name:CRAFTING_S_NAMES && !CRAFTING_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_S_NAMES && !CRAFTING_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_S_NAMES && !CRAFTING_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19615,7 +19615,7 @@ group: S Tier
 
 #define CRAFTING_S_MIN_QUANT 0
 
-rule (name:CRAFTING_S_NAMES && quantity:<CRAFTING_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_S_NAMES && quantity:<CRAFTING_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_S_NAMES && quantity:<CRAFTING_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19663,7 +19663,7 @@ group: A Tier
 
 #define CRAFTING_A_SHOW_UNNOTED true
 
-rule (name:CRAFTING_A_NAMES && !CRAFTING_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_A_NAMES && !CRAFTING_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_A_NAMES && !CRAFTING_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19674,7 +19674,7 @@ group: A Tier
 
 #define CRAFTING_A_MIN_QUANT 0
 
-rule (name:CRAFTING_A_NAMES && quantity:<CRAFTING_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_A_NAMES && quantity:<CRAFTING_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_A_NAMES && quantity:<CRAFTING_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19728,7 +19728,7 @@ group: B Tier
 
 #define CRAFTING_B_SHOW_UNNOTED true
 
-rule (name:CRAFTING_B_NAMES && !CRAFTING_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_B_NAMES && !CRAFTING_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_B_NAMES && !CRAFTING_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19739,7 +19739,7 @@ group: B Tier
 
 #define CRAFTING_B_MIN_QUANT 0
 
-rule (name:CRAFTING_B_NAMES && quantity:<CRAFTING_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_B_NAMES && quantity:<CRAFTING_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_B_NAMES && quantity:<CRAFTING_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19797,7 +19797,7 @@ group: C Tier
 
 #define CRAFTING_C_SHOW_UNNOTED true
 
-rule (name:CRAFTING_C_NAMES && !CRAFTING_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_C_NAMES && !CRAFTING_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_C_NAMES && !CRAFTING_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19808,7 +19808,7 @@ group: C Tier
 
 #define CRAFTING_C_MIN_QUANT 0
 
-rule (name:CRAFTING_C_NAMES && quantity:<CRAFTING_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_C_NAMES && quantity:<CRAFTING_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_C_NAMES && quantity:<CRAFTING_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19874,7 +19874,7 @@ group: D Tier
 
 #define CRAFTING_D_SHOW_UNNOTED true
 
-rule (name:CRAFTING_D_NAMES && !CRAFTING_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_D_NAMES && !CRAFTING_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_D_NAMES && !CRAFTING_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19885,7 +19885,7 @@ group: D Tier
 
 #define CRAFTING_D_MIN_QUANT 0
 
-rule (name:CRAFTING_D_NAMES && quantity:<CRAFTING_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_D_NAMES && quantity:<CRAFTING_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_D_NAMES && quantity:<CRAFTING_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19956,7 +19956,7 @@ group: E Tier
 
 #define CRAFTING_E_SHOW_UNNOTED false
 
-rule (name:CRAFTING_E_NAMES && !CRAFTING_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_E_NAMES && !CRAFTING_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_E_NAMES && !CRAFTING_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:crafting
@@ -19967,7 +19967,7 @@ group: E Tier
 
 #define CRAFTING_E_MIN_QUANT 10
 
-rule (name:CRAFTING_E_NAMES && quantity:<CRAFTING_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:CRAFTING_E_NAMES && quantity:<CRAFTING_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:CRAFTING_E_NAMES && quantity:<CRAFTING_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:crafting
@@ -20093,7 +20093,7 @@ group: Bones SS Tier
 #define PRAYER_BONES_SS_SHOW_UNNOTED true
 
 rule (name:PRAYER_BONES_SS_NAMES && !PRAYER_BONES_SS_SHOW_UNNOTED && stackable:false && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_SS_NAMES && !PRAYER_BONES_SS_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_SS_NAMES && !PRAYER_BONES_SS_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_SS_NAMES && !PRAYER_BONES_SS_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20105,7 +20105,7 @@ group: Bones SS Tier
 #define PRAYER_BONES_SS_MIN_QUANT 0
 
 rule (name:PRAYER_BONES_SS_NAMES && quantity:<PRAYER_BONES_SS_MIN_QUANT && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_SS_NAMES && quantity:<PRAYER_BONES_SS_MIN_QUANT && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_SS_NAMES && quantity:<PRAYER_BONES_SS_MIN_QUANT && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_SS_NAMES && quantity:<PRAYER_BONES_SS_MIN_QUANT && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20145,7 +20145,7 @@ group: Bones S Tier
 #define PRAYER_BONES_S_SHOW_UNNOTED true
 
 rule (name:PRAYER_BONES_S_NAMES && !PRAYER_BONES_S_SHOW_UNNOTED && stackable:false && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_S_NAMES && !PRAYER_BONES_S_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_S_NAMES && !PRAYER_BONES_S_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_S_NAMES && !PRAYER_BONES_S_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20157,7 +20157,7 @@ group: Bones S Tier
 #define PRAYER_BONES_S_MIN_QUANT 0
 
 rule (name:PRAYER_BONES_S_NAMES && quantity:<PRAYER_BONES_S_MIN_QUANT && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_S_NAMES && quantity:<PRAYER_BONES_S_MIN_QUANT && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_S_NAMES && quantity:<PRAYER_BONES_S_MIN_QUANT && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_S_NAMES && quantity:<PRAYER_BONES_S_MIN_QUANT && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20206,7 +20206,7 @@ group: Bones A Tier
 #define PRAYER_BONES_A_SHOW_UNNOTED true
 
 rule (name:PRAYER_BONES_A_NAMES && !PRAYER_BONES_A_SHOW_UNNOTED && stackable:false && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_A_NAMES && !PRAYER_BONES_A_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_A_NAMES && !PRAYER_BONES_A_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_A_NAMES && !PRAYER_BONES_A_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20218,7 +20218,7 @@ group: Bones A Tier
 #define PRAYER_BONES_A_MIN_QUANT 0
 
 rule (name:PRAYER_BONES_A_NAMES && quantity:<PRAYER_BONES_A_MIN_QUANT && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_A_NAMES && quantity:<PRAYER_BONES_A_MIN_QUANT && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_A_NAMES && quantity:<PRAYER_BONES_A_MIN_QUANT && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_A_NAMES && quantity:<PRAYER_BONES_A_MIN_QUANT && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20273,7 +20273,7 @@ group: Bones B Tier
 #define PRAYER_BONES_B_SHOW_UNNOTED true
 
 rule (name:PRAYER_BONES_B_NAMES && !PRAYER_BONES_B_SHOW_UNNOTED && stackable:false && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_B_NAMES && !PRAYER_BONES_B_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_B_NAMES && !PRAYER_BONES_B_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_B_NAMES && !PRAYER_BONES_B_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20285,7 +20285,7 @@ group: Bones B Tier
 #define PRAYER_BONES_B_MIN_QUANT 0
 
 rule (name:PRAYER_BONES_B_NAMES && quantity:<PRAYER_BONES_B_MIN_QUANT && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_B_NAMES && quantity:<PRAYER_BONES_B_MIN_QUANT && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_B_NAMES && quantity:<PRAYER_BONES_B_MIN_QUANT && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_B_NAMES && quantity:<PRAYER_BONES_B_MIN_QUANT && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20344,7 +20344,7 @@ group: Bones C Tier
 #define PRAYER_BONES_C_SHOW_UNNOTED true
 
 rule (name:PRAYER_BONES_C_NAMES && !PRAYER_BONES_C_SHOW_UNNOTED && stackable:false && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_C_NAMES && !PRAYER_BONES_C_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_C_NAMES && !PRAYER_BONES_C_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_C_NAMES && !PRAYER_BONES_C_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20356,7 +20356,7 @@ group: Bones C Tier
 #define PRAYER_BONES_C_MIN_QUANT 0
 
 rule (name:PRAYER_BONES_C_NAMES && quantity:<PRAYER_BONES_C_MIN_QUANT && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_C_NAMES && quantity:<PRAYER_BONES_C_MIN_QUANT && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_C_NAMES && quantity:<PRAYER_BONES_C_MIN_QUANT && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_C_NAMES && quantity:<PRAYER_BONES_C_MIN_QUANT && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20423,7 +20423,7 @@ group: Bones D Tier
 #define PRAYER_BONES_D_SHOW_UNNOTED true
 
 rule (name:PRAYER_BONES_D_NAMES && !PRAYER_BONES_D_SHOW_UNNOTED && stackable:false && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_D_NAMES && !PRAYER_BONES_D_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_D_NAMES && !PRAYER_BONES_D_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_D_NAMES && !PRAYER_BONES_D_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20435,7 +20435,7 @@ group: Bones D Tier
 #define PRAYER_BONES_D_MIN_QUANT 0
 
 rule (name:PRAYER_BONES_D_NAMES && quantity:<PRAYER_BONES_D_MIN_QUANT && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_D_NAMES && quantity:<PRAYER_BONES_D_MIN_QUANT && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_D_NAMES && quantity:<PRAYER_BONES_D_MIN_QUANT && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_D_NAMES && quantity:<PRAYER_BONES_D_MIN_QUANT && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20507,7 +20507,7 @@ group: Bones E Tier
 #define PRAYER_BONES_E_SHOW_UNNOTED false
 
 rule (name:PRAYER_BONES_E_NAMES && !PRAYER_BONES_E_SHOW_UNNOTED && stackable:false && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_E_NAMES && !PRAYER_BONES_E_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_E_NAMES && !PRAYER_BONES_E_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_E_NAMES && !PRAYER_BONES_E_SHOW_UNNOTED && stackable:false && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20519,7 +20519,7 @@ group: Bones E Tier
 #define PRAYER_BONES_E_MIN_QUANT 0
 
 rule (name:PRAYER_BONES_E_NAMES && quantity:<PRAYER_BONES_E_MIN_QUANT && ((MVP_BONES_LIST)) && !((B2P_BONES_LIST)))  {hideOverlay = true;}
-rule (name:PRAYER_BONES_E_NAMES && quantity:<PRAYER_BONES_E_MIN_QUANT && !((B2P_BONES_LIST)) && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_BONES_E_NAMES && quantity:<PRAYER_BONES_E_MIN_QUANT && !((B2P_BONES_LIST)) && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_BONES_E_NAMES && quantity:<PRAYER_BONES_E_MIN_QUANT && !((B2P_BONES_LIST))) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20636,7 +20636,7 @@ group: Ashes SS Tier
 #define PRAYER_ASHES_SS_SHOW_UNNOTED true
 
 rule (name:PRAYER_ASHES_SS_NAMES && !PRAYER_ASHES_SS_SHOW_UNNOTED && stackable:false && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_SS_NAMES && !PRAYER_ASHES_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_SS_NAMES && !PRAYER_ASHES_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_SS_NAMES && !PRAYER_ASHES_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20648,7 +20648,7 @@ group: Ashes SS Tier
 #define PRAYER_ASHES_SS_MIN_QUANT 0
 
 rule (name:PRAYER_ASHES_SS_NAMES && quantity:<PRAYER_ASHES_SS_MIN_QUANT && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_SS_NAMES && quantity:<PRAYER_ASHES_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_SS_NAMES && quantity:<PRAYER_ASHES_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_SS_NAMES && quantity:<PRAYER_ASHES_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20688,7 +20688,7 @@ group: Ashes S Tier
 #define PRAYER_ASHES_S_SHOW_UNNOTED true
 
 rule (name:PRAYER_ASHES_S_NAMES && !PRAYER_ASHES_S_SHOW_UNNOTED && stackable:false && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_S_NAMES && !PRAYER_ASHES_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_S_NAMES && !PRAYER_ASHES_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_S_NAMES && !PRAYER_ASHES_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20700,7 +20700,7 @@ group: Ashes S Tier
 #define PRAYER_ASHES_S_MIN_QUANT 0
 
 rule (name:PRAYER_ASHES_S_NAMES && quantity:<PRAYER_ASHES_S_MIN_QUANT && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_S_NAMES && quantity:<PRAYER_ASHES_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_S_NAMES && quantity:<PRAYER_ASHES_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_S_NAMES && quantity:<PRAYER_ASHES_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20749,7 +20749,7 @@ group: Ashes A Tier
 #define PRAYER_ASHES_A_SHOW_UNNOTED true
 
 rule (name:PRAYER_ASHES_A_NAMES && !PRAYER_ASHES_A_SHOW_UNNOTED && stackable:false && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_A_NAMES && !PRAYER_ASHES_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_A_NAMES && !PRAYER_ASHES_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_A_NAMES && !PRAYER_ASHES_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20761,7 +20761,7 @@ group: Ashes A Tier
 #define PRAYER_ASHES_A_MIN_QUANT 0
 
 rule (name:PRAYER_ASHES_A_NAMES && quantity:<PRAYER_ASHES_A_MIN_QUANT && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_A_NAMES && quantity:<PRAYER_ASHES_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_A_NAMES && quantity:<PRAYER_ASHES_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_A_NAMES && quantity:<PRAYER_ASHES_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20816,7 +20816,7 @@ group: Ashes B Tier
 #define PRAYER_ASHES_B_SHOW_UNNOTED true
 
 rule (name:PRAYER_ASHES_B_NAMES && !PRAYER_ASHES_B_SHOW_UNNOTED && stackable:false && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_B_NAMES && !PRAYER_ASHES_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_B_NAMES && !PRAYER_ASHES_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_B_NAMES && !PRAYER_ASHES_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20828,7 +20828,7 @@ group: Ashes B Tier
 #define PRAYER_ASHES_B_MIN_QUANT 0
 
 rule (name:PRAYER_ASHES_B_NAMES && quantity:<PRAYER_ASHES_B_MIN_QUANT && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_B_NAMES && quantity:<PRAYER_ASHES_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_B_NAMES && quantity:<PRAYER_ASHES_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_B_NAMES && quantity:<PRAYER_ASHES_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20887,7 +20887,7 @@ group: Ashes C Tier
 #define PRAYER_ASHES_C_SHOW_UNNOTED true
 
 rule (name:PRAYER_ASHES_C_NAMES && !PRAYER_ASHES_C_SHOW_UNNOTED && stackable:false && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_C_NAMES && !PRAYER_ASHES_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_C_NAMES && !PRAYER_ASHES_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_C_NAMES && !PRAYER_ASHES_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20899,7 +20899,7 @@ group: Ashes C Tier
 #define PRAYER_ASHES_C_MIN_QUANT 0
 
 rule (name:PRAYER_ASHES_C_NAMES && quantity:<PRAYER_ASHES_C_MIN_QUANT && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_C_NAMES && quantity:<PRAYER_ASHES_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_C_NAMES && quantity:<PRAYER_ASHES_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_C_NAMES && quantity:<PRAYER_ASHES_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20966,7 +20966,7 @@ group: Ashes D Tier
 #define PRAYER_ASHES_D_SHOW_UNNOTED true
 
 rule (name:PRAYER_ASHES_D_NAMES && !PRAYER_ASHES_D_SHOW_UNNOTED && stackable:false && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_D_NAMES && !PRAYER_ASHES_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_D_NAMES && !PRAYER_ASHES_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_D_NAMES && !PRAYER_ASHES_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -20978,7 +20978,7 @@ group: Ashes D Tier
 #define PRAYER_ASHES_D_MIN_QUANT 0
 
 rule (name:PRAYER_ASHES_D_NAMES && quantity:<PRAYER_ASHES_D_MIN_QUANT && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_D_NAMES && quantity:<PRAYER_ASHES_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_D_NAMES && quantity:<PRAYER_ASHES_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_D_NAMES && quantity:<PRAYER_ASHES_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21050,7 +21050,7 @@ group: Ashes E Tier
 #define PRAYER_ASHES_E_SHOW_UNNOTED false
 
 rule (name:PRAYER_ASHES_E_NAMES && !PRAYER_ASHES_E_SHOW_UNNOTED && stackable:false && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_E_NAMES && !PRAYER_ASHES_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_E_NAMES && !PRAYER_ASHES_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_E_NAMES && !PRAYER_ASHES_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21062,7 +21062,7 @@ group: Ashes E Tier
 #define PRAYER_ASHES_E_MIN_QUANT 10
 
 rule (name:PRAYER_ASHES_E_NAMES && quantity:<PRAYER_ASHES_E_MIN_QUANT && (area:[3020,6036,0,3048,6064,0] && name:"Infernal ashes" && ENABLE_ZALCANO_MVP && ownership:1)) {hideOverlay = true;}
-rule (name:PRAYER_ASHES_E_NAMES && quantity:<PRAYER_ASHES_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_ASHES_E_NAMES && quantity:<PRAYER_ASHES_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_ASHES_E_NAMES && quantity:<PRAYER_ASHES_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21178,7 +21178,7 @@ group: Ensouled Heads SS Tier
 
 #define PRAYER_HEADS_SS_SHOW_UNNOTED true
 
-rule (name:PRAYER_HEADS_SS_NAMES && !PRAYER_HEADS_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_SS_NAMES && !PRAYER_HEADS_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_SS_NAMES && !PRAYER_HEADS_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21189,7 +21189,7 @@ group: Ensouled Heads SS Tier
 
 #define PRAYER_HEADS_SS_MIN_QUANT 0
 
-rule (name:PRAYER_HEADS_SS_NAMES && quantity:<PRAYER_HEADS_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_SS_NAMES && quantity:<PRAYER_HEADS_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_SS_NAMES && quantity:<PRAYER_HEADS_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21228,7 +21228,7 @@ group: Ensouled Heads S Tier
 
 #define PRAYER_HEADS_S_SHOW_UNNOTED true
 
-rule (name:PRAYER_HEADS_S_NAMES && !PRAYER_HEADS_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_S_NAMES && !PRAYER_HEADS_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_S_NAMES && !PRAYER_HEADS_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21239,7 +21239,7 @@ group: Ensouled Heads S Tier
 
 #define PRAYER_HEADS_S_MIN_QUANT 0
 
-rule (name:PRAYER_HEADS_S_NAMES && quantity:<PRAYER_HEADS_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_S_NAMES && quantity:<PRAYER_HEADS_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_S_NAMES && quantity:<PRAYER_HEADS_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21287,7 +21287,7 @@ group: Ensouled Heads A Tier
 
 #define PRAYER_HEADS_A_SHOW_UNNOTED true
 
-rule (name:PRAYER_HEADS_A_NAMES && !PRAYER_HEADS_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_A_NAMES && !PRAYER_HEADS_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_A_NAMES && !PRAYER_HEADS_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21298,7 +21298,7 @@ group: Ensouled Heads A Tier
 
 #define PRAYER_HEADS_A_MIN_QUANT 0
 
-rule (name:PRAYER_HEADS_A_NAMES && quantity:<PRAYER_HEADS_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_A_NAMES && quantity:<PRAYER_HEADS_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_A_NAMES && quantity:<PRAYER_HEADS_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21352,7 +21352,7 @@ group: Ensouled Heads B Tier
 
 #define PRAYER_HEADS_B_SHOW_UNNOTED true
 
-rule (name:PRAYER_HEADS_B_NAMES && !PRAYER_HEADS_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_B_NAMES && !PRAYER_HEADS_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_B_NAMES && !PRAYER_HEADS_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21363,7 +21363,7 @@ group: Ensouled Heads B Tier
 
 #define PRAYER_HEADS_B_MIN_QUANT 0
 
-rule (name:PRAYER_HEADS_B_NAMES && quantity:<PRAYER_HEADS_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_B_NAMES && quantity:<PRAYER_HEADS_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_B_NAMES && quantity:<PRAYER_HEADS_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21421,7 +21421,7 @@ group: Ensouled Heads C Tier
 
 #define PRAYER_HEADS_C_SHOW_UNNOTED false
 
-rule (name:PRAYER_HEADS_C_NAMES && !PRAYER_HEADS_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_C_NAMES && !PRAYER_HEADS_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_C_NAMES && !PRAYER_HEADS_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21432,7 +21432,7 @@ group: Ensouled Heads C Tier
 
 #define PRAYER_HEADS_C_MIN_QUANT 0
 
-rule (name:PRAYER_HEADS_C_NAMES && quantity:<PRAYER_HEADS_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_C_NAMES && quantity:<PRAYER_HEADS_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_C_NAMES && quantity:<PRAYER_HEADS_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21498,7 +21498,7 @@ group: Ensouled Heads D Tier
 
 #define PRAYER_HEADS_D_SHOW_UNNOTED false
 
-rule (name:PRAYER_HEADS_D_NAMES && !PRAYER_HEADS_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_D_NAMES && !PRAYER_HEADS_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_D_NAMES && !PRAYER_HEADS_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21509,7 +21509,7 @@ group: Ensouled Heads D Tier
 
 #define PRAYER_HEADS_D_MIN_QUANT 0
 
-rule (name:PRAYER_HEADS_D_NAMES && quantity:<PRAYER_HEADS_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_D_NAMES && quantity:<PRAYER_HEADS_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_D_NAMES && quantity:<PRAYER_HEADS_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21580,7 +21580,7 @@ group: Ensouled Heads E Tier
 
 #define PRAYER_HEADS_E_SHOW_UNNOTED false
 
-rule (name:PRAYER_HEADS_E_NAMES && !PRAYER_HEADS_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_E_NAMES && !PRAYER_HEADS_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_E_NAMES && !PRAYER_HEADS_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21591,7 +21591,7 @@ group: Ensouled Heads E Tier
 
 #define PRAYER_HEADS_E_MIN_QUANT 0
 
-rule (name:PRAYER_HEADS_E_NAMES && quantity:<PRAYER_HEADS_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:PRAYER_HEADS_E_NAMES && quantity:<PRAYER_HEADS_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:PRAYER_HEADS_E_NAMES && quantity:<PRAYER_HEADS_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:prayer
@@ -21712,7 +21712,7 @@ group: SS Tier
 
 #define FLETCHING_SS_SHOW_UNNOTED true
 
-rule (name:FLETCHING_SS_NAMES && !FLETCHING_SS_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_SS_NAMES && !FLETCHING_SS_SHOW_UNNOTED && noted:true && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_SS_NAMES && !FLETCHING_SS_SHOW_UNNOTED && noted:true) {hidden = true;}
 
 /*@ define:input:fletching
@@ -21723,7 +21723,7 @@ group: SS Tier
 
 #define FLETCHING_SS_MIN_QUANT 0
 
-rule (name:FLETCHING_SS_NAMES && quantity:<FLETCHING_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_SS_NAMES && quantity:<FLETCHING_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_SS_NAMES && quantity:<FLETCHING_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:fletching
@@ -21762,7 +21762,7 @@ group: S Tier
 
 #define FLETCHING_S_SHOW_UNNOTED true
 
-rule (name:FLETCHING_S_NAMES && !FLETCHING_S_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_S_NAMES && !FLETCHING_S_SHOW_UNNOTED && noted:true && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_S_NAMES && !FLETCHING_S_SHOW_UNNOTED && noted:true) {hidden = true;}
 
 /*@ define:input:fletching
@@ -21773,7 +21773,7 @@ group: S Tier
 
 #define FLETCHING_S_MIN_QUANT 0
 
-rule (name:FLETCHING_S_NAMES && quantity:<FLETCHING_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_S_NAMES && quantity:<FLETCHING_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_S_NAMES && quantity:<FLETCHING_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:fletching
@@ -21821,7 +21821,7 @@ group: A Tier
 
 #define FLETCHING_A_SHOW_UNNOTED true
 
-rule (name:FLETCHING_A_NAMES && !FLETCHING_A_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_A_NAMES && !FLETCHING_A_SHOW_UNNOTED && noted:true && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_A_NAMES && !FLETCHING_A_SHOW_UNNOTED && noted:true) {hidden = true;}
 
 /*@ define:input:fletching
@@ -21832,7 +21832,7 @@ group: A Tier
 
 #define FLETCHING_A_MIN_QUANT 0
 
-rule (name:FLETCHING_A_NAMES && quantity:<FLETCHING_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_A_NAMES && quantity:<FLETCHING_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_A_NAMES && quantity:<FLETCHING_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:fletching
@@ -21886,7 +21886,7 @@ group: B Tier
 
 #define FLETCHING_B_SHOW_UNNOTED true
 
-rule (name:FLETCHING_B_NAMES && !FLETCHING_B_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_B_NAMES && !FLETCHING_B_SHOW_UNNOTED && noted:true && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_B_NAMES && !FLETCHING_B_SHOW_UNNOTED && noted:true) {hidden = true;}
 
 /*@ define:input:fletching
@@ -21897,7 +21897,7 @@ group: B Tier
 
 #define FLETCHING_B_MIN_QUANT 0
 
-rule (name:FLETCHING_B_NAMES && quantity:<FLETCHING_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_B_NAMES && quantity:<FLETCHING_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_B_NAMES && quantity:<FLETCHING_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:fletching
@@ -21955,7 +21955,7 @@ group: C Tier
 
 #define FLETCHING_C_SHOW_UNNOTED false
 
-rule (name:FLETCHING_C_NAMES && !FLETCHING_C_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_C_NAMES && !FLETCHING_C_SHOW_UNNOTED && noted:true && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_C_NAMES && !FLETCHING_C_SHOW_UNNOTED && noted:true) {hidden = true;}
 
 /*@ define:input:fletching
@@ -21966,7 +21966,7 @@ group: C Tier
 
 #define FLETCHING_C_MIN_QUANT 0
 
-rule (name:FLETCHING_C_NAMES && quantity:<FLETCHING_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_C_NAMES && quantity:<FLETCHING_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_C_NAMES && quantity:<FLETCHING_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:fletching
@@ -22032,7 +22032,7 @@ group: D Tier
 
 #define FLETCHING_D_SHOW_UNNOTED false
 
-rule (name:FLETCHING_D_NAMES && !FLETCHING_D_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_D_NAMES && !FLETCHING_D_SHOW_UNNOTED && noted:true && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_D_NAMES && !FLETCHING_D_SHOW_UNNOTED && noted:true) {hidden = true;}
 
 /*@ define:input:fletching
@@ -22043,7 +22043,7 @@ group: D Tier
 
 #define FLETCHING_D_MIN_QUANT 10
 
-rule (name:FLETCHING_D_NAMES && quantity:<FLETCHING_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_D_NAMES && quantity:<FLETCHING_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_D_NAMES && quantity:<FLETCHING_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:fletching
@@ -22114,7 +22114,7 @@ group: E Tier
 
 #define FLETCHING_E_SHOW_UNNOTED false
 
-rule (name:FLETCHING_E_NAMES && !FLETCHING_E_SHOW_UNNOTED && noted:true && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_E_NAMES && !FLETCHING_E_SHOW_UNNOTED && noted:true && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_E_NAMES && !FLETCHING_E_SHOW_UNNOTED && noted:true) {hidden = true;}
 
 /*@ define:input:fletching
@@ -22125,7 +22125,7 @@ group: E Tier
 
 #define FLETCHING_E_MIN_QUANT 100
 
-rule (name:FLETCHING_E_NAMES && quantity:<FLETCHING_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:FLETCHING_E_NAMES && quantity:<FLETCHING_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:FLETCHING_E_NAMES && quantity:<FLETCHING_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:fletching
@@ -22247,7 +22247,7 @@ group: SS Tier
 
 #define DRAGON_GEAR_SS_SHOW_UNNOTED true
 
-rule (name:DRAGON_GEAR_SS_NAMES && !DRAGON_GEAR_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_SS_NAMES && !DRAGON_GEAR_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_SS_NAMES && !DRAGON_GEAR_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22258,7 +22258,7 @@ group: SS Tier
 
 #define DRAGON_GEAR_SS_MIN_QUANT 0
 
-rule (name:DRAGON_GEAR_SS_NAMES && quantity:<DRAGON_GEAR_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_SS_NAMES && quantity:<DRAGON_GEAR_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_SS_NAMES && quantity:<DRAGON_GEAR_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22297,7 +22297,7 @@ group: S Tier
 
 #define DRAGON_GEAR_S_SHOW_UNNOTED true
 
-rule (name:DRAGON_GEAR_S_NAMES && !DRAGON_GEAR_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_S_NAMES && !DRAGON_GEAR_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_S_NAMES && !DRAGON_GEAR_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22308,7 +22308,7 @@ group: S Tier
 
 #define DRAGON_GEAR_S_MIN_QUANT 0
 
-rule (name:DRAGON_GEAR_S_NAMES && quantity:<DRAGON_GEAR_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_S_NAMES && quantity:<DRAGON_GEAR_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_S_NAMES && quantity:<DRAGON_GEAR_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22356,7 +22356,7 @@ group: A Tier
 
 #define DRAGON_GEAR_A_SHOW_UNNOTED true
 
-rule (name:DRAGON_GEAR_A_NAMES && !DRAGON_GEAR_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_A_NAMES && !DRAGON_GEAR_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_A_NAMES && !DRAGON_GEAR_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22367,7 +22367,7 @@ group: A Tier
 
 #define DRAGON_GEAR_A_MIN_QUANT 0
 
-rule (name:DRAGON_GEAR_A_NAMES && quantity:<DRAGON_GEAR_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_A_NAMES && quantity:<DRAGON_GEAR_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_A_NAMES && quantity:<DRAGON_GEAR_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22421,7 +22421,7 @@ group: B Tier
 
 #define DRAGON_GEAR_B_SHOW_UNNOTED true
 
-rule (name:DRAGON_GEAR_B_NAMES && !DRAGON_GEAR_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_B_NAMES && !DRAGON_GEAR_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_B_NAMES && !DRAGON_GEAR_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22432,7 +22432,7 @@ group: B Tier
 
 #define DRAGON_GEAR_B_MIN_QUANT 0
 
-rule (name:DRAGON_GEAR_B_NAMES && quantity:<DRAGON_GEAR_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_B_NAMES && quantity:<DRAGON_GEAR_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_B_NAMES && quantity:<DRAGON_GEAR_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22490,7 +22490,7 @@ group: C Tier
 
 #define DRAGON_GEAR_C_SHOW_UNNOTED true
 
-rule (name:DRAGON_GEAR_C_NAMES && !DRAGON_GEAR_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_C_NAMES && !DRAGON_GEAR_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_C_NAMES && !DRAGON_GEAR_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22501,7 +22501,7 @@ group: C Tier
 
 #define DRAGON_GEAR_C_MIN_QUANT 0
 
-rule (name:DRAGON_GEAR_C_NAMES && quantity:<DRAGON_GEAR_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_C_NAMES && quantity:<DRAGON_GEAR_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_C_NAMES && quantity:<DRAGON_GEAR_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22567,7 +22567,7 @@ group: D Tier
 
 #define DRAGON_GEAR_D_SHOW_UNNOTED true
 
-rule (name:DRAGON_GEAR_D_NAMES && !DRAGON_GEAR_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_D_NAMES && !DRAGON_GEAR_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_D_NAMES && !DRAGON_GEAR_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22578,7 +22578,7 @@ group: D Tier
 
 #define DRAGON_GEAR_D_MIN_QUANT 0
 
-rule (name:DRAGON_GEAR_D_NAMES && quantity:<DRAGON_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_D_NAMES && quantity:<DRAGON_GEAR_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_D_NAMES && quantity:<DRAGON_GEAR_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22649,7 +22649,7 @@ group: E Tier
 
 #define DRAGON_GEAR_E_SHOW_UNNOTED true
 
-rule (name:DRAGON_GEAR_E_NAMES && !DRAGON_GEAR_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_E_NAMES && !DRAGON_GEAR_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_E_NAMES && !DRAGON_GEAR_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22660,7 +22660,7 @@ group: E Tier
 
 #define DRAGON_GEAR_E_MIN_QUANT 0
 
-rule (name:DRAGON_GEAR_E_NAMES && quantity:<DRAGON_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:DRAGON_GEAR_E_NAMES && quantity:<DRAGON_GEAR_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:DRAGON_GEAR_E_NAMES && quantity:<DRAGON_GEAR_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:dragon_gear
@@ -22782,7 +22782,7 @@ group: SS Tier
 
 #define RUNITE_GEAR_SS_SHOW_UNNOTED true
 
-rule (name:RUNITE_GEAR_SS_NAMES && !RUNITE_GEAR_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_SS_NAMES && !RUNITE_GEAR_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_SS_NAMES && !RUNITE_GEAR_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -22793,7 +22793,7 @@ group: SS Tier
 
 #define RUNITE_GEAR_SS_MIN_QUANT 0
 
-rule (name:RUNITE_GEAR_SS_NAMES && quantity:<RUNITE_GEAR_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_SS_NAMES && quantity:<RUNITE_GEAR_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_SS_NAMES && quantity:<RUNITE_GEAR_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -22832,7 +22832,7 @@ group: S Tier
 
 #define RUNITE_GEAR_S_SHOW_UNNOTED true
 
-rule (name:RUNITE_GEAR_S_NAMES && !RUNITE_GEAR_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_S_NAMES && !RUNITE_GEAR_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_S_NAMES && !RUNITE_GEAR_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -22843,7 +22843,7 @@ group: S Tier
 
 #define RUNITE_GEAR_S_MIN_QUANT 0
 
-rule (name:RUNITE_GEAR_S_NAMES && quantity:<RUNITE_GEAR_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_S_NAMES && quantity:<RUNITE_GEAR_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_S_NAMES && quantity:<RUNITE_GEAR_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -22891,7 +22891,7 @@ group: A Tier
 
 #define RUNITE_GEAR_A_SHOW_UNNOTED true
 
-rule (name:RUNITE_GEAR_A_NAMES && !RUNITE_GEAR_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_A_NAMES && !RUNITE_GEAR_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_A_NAMES && !RUNITE_GEAR_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -22902,7 +22902,7 @@ group: A Tier
 
 #define RUNITE_GEAR_A_MIN_QUANT 0
 
-rule (name:RUNITE_GEAR_A_NAMES && quantity:<RUNITE_GEAR_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_A_NAMES && quantity:<RUNITE_GEAR_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_A_NAMES && quantity:<RUNITE_GEAR_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -22956,7 +22956,7 @@ group: B Tier
 
 #define RUNITE_GEAR_B_SHOW_UNNOTED true
 
-rule (name:RUNITE_GEAR_B_NAMES && !RUNITE_GEAR_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_B_NAMES && !RUNITE_GEAR_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_B_NAMES && !RUNITE_GEAR_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -22967,7 +22967,7 @@ group: B Tier
 
 #define RUNITE_GEAR_B_MIN_QUANT 0
 
-rule (name:RUNITE_GEAR_B_NAMES && quantity:<RUNITE_GEAR_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_B_NAMES && quantity:<RUNITE_GEAR_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_B_NAMES && quantity:<RUNITE_GEAR_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -23025,7 +23025,7 @@ group: C Tier
 
 #define RUNITE_GEAR_C_SHOW_UNNOTED true
 
-rule (name:RUNITE_GEAR_C_NAMES && !RUNITE_GEAR_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_C_NAMES && !RUNITE_GEAR_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_C_NAMES && !RUNITE_GEAR_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -23036,7 +23036,7 @@ group: C Tier
 
 #define RUNITE_GEAR_C_MIN_QUANT 0
 
-rule (name:RUNITE_GEAR_C_NAMES && quantity:<RUNITE_GEAR_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_C_NAMES && quantity:<RUNITE_GEAR_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_C_NAMES && quantity:<RUNITE_GEAR_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -23102,7 +23102,7 @@ group: D Tier
 
 #define RUNITE_GEAR_D_SHOW_UNNOTED true
 
-rule (name:RUNITE_GEAR_D_NAMES && !RUNITE_GEAR_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_D_NAMES && !RUNITE_GEAR_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_D_NAMES && !RUNITE_GEAR_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -23113,7 +23113,7 @@ group: D Tier
 
 #define RUNITE_GEAR_D_MIN_QUANT 10
 
-rule (name:RUNITE_GEAR_D_NAMES && quantity:<RUNITE_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_D_NAMES && quantity:<RUNITE_GEAR_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_D_NAMES && quantity:<RUNITE_GEAR_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -23184,7 +23184,7 @@ group: E Tier
 
 #define RUNITE_GEAR_E_SHOW_UNNOTED true
 
-rule (name:RUNITE_GEAR_E_NAMES && !RUNITE_GEAR_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_E_NAMES && !RUNITE_GEAR_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_E_NAMES && !RUNITE_GEAR_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -23195,7 +23195,7 @@ group: E Tier
 
 #define RUNITE_GEAR_E_MIN_QUANT 0
 
-rule (name:RUNITE_GEAR_E_NAMES && quantity:<RUNITE_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:RUNITE_GEAR_E_NAMES && quantity:<RUNITE_GEAR_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:RUNITE_GEAR_E_NAMES && quantity:<RUNITE_GEAR_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:runite_gear
@@ -23317,7 +23317,7 @@ group: SS Tier
 
 #define ADAMANTITE_GEAR_SS_SHOW_UNNOTED true
 
-rule (name:ADAMANTITE_GEAR_SS_NAMES && !ADAMANTITE_GEAR_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_SS_NAMES && !ADAMANTITE_GEAR_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_SS_NAMES && !ADAMANTITE_GEAR_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23328,7 +23328,7 @@ group: SS Tier
 
 #define ADAMANTITE_GEAR_SS_MIN_QUANT 0
 
-rule (name:ADAMANTITE_GEAR_SS_NAMES && quantity:<ADAMANTITE_GEAR_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_SS_NAMES && quantity:<ADAMANTITE_GEAR_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_SS_NAMES && quantity:<ADAMANTITE_GEAR_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23367,7 +23367,7 @@ group: S Tier
 
 #define ADAMANTITE_GEAR_S_SHOW_UNNOTED true
 
-rule (name:ADAMANTITE_GEAR_S_NAMES && !ADAMANTITE_GEAR_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_S_NAMES && !ADAMANTITE_GEAR_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_S_NAMES && !ADAMANTITE_GEAR_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23378,7 +23378,7 @@ group: S Tier
 
 #define ADAMANTITE_GEAR_S_MIN_QUANT 0
 
-rule (name:ADAMANTITE_GEAR_S_NAMES && quantity:<ADAMANTITE_GEAR_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_S_NAMES && quantity:<ADAMANTITE_GEAR_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_S_NAMES && quantity:<ADAMANTITE_GEAR_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23426,7 +23426,7 @@ group: A Tier
 
 #define ADAMANTITE_GEAR_A_SHOW_UNNOTED true
 
-rule (name:ADAMANTITE_GEAR_A_NAMES && !ADAMANTITE_GEAR_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_A_NAMES && !ADAMANTITE_GEAR_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_A_NAMES && !ADAMANTITE_GEAR_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23437,7 +23437,7 @@ group: A Tier
 
 #define ADAMANTITE_GEAR_A_MIN_QUANT 0
 
-rule (name:ADAMANTITE_GEAR_A_NAMES && quantity:<ADAMANTITE_GEAR_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_A_NAMES && quantity:<ADAMANTITE_GEAR_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_A_NAMES && quantity:<ADAMANTITE_GEAR_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23491,7 +23491,7 @@ group: B Tier
 
 #define ADAMANTITE_GEAR_B_SHOW_UNNOTED true
 
-rule (name:ADAMANTITE_GEAR_B_NAMES && !ADAMANTITE_GEAR_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_B_NAMES && !ADAMANTITE_GEAR_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_B_NAMES && !ADAMANTITE_GEAR_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23502,7 +23502,7 @@ group: B Tier
 
 #define ADAMANTITE_GEAR_B_MIN_QUANT 0
 
-rule (name:ADAMANTITE_GEAR_B_NAMES && quantity:<ADAMANTITE_GEAR_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_B_NAMES && quantity:<ADAMANTITE_GEAR_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_B_NAMES && quantity:<ADAMANTITE_GEAR_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23560,7 +23560,7 @@ group: C Tier
 
 #define ADAMANTITE_GEAR_C_SHOW_UNNOTED true
 
-rule (name:ADAMANTITE_GEAR_C_NAMES && !ADAMANTITE_GEAR_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_C_NAMES && !ADAMANTITE_GEAR_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_C_NAMES && !ADAMANTITE_GEAR_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23571,7 +23571,7 @@ group: C Tier
 
 #define ADAMANTITE_GEAR_C_MIN_QUANT 0
 
-rule (name:ADAMANTITE_GEAR_C_NAMES && quantity:<ADAMANTITE_GEAR_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_C_NAMES && quantity:<ADAMANTITE_GEAR_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_C_NAMES && quantity:<ADAMANTITE_GEAR_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23637,7 +23637,7 @@ group: D Tier
 
 #define ADAMANTITE_GEAR_D_SHOW_UNNOTED false
 
-rule (name:ADAMANTITE_GEAR_D_NAMES && !ADAMANTITE_GEAR_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_D_NAMES && !ADAMANTITE_GEAR_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_D_NAMES && !ADAMANTITE_GEAR_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23648,7 +23648,7 @@ group: D Tier
 
 #define ADAMANTITE_GEAR_D_MIN_QUANT 0
 
-rule (name:ADAMANTITE_GEAR_D_NAMES && quantity:<ADAMANTITE_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_D_NAMES && quantity:<ADAMANTITE_GEAR_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_D_NAMES && quantity:<ADAMANTITE_GEAR_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23719,7 +23719,7 @@ group: E Tier
 
 #define ADAMANTITE_GEAR_E_SHOW_UNNOTED false
 
-rule (name:ADAMANTITE_GEAR_E_NAMES && !ADAMANTITE_GEAR_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_E_NAMES && !ADAMANTITE_GEAR_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_E_NAMES && !ADAMANTITE_GEAR_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23730,7 +23730,7 @@ group: E Tier
 
 #define ADAMANTITE_GEAR_E_MIN_QUANT 50
 
-rule (name:ADAMANTITE_GEAR_E_NAMES && quantity:<ADAMANTITE_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:ADAMANTITE_GEAR_E_NAMES && quantity:<ADAMANTITE_GEAR_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:ADAMANTITE_GEAR_E_NAMES && quantity:<ADAMANTITE_GEAR_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:adamantite_gear
@@ -23852,7 +23852,7 @@ group: SS Tier
 
 #define MITHRIL_GEAR_SS_SHOW_UNNOTED true
 
-rule (name:MITHRIL_GEAR_SS_NAMES && !MITHRIL_GEAR_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_SS_NAMES && !MITHRIL_GEAR_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_SS_NAMES && !MITHRIL_GEAR_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -23863,7 +23863,7 @@ group: SS Tier
 
 #define MITHRIL_GEAR_SS_MIN_QUANT 0
 
-rule (name:MITHRIL_GEAR_SS_NAMES && quantity:<MITHRIL_GEAR_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_SS_NAMES && quantity:<MITHRIL_GEAR_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_SS_NAMES && quantity:<MITHRIL_GEAR_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -23902,7 +23902,7 @@ group: S Tier
 
 #define MITHRIL_GEAR_S_SHOW_UNNOTED true
 
-rule (name:MITHRIL_GEAR_S_NAMES && !MITHRIL_GEAR_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_S_NAMES && !MITHRIL_GEAR_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_S_NAMES && !MITHRIL_GEAR_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -23913,7 +23913,7 @@ group: S Tier
 
 #define MITHRIL_GEAR_S_MIN_QUANT 0
 
-rule (name:MITHRIL_GEAR_S_NAMES && quantity:<MITHRIL_GEAR_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_S_NAMES && quantity:<MITHRIL_GEAR_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_S_NAMES && quantity:<MITHRIL_GEAR_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -23961,7 +23961,7 @@ group: A Tier
 
 #define MITHRIL_GEAR_A_SHOW_UNNOTED true
 
-rule (name:MITHRIL_GEAR_A_NAMES && !MITHRIL_GEAR_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_A_NAMES && !MITHRIL_GEAR_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_A_NAMES && !MITHRIL_GEAR_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -23972,7 +23972,7 @@ group: A Tier
 
 #define MITHRIL_GEAR_A_MIN_QUANT 0
 
-rule (name:MITHRIL_GEAR_A_NAMES && quantity:<MITHRIL_GEAR_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_A_NAMES && quantity:<MITHRIL_GEAR_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_A_NAMES && quantity:<MITHRIL_GEAR_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -24026,7 +24026,7 @@ group: B Tier
 
 #define MITHRIL_GEAR_B_SHOW_UNNOTED true
 
-rule (name:MITHRIL_GEAR_B_NAMES && !MITHRIL_GEAR_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_B_NAMES && !MITHRIL_GEAR_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_B_NAMES && !MITHRIL_GEAR_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -24037,7 +24037,7 @@ group: B Tier
 
 #define MITHRIL_GEAR_B_MIN_QUANT 0
 
-rule (name:MITHRIL_GEAR_B_NAMES && quantity:<MITHRIL_GEAR_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_B_NAMES && quantity:<MITHRIL_GEAR_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_B_NAMES && quantity:<MITHRIL_GEAR_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -24095,7 +24095,7 @@ group: C Tier
 
 #define MITHRIL_GEAR_C_SHOW_UNNOTED true
 
-rule (name:MITHRIL_GEAR_C_NAMES && !MITHRIL_GEAR_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_C_NAMES && !MITHRIL_GEAR_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_C_NAMES && !MITHRIL_GEAR_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -24106,7 +24106,7 @@ group: C Tier
 
 #define MITHRIL_GEAR_C_MIN_QUANT 0
 
-rule (name:MITHRIL_GEAR_C_NAMES && quantity:<MITHRIL_GEAR_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_C_NAMES && quantity:<MITHRIL_GEAR_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_C_NAMES && quantity:<MITHRIL_GEAR_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -24172,7 +24172,7 @@ group: D Tier
 
 #define MITHRIL_GEAR_D_SHOW_UNNOTED false
 
-rule (name:MITHRIL_GEAR_D_NAMES && !MITHRIL_GEAR_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_D_NAMES && !MITHRIL_GEAR_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_D_NAMES && !MITHRIL_GEAR_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -24183,7 +24183,7 @@ group: D Tier
 
 #define MITHRIL_GEAR_D_MIN_QUANT 0
 
-rule (name:MITHRIL_GEAR_D_NAMES && quantity:<MITHRIL_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_D_NAMES && quantity:<MITHRIL_GEAR_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_D_NAMES && quantity:<MITHRIL_GEAR_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -24254,7 +24254,7 @@ group: E Tier
 
 #define MITHRIL_GEAR_E_SHOW_UNNOTED false
 
-rule (name:MITHRIL_GEAR_E_NAMES && !MITHRIL_GEAR_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_E_NAMES && !MITHRIL_GEAR_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_E_NAMES && !MITHRIL_GEAR_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -24265,7 +24265,7 @@ group: E Tier
 
 #define MITHRIL_GEAR_E_MIN_QUANT 50
 
-rule (name:MITHRIL_GEAR_E_NAMES && quantity:<MITHRIL_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:MITHRIL_GEAR_E_NAMES && quantity:<MITHRIL_GEAR_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:MITHRIL_GEAR_E_NAMES && quantity:<MITHRIL_GEAR_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:mithril_gear
@@ -24387,7 +24387,7 @@ group: SS Tier
 
 #define BLACK_GEAR_SS_SHOW_UNNOTED true
 
-rule (name:BLACK_GEAR_SS_NAMES && !BLACK_GEAR_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_SS_NAMES && !BLACK_GEAR_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_SS_NAMES && !BLACK_GEAR_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24398,7 +24398,7 @@ group: SS Tier
 
 #define BLACK_GEAR_SS_MIN_QUANT 0
 
-rule (name:BLACK_GEAR_SS_NAMES && quantity:<BLACK_GEAR_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_SS_NAMES && quantity:<BLACK_GEAR_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_SS_NAMES && quantity:<BLACK_GEAR_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24437,7 +24437,7 @@ group: S Tier
 
 #define BLACK_GEAR_S_SHOW_UNNOTED true
 
-rule (name:BLACK_GEAR_S_NAMES && !BLACK_GEAR_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_S_NAMES && !BLACK_GEAR_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_S_NAMES && !BLACK_GEAR_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24448,7 +24448,7 @@ group: S Tier
 
 #define BLACK_GEAR_S_MIN_QUANT 0
 
-rule (name:BLACK_GEAR_S_NAMES && quantity:<BLACK_GEAR_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_S_NAMES && quantity:<BLACK_GEAR_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_S_NAMES && quantity:<BLACK_GEAR_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24496,7 +24496,7 @@ group: A Tier
 
 #define BLACK_GEAR_A_SHOW_UNNOTED true
 
-rule (name:BLACK_GEAR_A_NAMES && !BLACK_GEAR_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_A_NAMES && !BLACK_GEAR_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_A_NAMES && !BLACK_GEAR_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24507,7 +24507,7 @@ group: A Tier
 
 #define BLACK_GEAR_A_MIN_QUANT 0
 
-rule (name:BLACK_GEAR_A_NAMES && quantity:<BLACK_GEAR_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_A_NAMES && quantity:<BLACK_GEAR_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_A_NAMES && quantity:<BLACK_GEAR_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24561,7 +24561,7 @@ group: B Tier
 
 #define BLACK_GEAR_B_SHOW_UNNOTED true
 
-rule (name:BLACK_GEAR_B_NAMES && !BLACK_GEAR_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_B_NAMES && !BLACK_GEAR_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_B_NAMES && !BLACK_GEAR_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24572,7 +24572,7 @@ group: B Tier
 
 #define BLACK_GEAR_B_MIN_QUANT 0
 
-rule (name:BLACK_GEAR_B_NAMES && quantity:<BLACK_GEAR_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_B_NAMES && quantity:<BLACK_GEAR_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_B_NAMES && quantity:<BLACK_GEAR_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24630,7 +24630,7 @@ group: C Tier
 
 #define BLACK_GEAR_C_SHOW_UNNOTED true
 
-rule (name:BLACK_GEAR_C_NAMES && !BLACK_GEAR_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_C_NAMES && !BLACK_GEAR_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_C_NAMES && !BLACK_GEAR_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24641,7 +24641,7 @@ group: C Tier
 
 #define BLACK_GEAR_C_MIN_QUANT 0
 
-rule (name:BLACK_GEAR_C_NAMES && quantity:<BLACK_GEAR_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_C_NAMES && quantity:<BLACK_GEAR_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_C_NAMES && quantity:<BLACK_GEAR_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24706,7 +24706,7 @@ group: D Tier
 */
 
 #define BLACK_GEAR_D_SHOW_UNNOTED false
-rule (name:BLACK_GEAR_D_NAMES && !BLACK_GEAR_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_D_NAMES && !BLACK_GEAR_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_D_NAMES && !BLACK_GEAR_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24717,7 +24717,7 @@ group: D Tier
 
 #define BLACK_GEAR_D_MIN_QUANT 10
 
-rule (name:BLACK_GEAR_D_NAMES && quantity:<BLACK_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_D_NAMES && quantity:<BLACK_GEAR_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_D_NAMES && quantity:<BLACK_GEAR_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24788,7 +24788,7 @@ group: E Tier
 
 #define BLACK_GEAR_E_SHOW_UNNOTED false
 
-rule (name:BLACK_GEAR_E_NAMES && !BLACK_GEAR_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_E_NAMES && !BLACK_GEAR_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_E_NAMES && !BLACK_GEAR_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24799,7 +24799,7 @@ group: E Tier
 
 #define BLACK_GEAR_E_MIN_QUANT 50
 
-rule (name:BLACK_GEAR_E_NAMES && quantity:<BLACK_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BLACK_GEAR_E_NAMES && quantity:<BLACK_GEAR_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BLACK_GEAR_E_NAMES && quantity:<BLACK_GEAR_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:black_gear
@@ -24921,7 +24921,7 @@ group: SS Tier
 
 #define WHITE_GEAR_SS_SHOW_UNNOTED true
 
-rule (name:WHITE_GEAR_SS_NAMES && !WHITE_GEAR_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_SS_NAMES && !WHITE_GEAR_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_SS_NAMES && !WHITE_GEAR_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -24932,7 +24932,7 @@ group: SS Tier
 
 #define WHITE_GEAR_SS_MIN_QUANT 0
 
-rule (name:WHITE_GEAR_SS_NAMES && quantity:<WHITE_GEAR_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_SS_NAMES && quantity:<WHITE_GEAR_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_SS_NAMES && quantity:<WHITE_GEAR_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -24971,7 +24971,7 @@ group: S Tier
 
 #define WHITE_GEAR_S_SHOW_UNNOTED true
 
-rule (name:WHITE_GEAR_S_NAMES && !WHITE_GEAR_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_S_NAMES && !WHITE_GEAR_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_S_NAMES && !WHITE_GEAR_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -24982,7 +24982,7 @@ group: S Tier
 
 #define WHITE_GEAR_S_MIN_QUANT 0
 
-rule (name:WHITE_GEAR_S_NAMES && quantity:<WHITE_GEAR_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_S_NAMES && quantity:<WHITE_GEAR_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_S_NAMES && quantity:<WHITE_GEAR_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25030,7 +25030,7 @@ group: A Tier
 
 #define WHITE_GEAR_A_SHOW_UNNOTED true
 
-rule (name:WHITE_GEAR_A_NAMES && !WHITE_GEAR_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_A_NAMES && !WHITE_GEAR_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_A_NAMES && !WHITE_GEAR_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25041,7 +25041,7 @@ group: A Tier
 
 #define WHITE_GEAR_A_MIN_QUANT 0
 
-rule (name:WHITE_GEAR_A_NAMES && quantity:<WHITE_GEAR_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_A_NAMES && quantity:<WHITE_GEAR_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_A_NAMES && quantity:<WHITE_GEAR_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25095,7 +25095,7 @@ group: B Tier
 
 #define WHITE_GEAR_B_SHOW_UNNOTED true
 
-rule (name:WHITE_GEAR_B_NAMES && !WHITE_GEAR_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_B_NAMES && !WHITE_GEAR_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_B_NAMES && !WHITE_GEAR_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25106,7 +25106,7 @@ group: B Tier
 
 #define WHITE_GEAR_B_MIN_QUANT 0
 
-rule (name:WHITE_GEAR_B_NAMES && quantity:<WHITE_GEAR_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_B_NAMES && quantity:<WHITE_GEAR_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_B_NAMES && quantity:<WHITE_GEAR_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25164,7 +25164,7 @@ group: C Tier
 
 #define WHITE_GEAR_C_SHOW_UNNOTED true
 
-rule (name:WHITE_GEAR_C_NAMES && !WHITE_GEAR_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_C_NAMES && !WHITE_GEAR_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_C_NAMES && !WHITE_GEAR_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25175,7 +25175,7 @@ group: C Tier
 
 #define WHITE_GEAR_C_MIN_QUANT 0
 
-rule (name:WHITE_GEAR_C_NAMES && quantity:<WHITE_GEAR_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_C_NAMES && quantity:<WHITE_GEAR_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_C_NAMES && quantity:<WHITE_GEAR_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25241,7 +25241,7 @@ group: D Tier
 
 #define WHITE_GEAR_D_SHOW_UNNOTED true
 
-rule (name:WHITE_GEAR_D_NAMES && !WHITE_GEAR_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_D_NAMES && !WHITE_GEAR_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_D_NAMES && !WHITE_GEAR_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25252,7 +25252,7 @@ group: D Tier
 
 #define WHITE_GEAR_D_MIN_QUANT 0
 
-rule (name:WHITE_GEAR_D_NAMES && quantity:<WHITE_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_D_NAMES && quantity:<WHITE_GEAR_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_D_NAMES && quantity:<WHITE_GEAR_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25323,7 +25323,7 @@ group: E Tier
 
 #define WHITE_GEAR_E_SHOW_UNNOTED true
 
-rule (name:WHITE_GEAR_E_NAMES && !WHITE_GEAR_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_E_NAMES && !WHITE_GEAR_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_E_NAMES && !WHITE_GEAR_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25334,7 +25334,7 @@ group: E Tier
 
 #define WHITE_GEAR_E_MIN_QUANT 0
 
-rule (name:WHITE_GEAR_E_NAMES && quantity:<WHITE_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:WHITE_GEAR_E_NAMES && quantity:<WHITE_GEAR_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:WHITE_GEAR_E_NAMES && quantity:<WHITE_GEAR_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:white_gear
@@ -25456,7 +25456,7 @@ group: SS Tier
 
 #define STEEL_GEAR_SS_SHOW_UNNOTED true
 
-rule (name:STEEL_GEAR_SS_NAMES && !STEEL_GEAR_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_SS_NAMES && !STEEL_GEAR_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_SS_NAMES && !STEEL_GEAR_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25467,7 +25467,7 @@ group: SS Tier
 
 #define STEEL_GEAR_SS_MIN_QUANT 0
 
-rule (name:STEEL_GEAR_SS_NAMES && quantity:<STEEL_GEAR_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_SS_NAMES && quantity:<STEEL_GEAR_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_SS_NAMES && quantity:<STEEL_GEAR_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25506,7 +25506,7 @@ group: S Tier
 
 #define STEEL_GEAR_S_SHOW_UNNOTED true
 
-rule (name:STEEL_GEAR_S_NAMES && !STEEL_GEAR_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_S_NAMES && !STEEL_GEAR_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_S_NAMES && !STEEL_GEAR_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25517,7 +25517,7 @@ group: S Tier
 
 #define STEEL_GEAR_S_MIN_QUANT 0
 
-rule (name:STEEL_GEAR_S_NAMES && quantity:<STEEL_GEAR_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_S_NAMES && quantity:<STEEL_GEAR_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_S_NAMES && quantity:<STEEL_GEAR_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25565,7 +25565,7 @@ group: A Tier
 
 #define STEEL_GEAR_A_SHOW_UNNOTED true
 
-rule (name:STEEL_GEAR_A_NAMES && !STEEL_GEAR_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_A_NAMES && !STEEL_GEAR_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_A_NAMES && !STEEL_GEAR_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25576,7 +25576,7 @@ group: A Tier
 
 #define STEEL_GEAR_A_MIN_QUANT 0
 
-rule (name:STEEL_GEAR_A_NAMES && quantity:<STEEL_GEAR_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_A_NAMES && quantity:<STEEL_GEAR_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_A_NAMES && quantity:<STEEL_GEAR_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25630,7 +25630,7 @@ group: B Tier
 
 #define STEEL_GEAR_B_SHOW_UNNOTED true
 
-rule (name:STEEL_GEAR_B_NAMES && !STEEL_GEAR_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_B_NAMES && !STEEL_GEAR_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_B_NAMES && !STEEL_GEAR_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25641,7 +25641,7 @@ group: B Tier
 
 #define STEEL_GEAR_B_MIN_QUANT 0
 
-rule (name:STEEL_GEAR_B_NAMES && quantity:<STEEL_GEAR_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_B_NAMES && quantity:<STEEL_GEAR_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_B_NAMES && quantity:<STEEL_GEAR_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25699,7 +25699,7 @@ group: C Tier
 
 #define STEEL_GEAR_C_SHOW_UNNOTED true
 
-rule (name:STEEL_GEAR_C_NAMES && !STEEL_GEAR_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_C_NAMES && !STEEL_GEAR_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_C_NAMES && !STEEL_GEAR_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25710,7 +25710,7 @@ group: C Tier
 
 #define STEEL_GEAR_C_MIN_QUANT 0
 
-rule (name:STEEL_GEAR_C_NAMES && quantity:<STEEL_GEAR_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_C_NAMES && quantity:<STEEL_GEAR_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_C_NAMES && quantity:<STEEL_GEAR_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25776,7 +25776,7 @@ group: D Tier
 
 #define STEEL_GEAR_D_SHOW_UNNOTED false
 
-rule (name:STEEL_GEAR_D_NAMES && !STEEL_GEAR_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_D_NAMES && !STEEL_GEAR_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_D_NAMES && !STEEL_GEAR_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25787,7 +25787,7 @@ group: D Tier
 
 #define STEEL_GEAR_D_MIN_QUANT 10
 
-rule (name:STEEL_GEAR_D_NAMES && quantity:<STEEL_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_D_NAMES && quantity:<STEEL_GEAR_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_D_NAMES && quantity:<STEEL_GEAR_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25858,7 +25858,7 @@ group: E Tier
 
 #define STEEL_GEAR_E_SHOW_UNNOTED false
 
-rule (name:STEEL_GEAR_E_NAMES && !STEEL_GEAR_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_E_NAMES && !STEEL_GEAR_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_E_NAMES && !STEEL_GEAR_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25869,7 +25869,7 @@ group: E Tier
 
 #define STEEL_GEAR_E_MIN_QUANT 100
 
-rule (name:STEEL_GEAR_E_NAMES && quantity:<STEEL_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:STEEL_GEAR_E_NAMES && quantity:<STEEL_GEAR_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:STEEL_GEAR_E_NAMES && quantity:<STEEL_GEAR_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:steel_gear
@@ -25991,7 +25991,7 @@ group: SS Tier
 
 #define IRON_GEAR_SS_SHOW_UNNOTED true
 
-rule (name:IRON_GEAR_SS_NAMES && !IRON_GEAR_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_SS_NAMES && !IRON_GEAR_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_SS_NAMES && !IRON_GEAR_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26002,7 +26002,7 @@ group: SS Tier
 
 #define IRON_GEAR_SS_MIN_QUANT 0
 
-rule (name:IRON_GEAR_SS_NAMES && quantity:<IRON_GEAR_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_SS_NAMES && quantity:<IRON_GEAR_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_SS_NAMES && quantity:<IRON_GEAR_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26041,7 +26041,7 @@ group: S Tier
 
 #define IRON_GEAR_S_SHOW_UNNOTED true
 
-rule (name:IRON_GEAR_S_NAMES && !IRON_GEAR_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_S_NAMES && !IRON_GEAR_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_S_NAMES && !IRON_GEAR_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26052,7 +26052,7 @@ group: S Tier
 
 #define IRON_GEAR_S_MIN_QUANT 0
 
-rule (name:IRON_GEAR_S_NAMES && quantity:<IRON_GEAR_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_S_NAMES && quantity:<IRON_GEAR_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_S_NAMES && quantity:<IRON_GEAR_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26100,7 +26100,7 @@ group: A Tier
 
 #define IRON_GEAR_A_SHOW_UNNOTED true
 
-rule (name:IRON_GEAR_A_NAMES && !IRON_GEAR_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_A_NAMES && !IRON_GEAR_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_A_NAMES && !IRON_GEAR_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26111,7 +26111,7 @@ group: A Tier
 
 #define IRON_GEAR_A_MIN_QUANT 0
 
-rule (name:IRON_GEAR_A_NAMES && quantity:<IRON_GEAR_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_A_NAMES && quantity:<IRON_GEAR_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_A_NAMES && quantity:<IRON_GEAR_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26165,7 +26165,7 @@ group: B Tier
 
 #define IRON_GEAR_B_SHOW_UNNOTED true
 
-rule (name:IRON_GEAR_B_NAMES && !IRON_GEAR_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_B_NAMES && !IRON_GEAR_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_B_NAMES && !IRON_GEAR_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26176,7 +26176,7 @@ group: B Tier
 
 #define IRON_GEAR_B_MIN_QUANT 0
 
-rule (name:IRON_GEAR_B_NAMES && quantity:<IRON_GEAR_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_B_NAMES && quantity:<IRON_GEAR_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_B_NAMES && quantity:<IRON_GEAR_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26234,7 +26234,7 @@ group: C Tier
 
 #define IRON_GEAR_C_SHOW_UNNOTED true
 
-rule (name:IRON_GEAR_C_NAMES && !IRON_GEAR_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_C_NAMES && !IRON_GEAR_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_C_NAMES && !IRON_GEAR_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26245,7 +26245,7 @@ group: C Tier
 
 #define IRON_GEAR_C_MIN_QUANT 0
 
-rule (name:IRON_GEAR_C_NAMES && quantity:<IRON_GEAR_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_C_NAMES && quantity:<IRON_GEAR_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_C_NAMES && quantity:<IRON_GEAR_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26311,7 +26311,7 @@ group: D Tier
 
 #define IRON_GEAR_D_SHOW_UNNOTED false
 
-rule (name:IRON_GEAR_D_NAMES && !IRON_GEAR_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_D_NAMES && !IRON_GEAR_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_D_NAMES && !IRON_GEAR_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26322,7 +26322,7 @@ group: D Tier
 
 #define IRON_GEAR_D_MIN_QUANT 0
 
-rule (name:IRON_GEAR_D_NAMES && quantity:<IRON_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_D_NAMES && quantity:<IRON_GEAR_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_D_NAMES && quantity:<IRON_GEAR_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26392,7 +26392,7 @@ group: E Tier
 */
 
 #define IRON_GEAR_E_SHOW_UNNOTED false
-rule (name:IRON_GEAR_E_NAMES && !IRON_GEAR_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_E_NAMES && !IRON_GEAR_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_E_NAMES && !IRON_GEAR_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26403,7 +26403,7 @@ group: E Tier
 
 #define IRON_GEAR_E_MIN_QUANT 50
 
-rule (name:IRON_GEAR_E_NAMES && quantity:<IRON_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:IRON_GEAR_E_NAMES && quantity:<IRON_GEAR_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:IRON_GEAR_E_NAMES && quantity:<IRON_GEAR_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:iron_gear
@@ -26525,7 +26525,7 @@ group: SS Tier
 
 #define BRONZE_GEAR_SS_SHOW_UNNOTED true
 
-rule (name:BRONZE_GEAR_SS_NAMES && !BRONZE_GEAR_SS_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_SS_NAMES && !BRONZE_GEAR_SS_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_SS_NAMES && !BRONZE_GEAR_SS_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26536,7 +26536,7 @@ group: SS Tier
 
 #define BRONZE_GEAR_SS_MIN_QUANT 0
 
-rule (name:BRONZE_GEAR_SS_NAMES && quantity:<BRONZE_GEAR_SS_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_SS_NAMES && quantity:<BRONZE_GEAR_SS_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_SS_NAMES && quantity:<BRONZE_GEAR_SS_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26575,7 +26575,7 @@ group: S Tier
 
 #define BRONZE_GEAR_S_SHOW_UNNOTED true
 
-rule (name:BRONZE_GEAR_S_NAMES && !BRONZE_GEAR_S_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_S_NAMES && !BRONZE_GEAR_S_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_S_NAMES && !BRONZE_GEAR_S_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26586,7 +26586,7 @@ group: S Tier
 
 #define BRONZE_GEAR_S_MIN_QUANT 0
 
-rule (name:BRONZE_GEAR_S_NAMES && quantity:<BRONZE_GEAR_S_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_S_NAMES && quantity:<BRONZE_GEAR_S_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_S_NAMES && quantity:<BRONZE_GEAR_S_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26634,7 +26634,7 @@ group: A Tier
 
 #define BRONZE_GEAR_A_SHOW_UNNOTED true
 
-rule (name:BRONZE_GEAR_A_NAMES && !BRONZE_GEAR_A_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_A_NAMES && !BRONZE_GEAR_A_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_A_NAMES && !BRONZE_GEAR_A_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26645,7 +26645,7 @@ group: A Tier
 
 #define BRONZE_GEAR_A_MIN_QUANT 0
 
-rule (name:BRONZE_GEAR_A_NAMES && quantity:<BRONZE_GEAR_A_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_A_NAMES && quantity:<BRONZE_GEAR_A_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_A_NAMES && quantity:<BRONZE_GEAR_A_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26699,7 +26699,7 @@ group: B Tier
 
 #define BRONZE_GEAR_B_SHOW_UNNOTED true
 
-rule (name:BRONZE_GEAR_B_NAMES && !BRONZE_GEAR_B_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_B_NAMES && !BRONZE_GEAR_B_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_B_NAMES && !BRONZE_GEAR_B_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26710,7 +26710,7 @@ group: B Tier
 
 #define BRONZE_GEAR_B_MIN_QUANT 0
 
-rule (name:BRONZE_GEAR_B_NAMES && quantity:<BRONZE_GEAR_B_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_B_NAMES && quantity:<BRONZE_GEAR_B_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_B_NAMES && quantity:<BRONZE_GEAR_B_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26768,7 +26768,7 @@ group: C Tier
 
 #define BRONZE_GEAR_C_SHOW_UNNOTED true
 
-rule (name:BRONZE_GEAR_C_NAMES && !BRONZE_GEAR_C_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_C_NAMES && !BRONZE_GEAR_C_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_C_NAMES && !BRONZE_GEAR_C_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26779,7 +26779,7 @@ group: C Tier
 
 #define BRONZE_GEAR_C_MIN_QUANT 0
 
-rule (name:BRONZE_GEAR_C_NAMES && quantity:<BRONZE_GEAR_C_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_C_NAMES && quantity:<BRONZE_GEAR_C_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_C_NAMES && quantity:<BRONZE_GEAR_C_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26845,7 +26845,7 @@ group: D Tier
 
 #define BRONZE_GEAR_D_SHOW_UNNOTED false
 
-rule (name:BRONZE_GEAR_D_NAMES && !BRONZE_GEAR_D_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_D_NAMES && !BRONZE_GEAR_D_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_D_NAMES && !BRONZE_GEAR_D_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26856,7 +26856,7 @@ group: D Tier
 
 #define BRONZE_GEAR_D_MIN_QUANT 10
 
-rule (name:BRONZE_GEAR_D_NAMES && quantity:<BRONZE_GEAR_D_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_D_NAMES && quantity:<BRONZE_GEAR_D_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_D_NAMES && quantity:<BRONZE_GEAR_D_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26927,7 +26927,7 @@ group: E Tier
 
 #define BRONZE_GEAR_E_SHOW_UNNOTED false
 
-rule (name:BRONZE_GEAR_E_NAMES && !BRONZE_GEAR_E_SHOW_UNNOTED && stackable:false && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_E_NAMES && !BRONZE_GEAR_E_SHOW_UNNOTED && stackable:false && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_E_NAMES && !BRONZE_GEAR_E_SHOW_UNNOTED && stackable:false) {hidden = true;}
 
 /*@ define:input:bronze_gear
@@ -26938,7 +26938,7 @@ group: E Tier
 
 #define BRONZE_GEAR_E_MIN_QUANT 100
 
-rule (name:BRONZE_GEAR_E_NAMES && quantity:<BRONZE_GEAR_E_MIN_QUANT && (PERFECT_KILL_LISTS)))) {hideOverlay = true;}
+rule (name:BRONZE_GEAR_E_NAMES && quantity:<BRONZE_GEAR_E_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:BRONZE_GEAR_E_NAMES && quantity:<BRONZE_GEAR_E_MIN_QUANT) {hidden = true;}
 
 /*@ define:input:bronze_gear
