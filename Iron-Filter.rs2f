@@ -21739,7 +21739,7 @@ exampleItem: Dragon crossbow (u)
 	color = "#ff094A4C";\
 	fontType = 3;\
 	textAccent = 3;\
-	borderColor = "#ffffffff";\
+	borderColor = "#ff094A4C";\
 	showLootbeam = true;\
 	lootbeamColor = "#ff094A4C";\
 	menuSort = 50000;\
