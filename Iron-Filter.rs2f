@@ -11839,6 +11839,189 @@ rule (name:"Numulite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_C_
 rule (name:"Numulite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_D_QUANT) {NUMALITE_D_STYLE}
 rule (name:"Numulite" && quantity:>=NUMALITE_MIN_QUANT && quantity:>=NUMALITE_E_QUANT) {NUMALITE_E_STYLE}
 
+/*@ define:input:currency	
+label: Minimum Value	
+type: number	
+group: Marks of Grace	
+*/	
+	
+#define MARK_OF_GRACE_MIN_QUANT 0
+	
+rule (name:"Mark of grace" && quantity:<MARK_OF_GRACE_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;})	
+rule (name:"Mark of grace" && quantity:<MARK_OF_GRACE_MIN_QUANT) {hidden = true;}	
+	
+/*@ define:input:currency	
+label: SS Value	
+type: number	
+group: Marks of Grace	
+*/	
+	
+#define MARK_OF_GRACE_SS_QUANT 10000
+	
+/*@ define:input:currency	
+label: S Value	
+type: number	
+group: Marks of Grace	
+*/	
+	
+#define MARK_OF_GRACE_S_QUANT 1000
+	
+/*@ define:input:currency	
+label: A Value	
+type: number	
+group: Marks of Grace	
+*/	
+	
+#define MARK_OF_GRACE_A_QUANT 100
+	
+/*@ define:input:currency	
+label: B Value	
+type: number	
+group: Marks of Grace	
+*/	
+	
+#define MARK_OF_GRACE_B_QUANT 10
+	
+/*@ define:input:currency	
+label: C Value	
+type: number	
+group: Marks of Grace	
+*/	
+	
+#define MARK_OF_GRACE_C_QUANT 1	
+	
+/*@ define:input:currency	
+label: D Quantity	
+type: number	
+group: Marks of Grace	
+*/	
+	
+#define MARK_OF_GRACE_D_QUANT 0	
+	
+/*@ define:input:currency	
+label: E Quantity	
+type: number	
+group: Marks of Grace	
+*/	
+	
+#define MARK_OF_GRACE_E_QUANT 0	
+	
+/*@ define:input:currency	
+label: SS Tier	
+type: style	
+group: Marks of Grace	
+exampleItem: "Mark of grace"	
+*/	
+	
+#define MARK_OF_GRACE_SS_STYLE \
+	backgroundColor = "#FFFFFFFF";\
+	menuTextColor = "#FFBDA518";\
+	color = "#FFBDA518";\
+	fontType = 3;\
+	textAccent = 3;\
+	borderColor = "#FFBDA518";\
+	showLootbeam = true;\
+	lootbeamColor = "#FFBDA518";\
+	menuSort = 50000;\
+	sound = "DropSS.wav";
+	
+/*@ define:input:currency	
+label: S Tier	
+type: style	
+group: Marks of Grace	
+exampleItem: "Mark of grace"	
+*/	
+	
+#define MARK_OF_GRACE_S_STYLE \
+	backgroundColor = "#FFBDA518";\
+	menuTextColor = "#FFBDA518";\
+	color = "#FF9F2211";\
+	fontType = 3;\
+	textAccent = 3;\
+	borderColor = "#FF9F2211";\
+	showLootbeam = true;\
+	lootbeamColor = "#FFBDA518";\
+	menuSort = 40000;\
+	sound = "DropS.wav";
+	
+/*@ define:input:currency	
+label: A Tier	
+type: style	
+group: Marks of Grace	
+exampleItem: "Mark of grace"	
+*/	
+	
+#define MARK_OF_GRACE_A_STYLE \
+	color = "#FF9F2211";\
+	backgroundColor = "#CCBDA518";\
+	menuTextColor = "#FFBDA518";\
+	fontType = 2;\
+	textAccent = 3;\
+	borderColor = "#FF9F2211";\
+	menuSort = 30000;\
+	sound = "DropA.wav";
+	
+/*@ define:input:currency	
+label: B Tier	
+type: style	
+group: Marks of Grace	
+exampleItem: "Mark of grace"	
+*/	
+	
+#define MARK_OF_GRACE_B_STYLE \
+	color = "#FF9F2211";\
+	backgroundColor = "#99BDA518";\
+	menuTextColor = "#FFBDA518";\
+	textAccent = 3;\
+	menuSort = 20000;
+	
+/*@ define:input:currency	
+label: C Tier	
+type: style	
+group: Marks of Grace	
+exampleItem: "Mark of grace"	
+*/	
+	
+#define MARK_OF_GRACE_C_STYLE \
+	color = "#FF9F2211";\
+	backgroundColor = "#44BDA518";\
+	menuTextColor = "#FFBDA518";\
+	textAccent = 3;\
+	menuSort = 10000;
+	
+/*@ define:input:currency	
+label: D Tier	
+type: style	
+group: Marks of Grace	
+exampleItem: "Mark of grace"	
+*/	
+	
+#define MARK_OF_GRACE_D_STYLE \
+	color = "#FFBDA518";\
+	menuTextColor = "#FFBDA518";\
+	
+/*@ define:input:currency	
+label: E Tier	
+type: style	
+group: Marks of Grace	
+exampleItem: "Mark of grace"	
+*/	
+	
+#define MARK_OF_GRACE_ES_STYLE \
+	color = "#66BDA518"; \
+	menuTextColor = "#FFBDA518";\
+	textAccent = 2;\
+	textAccentColor = "#66000000";\
+	menuSort = -10000;\
+	
+rule (name:["Mark of grace", "Sunken treasure"] && quantity:>=MARK_OF_GRACE_MIN_QUANT && quantity:>=MARK_OF_GRACE_SS_QUANT) {MARK_OF_GRACE_SS_STYLE}	
+rule (name:["Mark of grace", "Sunken treasure"] && quantity:>=MARK_OF_GRACE_MIN_QUANT && quantity:>=MARK_OF_GRACE_S_QUANT) {MARK_OF_GRACE_S_STYLE}	
+rule (name:["Mark of grace", "Sunken treasure"] && quantity:>=MARK_OF_GRACE_MIN_QUANT && quantity:>=MARK_OF_GRACE_A_QUANT) {MARK_OF_GRACE_A_STYLE}	
+rule (name:["Mark of grace", "Sunken treasure"] && quantity:>=MARK_OF_GRACE_MIN_QUANT && quantity:>=MARK_OF_GRACE_B_QUANT) {MARK_OF_GRACE_B_STYLE}	
+rule (name:["Mark of grace", "Sunken treasure"] && quantity:>=MARK_OF_GRACE_MIN_QUANT && quantity:>=MARK_OF_GRACE_C_QUANT) {MARK_OF_GRACE_C_STYLE}	
+rule (name:["Mark of grace", "Sunken treasure"] && quantity:>=MARK_OF_GRACE_MIN_QUANT && quantity:>=MARK_OF_GRACE_D_QUANT) {MARK_OF_GRACE_D_STYLE}	
+rule (name:["Mark of grace", "Sunken treasure"] && quantity:>=MARK_OF_GRACE_MIN_QUANT && quantity:>=MARK_OF_GRACE_E_QUANT) {MARK_OF_GRACE_E_STYLE}	
+	
 /*@ define:module:alchs
 name: Alchs
 subtitle: Turn Everything to Gold
