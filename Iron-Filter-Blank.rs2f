@@ -11843,7 +11843,7 @@ group: Marks of Grace
 	
 #define MARK_OF_GRACE_MIN_QUANT 0
 	
-rule (name:"Mark of grace" && quantity:<MARK_OF_GRACE_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;})	
+rule (name:"Mark of grace" && quantity:<MARK_OF_GRACE_MIN_QUANT && ((PERFECT_KILL_LISTS))))) {hideOverlay = true;}
 rule (name:"Mark of grace" && quantity:<MARK_OF_GRACE_MIN_QUANT) {hidden = true;}	
 	
 /*@ define:input:currency	
@@ -12003,7 +12003,7 @@ group: Marks of Grace
 exampleItem: "Mark of grace"	
 */	
 	
-#define MARK_OF_GRACE_ES_STYLE \
+#define MARK_OF_GRACE_E_STYLE \
 	color = "#66BDA518"; \
 	menuTextColor = "#FFBDA518";\
 	textAccent = 2;\
