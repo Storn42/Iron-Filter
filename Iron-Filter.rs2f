@@ -10568,7 +10568,7 @@ group: Prison of Raeun
 enum: ["Sunken treasure","Fremennik graceful ornament kit","Fremennik sail fabric"]
 */
 
-#define PRISON OF_RAEUN_B_UNIQUES ["Fremennik graceful ornament kit","Fremennik sail fabric"]
+#define PRISON_OF_RAEUN_B_UNIQUES ["Fremennik graceful ornament kit","Fremennik sail fabric"]
 
 rule (name:PRISON_OF_RAEUN_B_UNIQUES) {UNIQUE_B_STYLE}
 
