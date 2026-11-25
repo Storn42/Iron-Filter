@@ -10531,9 +10531,9 @@ group: Prison of Raeun
 enum: ["Sunken treasure","Fremennik graceful ornament kit","Fremennik sail fabric"]
 */
 
-#define PRISON OF RAEUN_SS_UNIQUES []
+#define PRISON_OF_RAEUN_SS_UNIQUES []
 
-rule (name:PRISON OF RAEUN_SS_UNIQUES) {UNIQUE_SS_STYLE}
+rule (name:PRISON_OF_RAEUN_SS_UNIQUES) {UNIQUE_SS_STYLE}
 
 /*@ define:input:misc_uniques
 label: S Tier Uniques
@@ -10542,9 +10542,9 @@ group: Prison of Raeun
 enum: ["Sunken treasure","Fremennik graceful ornament kit","Fremennik sail fabric"]
 */
 
-#define PRISON OF RAEUN_S_UNIQUES []
+#define PRISON_OF_RAEUN_S_UNIQUES []
 
-rule (name:PRISON OF RAEUN_S_UNIQUES) {UNIQUE_S_STYLE}
+rule (name:PRISON_OF_RAEUN_S_UNIQUES) {UNIQUE_S_STYLE}
 
 /*@ define:input:misc_uniques
 label: A Tier Uniques
@@ -10553,9 +10553,9 @@ group: Prison of Raeun
 enum: ["Sunken treasure","Fremennik graceful ornament kit","Fremennik sail fabric"]
 */
 
-#define PRISON OF RAEUN_A_UNIQUES []
+#define PRISON_OF_RAEUN_A_UNIQUES []
 
-rule (name:PRISON OF RAEUN_A_UNIQUES) {UNIQUE_A_STYLE}
+rule (name:PRISON_OF_RAEUN_A_UNIQUES) {UNIQUE_A_STYLE}
 
 /*@ define:input:misc_uniques
 label: B Tier Uniques
@@ -10564,9 +10564,9 @@ group: Prison of Raeun
 enum: ["Sunken treasure","Fremennik graceful ornament kit","Fremennik sail fabric"]
 */
 
-#define PRISON OF RAEUN_B_UNIQUES ["Fremennik graceful ornament kit","Fremennik sail fabric"]
+#define PRISON_OF_RAEUN_B_UNIQUES ["Fremennik graceful ornament kit","Fremennik sail fabric"]
 
-rule (name:PRISON OF RAEUN_B_UNIQUES) {UNIQUE_B_STYLE}
+rule (name:PRISON_OF_RAEUN_B_UNIQUES) {UNIQUE_B_STYLE}
 
 /*@ define:input:misc_uniques
 label: C Tier Uniques
@@ -10575,9 +10575,9 @@ group: Prison of Raeun
 enum: ["Sunken treasure","Fremennik graceful ornament kit","Fremennik sail fabric"]
 */
 
-#define PRISON OF RAEUN_C_UNIQUES ["Sunken treasure"]
+#define PRISON_OF_RAEUN_C_UNIQUES ["Sunken treasure"]
 
-rule (name:PRISON OF RAEUN_C_UNIQUES) {UNIQUE_C_STYLE}
+rule (name:PRISON_OF_RAEUN_C_UNIQUES) {UNIQUE_C_STYLE}
 
 /*@ define:input:misc_uniques
 label: SS Tier Uniques
