@@ -9659,7 +9659,7 @@ rule (name:"* key brown" && ENABLE_SHADES_COLORS) {KEY_SHADES_BROWN}
 label: Key Crimson Style
 type: style
 group: Shades of Mort'ton
-exampleItem: Black key brown
+exampleItem: Black key crimson
 */
 #define KEY_SHADES_CRIMSON \
 	color = "#ffff0000"; \
