@@ -19778,7 +19778,7 @@ subtitle: Gems & Leathers
 /*@ define:input:crafting
 label: SS Tier Crafting Supplies
 type: enumlist
-enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cow hide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
+enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cowhide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
 group: SS Tier
 */
 
@@ -19828,7 +19828,7 @@ exampleItem: Uncut zenyte
 /*@ define:input:crafting
 label: S Tier Crafting Supplies
 type: enumlist
-enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cow hide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
+enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cowhide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
 group: S Tier
 */
 
@@ -19887,7 +19887,7 @@ exampleItem: Uncut onyx
 /*@ define:input:crafting
 label: A Tier Crafting Supplies
 type: enumlist
-enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cow hide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
+enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cowhide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
 group: A Tier
 */
 
@@ -19952,7 +19952,7 @@ exampleItem: Hueycoatl hide
 /*@ define:input:crafting
 label: B Tier Crafting Supplies
 type: enumlist
-enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cow hide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
+enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cowhide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
 group: B Tier
 */
 
@@ -20021,7 +20021,7 @@ exampleItem: Uncut dragonstone
 /*@ define:input:crafting
 label: C Tier Crafting Supplies
 type: enumlist
-enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cow hide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
+enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cowhide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
 group: C Tier
 */
 
@@ -20098,7 +20098,7 @@ exampleItem: Black dragon leather
 /*@ define:input:crafting
 label: D Tier Crafting Supplies
 type: enumlist
-enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cow hide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
+enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cowhide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
 group: D Tier
 */
 
@@ -20180,11 +20180,11 @@ exampleItem: Uncut ruby
 /*@ define:input:crafting
 label: E Tier Crafting Supplies
 type: enumlist
-enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cow hide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
+enum: ["Zenyte","Uncut zenyte","Onyx","Uncut onyx","Hueycoatl hide","Uncut diamond","Dragonstone","Green dragon leather","Blue dragon leather","Red dragon leather","Black dragon leather","Fine cloth","Red topaz","Uncut red topaz","Diamond","Uncut diamond","Green dragonhide","Blue dragonhide","Red dragonhide","Black dragonhide","Battlestaff","Hemp","Linen yarn","Hemp yarn","Cotton yarn","Cotton boll","Soft clay","Cured yak-hide","Xerician fabric","Molten glass","Opal","Uncut opal","Jade","Uncut jade","Sapphire","Uncut sapphire","Emerald","Uncut emerald","Ruby","Uncut ruby","Water orb","Earth orb","Fire orb","Air orb","Amethyst","Wool","Flax","Ball of wool","Cowhide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
 group: E Tier
 */
 
-#define CRAFTING_E_NAMES ["Wool","Flax","Ball of wool","Cow hide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
+#define CRAFTING_E_NAMES ["Wool","Flax","Ball of wool","Cowhide","Leather","Hard leather","Snakeskin","Snake hide","Gold bar","Silver bar"]
 
 /*@ define:input:crafting
 label: Show Unnoted
